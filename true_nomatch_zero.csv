@@ -1,0 +1,93 @@
+artist_name,first_qualifying_debut,original_api_count,retry_api_count,retry_returned_candidates,retry_query,top_candidate_names,contains_lucene_special_character,api_error_recorded,retry_result
+(hed) p.e.,2009-01-28,0,1,1,"""(hed) p.e.""",(həd) p.e.,True,False,candidates_returned
+(hed) planet earth,2014-08-06,0,1,1,"""(hed) planet earth""",(həd) p.e.,True,False,candidates_returned
+1-1-Six,2011-10-12,0,0,0,"""1-1-Six""",,False,False,zero_candidates_after_literal_alias_aware_retry
+98 Degrees,2013-05-22,0,2,2,"""98 Degrees""",98° | Michael Hall,False,False,candidates_returned
+A$AP Ferg,2013-09-04,0,2,2,"""A$AP Ferg""",FERG | The Scythe,True,False,candidates_returned
+Aliados De La Sierra,2009-03-25,0,0,0,"""Aliados De La Sierra""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Andrew Jackson Jihad,2014-05-21,0,1,1,"""Andrew Jackson Jihad""",AJJ,False,False,candidates_returned
+Andrew McMahon In the Wilderness,2014-10-29,0,1,1,"""Andrew McMahon In the Wilderness""",Andrew McMahon,False,False,candidates_returned
+Andrew Ross McMahon,2013-05-15,0,1,1,"""Andrew Ross McMahon""",Andrew McMahon,False,False,candidates_returned
+Architects UK,2014-03-26,0,0,0,"""Architects UK""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Attention Deficit Domination,2011-09-21,0,0,0,"""Attention Deficit Domination""",,False,False,zero_candidates_after_literal_alias_aware_retry
+AverySunshine,2014-06-11,0,1,1,"""AverySunshine""",Avery Sunshine,False,False,candidates_returned
+Banda Sinaloense MS de Sergio Lizarraga,2014-07-09,0,0,0,"""Banda Sinaloense MS de Sergio Lizarraga""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Billie Joe + Norah,2013-12-11,0,0,0,"""Billie Joe + Norah""",,True,False,zero_candidates_after_literal_alias_aware_retry
+Bruckner Orchester Linz Conducted By Dennis Russell Davies,2012-02-15,0,0,0,"""Bruckner Orchester Linz Conducted By Dennis Russell Davies""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Capture The Crown,2014-08-20,0,1,1,"""Capture The Crown""",Capture,False,False,candidates_returned
+DJ Drama Presents: Wyclef Jean aka Toussaint St. Jean,2009-11-25,0,0,0,"""DJ Drama Presents: Wyclef Jean aka Toussaint St. Jean""",,True,False,zero_candidates_after_literal_alias_aware_retry
+DJ Holiday + Gucci Mane,2010-04-28,0,0,0,"""DJ Holiday + Gucci Mane""",,True,False,zero_candidates_after_literal_alias_aware_retry
+DJ KaySlay,2010-02-24,0,1,1,"""DJ KaySlay""",DJ Kay Slay,False,False,candidates_returned
+DJ Paul Of Three 6 Mafia,2009-05-20,0,0,0,"""DJ Paul Of Three 6 Mafia""",,False,False,zero_candidates_after_literal_alias_aware_retry
+DJ Poet Name Life,2010-01-27,0,0,0,"""DJ Poet Name Life""",,False,False,zero_candidates_after_literal_alias_aware_retry
+DJ Skee Presents The Game,2013-10-30,0,0,0,"""DJ Skee Presents The Game""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Daryl Hall  John Oates,2009-10-28,0,1,1,"""Daryl Hall  John Oates""",Daryl Hall & John Oates,False,False,candidates_returned
+Devil You Know,2014-05-14,0,1,1,"""Devil You Know""",Light the Torch,False,False,candidates_returned
+Dixie Chicks,2010-06-16,0,1,1,"""Dixie Chicks""",The Chicks,False,False,candidates_returned
+Dr. Kokastien,2012-08-01,0,0,0,"""Dr. Kokastien""",,True,False,zero_candidates_after_literal_alias_aware_retry
+F.L.Y. (Fast Life Yungstaz),2009-07-08,0,0,0,"""F.L.Y. (Fast Life Yungstaz)""",,True,False,zero_candidates_after_literal_alias_aware_retry
+Frnkiero AndThe Cellebration.,2014-09-10,0,0,0,"""Frnkiero AndThe Cellebration.""",,True,False,zero_candidates_after_literal_alias_aware_retry
+Ghost B.C.,2013-05-01,0,1,1,"""Ghost B.C.""",Ghost,True,False,candidates_returned
+Halloween FX Productions,2012-11-14,0,0,0,"""Halloween FX Productions""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Hank 3,2011-09-21,0,1,1,"""Hank 3""",Hank Williams III,False,False,candidates_returned
+Hank III,2010-06-09,0,1,1,"""Hank III""",Hank Williams III,False,False,candidates_returned
+Jackson 5,2009-08-05,0,5,5,"""Jackson 5""",The Jacksons | Jermaine Jackson | Johnny Jackson | Jackie Jackson | DJ Matteo,False,False,candidates_returned
+Jackson Browne David Lindley,2010-05-26,0,0,0,"""Jackson Browne David Lindley""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Jay Z Kanye West,2011-08-24,0,0,0,"""Jay Z Kanye West""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Jethro Tull's Ian Anderson,2012-04-18,0,1,1,"""Jethro Tull's Ian Anderson""",Ian Anderson,False,False,candidates_returned
+Juicy J Of Three 6 Mafia,2009-07-01,0,0,0,"""Juicy J Of Three 6 Mafia""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Julian Casablancas + The Voidz,2014-10-08,0,1,1,"""Julian Casablancas + The Voidz""",The Voidz,True,False,candidates_returned
+Ke$ha,2010-01-20,0,2,2,"""Ke$ha""",Kesha | Pebe Sebert,True,False,candidates_returned
+Kidz Bop Kids,2009-02-18,0,1,1,"""Kidz Bop Kids""",Kidz Bop,False,False,candidates_returned
+Lady Antebellum,2010-02-10,0,1,1,"""Lady Antebellum""",Lady A,False,False,candidates_returned
+Lee Strobel,2012-09-26,0,0,0,"""Lee Strobel""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Lil' Boosie,2009-09-30,0,2,2,"""Lil' Boosie""",Boosie Badazz | K.T,False,False,candidates_returned
+LoCash Cowboys,2013-07-03,0,0,0,"""LoCash Cowboys""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Lonnie Hunter,2011-05-18,0,0,0,"""Lonnie Hunter""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Los Creadorez del Pasito Duranguense de Alfredo Ramirez,2009-08-12,0,0,0,"""Los Creadorez del Pasito Duranguense de Alfredo Ramirez""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Marlene Brehm,2012-10-03,0,0,0,"""Marlene Brehm""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Marvin L Winans,2012-07-11,0,1,1,"""Marvin L Winans""",Marvin Winans,False,False,candidates_returned
+Mike Stud,2013-05-22,0,1,1,"""Mike Stud""",mike.,False,False,candidates_returned
+Mos Def,2009-06-24,0,6,6,"""Mos Def""",The YMD | Black Star | Yasiin Bey | Taylor Dunn | Deimos Defender,False,False,candidates_returned
+N.O.R.E. a.k.a. P.A.P.I.,2013-05-01,0,0,0,"""N.O.R.E. a.k.a. P.A.P.I.""",,True,False,zero_candidates_after_literal_alias_aware_retry
+New Broadway Cast Recording,2011-12-14,0,1,1,"""New Broadway Cast Recording""",[theatre],False,False,candidates_returned
+P Reign,2014-09-24,0,1,1,"""P Reign""",Preme,False,False,candidates_returned
+Passion Band,2011-03-23,0,1,1,"""Passion Band""",Passion,False,False,candidates_returned
+Prodigy Of Mobb Deep,2012-07-18,0,1,1,"""Prodigy Of Mobb Deep""",Prodigy,False,False,candidates_returned
+Rend Collective Experiment,2013-02-13,0,1,1,"""Rend Collective Experiment""",Rend Collective,False,False,candidates_returned
+Rico Calhoun,2014-08-20,0,0,0,"""Rico Calhoun""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Ron Isley,2010-12-15,0,1,1,"""Ron Isley""",Ronald Isley,False,False,candidates_returned
+Scott Walker + Sunn O))),2014-11-05,0,0,0,"""Scott Walker + Sunn O)))""",,True,False,zero_candidates_after_literal_alias_aware_retry
+Sergio Vega: El Shaka,2010-08-04,0,1,1,"""Sergio Vega: El Shaka""",Sergio Vega,True,False,candidates_returned
+Sixx: A.M.,2011-05-18,0,1,1,"""Sixx: A.M.""",Sixx:A.M.,True,False,candidates_returned
+Smokie Norful Presents: Victory Cathedral Choir,2010-04-21,0,0,0,"""Smokie Norful Presents: Victory Cathedral Choir""",,True,False,zero_candidates_after_literal_alias_aware_retry
+Snoop Doggy Dogg,2009-10-28,0,1,1,"""Snoop Doggy Dogg""",Snoop Dogg,False,False,candidates_returned
+Spinal Tap,2009-07-01,0,4,4,"""Spinal Tap""",Spın̈al Tap | Viv Savage | Courage | Spinal Tappets,False,False,candidates_returned
+Swindoe,2010-03-24,0,0,0,"""Swindoe""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Talib Kweli + Hi-Tek Are Reflection Eternal,2010-06-02,0,0,0,"""Talib Kweli + Hi-Tek Are Reflection Eternal""",,True,False,zero_candidates_after_literal_alias_aware_retry
+Tech N9ne Collabos,2009-05-13,0,0,0,"""Tech N9ne Collabos""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Tech N9ne Presents Stevie Stone,2012-06-27,0,0,0,"""Tech N9ne Presents Stevie Stone""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The 2011 Broadway Cast Recording,2011-06-22,0,0,0,"""The 2011 Broadway Cast Recording""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The CAJO Family,2009-10-21,0,0,0,"""The CAJO Family""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The Dead Rabbitts,2014-07-16,0,0,0,"""The Dead Rabbitts""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The Devin Townsend Project,2012-10-03,0,1,1,"""The Devin Townsend Project""",Devin Townsend Project,False,False,candidates_returned
+The Dirty Heads,2010-05-12,0,1,1,"""The Dirty Heads""",Dirty Heads,False,False,candidates_returned
+The Hit Crew Kids,2012-04-18,0,0,0,"""The Hit Crew Kids""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The Jacka Of The Mob Figaz,2009-07-01,0,0,0,"""The Jacka Of The Mob Figaz""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The Kenny Wayne Shepherd Band,2010-10-13,0,0,0,"""The Kenny Wayne Shepherd Band""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The London Classical Orchestra (Wilson),2011-10-19,0,0,0,"""The London Classical Orchestra (Wilson)""",,True,False,zero_candidates_after_literal_alias_aware_retry
+The Miles Davis Quintet,2011-10-05,0,1,1,"""The Miles Davis Quintet""",Miles Davis Quintet,False,False,candidates_returned
+The Nashville Tribute Band,2014-11-19,0,0,0,"""The Nashville Tribute Band""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The New Broadway Cast Recording,2009-06-10,0,0,0,"""The New Broadway Cast Recording""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The Nick Hexum Quintet,2013-10-16,0,0,0,"""The Nick Hexum Quintet""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The Original 7ven,2011-11-02,0,1,1,"""The Original 7ven""",The Time,False,False,candidates_returned
+The Original Broadway Cast Recording,2010-05-05,0,0,0,"""The Original Broadway Cast Recording""",,False,False,zero_candidates_after_literal_alias_aware_retry
+The Ramones,2012-08-29,0,6,6,"""The Ramones""",Ramones | Cavrones | DUMB | Learning to Count | Ramones Alive,False,False,candidates_returned
+The Steve Miller Band,2010-06-30,0,1,1,"""The Steve Miller Band""",Steve Miller Band,False,False,candidates_returned
+Thomas Miles aka Nephew Tommy,2012-07-11,0,0,0,"""Thomas Miles aka Nephew Tommy""",,False,False,zero_candidates_after_literal_alias_aware_retry
+Trust Company,2011-03-23,0,1,1,"""Trust Company""",TRUSTcompany,False,False,candidates_returned
+V V Brown,2010-02-17,0,1,1,"""V V Brown""",VV Brown,False,False,candidates_returned
+Wax (Rapper),2013-01-30,0,0,0,"""Wax (Rapper)""",,True,False,zero_candidates_after_literal_alias_aware_retry
+We Are Augustines,2011-06-22,0,1,1,"""We Are Augustines""",Augustines,False,False,candidates_returned
+Yim Yames,2009-08-19,0,1,1,"""Yim Yames""",Jim James,False,False,candidates_returned
+Young Jeezy,2012-01-04,0,4,4,"""Young Jeezy""",Jeezy | Mach | B.I.T.H. | Dank,False,False,candidates_returned

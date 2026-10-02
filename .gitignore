@@ -1,0 +1,17 @@
+# Raw inputs (read-only, never committed)
+data/raw/
+OriginalDataFiles/
+
+# MusicBrainz caches and large collected tables (never delete; rebuilt only via rate-limited API)
+data/external/
+data/*cache*.jsonl
+data/musicbrainz_release_groups.csv
+data/musicbrainz_official_releases.csv
+data/musicbrainz_standard_album_candidates.csv
+
+# Intermediates and environments
+*.pkl
+__pycache__/
+*.pyc
+.venv/
+archive/venv_msys_py312/

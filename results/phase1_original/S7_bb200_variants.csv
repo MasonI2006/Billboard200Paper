@@ -1,0 +1,7 @@
+spec,coef,se,p,n
+"BB200, continuous intensity",0.057,0.027,0.037,499
+"BB200, continuous, excl electronic",0.081,0.037,0.029,468
+"BB200, binary, over12",0.202,0.096,0.036,499
+"BB200, binary, long18",0.142,0.062,0.022,499
+"BB200, binary, 2010-2019",0.141,0.054,0.009,350
+"BB200, binary, artist FE",0.072,0.09,0.424,499

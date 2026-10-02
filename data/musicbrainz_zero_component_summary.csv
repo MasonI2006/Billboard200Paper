@@ -1,0 +1,46 @@
+artist_name,components_searched,component_count,any_candidate_returned,exact_components_found,exact_component_hit_count,exact_component_matches,composite_credit_not_single_artist
+1-1-Six,1-1-Six,1,False,,0,[],False
+Aliados De La Sierra,Aliados De La Sierra,1,False,,0,[],False
+Architects UK,Architects UK,1,False,,0,[],False
+Attention Deficit Domination,Attention Deficit Domination,1,False,,0,[],False
+Banda Sinaloense MS de Sergio Lizarraga,Banda Sinaloense MS de Sergio Lizarraga,1,False,,0,[],False
+Billie Joe + Norah,Billie Joe | Norah,2,True,Norah,1,"[{""component"": ""Norah"", ""id"": ""ffd0a536-e0d5-48d4-8627-7decfbf1c1ab"", ""name"": ""Norah"", ""score"": 97, ""basis"": ""canonical_name"", ""disambiguation"": ""Argentinian singer"", ""type"": ""Person"", ""area"": ""Argentina""}]",True
+Bruckner Orchester Linz Conducted By Dennis Russell Davies,Bruckner Orchester Linz Conducted By Dennis Russell Davies,1,False,,0,[],False
+DJ Drama Presents: Wyclef Jean aka Toussaint St. Jean,DJ Drama | Wyclef Jean | Toussaint St. Jean,3,True,DJ Drama | Wyclef Jean,2,"[{""component"": ""DJ Drama"", ""id"": ""de23d637-20df-4b15-ae63-263dd5a34f10"", ""name"": ""DJ Drama"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""US rap mixtape DJ Tyree Cinque Simmons"", ""type"": ""Person"", ""area"": ""United States""}, {""component"": ""Wyclef Jean"", ""id"": ""4f29ecd7-21a5-4c03-b9ba-d0cfe9488f8c"", ""name"": ""Wyclef Jean"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""Haitian rapper, musician and actor"", ""type"": ""Person"", ""area"": ""United States""}]",True
+DJ Holiday + Gucci Mane,DJ Holiday | Gucci Mane,2,True,DJ Holiday | Gucci Mane,2,"[{""component"": ""DJ Holiday"", ""id"": ""c6d08ca0-3b17-4015-9aef-2ae31354adcc"", ""name"": ""DJ Holiday"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Person"", ""area"": ""United States""}, {""component"": ""Gucci Mane"", ""id"": ""36494952-f434-45d8-a958-8b4acdbcf8a8"", ""name"": ""Gucci Mane"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""US rapper"", ""type"": ""Person"", ""area"": ""United States""}]",True
+DJ Paul Of Three 6 Mafia,DJ Paul | Three 6 Mafia,2,True,DJ Paul | Three 6 Mafia,2,"[{""component"": ""DJ Paul"", ""id"": ""026c4d7c-8dfe-46e8-ab14-cf9304d6863d"", ""name"": ""DJ Paul Elstak"", ""score"": 100, ""basis"": ""alias"", ""disambiguation"": ""Dutch hardcore/gabber DJ, often credited as DJ Paul"", ""type"": ""Person"", ""area"": ""Netherlands""}, {""component"": ""Three 6 Mafia"", ""id"": ""a8754ac4-a85e-4f48-a81f-eecd482570ef"", ""name"": ""Three 6 Mafia"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Group"", ""area"": ""Memphis""}]",True
+DJ Poet Name Life,DJ Poet Name Life,1,False,,0,[],False
+DJ Skee Presents The Game,DJ Skee | The Game,2,True,DJ Skee | The Game,2,"[{""component"": ""DJ Skee"", ""id"": ""319affef-61e1-43a5-b2d3-4f1406e07584"", ""name"": ""DJ Skee"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Person"", ""area"": ""United States""}, {""component"": ""The Game"", ""id"": ""07cc14fb-4784-4a25-804b-2686ed5ef52c"", ""name"": ""The Game"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""US rapper, aka Game"", ""type"": ""Person"", ""area"": ""United States""}]",True
+Dr. Kokastien,Dr. Kokastien,1,False,,0,[],False
+F.L.Y. (Fast Life Yungstaz),F.L.Y. (Fast Life Yungstaz),1,False,,0,[],False
+Frnkiero AndThe Cellebration.,Frnkiero AndThe Cellebration.,1,False,,0,[],False
+Halloween FX Productions,Halloween FX Productions,1,False,,0,[],False
+Jackson Browne David Lindley,Jackson Browne David Lindley,1,False,,0,[],False
+Jay Z Kanye West,Jay Z Kanye West,1,False,,0,[],False
+Juicy J Of Three 6 Mafia,Juicy J | Three 6 Mafia,2,True,Juicy J | Three 6 Mafia,2,"[{""component"": ""Juicy J"", ""id"": ""c45d161f-83ce-4464-ba41-44202e6916d9"", ""name"": ""Juicy J"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""US rapper"", ""type"": ""Person"", ""area"": ""United States""}, {""component"": ""Three 6 Mafia"", ""id"": ""a8754ac4-a85e-4f48-a81f-eecd482570ef"", ""name"": ""Three 6 Mafia"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Group"", ""area"": ""Memphis""}]",True
+Lee Strobel,Lee Strobel,1,False,,0,[],False
+LoCash Cowboys,LoCash Cowboys,1,False,,0,[],False
+Lonnie Hunter,Lonnie Hunter,1,False,,0,[],False
+Los Creadorez del Pasito Duranguense de Alfredo Ramirez,Los Creadorez del Pasito Duranguense de Alfredo Ramirez,1,False,,0,[],False
+Marlene Brehm,Marlene Brehm,1,False,,0,[],False
+N.O.R.E. a.k.a. P.A.P.I.,N.O.R.E. | P.A.P.I.,2,True,N.O.R.E. | P.A.P.I.,2,"[{""component"": ""N.O.R.E."", ""id"": ""812d3015-2f4c-4fa7-bd7d-30ec4beb2c82"", ""name"": ""N.O.R.E."", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""Noreaga, hip-hop artist from Queens, NY"", ""type"": ""Person"", ""area"": ""United States""}, {""component"": ""P.A.P.I."", ""id"": ""ea686327-b0d9-49f0-9943-32e2f461d5f0"", ""name"": ""P.A.P.I"", ""score"": 99, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": """", ""area"": """"}]",True
+Rico Calhoun,Rico Calhoun,1,False,,0,[],False
+Scott Walker + Sunn O))),Scott Walker | Sunn O))),2,True,Scott Walker | Sunn O))),2,"[{""component"": ""Scott Walker"", ""id"": ""99524243-dc2e-4bf3-82c0-72395391d21f"", ""name"": ""Scott Walker"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""singer‐songwriter, musician and producer"", ""type"": ""Person"", ""area"": ""United Kingdom""}, {""component"": ""Sunn O)))"", ""id"": ""1d3da898-4fb4-4445-b704-cd7315e01789"", ""name"": ""Sunn O)))"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""US drone metal band"", ""type"": ""Group"", ""area"": ""United States""}]",True
+Smokie Norful Presents: Victory Cathedral Choir,Smokie Norful | Victory Cathedral Choir,2,True,Smokie Norful | Victory Cathedral Choir,2,"[{""component"": ""Smokie Norful"", ""id"": ""a66ab26a-ea04-4134-ae67-97e64d33f6fe"", ""name"": ""Smokie Norful"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Person"", ""area"": ""United States""}, {""component"": ""Victory Cathedral Choir"", ""id"": ""eea4bfbb-9c70-4054-a044-199a453e5144"", ""name"": ""Victory Cathedral Choir"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""US gospel choir"", ""type"": ""Choir"", ""area"": ""Chicago""}]",True
+Swindoe,Swindoe,1,False,,0,[],False
+Talib Kweli + Hi-Tek Are Reflection Eternal,Talib Kweli | Hi-Tek Are Reflection Eternal,2,True,Talib Kweli,1,"[{""component"": ""Talib Kweli"", ""id"": ""bb3cbea2-5ad4-4917-bc84-8a1975d40315"", ""name"": ""Talib Kweli"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Person"", ""area"": ""United States""}]",True
+Tech N9ne Collabos,Tech N9ne Collabos,1,False,,0,[],False
+Tech N9ne Presents Stevie Stone,Tech N9ne | Stevie Stone,2,True,Tech N9ne | Stevie Stone,2,"[{""component"": ""Tech N9ne"", ""id"": ""dde3d9b1-0e44-48bc-b0c9-d739b3570000"", ""name"": ""Tech N9ne"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": ""US rapper"", ""type"": ""Person"", ""area"": ""United States""}, {""component"": ""Stevie Stone"", ""id"": ""1c0a8759-14ce-451f-8816-55da73066ed0"", ""name"": ""Stevie Stone"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Person"", ""area"": ""United States""}]",True
+The 2011 Broadway Cast Recording,The 2011 Broadway Cast Recording,1,False,,0,[],False
+The CAJO Family,The CAJO Family,1,False,,0,[],False
+The Dead Rabbitts,The Dead Rabbitts,1,False,,0,[],False
+The Hit Crew Kids,The Hit Crew Kids,1,False,,0,[],False
+The Jacka Of The Mob Figaz,The Jacka | The Mob Figaz,2,True,The Jacka,1,"[{""component"": ""The Jacka"", ""id"": ""71ae037a-d95f-4bd7-aa9a-dd557a7d84ae"", ""name"": ""The Jacka"", ""score"": 100, ""basis"": ""canonical_name"", ""disambiguation"": """", ""type"": ""Person"", ""area"": ""United States""}]",True
+The Kenny Wayne Shepherd Band,The Kenny Wayne Shepherd Band,1,False,,0,[],False
+The London Classical Orchestra (Wilson),The London Classical Orchestra (Wilson),1,False,,0,[],False
+The Nashville Tribute Band,The Nashville Tribute Band,1,False,,0,[],False
+The New Broadway Cast Recording,The New Broadway Cast Recording,1,False,,0,[],False
+The Nick Hexum Quintet,The Nick Hexum Quintet,1,False,,0,[],False
+The Original Broadway Cast Recording,The Original Broadway Cast Recording,1,False,,0,[],False
+Thomas Miles aka Nephew Tommy,Thomas Miles | Nephew Tommy,2,True,,0,[],True
+Wax (Rapper),Wax (Rapper),1,False,,0,[],False

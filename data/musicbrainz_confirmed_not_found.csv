@@ -1,0 +1,6 @@
+artist_name,category,search_evidence,decision
+New Broadway Cast Recording,generic_broadway_cast_credit,Full literal search and component path returned zero candidates,Confirmed not found as a MusicBrainz artist entity; generic cast credit only
+The 2011 Broadway Cast Recording,generic_broadway_cast_credit,Full literal search and component path returned zero candidates,Confirmed not found as a MusicBrainz artist entity; generic cast credit only
+The New Broadway Cast Recording,generic_broadway_cast_credit,Full literal search and component path returned zero candidates,Confirmed not found as a MusicBrainz artist entity; generic cast credit only
+The Original Broadway Cast Recording,generic_broadway_cast_credit,Full literal search and component path returned zero candidates,Confirmed not found as a MusicBrainz artist entity; generic cast credit only
+Smokie Norful Presents: Victory Cathedral Choir,joint_church_choir_billing,Full-credit query returned zero candidates; separate component searches identified Smokie Norful and Victory Cathedral Choir,Confirmed not found as one full-credit artist entity; retain component identities separately if relevant

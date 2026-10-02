@@ -1,0 +1,10 @@
+spec,term,coef,se,p,n
+"binary high, ln_tracks",post:high,0.045,0.053,0.402,699
+"binary high, long18",post:high,0.072,0.058,0.215,699
+"binary high, over12",post:high,0.135,0.085,0.114,699
+"binary, excl electronic",post:high,0.078,0.056,0.165,633
+"binary, window 2010-19",post:high,0.082,0.054,0.132,479
+hiphop vs rock+country only,post:high,0.098,0.065,0.129,440
+"over12, hiphop vs rock+country",post:high,0.2,0.104,0.054,440
+Billboard-200 albums only,post:high,0.123,0.05,0.015,499
+"artist exposure (Kaggle), ln_tracks",post:exp_std,0.017,0.03,0.582,249

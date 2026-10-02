@@ -1,0 +1,306 @@
+release_group_id,album_title,musicbrainz_tracks,musicbrainz_artist,spotify_key,key,spotify_tracks,spotify_artist,spotify_album,spotify_tracks_numeric,track_count_difference,large_difference_flag
+016d0958-01da-4d16-8da1-8328f891a3a1,Pink Friday 2,10,Nicki Minaj,nicki minaj|pink friday 2,nicki minaj|pink friday 2,22,Nicki Minaj,Pink Friday 2,22,-12,True
+028b8602-3bde-495a-a7da-15594fc4f786,Static,11,cults,cults|static,cults|static,11,Cults,Static,11,0,False
+02e054f2-23f1-4e54-bf6a-53dd8ff1b7ba,Habits,8,Neon Trees,neon trees|habits,neon trees|habits,13,Neon Trees,Habits (Spotify),13,-5,True
+0304f1e1-0547-4fd9-a0cc-90bfdb7945b0,The Lumineers,11,The Lumineers,the lumineers|the lumineers,the lumineers|the lumineers,11,The Lumineers,The Lumineers,11,0,False
+03c9caee-ee5c-4741-8dd6-eed2c2883b40,Kill the Lights,13,Luke Bryan,luke bryan|kill the lights,luke bryan|kill the lights,13,Luke Bryan,Kill The Lights,13,0,False
+0516dbfb-6c53-4248-a450-9048ea427d8a,Ripcord,18,Keith Urban,keith urban|ripcord,keith urban|ripcord,13,Keith Urban,Ripcord,13,5,True
+06af18b0-1f97-4282-8a4d-af53ae8d9377,Hozier,13,Hozier,hozier|hozier,hozier|hozier,13,Hozier,Hozier,13,0,False
+07192b2b-a27f-4fe4-b03c-5597400a1b0c,The Pale Emperor,10,Marilyn Manson,marilyn manson|the pale emperor,marilyn manson|the pale emperor,13,Marilyn Manson,The Pale Emperor,13,-3,True
+08aa7a6c-3e43-4459-87b2-e47faf3a088a,Currents,13,Tame Impala,tame impala|currents,tame impala|currents,13,Tame Impala,Currents,13,0,False
+08b1bdaf-6758-496c-a8ce-4d82d3fa4ec8,Hard to Imagine the Neighbourhood Ever Changing,12,The Neighbourhood,the neighbourhood|hard to imagine the neighbourhood ever changing,the neighbourhood|hard to imagine the neighbourhood ever changing,21,The Neighbourhood,Hard To Imagine The Neighbourhood Ever Changing,21,-9,True
+0a57ce2e-9c35-4466-8917-9a47fd762210,Mind Over Matter,13,Young the Giant,young the giant|mind over matter,young the giant|mind over matter,13,Young the Giant,Mind Over Matter,13,0,False
+0ac61b2d-2234-4eb4-9a81-4117ba2c6c0a,Good Things,12,Dan + Shay,dan shay|good things,dan shay|good things,12,Dan + Shay,Good Things,12,0,False
+0c8b2d79-2dd9-4fee-ac15-66d0d7b58395,Flockaveli,17,Waka Flocka Flame,waka flocka flame|flockaveli,waka flocka flame|flockaveli,17,Waka Flocka Flame,Flockaveli,17,0,False
+0cd63d76-929b-4303-af5f-36d23ab537d4,Moon Landing,11,James Blunt,james blunt|moon landing,james blunt|moon landing,18,James Blunt,Moon Landing,18,-7,True
+0d52ae29-0d3c-4c40-a960-666e65546679,Gravel & Wine,12,Gin Wigmore,gin wigmore|gravel wine,gin wigmore|gravel wine,12,Gin Wigmore,Gravel & Wine,12,0,False
+0d8b973c-fcff-4830-b645-a877b8a9a08f,PRISM,13,Katy Perry,katy perry|prism,katy perry|prism,13,Katy Perry,PRISM,13,0,False
+0d93ac61-99d0-427c-8b23-f5014483cc73,Head or Heart,13,Christina Perri,christina perri|head or heart,christina perri|head or heart,13,Christina Perri,head or heart,13,0,False
+0da340a0-6ad7-4fc2-a272-6f94393a7831,Blonde,17,Frank Ocean,frank ocean|blonde,frank ocean|blonde,17,Frank Ocean,Blonde,17,0,False
+0da55280-3c78-474a-9e81-5e9e348ff227,For Your Entertainment,14,Adam Lambert,adam lambert|for your entertainment,adam lambert|for your entertainment,14,Adam Lambert,For Your Entertainment,14,0,False
+0df19e51-b297-4721-96b6-43d6874755b9,Confident,11,Demi Lovato,demi lovato|confident,demi lovato|confident,11,Demi Lovato,Confident,11,0,False
+0f16c79e-f4db-470c-a466-f3bb56f416f8,Scripted,13,Icon for Hire,icon for hire|scripted,icon for hire|scripted,11,Icon For Hire,Scripted,11,2,False
+0f9d5103-dd09-4fcd-8fe1-223612668f09,Justice,27,Justin Bieber,justin bieber|justice,justin bieber|justice,16,Justin Bieber,Justice,16,11,True
+0ffe41e9-5b6f-4fc0-8a6f-ab647a5727d4,Pretty Girls Like Trap Music,14,2 Chainz,2 chainz|pretty girls like trap music,2 chainz|pretty girls like trap music,16,2 Chainz,Pretty Girls Like Trap Music,16,-2,False
+10cda8bd-0880-46c4-a696-df6d46f35227,Wonder,14,Shawn Mendes,shawn mendes|wonder,shawn mendes|wonder,14,Shawn Mendes,Wonder,14,0,False
+1237b040-fb8f-4f23-8000-fb6909486c83,Yours Truly,12,Ariana Grande,ariana grande|yours truly,ariana grande|yours truly,12,Ariana Grande,Yours Truly,12,0,False
+1273cb92-8775-404b-bc1b-4381a8c6a5b1,Being Funny in a Foreign Language,10,The 1975,the 1975|being funny in a foreign language,the 1975|being funny in a foreign language,11,The 1975,Being Funny In A Foreign Language,11,-1,False
+140b2254-247b-43b2-a495-ff50bcbad55c,I Decided.,14,Big Sean,big sean|i decided,big sean|i decided,14,Big Sean,I Decided.,14,0,False
+160401ed-48b6-4db6-ac7c-e31e073a07d3,Sheezus,14,Lily Allen,lily allen|sheezus,lily allen|sheezus,14,Lily Allen,Sheezus,14,0,False
+1646286a-d0ad-4288-bfab-34b0fb7b22c1,SOS,23,SZA,sza|sos,sza|sos,23,SZA,SOS,23,0,False
+17fd3576-b584-4f32-8ff0-12206d4cb66c,My Everything,12,Ariana Grande,ariana grande|my everything,ariana grande|my everything,15,Ariana Grande,My Everything,15,-3,True
+18e11653-713d-4274-9881-16216dfa4adf,Jeremih,13,Jeremih,jeremih|jeremih,jeremih|jeremih,13,Jeremih,Jeremih,13,0,False
+1a36fd5a-7c86-4d58-a7d8-3c88e6efd76e,"Passion, Pain & Pleasure",17,Trey Songz,trey songz|passion pain pleasure,trey songz|passion pain pleasure,17,Trey Songz,"Passion, Pain & Pleasure",17,0,False
+1ae55e74-3712-4089-994e-67a107e4c544,We Are Chaos,10,Marilyn Manson,marilyn manson|we are chaos,marilyn manson|we are chaos,10,Marilyn Manson,WE ARE CHAOS,10,0,False
+1bce0538-dfed-4993-ac43-b075c1ee6b4c,Light Me Up,10,The Pretty Reckless,the pretty reckless|light me up,the pretty reckless|light me up,10,The Pretty Reckless,Light Me Up,10,0,False
+1c43f3cb-e590-47e3-a974-b6e92145ef1c,Unbroken,15,Demi Lovato,demi lovato|unbroken,demi lovato|unbroken,15,Demi Lovato,Unbroken,15,0,False
+1c706735-7d78-4e75-a491-bf0d4369c722,Hello My Name Is...,12,Bridgit Mendler,bridgit mendler|hello my name is,bridgit mendler|hello my name is,12,Bridgit Mendler,Hello My Name Is...,12,0,False
+1ca3c5d2-5979-41de-aa39-15335154ced3,Never Trust a Happy Song,12,Grouplove,grouplove|never trust a happy song,grouplove|never trust a happy song,12,GROUPLOVE,Never Trust a Happy Song,12,0,False
+1d1cae70-7b92-4c8f-b3dd-ca9abec33737,THE INSIDE OUTTAKES,12,Bo Burnham,bo burnham|the inside outtakes,bo burnham|the inside outtakes,12,Bo Burnham,THE INSIDE OUTTAKES,12,0,False
+1ddcb525-07c5-4b3f-b742-6ed34645502b,How Country Feels,15,Randy Houser,randy houser|how country feels,randy houser|how country feels,15,Randy Houser,How Country Feels,15,0,False
+1eaaba95-ba84-48f3-bfa8-e7f404f91d55,Indie Cindy,13,Pixies,pixies|indie cindy,pixies|indie cindy,25,Pixies,Indie Cindy,25,-12,True
+1f25d940-89e2-4813-a86f-955b0e99c391,Prequelle,10,Ghost,ghost|prequelle,ghost|prequelle,10,Ghost,Prequelle,10,0,False
+21666540-83c8-4c54-9be1-0363a0848f33,Carrie & Lowell,11,Sufjan Stevens,sufjan stevens|carrie lowell,sufjan stevens|carrie lowell,11,Sufjan Stevens,Carrie & Lowell,11,0,False
+221e0eac-7a43-487b-bd6c-2bf92daf2398,No Fixed Address,11,Nickelback,nickelback|no fixed address,nickelback|no fixed address,11,Nickelback,No Fixed Address,11,0,False
+22b1d527-73da-4267-86ac-3be36219e2c7,PARTYNEXTDOOR TWO,12,PARTYNEXTDOOR,partynextdoor|partynextdoor two,partynextdoor|partynextdoor two,12,PARTYNEXTDOOR,PARTYNEXTDOOR TWO,12,0,False
+23355caf-a543-4b5f-80fe-449101868fc1,xx,11,The XX,the xx|xx,the xx|xx,11,The xx,xx,11,0,False
+23fffff0-5311-4b9f-b131-150a7ab60a55,Tailgates & Tanlines,13,Luke Bryan,luke bryan|tailgates tanlines,luke bryan|tailgates tanlines,13,Luke Bryan,Tailgates & Tanlines,13,0,False
+27c3d1f4-e97f-46f2-b6cc-8c24fa35b3f0,aurora,14,Bea Miller,bea miller|aurora,bea miller|aurora,14,Bea Miller,aurora,14,0,False
+27da3ef8-f3b0-47bf-898d-9bdf4af7fc04,A Head Full of Dreams,11,Coldplay,coldplay|a head full of dreams,coldplay|a head full of dreams,11,Coldplay,A Head Full of Dreams,11,0,False
+28028f46-80ba-4ba4-8823-48fc8ddc11c3,Just as I Am,11,Brantley Gilbert,brantley gilbert|just as i am,brantley gilbert|just as i am,11,Brantley Gilbert,Just As I Am,11,0,False
+294ecdcd-7dd3-4392-87fa-edeb1349bfd0,Native,12,OneRepublic,onerepublic|native,onerepublic|native,12,OneRepublic,Native,12,0,False
+2c3ec455-5021-4b51-a38d-98ffecd0b4db,The Midsummer Station,11,Owl City,owl city|the midsummer station,owl city|the midsummer station,11,Owl City,The Midsummer Station,11,0,False
+2c708b27-1407-4457-a9f8-2ed04c0d85ac,Tangled Up,13,Thomas Rhett,thomas rhett|tangled up,thomas rhett|tangled up,13,Thomas Rhett,Tangled Up,13,0,False
+2d1d9561-4c16-41d4-8234-dfe30c6334eb,POST HUMAN: SURVIVAL HORROR,9,Bring Me the Horizon,bring me the horizon|post human survival horror,bring me the horizon|post human survival horror,9,Bring Me The Horizon,POST HUMAN: SURVIVAL HORROR,9,0,False
+2dd6bf14-adcb-4ac5-807e-4a9c4f1813c5,Write You a Song,11,Jon Pardi,jon pardi|write you a song,jon pardi|write you a song,11,Jon Pardi,Write You A Song,11,0,False
+2e3b231b-ab9f-4d85-950a-48708a1cc2fb,Born This Way,14,Lady Gaga,lady gaga|born this way,lady gaga|born this way,14,Lady Gaga,Born This Way,14,0,False
+2f29a348-dfa8-4d2f-95a6-34c5cb57949a,Finally Famous,12,Big Sean,big sean|finally famous,big sean|finally famous,13,Big Sean,Finally Famous,13,-1,False
+3227286b-8f17-4a94-96f6-18c644d4a1aa,I Love You.,11,The Neighbourhood,the neighbourhood|i love you,the neighbourhood|i love you,11,The Neighbourhood,I Love You.,11,0,False
+32cb822c-a14e-49ce-a169-f209c5f31e0f,GNX,12,Kendrick Lamar,kendrick lamar|gnx,kendrick lamar|gnx,12,Kendrick Lamar,GNX,12,0,False
+3344452a-3da9-4b4f-8954-ae23a86c2ecf,Dawn FM,16,The Weeknd,the weeknd|dawn fm,the weeknd|dawn fm,16,The Weeknd,Dawn FM,16,0,False
+35f5895e-f2ea-45d5-83e1-6ad843c66b6f,Bringing Back the Sunshine,12,Blake Shelton,blake shelton|bringing back the sunshine,blake shelton|bringing back the sunshine,12,Blake Shelton,BRINGING BACK THE SUNSHINE,12,0,False
+3622c71c-c674-46bc-8fc2-24d182f7684a,V,11,Maroon 5,maroon 5|v,maroon 5|v,12,Maroon 5,V,12,-1,False
+365f99a0-04be-48cc-8a73-5145d33e53df,Free Wired,10,Far East Movement,far east movement|free wired,far east movement|free wired,10,Far East Movement,Free Wired,10,0,False
+37608ff2-3168-3e7c-a77e-04a4b7300c1b,21st Century Breakdown,18,Green Day,green day|21st century breakdown,green day|21st century breakdown,18,Green Day,21st Century Breakdown,18,0,False
+3773cfc7-7ed3-49c8-9956-32dab35043a5,Kings of Suburbia,11,Tokio Hotel,tokio hotel|kings of suburbia,tokio hotel|kings of suburbia,15,Tokio Hotel,Kings Of Suburbia,15,-4,True
+37b21c23-b70c-40c1-8c24-191ff84242c1,Journals,18,Justin Bieber,justin bieber|journals,justin bieber|journals,16,Justin Bieber,Journals,16,2,False
+387abedf-df02-4922-8975-c89c156019c5,Broke With Expensive Taste,16,Azealia Banks,azealia banks|broke with expensive taste,azealia banks|broke with expensive taste,16,Azealia Banks,Broke with Expensive Taste,16,0,False
+3a522baa-9f2a-4a7d-a8f5-aebe5cb0b7e0,Rearview Town,15,Jason Aldean,jason aldean|rearview town,jason aldean|rearview town,15,Jason Aldean,Rearview Town,15,0,False
+3afcf111-fc5d-4b7c-9712-55d225f4b2eb,Cleopatra,11,The Lumineers,the lumineers|cleopatra,the lumineers|cleopatra,11,The Lumineers,Cleopatra,11,0,False
+3afd46b3-90bd-402c-af55-8f893f373807,Revival,11,Selena Gomez,selena gomez|revival,selena gomez|revival,11,Selena Gomez,Revival,11,0,False
+3ba00670-7a00-46d9-b9f4-80625438c058,2,13,Mac DeMarco,mac demarco|2,mac demarco|2,11,Mac DeMarco,2,11,2,False
+3be839a3-1d35-4846-aa64-9d1532648799,Sorry for Party Rocking,10,LMFAO,lmfao|sorry for party rocking,lmfao|sorry for party rocking,16,LMFAO,Sorry For Party Rocking,16,-6,True
+3c7bea52-7c2f-4706-8c7f-d90b8178c800,Dark Sky Paradise,15,Big Sean,big sean|dark sky paradise,big sean|dark sky paradise,12,Big Sean,Dark Sky Paradise,12,3,True
+3d3ca13d-8269-4d90-95c9-7e03bb297d37,Wild Ones,9,Flo Rida,flo rida|wild ones,flo rida|wild ones,10,Flo Rida,Wild Ones,10,-1,False
+3d59017f-bb26-4095-8a78-c9d372cc64f4,Illuminate,12,Shawn Mendes,shawn mendes|illuminate,shawn mendes|illuminate,13,Shawn Mendes,Illuminate,13,-1,False
+40740097-e05a-4609-bee5-e04106e1727b,Kris Allen,13,Kris Allen,kris allen|kris allen,kris allen|kris allen,13,Kris Allen,Kris Allen,13,0,False
+4114f899-a9d2-48a8-b597-8a5ca8bb6847,Teen Dream,12,Beach House,beach house|teen dream,beach house|teen dream,10,Beach House,Teen Dream,10,2,False
+413af822-7dcc-40d5-a4ef-3cbf507ecb07,Magazines or Novels,12,Andy Grammer,andy grammer|magazines or novels,andy grammer|magazines or novels,11,Andy Grammer,Magazines Or Novels,11,1,False
+41866276-da8e-4a63-b9dc-0af2904343ec,MKTO,11,MKTO,mkto|mkto,mkto|mkto,11,MKTO,MKTO,11,0,False
+41b9c230-aee1-4f02-a01c-a2abdf4d4f36,Shawn Mendes,14,Shawn Mendes,shawn mendes|shawn mendes,shawn mendes|shawn mendes,14,Shawn Mendes,Shawn Mendes,14,0,False
+43269089-80ac-4744-a7d8-fea4bdee04b0,Whiskey Myers,14,Whiskey Myers,whiskey myers|whiskey myers,whiskey myers|whiskey myers,14,Whiskey Myers,Whiskey Myers,14,0,False
+43ca5aa6-92de-47e9-8f0b-9112e4881426,The New Abnormal,9,The Strokes,the strokes|the new abnormal,the strokes|the new abnormal,9,The Strokes,The New Abnormal,9,0,False
+445aef58-3adb-4179-8b90-8a8b4e739b57,The Gifted,16,Wale,wale|the gifted,wale|the gifted,16,Wale,The Gifted,16,0,False
+46139fa3-9ed5-4236-8b20-5f8ed0d6cde8,Dan + Shay,11,Dan + Shay,dan shay|dan shay,dan shay|dan shay,11,Dan + Shay,Dan + Shay,11,0,False
+467b4946-5057-4d0a-8e5a-cb01a6131a39,Tell Me You Love Me,12,Demi Lovato,demi lovato|tell me you love me,demi lovato|tell me you love me,12,Demi Lovato,Tell Me You Love Me,12,0,False
+47bbac51-0fe3-4364-b51a-d7d5cf326096,Megalithic Symphony,16,AWOLNATION,awolnation|megalithic symphony,awolnation|megalithic symphony,14,AWOLNATION,Megalithic Symphony,14,2,False
+485d3241-ef02-49a4-88df-a03eaa86d9cd,"thank u, next",12,Ariana Grande,ariana grande|thank u next,ariana grande|thank u next,12,Ariana Grande,"thank u, next",12,0,False
+4933ec10-b654-411c-a6bc-960b1dd1167e,31 Minutes to Takeoff,13,Mike Posner,mike posner|31 minutes to takeoff,mike posner|31 minutes to takeoff,14,Mike Posner,31 Minutes to Takeoff,14,-1,False
+4d5f0303-9153-4875-af3c-4f9d97ae89d3,mainstream sellout,16,MGK,mgk|mainstream sellout,mgk|mainstream sellout,16,mgk,mainstream sellout,16,0,False
+4ddf87cb-29c0-42ef-bb64-c57d617a8b4a,Goodbye Lullaby,14,Avril Lavigne,avril lavigne|goodbye lullaby,avril lavigne|goodbye lullaby,14,Avril Lavigne,Goodbye Lullaby,14,0,False
+50e1fb42-ac14-4487-a58d-ed5c847f701d,Manic,13,Halsey,halsey|manic,halsey|manic,16,Halsey,Manic,16,-3,True
+50e5e68b-626a-3bde-904d-5649163ebecd,All I Ever Wanted,14,Kelly Clarkson,kelly clarkson|all i ever wanted,kelly clarkson|all i ever wanted,16,Kelly Clarkson,All I Ever Wanted,16,-2,False
+5126b6eb-5132-4c69-bc4d-8927a74d78f3,Clarity,10,Zedd,zedd|clarity,zedd|clarity,10,Zedd,Clarity,10,0,False
+5253c012-f7d3-440e-919b-5bac6d91ae7e,Camp,17,Childish Gambino,childish gambino|camp,childish gambino|camp,13,Childish Gambino,Camp,13,4,True
+535748f7-5b3d-4a2a-8f9c-bd8baa587239,Torches,10,Foster the People,foster the people|torches,foster the people|torches,10,Foster The People,Torches,10,0,False
+5611e7a8-3b0d-48a1-820e-45b94229f653,Culture,13,Migos,migos|culture,migos|culture,13,Migos,Culture,13,0,False
+57115279-ee5f-4f7e-a484-148f55fa09ad,Listen,14,David Guetta,david guetta|listen,david guetta|listen,18,David Guetta,Listen,18,-4,True
+5735c670-6c7d-459d-a78d-bf24fe9499d5,Eclipse,11,Twin Shadow,twin shadow|eclipse,twin shadow|eclipse,11,Twin Shadow,Eclipse,11,0,False
+57db9419-f0a0-4060-8003-b7737b9dab4d,Born Sinner,16,J. Cole,j cole|born sinner,j cole|born sinner,21,J. Cole,Born Sinner,21,-5,True
+58631e7e-7a45-4d3c-a098-f8f4da5f053c,The World From the Side of the Moon,12,Phillip Phillips,phillip phillips|the world from the side of the moon,phillip phillips|the world from the side of the moon,12,Phillip Phillips,The World From The Side Of The Moon,12,0,False
+58aef3a3-d4be-4e46-a295-6af12dce2802,Mad Love: The Prequel,9,Sean Paul,sean paul|mad love the prequel,sean paul|mad love the prequel,9,Sean Paul,Mad Love The Prequel,9,0,False
+58afd5f5-a3cb-43c4-a0dc-fd15fbfe33bf,Sweetener,15,Ariana Grande,ariana grande|sweetener,ariana grande|sweetener,15,Ariana Grande,Sweetener,15,0,False
+5995738d-4b6f-4db6-847b-310a9dc67085,2014 Forest Hills Drive,13,J. Cole,j cole|2014 forest hills drive,j cole|2014 forest hills drive,13,J. Cole,2014 Forest Hills Drive,13,0,False
+5aadf6f8-bbf7-4675-8b83-771c1e0fb08f,Cole World: The Sideline Story,16,J Cole,j cole|cole world the sideline story,j cole|cole world the sideline story,16,J. Cole,Cole World: The Sideline Story,16,0,False
+5c0e582c-c6e4-4125-9f94-1f9270b6d7fd,Bloom,10,Troye Sivan,troye sivan|bloom,troye sivan|bloom,10,Troye Sivan,Bloom,10,0,False
+5cb94ddd-5d0d-4c5a-a2bc-d0b1c73e2b71,"Oh, What a Life",11,American Authors,american authors|oh what a life,american authors|oh what a life,11,American Authors,"Oh, What A Life",11,0,False
+5d78819e-18b5-4d1a-a286-d816ce868044,MAGDALENE,10,FKA Twigs,fka twigs|magdalene,fka twigs|magdalene,9,FKA twigs,MAGDALENE,9,1,False
+5e084a94-8228-4a81-81b5-7579e03291e9,No Sound Without Silence,11,The Script,the script|no sound without silence,the script|no sound without silence,11,The Script,No Sound Without Silence,11,0,False
+5f45cca4-cda2-4c1f-80de-82c9c2e41580,Night Train,15,Jason Aldean,jason aldean|night train,jason aldean|night train,15,Jason Aldean,Night Train,15,0,False
+61180839-f4a7-407f-b86f-24c48eef4066,True,10,Avicii,avicii|true,avicii|true,12,Avicii,True,12,-2,False
+61656c91-d8fc-49e4-91af-4bbc9b1456ea,Blood for Blood,10,HellYeah,hellyeah|blood for blood,hellyeah|blood for blood,12,HELLYEAH,Blood For Blood,12,-2,False
+61b7b6cd-86a6-4728-9478-b58c93bca8fd,Mylo Xyloto,14,Coldplay,coldplay|mylo xyloto,coldplay|mylo xyloto,14,Coldplay,Mylo Xyloto,14,0,False
+622e9aef-50c0-4ab0-bb7f-ba5f98e9b59c,Trigga,13,Trey Songz,trey songz|trigga,trey songz|trigga,13,Trey Songz,Trigga,13,0,False
+62b5b07f-d348-4f1e-98eb-2b0bccc772ae,Life Starts Now,12,Three Days Grace,three days grace|life starts now,three days grace|life starts now,12,Three Days Grace,Life Starts Now,12,0,False
+6387134c-f559-4048-8084-c27b169bb769,The Blessed Unrest,12,Sara Bareilles,sara bareilles|the blessed unrest,sara bareilles|the blessed unrest,12,Sara Bareilles,The Blessed Unrest,12,0,False
+63f697ae-126b-4776-8ac9-0e550e996f5f,Is There Anybody Out There?,13,A Great Big World,a great big world|is there anybody out there,a great big world|is there anybody out there,13,A Great Big World,Is There Anybody Out There?,13,0,False
+64697a9d-e1cc-4038-b5be-c5301505563b,Save Rock and Roll,11,Fall Out Boy,fall out boy|save rock and roll,fall out boy|save rock and roll,11,Fall Out Boy,Save Rock And Roll,11,0,False
+64b9807d-ed23-47a3-a388-41c82bfd8069,"Night Time, My Time",12,Sky Ferreira,sky ferreira|night time my time,sky ferreira|night time my time,14,Sky Ferreira,"Night Time, My Time",14,-2,False
+664266b9-db3d-3e68-9ac1-1f89aed4d80c,Wide Open,11,Jason Aldean,jason aldean|wide open,jason aldean|wide open,12,Jason Aldean,Wide Open,12,-1,False
+668e80e0-b35e-4471-9788-0a3d797fe42c,Melodrama,11,Lorde,lorde|melodrama,lorde|melodrama,11,Lorde,Melodrama,11,0,False
+681bb7dc-fa32-4f38-9e01-582ac8c91706,Lightning Bolt,12,Pearl Jam,pearl jam|lightning bolt,pearl jam|lightning bolt,12,Pearl Jam,Lightning Bolt,12,0,False
+6a071572-1d4c-48af-969f-97a6b70c27cb,Jungle Rules,18,French Montana,french montana|jungle rules,french montana|jungle rules,18,French Montana,Jungle Rules,18,0,False
+6bd70eee-bd46-4738-851a-f50c19d8d6db,Mr. Morale & the Big Steppers,18,Kendrick Lamar,kendrick lamar|mr morale the big steppers,kendrick lamar|mr morale the big steppers,18,Kendrick Lamar,Mr. Morale & The Big Steppers,18,0,False
+6c791112-0fcc-33fe-bd7d-a4f21da584ac,Wild Young Hearts,11,Noisettes,noisettes|wild young hearts,noisettes|wild young hearts,11,Noisettes,Wild Young Hearts,11,0,False
+6cf5cd4c-2992-4777-839c-3ffae45f46c8,All or Nothing,14,Jay Sean,jay sean|all or nothing,jay sean|all or nothing,16,Jay Sean,All Or Nothing,16,-2,False
+6d7dba7c-a146-4ebb-8bdd-763754f41ef5,My Life II,9,SoMo,somo|my life ii,somo|my life ii,9,SoMo,My Life II,9,0,False
+6deace52-46cd-4d32-a7b1-74ec8bf25db1,I Speak Because I Can,11,Laura Marling,laura marling|i speak because i can,laura marling|i speak because i can,10,Laura Marling,I Speak Because I Can,10,1,False
+6f052ba8-11eb-4fda-8c06-97e11f881864,California Sunrise,12,Jon Pardi,jon pardi|california sunrise,jon pardi|california sunrise,12,Jon Pardi,California Sunrise,12,0,False
+6fa35df1-a08e-42f5-aeb2-ae590ba9fd6b,Ocean Eyes,12,Owl City,owl city|ocean eyes,owl city|ocean eyes,12,Owl City,Ocean Eyes,12,0,False
+6fe82196-df5d-4938-aa39-920df5b4517d,House of Balloons,9,The Weeknd,the weeknd|house of balloons,the weeknd|house of balloons,9,The Weeknd,House Of Balloons (Original),9,0,False
+7000fa0a-81eb-4238-af55-916e774b03a2,Heaven Upside Down,10,Marilyn Manson,marilyn manson|heaven upside down,marilyn manson|heaven upside down,10,Marilyn Manson,Heaven Upside Down,10,0,False
+70407690-0953-42f0-b4a7-4c58c901e3ff,35 mph Town,10,Toby Keith,toby keith|35 mph town,toby keith|35 mph town,10,Toby Keith,35 mph Town,10,0,False
+706531ea-c32b-461d-9086-730a5445ef7d,The Fool,13,Ryn Weaver,ryn weaver|the fool,ryn weaver|the fool,13,Ryn Weaver,The Fool,13,0,False
+71afa9d6-3d3f-4ec5-b765-ac80bdae378e,7,27,David Guetta,david guetta|7,david guetta|7,27,David Guetta,7,27,0,False
+720a2234-52b8-4d47-a511-5dd235ac6f17,Black,13,Dierks Bentley,dierks bentley|black,dierks bentley|black,13,Dierks Bentley,Black,13,0,False
+72e91c16-284c-43ad-b998-0212f81e1ccb,Girl on Fire,13,Alicia Keys,alicia keys|girl on fire,alicia keys|girl on fire,13,Alicia Keys,Girl On Fire,13,0,False
+732e6312-e190-4f5d-88ff-f9ae7d0a4d6a,5 Seconds of Summer,12,5 Seconds of Summer,5 seconds of summer|5 seconds of summer,5 seconds of summer|5 seconds of summer,16,5 Seconds of Summer,5 Seconds Of Summer,16,-4,True
+74075a86-d650-4273-9876-4890eeffeb09,Tickets to My Downfall,15,MGK,mgk|tickets to my downfall,mgk|tickets to my downfall,15,mgk,Tickets To My Downfall,15,0,False
+74ab9e2d-93dd-47df-b168-1d93ff382097,Everything Is 4,11,Jason Derulo,jason derulo|everything is 4,jason derulo|everything is 4,11,Jason Derulo,Everything Is 4,11,0,False
+74d25ab8-22c5-4c4d-989d-9b7d37abbe9f,Stories,14,Avicii,avicii|stories,avicii|stories,14,Avicii,Stories,14,0,False
+74eb2032-5312-4fc4-969e-2aec09fb9cc8,Last Train to Paris,18,Diddy - Dirty Money,diddy dirty money|last train to paris,diddy dirty money|last train to paris,16,Diddy - Dirty Money,Last Train To Paris,16,2,False
+765e2a73-96d5-49ce-8bf9-c0641d8bceda,The Lady Killer,14,CeeLo Green,ceelo green|the lady killer,ceelo green|the lady killer,14,CeeLo Green,The Lady Killer,14,0,False
+77cacaee-0339-4b4e-8caa-a0a255e686ec,What Makes You Country,15,Luke Bryan,luke bryan|what makes you country,luke bryan|what makes you country,15,Luke Bryan,What Makes You Country,15,0,False
+78570bea-2a26-467c-a3db-c52723ceb394,After Hours,14,The Weeknd,the weeknd|after hours,the weeknd|after hours,14,The Weeknd,After Hours,14,0,False
+78a4ac64-298f-45ec-ac69-832a68830a6a,Pink Friday: Roman Reloaded,19,Nicki Minaj,nicki minaj|pink friday roman reloaded,nicki minaj|pink friday roman reloaded,19,Nicki Minaj,Pink Friday ... Roman Reloaded,19,0,False
+78b65cee-4a6d-49c8-a98e-9159bf147cd1,The Lockdown Sessions,16,Elton John,elton john|the lockdown sessions,elton john|the lockdown sessions,17,Elton John,The Lockdown Sessions,17,-1,False
+78c4271f-a733-41e3-85bc-5cc7f38bc8dc,Rolling Papers,14,Wiz Khalifa,wiz khalifa|rolling papers,wiz khalifa|rolling papers,14,Wiz Khalifa,Rolling Papers,14,0,False
+79ff9689-de0d-4cfc-a7e2-55107a8da0d5,#3,10,The Script,the script|3,the script|3,10,The Script,#3,10,0,False
+7b278ec9-b4e2-4a6b-9721-ec55afc65997,Three,10,Phantogram,phantogram|three,phantogram|three,10,Phantogram,Three,10,0,False
+7c4e9b88-1f66-4805-bf75-0300d2d3549d,Strange Trails,14,Lord Huron,lord huron|strange trails,lord huron|strange trails,14,Lord Huron,Strange Trails,14,0,False
+7db1808d-53bc-4bde-9ee2-5dfc96cfeb45,Positions,14,Ariana Grande,ariana grande|positions,ariana grande|positions,14,Ariana Grande,Positions,14,0,False
+7f673bef-5e95-46a7-baa2-8f29df0624cf,Changes,16,Justin Bieber,justin bieber|changes,justin bieber|changes,17,Justin Bieber,Changes,17,-1,False
+8050b694-681f-4c4b-bbcc-ca9100c889dd,Culture II,24,Migos,migos|culture ii,migos|culture ii,24,Migos,Culture II,24,0,False
+80ea43b7-2c32-4a79-9fb0-8ff1761ebe09,24K Magic,9,Bruno Mars,bruno mars|24k magic,bruno mars|24k magic,9,Bruno Mars,24K Magic,9,0,False
+80fc690e-9573-4255-9910-bb37a878c662,All About You,11,Jeremih,jeremih|all about you,jeremih|all about you,11,Jeremih,All About You,11,0,False
+813625b6-245a-451a-a3a8-3624952228ea,Lazarus,13,Travie McCoy,travie mccoy|lazarus,travie mccoy|lazarus,10,Travie McCoy,Lazarus,10,3,True
+819f31f4-cc1c-4d03-9b51-2445d70f5abe,Night Shades,11,Cobra Starship,cobra starship|night shades,cobra starship|night shades,10,Cobra Starship,Night Shades,10,1,False
+82c8d464-7247-44e4-a10a-8a1cdb6d45c4,Man of the Woods,16,Justin Timberlake,justin timberlake|man of the woods,justin timberlake|man of the woods,16,Justin Timberlake,Man of the Woods,16,0,False
+831f10e3-32e5-4d22-b001-2f3ab1254be0,The Getaway,13,Red Hot Chili Peppers,red hot chili peppers|the getaway,red hot chili peppers|the getaway,13,Red Hot Chili Peppers,The Getaway,13,0,False
+8341c952-694d-4866-870e-df48c9e10f17,Evolve,11,Imagine Dragons,imagine dragons|evolve,imagine dragons|evolve,12,Imagine Dragons,Evolve,12,-1,False
+83720f3f-3207-4a95-8fca-0d68c2b049b3,Wanderer,11,Cat Power,cat power|wanderer,cat power|wanderer,11,Cat Power,Wanderer,11,0,False
+83b05ad8-8359-49a7-bf84-fb876d807e29,Shrines,14,Purity Ring,purity ring|shrines,purity ring|shrines,11,Purity Ring,shrines,11,3,True
+84ed3eda-48ec-4358-8165-65bdc86eca0f,The Incredible Machine,16,Sugarland,sugarland|the incredible machine,sugarland|the incredible machine,11,Sugarland,The Incredible Machine,11,5,True
+88805cb4-efa3-4e46-be26-aabe213bdb95,Saturn Return,10,The Secret Sisters,the secret sisters|saturn return,the secret sisters|saturn return,10,The Secret Sisters,Saturn Return,10,0,False
+89299f62-9c70-4bff-a42c-8df2ba512422,Wiped Out!,11,The Neighbourhood,the neighbourhood|wiped out,the neighbourhood|wiped out,11,The Neighbourhood,Wiped Out!,11,0,False
+89c12bdc-9525-4d9d-bd4e-66e8ca16708d,Aquarius,18,Tinashe,tinashe|aquarius,tinashe|aquarius,18,Tinashe,Aquarius,18,0,False
+8a4f1172-4e83-489b-94d8-48cbd45b9717,Shock Value II,17,Timbaland,timbaland|shock value ii,timbaland|shock value ii,13,Timbaland,Shock Value II,13,4,True
+8b3bed99-a31a-4f54-9daf-caa1de6f5f42,You Should Be Here,12,Cole Swindell,cole swindell|you should be here,cole swindell|you should be here,12,Cole Swindell,You Should Be Here,12,0,False
+8c68c586-358f-46c0-85e3-77d2ea9650be,Making Mirrors,12,Gotye,gotye|making mirrors,gotye|making mirrors,12,Gotye,Making Mirrors,12,0,False
+8e8a1db7-1d43-44d3-9796-fd69f12730cb,Pure Heroine,10,Lorde,lorde|pure heroine,lorde|pure heroine,10,Lorde,Pure Heroine,10,0,False
+8f5a3b53-18ec-4efd-837f-1f3ea4930a84,Offering,11,Cults,cults|offering,cults|offering,13,Cults,Offering,13,-2,False
+8fa10440-1a55-4130-87e0-876027231fa3,"All We Know of Heaven, All We Need of Hell",10,PVRIS,pvris|all we know of heaven all we need of hell,pvris|all we know of heaven all we need of hell,10,PVRIS,"All We Know Of Heaven, All We Need Of Hell",10,0,False
+8fc57341-635e-4638-a1d6-0c7094eaa9ca,The New Classic,12,Iggy Azalea,iggy azalea|the new classic,iggy azalea|the new classic,12,Iggy Azalea,The New Classic,12,0,False
+900eb40b-1435-4da4-b559-e9bd5f521325,Voices,11,Phantogram,phantogram|voices,phantogram|voices,11,Phantogram,Voices,11,0,False
+908dfd89-0964-48ca-a7d5-eacb770f252c,CALM,15,5 Seconds of Summer,5 seconds of summer|calm,5 seconds of summer|calm,12,5 Seconds of Summer,CALM,12,3,True
+91d3a3b7-1814-4088-84b9-5740c1e3efd9,Queen of the Clouds,16,Tove Lo,tove lo|queen of the clouds,tove lo|queen of the clouds,19,Tove Lo,Queen Of The Clouds,19,-3,True
+9477d99c-1df7-4ae7-b08d-a2484c8e80f4,Crystal Castles,14,Crystal Castles,crystal castles|crystal castles,crystal castles|crystal castles,17,Crystal Castles,Crystal Castles (II),17,-3,True
+96de0816-729a-4e0d-a0a3-24c18397d02b,Hotel Diablo,14,MGK,mgk|hotel diablo,mgk|hotel diablo,14,mgk,Hotel Diablo,14,0,False
+9768a459-e331-4755-a311-c9d78f526aab,Guilty Pleasure,14,Ashley Tisdale,ashley tisdale|guilty pleasure,ashley tisdale|guilty pleasure,14,Ashley Tisdale,Guilty Pleasure,14,0,False
+978d88db-60ec-41d9-ade7-beea020941b0,Unorthodox Jukebox,10,Bruno Mars,bruno mars|unorthodox jukebox,bruno mars|unorthodox jukebox,10,Bruno Mars,Unorthodox Jukebox,10,0,False
+979e5e4d-0c1d-46c0-9fda-fa9b6fce89a6,Chief,11,Eric Church,eric church|chief,eric church|chief,11,Eric Church,Chief,11,0,False
+98aae2a3-1bcf-4e9f-baaa-1b3187318c39,Whatever,11,Hot Chelle Rae,hot chelle rae|whatever,hot chelle rae|whatever,11,Hot Chelle Rae,Whatever,11,0,False
+99599db8-0e36-4a93-b0e8-350e9d7502a9,You Want It Darker,9,Leonard Cohen,leonard cohen|you want it darker,leonard cohen|you want it darker,9,Leonard Cohen,You Want It Darker,9,0,False
+99c195d6-0247-48d0-83ab-640ecca7a74f,Salad Days,11,Mac DeMarco,mac demarco|salad days,mac demarco|salad days,11,Mac DeMarco,Salad Days,11,0,False
+99cd8f1a-86ef-46d9-811b-731ec9b90829,I Am Not a Human Being,10,Lil Wayne,lil wayne|i am not a human being,lil wayne|i am not a human being,13,Lil Wayne,I Am Not A Human Being,13,-3,True
+9ad9539d-00e4-43b1-ada2-9574b848e3e0,La Roux,12,La Roux,la roux|la roux,la roux|la roux,12,La Roux,La Roux,12,0,False
+9adbc8fd-b77d-4e99-8951-8c43cfe4897b,Peace Is the Mission,17,Major Lazer,major lazer|peace is the mission,major lazer|peace is the mission,9,Major Lazer,Peace Is The Mission,9,8,True
+9c5aa9d2-068b-4626-b352-ae6f4f4e0b15,Ghost Stories,9,Coldplay,coldplay|ghost stories,coldplay|ghost stories,9,Coldplay,Ghost Stories,9,0,False
+9c7c2b4e-b094-4bc9-849e-d62e45e32bdf,The Outsiders,12,Eric Church,eric church|the outsiders,eric church|the outsiders,12,Eric Church,The Outsiders,12,0,False
+9ce73eb5-8929-4934-9cb9-6d386c92762e,Mercury – Act 1,13,Imagine Dragons,imagine dragons|mercury act 1,imagine dragons|mercury act 1,14,Imagine Dragons,Mercury - Act 1,14,-1,False
+9e605084-d925-4a8e-80c8-983efbfdcbf0,Moonshine in the Trunk,14,Brad Paisley,brad paisley|moonshine in the trunk,brad paisley|moonshine in the trunk,15,Brad Paisley,Moonshine in the Trunk,15,-1,False
+9f0e2782-1ec8-4891-80ec-239b21073b9c,Freedom Child,14,The Script,the script|freedom child,the script|freedom child,14,The Script,Freedom Child,14,0,False
+a097ca51-85d5-4109-8e0f-55189a70cb9b,Hands All Over,12,Maroon 5,maroon 5|hands all over,maroon 5|hands all over,13,Maroon 5,Hands All Over,13,-1,False
+a0b61c75-910f-4dcf-8a42-0db7567253b9,Demi,14,Demi Lovato,demi lovato|demi,demi lovato|demi,13,Demi Lovato,Demi,13,1,False
+a0f2c14e-2424-45fc-9786-3a0ca5cdd22e,Picture Show,11,Neon Trees,neon trees|picture show,neon trees|picture show,11,Neon Trees,Picture Show,11,0,False
+a2709bdb-e16e-4f71-b1aa-cc68119fb782,Nothing but the Beat,22,David Guetta,david guetta|nothing but the beat,david guetta|nothing but the beat,13,David Guetta,Nothing but the Beat,13,9,True
+a3175117-a18f-491c-aea4-97bd64cd72e5,Resistencia,17,Yandel,yandel|resistencia,yandel|resistencia,17,Yandel,Resistencia,17,0,False
+a348ba2f-f8b3-4686-b928-e63d8d94d543,AM,12,Arctic Monkeys,arctic monkeys|am,arctic monkeys|am,12,Arctic Monkeys,AM,12,0,False
+a3597f45-b9d9-4c8a-803e-0a7d0d4d4e9b,Tourist History,12,Two Door Cinema Club,two door cinema club|tourist history,two door cinema club|tourist history,10,Two Door Cinema Club,Tourist History,10,2,False
+a4553866-e9d2-4a9d-a0f3-8319f6e6cc97,Night People,10,You Me at Six,you me at six|night people,you me at six|night people,10,You Me At Six,Night People,10,0,False
+a5056c3b-730f-493b-b10e-52f678d72b85,Recovery,17,Eminem,eminem|recovery,eminem|recovery,17,Eminem,Recovery,17,0,False
+a5572828-f7f2-405d-8853-a2019b019e07,"Old Boots, New Dirt",15,Jason Aldean,jason aldean|old boots new dirt,jason aldean|old boots new dirt,15,Jason Aldean,"Old Boots, New Dirt",15,0,False
+a6af0967-694d-426c-b559-3a9c7b229ae1,so sad so sexy,10,Lykke Li,lykke li|so sad so sexy,lykke li|so sad so sexy,10,Lykke Li,so sad so sexy,10,0,False
+a85b8aff-fcbc-4431-95ba-d8c20bbfb77e,Beauty Behind the Madness,14,The Weeknd,the weeknd|beauty behind the madness,the weeknd|beauty behind the madness,14,The Weeknd,Beauty Behind The Madness,14,0,False
+aa997ea0-2936-40bd-884d-3af8a0e064dc,Random Access Memories,13,Daft Punk,daft punk|random access memories,daft punk|random access memories,13,Daft Punk,Random Access Memories,13,0,False
+ac5c073d-c2b5-47c2-8840-f2ff57848baf,All of It,12,Cole Swindell,cole swindell|all of it,cole swindell|all of it,12,Cole Swindell,All of It,12,0,False
+accd791c-5948-4414-8ae2-16b71f487863,Chromatica,16,Lady Gaga,lady gaga|chromatica,lady gaga|chromatica,16,Lady Gaga,Chromatica,16,0,False
+acd4faf8-73c4-41f2-906d-e0d014d7e863,4 Your Eyez Only,10,J. Cole,j cole|4 your eyez only,j cole|4 your eyez only,10,J. Cole,4 Your Eyez Only,10,0,False
+ad428872-2b62-407e-a8a9-4a04439ab1f7,American Saturday Night,15,Brad Paisley,brad paisley|american saturday night,brad paisley|american saturday night,15,Brad Paisley,American Saturday Night,15,0,False
+af635412-fa88-4624-b33c-bbea72afedd0,This Is… Icona Pop,11,Icona Pop,icona pop|this is icona pop,icona pop|this is icona pop,11,Icona Pop,THIS IS... ICONA POP,11,0,False
+b0fcf625-47f0-4e48-9e21-7644effd506a,Tomahawk Technique,12,Sean Paul,sean paul|tomahawk technique,sean paul|tomahawk technique,12,Sean Paul,Tomahawk Technique,12,0,False
+b104f901-89c5-4ddc-b0ae-ad11850f2b3d,lovestrong.,12,Christina Perri,christina perri|lovestrong,christina perri|lovestrong,13,Christina Perri,lovestrong.,13,-1,False
+b19df4df-8e0c-44d8-ad85-a842f7b532fd,Use Me,11,PVRIS,pvris|use me,pvris|use me,11,PVRIS,Use Me,11,0,False
+b2460e22-8948-441a-b894-f031b57d4231,Trench,14,Twenty One Pilots,twenty one pilots|trench,twenty one pilots|trench,14,Twenty One Pilots,Trench,14,0,False
+b248952b-f242-4526-8877-b051b48812ce,Social Cues,13,Cage the Elephant,cage the elephant|social cues,cage the elephant|social cues,13,Cage The Elephant,Social Cues,13,0,False
+b25e6372-ae59-4ef2-b33b-677ee0cd52a4,KHALED KHALED,14,DJ Khaled,dj khaled|khaled khaled,dj khaled|khaled khaled,14,DJ Khaled,KHALED KHALED,14,0,False
+b2cbaa83-cb77-4961-8ca3-816b24e5204f,The Bones of What You Believe,16,Chvrches,chvrches|the bones of what you believe,chvrches|the bones of what you believe,12,CHVRCHES,The Bones of What You Believe,12,4,True
+b6929844-43d3-4cef-a96b-c575dad67153,Lasers,12,Lupe Fiasco,lupe fiasco|lasers,lupe fiasco|lasers,12,Lupe Fiasco,Lasers,12,0,False
+b6c02ae3-bc37-47b8-88af-e4cf8e86342e,Going to Hell,12,The Pretty Reckless,the pretty reckless|going to hell,the pretty reckless|going to hell,12,The Pretty Reckless,Going to Hell,12,0,False
+b88655ba-7469-48b8-a296-b9011ab73ef3,DAMN.,14,Kendrick Lamar,kendrick lamar|damn,kendrick lamar|damn,14,Kendrick Lamar,DAMN.,14,0,False
+b98397c3-76c8-4d00-8274-fbbc418bb99f,G I R L,10,Pharrell Williams,pharrell williams|g i r l,pharrell williams|g i r l,11,Pharrell Williams,G I R L,11,-1,False
+bc217c64-db43-4311-9b73-fca6d25c4ac5,Music to Be Murdered By,20,Eminem,eminem|music to be murdered by,eminem|music to be murdered by,20,Eminem,Music To Be Murdered By,20,0,False
+bcdc25a0-7c27-4a77-80fa-f5feb8f49733,Dance Fever,14,Florence + The Machine,florence the machine|dance fever,florence the machine|dance fever,14,Florence + The Machine,Dance Fever,14,0,False
+bcec22a7-4338-4a71-82e8-b6e39887219c,Pray for the Wicked,11,Panic! At The Disco,panic at the disco|pray for the wicked,panic at the disco|pray for the wicked,11,Panic! At The Disco,Pray for the Wicked,11,0,False
+bf7d9159-387d-4c60-8262-d7c018df6833,Brightest Blue,18,Ellie Goulding,ellie goulding|brightest blue,ellie goulding|brightest blue,19,Ellie Goulding,Brightest Blue,19,-1,False
+c169f440-90bf-4a0b-aa6a-c83072bd7eed,Music of the Spheres,12,Coldplay,coldplay|music of the spheres,coldplay|music of the spheres,12,Coldplay,Music Of The Spheres,12,0,False
+c2142471-c85b-4433-849c-839aafc8e3a4,Recess,11,Skrillex,skrillex|recess,skrillex|recess,11,Skrillex,Recess,11,0,False
+c285c71b-4b52-46f3-b0b2-f2e2726ce839,The Golden Age,14,Woodkid,woodkid|the golden age,woodkid|the golden age,14,Woodkid,The Golden Age,14,0,False
+c2eed4c1-5cd9-469a-9075-b82077093967,El Camino,11,The Black Keys,the black keys|el camino,the black keys|el camino,11,The Black Keys,El Camino,11,0,False
+c4a0cc2b-99b6-4299-b35c-92868ba6f570,TIM,12,Avicii,avicii|tim,avicii|tim,12,Avicii,TIM,12,0,False
+c4bb9940-e53e-4d5c-a19c-dab81e0f9687,Rare,18,Selena Gomez,selena gomez|rare,selena gomez|rare,13,Selena Gomez,Rare,13,5,True
+c6fc678e-e987-45c5-811c-e2bd09c8b902,The Slow Rush,12,Tame Impala,tame impala|the slow rush,tame impala|the slow rush,12,Tame Impala,The Slow Rush,12,0,False
+c91d9596-dfa8-482d-b3ab-706e937fd3ec,Pink Friday,13,Nicki Minaj,nicki minaj|pink friday,nicki minaj|pink friday,18,Nicki Minaj,Pink Friday,18,-5,True
+caef5f01-8568-4573-8458-c9e99ff7c734,Night Visions,13,Imagine Dragons,imagine dragons|night visions,imagine dragons|night visions,12,Imagine Dragons,Night Visions,12,1,False
+cb78edf1-3464-4627-ad78-c57eeba77793,Sweeter,10,Gavin DeGraw,gavin degraw|sweeter,gavin degraw|sweeter,10,Gavin DeGraw,Sweeter,10,0,False
+cbbe5df6-08b8-4181-8aae-461a6ae9790d,The 1975,18,The 1975,the 1975|the 1975,the 1975|the 1975,16,The 1975,The 1975,16,2,False
+cbf8fc77-e2f0-4e73-9740-19cd6c0624a4,Something to Give Each Other,10,Troye Sivan,troye sivan|something to give each other,troye sivan|something to give each other,10,Troye Sivan,Something To Give Each Other,10,0,False
+cc8ec26e-0f98-421d-8c1b-e849a017c5fc,Doin’ My Thing,11,Luke Bryan,luke bryan|doin my thing,luke bryan|doin my thing,13,Luke Bryan,Doin' My Thing,13,-2,False
+ceaa5c39-91c7-4c8a-886c-85b11fa8a1f6,Starboy,18,The Weeknd,the weeknd|starboy,the weeknd|starboy,18,The Weeknd,Starboy,18,0,False
+cf556b32-6f0c-4d32-9cbb-cc219a20566f,Blurryface,14,Twenty One Pilots,twenty one pilots|blurryface,twenty one pilots|blurryface,14,Twenty One Pilots,Blurryface,14,0,False
+cfc62e61-686c-46cd-a453-608979646f71,Revival,19,Eminem,eminem|revival,eminem|revival,19,Eminem,Revival,19,0,False
+d03545cc-046c-4b8e-b942-8cd1001fe4b5,Vida,15,Luis Fonsi,luis fonsi|vida,luis fonsi|vida,15,Luis Fonsi,VIDA,15,0,False
+d0efb4c9-0578-49e7-bb3f-c64f98871009,Handwritten,12,Shawn Mendes,shawn mendes|handwritten,shawn mendes|handwritten,12,Shawn Mendes,Handwritten,12,0,False
+d0f34ec7-9608-4302-98c5-8dbda869857b,Turn Blue,11,The Black Keys,the black keys|turn blue,the black keys|turn blue,11,The Black Keys,Turn Blue,11,0,False
+d18f6a72-abf4-4dc0-9bef-89c31d8ee877,Woodstock,14,Portugal. The Man,portugal the man|woodstock,portugal the man|woodstock,10,Portugal. The Man,Woodstock,10,4,True
+d1e4c110-595a-4319-8c7a-76ff80e424d5,The Lateness of the Hour,12,Alex Clare,alex clare|the lateness of the hour,alex clare|the lateness of the hour,11,Alex Clare,The Lateness Of The Hour,11,1,False
+d3677a23-b945-4210-be20-f5b57fa7e740,"At Night, Alone.",20,Mike Posner,mike posner|at night alone,mike posner|at night alone,18,Mike Posner,"At Night, Alone.",18,2,False
+d3b2709c-6535-47a4-9ec9-d826ba9276cb,The Papercut Chronicles II,11,Gym Class Heroes,gym class heroes|the papercut chronicles ii,gym class heroes|the papercut chronicles ii,11,Gym Class Heroes,The Papercut Chronicles II,11,0,False
+d441ada0-2715-4f98-9a8b-c1a6f8bbd07c,Tattoos,11,Jason Derulo,jason derulo|tattoos,jason derulo|tattoos,11,Jason Derulo,Tattoos,11,0,False
+d44f9505-840f-40ae-b06c-77563bd60f43,Fired Up,17,Randy Houser,randy houser|fired up,randy houser|fired up,17,Randy Houser,Fired Up,17,0,False
+d54fd44e-e79f-44a8-a915-c0d9ee74b7b1,Better,11,Haley Reinhart,haley reinhart|better,haley reinhart|better,11,Haley Reinhart,Better,11,0,False
+d5d115f4-57ad-4f17-89b3-b11e81e97c42,Eyelid Movies,11,Phantogram,phantogram|eyelid movies,phantogram|eyelid movies,11,Phantogram,Eyelid Movies,11,0,False
+d7024c96-2e07-4e13-8675-d01be135014c,Anything Goes,15,Florida Georgia Line,florida georgia line|anything goes,florida georgia line|anything goes,12,Florida Georgia Line,Anything Goes,12,3,True
+d70b6a1c-ad1c-40ef-ae55-6428703a050e,Illinois,12,Brett Eldredge,brett eldredge|illinois,brett eldredge|illinois,12,Brett Eldredge,Illinois,12,0,False
+d8b70a79-a964-4baf-8567-5c3e95cb2734,OutRun,14,Kavinsky,kavinsky|outrun,kavinsky|outrun,13,Kavinsky,OutRun,13,1,False
+d8b9555e-9dc4-4e5c-b5b6-18a6bb7fbe03,A Brief Inquiry Into Online Relationships,15,The 1975,the 1975|a brief inquiry into online relationships,the 1975|a brief inquiry into online relationships,15,The 1975,A Brief Inquiry Into Online Relationships,15,0,False
+da04aa2d-134a-4b5b-ae10-cda5321773fe,Grateful,22,DJ Khaled,dj khaled|grateful,dj khaled|grateful,23,DJ Khaled,Grateful,23,-1,False
+da216e7b-9ce3-4347-8f59-bc758dca2da1,Depression Cherry,9,Beach House,beach house|depression cherry,beach house|depression cherry,9,Beach House,Depression Cherry,9,0,False
+db167d57-3779-42ca-9399-8df9b62fc3d9,New Levels New Devils,10,Polyphia,polyphia|new levels new devils,polyphia|new levels new devils,10,Polyphia,New Levels New Devils,10,0,False
+dd7ecfc9-58e6-40d9-a18f-986fcaeea091,Dream Your Life Away,13,Vance Joy,vance joy|dream your life away,vance joy|dream your life away,13,Vance Joy,Dream Your Life Away,13,0,False
+de9470f4-f4a3-4ddf-967b-ac77c886ad49,Kiss Land,10,The Weeknd,the weeknd|kiss land,the weeknd|kiss land,10,The Weeknd,Kiss Land,10,0,False
+df46f245-7f62-4982-9d2c-e83d7be91cbf,Believe,19,Justin Bieber,justin bieber|believe,justin bieber|believe,13,Justin Bieber,Believe,13,6,True
+df784e72-c6dc-48a6-b86e-805702d91781,Melophobia,10,Cage the Elephant,cage the elephant|melophobia,cage the elephant|melophobia,10,Cage The Elephant,Melophobia,10,0,False
+dfd3e397-a8a9-4f71-a091-c9beb0df06e3,Seeds,14,TV On The Radio,tv on the radio|seeds,tv on the radio|seeds,12,TV On The Radio,Seeds,12,2,False
+dfd582da-ab2e-4009-9365-405bf1ad2c49,Dangerous Woman,11,Ariana Grande,ariana grande|dangerous woman,ariana grande|dangerous woman,15,Ariana Grande,Dangerous Woman,15,-4,True
+e25c26bb-57e8-4c9f-9b66-8dbba5648e3a,My Kinda Party,15,Jason Aldean,jason aldean|my kinda party,jason aldean|my kinda party,15,Jason Aldean,My Kinda Party,15,0,False
+e271f07e-8478-4c0e-9613-3a89800da193,Infestissumam,12,Ghost,ghost|infestissumam,ghost|infestissumam,10,Ghost,Infestissumam,10,2,False
+e2bf2daf-6ed1-4e4b-806e-460990cca6d9,Conditions,10,The Temper Trap,the temper trap|conditions,the temper trap|conditions,10,The Temper Trap,Conditions,10,0,False
+e2eda319-fb62-4deb-87d2-9b23f8159d82,Enjoy Yourself,11,Billy Currington,billy currington|enjoy yourself,billy currington|enjoy yourself,11,Billy Currington,Enjoy Yourself,11,0,False
+e3319d41-37c3-442c-bfe9-e8d55537a7ad,Here Comes the Cowboy,13,Mac DeMarco,mac demarco|here comes the cowboy,mac demarco|here comes the cowboy,13,Mac DeMarco,Here Comes The Cowboy,13,0,False
+e5540cfd-9da2-4928-9f5e-1a85c6bebf5e,Heartwork,16,The Used,the used|heartwork,the used|heartwork,16,The Used,Heartwork,16,0,False
+e596c4a9-88be-4dee-a3b0-f62f291b45d7,Synthesis,16,Evanescence,evanescence|synthesis,evanescence|synthesis,16,Evanescence,Synthesis,16,0,False
+e6283e1c-0041-4888-a8f5-5913f1fa626b,True Believers,15,Darius Rucker,darius rucker|true believers,darius rucker|true believers,12,Darius Rucker,True Believers,12,3,True
+e665cc07-f57a-4b0d-8e7a-426095aa529f,Lights,10,Ellie Goulding,ellie goulding|lights,ellie goulding|lights,11,Ellie Goulding,Lights,11,-1,False
+e6f63f4a-951d-4e31-8f34-4e2e16757912,Happiness Begins,14,Jonas Brothers,jonas brothers|happiness begins,jonas brothers|happiness begins,14,Jonas Brothers,Happiness Begins,14,0,False
+e6f683c9-fc85-412c-a352-d6e411fc2603,Teenage Dream,12,Katy Perry,katy perry|teenage dream,katy perry|teenage dream,17,Katy Perry,Teenage Dream,17,-5,True
+e7ce6cac-d26e-470c-b8a1-97ecc07354df,Kiss,13,Carly Rae Jepsen,carly rae jepsen|kiss,carly rae jepsen|kiss,17,Carly Rae Jepsen,Kiss,17,-4,True
+e828c3f0-b766-4c25-9c23-067095165a5d,Impera,12,Ghost,ghost|impera,ghost|impera,12,Ghost,IMPERA,12,0,False
+e8c42623-8d66-47f3-a9d5-1c0a9060573b,PARTYMOBILE,15,PARTYNEXTDOOR,partynextdoor|partymobile,partynextdoor|partymobile,15,PARTYNEXTDOOR,PARTYMOBILE,15,0,False
+eb7e64a3-dab8-43db-886d-2f445e35f4a3,Cole Swindell,12,Cole Swindell,cole swindell|cole swindell,cole swindell|cole swindell,12,Cole Swindell,Cole Swindell,12,0,False
+ed2044c6-15a8-4f13-95bb-4d9fa39e6d36,Championships,19,Meek Mill,meek mill|championships,meek mill|championships,19,Meek Mill,Championships,19,0,False
+ed3c55b6-e49d-4d4e-a338-62b823b1e2d4,Overexposed,12,Maroon 5,maroon 5|overexposed,maroon 5|overexposed,12,Maroon 5,Overexposed,12,0,False
+eda0fd8e-c281-4173-9bed-8e505184d399,Queen,19,Nicki Minaj,nicki minaj|queen,nicki minaj|queen,19,Nicki Minaj,Queen,19,0,False
+edc8b011-6294-48b6-b064-67dfd1712c1b,CAPRISONGS,17,FKA Twigs,fka twigs|caprisongs,fka twigs|caprisongs,17,FKA twigs,CAPRISONGS,17,0,False
+efba7763-a237-4bba-85e7-ba94f59f8c2c,Up All Night,13,One Direction,one direction|up all night,one direction|up all night,13,One Direction,Up All Night,13,0,False
+f1390eec-a192-4d96-9943-bbc42a819588,Bloom,10,Beach House,beach house|bloom,beach house|bloom,10,Beach House,Bloom,10,0,False
+f21cec66-4e3a-42fc-b7e4-59b17bed0cca,Diamond Eyes,11,Deftones,deftones|diamond eyes,deftones|diamond eyes,11,Deftones,Diamond Eyes,11,0,False
+f48b5c40-6343-4d94-b306-3591d294caeb,This Old Dog,13,Mac DeMarco,mac demarco|this old dog,mac demarco|this old dog,13,Mac DeMarco,This Old Dog,13,0,False
+f4fc9067-305b-412e-b507-c01ab34f4c2c,Rokstarr,12,Taio Cruz,taio cruz|rokstarr,taio cruz|rokstarr,11,Taio Cruz,Rokstarr,11,1,False
+f62bd790-3682-479e-8d6a-3443081ef9aa,Intense,15,Armin van Buuren,armin van buuren|intense,armin van buuren|intense,15,Armin van Buuren,Intense,15,0,False
+f645671e-e21f-49a6-9152-5fc57c5b6bb1,Born Villain,14,Marilyn Manson,marilyn manson|born villain,marilyn manson|born villain,14,Marilyn Manson,Born Villain,14,0,False
+f758ae7a-7eb0-4986-8b23-62631016f1bc,Crash My Party,13,Luke Bryan,luke bryan|crash my party,luke bryan|crash my party,13,Luke Bryan,Crash My Party,13,0,False
+f7b59bee-62d7-4bc8-ad47-cda988cd8ded,Because the Internet,19,Childish Gambino,childish gambino|because the internet,childish gambino|because the internet,19,Childish Gambino,Because the Internet,19,0,False
+f81a75f0-ee3a-4e10-9d27-701e654d901b,Smile,12,Katy Perry,katy perry|smile,katy perry|smile,12,Katy Perry,Smile,12,0,False
+f8f4167d-897c-4b25-a171-638374d1dfa4,channel ORANGE,17,Frank Ocean,frank ocean|channel orange,frank ocean|channel orange,17,Frank Ocean,channel ORANGE,17,0,False
+f95bffe5-32de-44b2-b8db-32915d86ce4a,The Band Perry,11,The Band Perry,the band perry|the band perry,the band perry|the band perry,11,The Band Perry,The Band Perry,11,0,False
+f9eab5ff-6eb5-4c4e-9136-afbbc491f7cb,Wounded Rhymes,11,Lykke Li,lykke li|wounded rhymes,lykke li|wounded rhymes,11,Lykke Li,Wounded Rhymes,11,0,False
+fb44865f-de5c-482d-8298-d281858980b9,Beam Me Up Scotty,23,Nicki Minaj,nicki minaj|beam me up scotty,nicki minaj|beam me up scotty,23,Nicki Minaj,Beam Me Up Scotty,23,0,False
+fb992c06-9807-4ffd-90d8-115db5d513f6,eternal sunshine,13,Ariana Grande,ariana grande|eternal sunshine,ariana grande|eternal sunshine,13,Ariana Grande,eternal sunshine,13,0,False
+fbcf99f6-ec6f-4048-bc41-e099be84796c,We the Best Forever,12,DJ Khaled,dj khaled|we the best forever,dj khaled|we the best forever,12,DJ Khaled,We The Best Forever,12,0,False
+fbe216fc-3443-4425-8c99-e538b44e60ac,Collide With the Sky,12,Pierce the Veil,pierce the veil|collide with the sky,pierce the veil|collide with the sky,12,Pierce The Veil,Collide With The Sky,12,0,False
+fcb3b72d-67b4-4e4a-9c91-354eca76a3dd,Waking Up,11,OneRepublic,onerepublic|waking up,onerepublic|waking up,11,OneRepublic,Waking Up,11,0,False
+fd817615-3d43-4f07-9509-d0a46b2bc278,"“Awaken, My Love!”",11,Childish Gambino,childish gambino|awaken my love,childish gambino|awaken my love,11,Childish Gambino,"""Awaken, My Love!""",11,0,False
+fe0f6c95-3ea8-4fde-9d3c-7f1b73336827,Politics of Living,12,Kodaline,kodaline|politics of living,kodaline|politics of living,12,Kodaline,Politics of Living,12,0,False
+ff9b0645-2327-46f4-b2b4-a7f41946d39e,Little Dark Age,10,MGMT,mgmt|little dark age,mgmt|little dark age,10,MGMT,Little Dark Age,10,0,False
+ffdc0fd3-e726-4e98-af19-d3274ede2311,Suck It and See,12,Arctic Monkeys,arctic monkeys|suck it and see,arctic monkeys|suck it and see,12,Arctic Monkeys,Suck It and See,12,0,False

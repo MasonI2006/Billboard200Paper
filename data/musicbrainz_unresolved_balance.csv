@@ -1,0 +1,7 @@
+split_dimension,split_group,n_units,n_unresolved,unresolved_rate,note
+artist_genre,streaming_heavy,78,26,0.3333333333333333,Artist-level; genre from exact normalized artist match in Spotify sample.
+artist_genre,other,68,16,0.23529411764705882,Artist-level; genre from exact normalized artist match in Spotify sample.
+first_qualifying_artist_debut,pre_rule,3361,994,0.2957453138946742,First qualifying debut defines the roster and is restricted to pre-rule dates; the post group is structurally empty and is not an estimable comparison.
+first_qualifying_artist_debut,post_rule,0,0,,First qualifying debut defines the roster and is restricted to pre-rule dates; the post group is structurally empty and is not an estimable comparison.
+charting_album_debut,pre_rule,6273,1650,0.26303204208512676,Supporting album-debut-weighted split among charting album debuts by roster artists; not the first-qualifying-artist-debut split.
+charting_album_debut,post_rule,3258,793,0.24340085942295886,Supporting album-debut-weighted split among charting album debuts by roster artists; not the first-qualifying-artist-debut split.

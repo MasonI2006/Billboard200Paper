@@ -1,0 +1,6 @@
+artist_name,musicbrainz_artist_id,entity_name,entity_type,decision,basis
+"""Frank Sinatra, Dean Martin & Sammy Davis Jr""",35e227e5-f724-4699-91b2-d5184cdc7411,The Rat Pack,Group,matched_full_credit_alias,Exact MusicBrainz alias equals full joint Billboard credit.
+The Kenny Wayne Shepherd Band,,Kenny Wayne Shepherd,Person,unresolved_band_entity_not_found,"The exact billed-band search returned only the solo Person entity; its alias does not convert it into a separate band entity, so do not assign the Person to the band credit."
+The Dead Rabbitts,ebafff3d-0105-4e5d-a7a4-98972c48a57f,Dead Rabbitts,Group,matched_group_credit,"The billed act is a group; exact core name resolves to the Group entity, with only the leading article differing."
+The Nick Hexum Quintet,23af1753-e926-4338-aef6-7cfe2861d1d8,Nick Hexum Quintet,Group,matched_group_credit,"The billed act names the Quintet; MusicBrainz has a separate Group entity, preferred over solo Person Nick Hexum."
+The CAJO Family,,,,unmatched_no_artist_entity,Exact full-credit and CAJO searches did not identify a matching artist or group; candidates were unrelated.

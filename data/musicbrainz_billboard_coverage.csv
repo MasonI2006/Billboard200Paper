@@ -1,0 +1,7 @@
+genre_group,period,billboard_debut_rows,found_in_musicbrainz,coverage_rate
+other,post_rule,526,453,0.8612167300380228
+other,pre_rule,1094,883,0.8071297989031079
+streaming_heavy,post_rule,183,149,0.8142076502732241
+streaming_heavy,pre_rule,412,308,0.7475728155339806
+unknown,post_rule,1699,1063,0.6256621542083579
+unknown,pre_rule,2930,1835,0.6262798634812287
