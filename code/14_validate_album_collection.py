@@ -3,24 +3,32 @@
 import json
 import re
 import unicodedata
-from pathlib import Path
-
 import numpy as np
 import pandas as pd
 
 from load_clean_data import lead_artist, load_chart, normalize_match_text
+from paths import (
+    ALBUM_CANDIDATES,
+    ARTIST_MATCHES,
+    ARTIST_SEARCH_CACHE,
+    BILLBOARD_COVERAGE,
+    RELEASE_GROUPS,
+    RESULTS_P1_VALIDATION,
+    ROSTER,
+    SPOTIFY_ALBUM_SAMPLE,
+    SPOTIFY_COUNT_COMPARISON,
+)
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-MATCHES_PATH = DATA_DIR / "musicbrainz_artist_matches.csv"
-ROSTER_PATH = DATA_DIR / "pre_rule_artist_roster.csv"
-GROUPS_PATH = DATA_DIR / "musicbrainz_release_groups.csv"
-ALBUMS_PATH = DATA_DIR / "musicbrainz_standard_album_candidates.csv"
-SPOTIFY_PATH = DATA_DIR / "spotify_album_sample.csv"
-ARTIST_CACHE_PATH = DATA_DIR / "musicbrainz_artist_search_cache.jsonl"
-COVERAGE_PATH = DATA_DIR / "musicbrainz_billboard_coverage.csv"
-DIFF_PATH = DATA_DIR / "musicbrainz_spotify_count_comparison.csv"
+MATCHES_PATH = ARTIST_MATCHES
+ROSTER_PATH = ROSTER
+GROUPS_PATH = RELEASE_GROUPS
+ALBUMS_PATH = ALBUM_CANDIDATES
+SPOTIFY_PATH = SPOTIFY_ALBUM_SAMPLE
+ARTIST_CACHE_PATH = ARTIST_SEARCH_CACHE
+COVERAGE_PATH = BILLBOARD_COVERAGE
+DIFF_PATH = SPOTIFY_COUNT_COMPARISON
+RESULTS_P1_VALIDATION.mkdir(parents=True, exist_ok=True)
 
 GENRE_TERMS = {
     "hiphop_rnb": ("hip hop", "hip-hop", "rap", "r&b", "soul", "grime", "trap"),

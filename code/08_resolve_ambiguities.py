@@ -4,20 +4,27 @@ import csv
 import json
 import re
 import unicodedata
-from pathlib import Path
-
 import pandas as pd
 
+from paths import (
+    AMBIGUITY_AUTO_RESOLUTION,
+    ARTIST_MATCHES,
+    ARTIST_MATCHES_REVIEW,
+    ARTIST_SEARCH_CACHE,
+    INTERIM_DIR,
+    ROSTER,
+    SPOTIFY_ALBUM_SAMPLE,
+    UNRESOLVED_BALANCE,
+)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-ROSTER_PATH = DATA_DIR / "pre_rule_artist_roster.csv"
-MATCHES_PATH = DATA_DIR / "musicbrainz_artist_matches.csv"
-REVIEW_PATH = DATA_DIR / "musicbrainz_artist_matches_review.csv"
-CACHE_PATH = DATA_DIR / "musicbrainz_artist_search_cache.jsonl"
-SPOTIFY_SAMPLE_PATH = DATA_DIR / "spotify_album_sample.csv"
-RESOLUTION_AUDIT_PATH = DATA_DIR / "musicbrainz_ambiguity_auto_resolution.csv"
-BALANCE_PATH = DATA_DIR / "musicbrainz_unresolved_balance.csv"
+
+ROSTER_PATH = ROSTER
+MATCHES_PATH = ARTIST_MATCHES
+REVIEW_PATH = ARTIST_MATCHES_REVIEW
+CACHE_PATH = ARTIST_SEARCH_CACHE
+SPOTIFY_SAMPLE_PATH = SPOTIFY_ALBUM_SAMPLE
+RESOLUTION_AUDIT_PATH = AMBIGUITY_AUTO_RESOLUTION
+BALANCE_PATH = UNRESOLVED_BALANCE
 
 GENRE_TERMS = {
     "hiphop_rnb": ("hip hop", "hip-hop", "rap", "r&b", "soul", "grime", "trap"),
@@ -210,7 +217,7 @@ def resolved(result, candidate, rule):
 
 
 def main():
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    INTERIM_DIR.mkdir(parents=True, exist_ok=True)
     cache = read_cache()
     rows = read_matches()
     roster = {row["roster_artist_key"]: row for row in rows}

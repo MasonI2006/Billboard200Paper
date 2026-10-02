@@ -1,18 +1,24 @@
 """Prepare the seeded 100-album MusicBrainz genre hand-check sheet."""
 
 import json
-from pathlib import Path
-
 import pandas as pd
 
+from paths import (
+    ALBUM_CANDIDATES,
+    ARTIST_MATCHES,
+    ARTIST_SEARCH_CACHE,
+    GENRE_HANDCHECK_SAMPLE,
+    SPOTIFY_ALBUM_SAMPLE,
+)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-ALBUMS_PATH = DATA_DIR / "musicbrainz_standard_album_candidates.csv"
-MATCHES_PATH = DATA_DIR / "musicbrainz_artist_matches.csv"
-CACHE_PATH = DATA_DIR / "musicbrainz_artist_search_cache.jsonl"
-SPOTIFY_PATH = DATA_DIR / "spotify_album_sample.csv"
-OUTPUT_PATH = DATA_DIR / "genre_handcheck_sample_100.csv"
+
+# One-time step: run_pipeline.py skips this script because rerunning it
+# regenerates the hand-check sheet (results/part1_album_length/validation/).
+ALBUMS_PATH = ALBUM_CANDIDATES
+MATCHES_PATH = ARTIST_MATCHES
+CACHE_PATH = ARTIST_SEARCH_CACHE
+SPOTIFY_PATH = SPOTIFY_ALBUM_SAMPLE
+OUTPUT_PATH = GENRE_HANDCHECK_SAMPLE
 SEED = 20260928
 
 MANUAL_DECISIONS = {

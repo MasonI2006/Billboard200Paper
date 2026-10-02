@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
+from paths import RESULTS_P1_SPOTIFY, SPOTIFY_ALBUM_SAMPLE
 from load_clean_data import (
-    RESULTS_DIR,
     collect_artist_genres,
     classify_genre,
     lead_artist,
@@ -17,7 +17,7 @@ from load_clean_data import (
 
 
 RULE_DATE = pd.Timestamp("2014-12-10")
-OUTPUT_DIR = RESULTS_DIR / "phase1_clean"
+OUTPUT_DIR = RESULTS_P1_SPOTIFY
 
 
 def save_table(table, filename, index=False):
@@ -647,7 +647,7 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     charts, exposure = analyze_charts()
     sample = pd.read_csv(
-        RESULTS_DIR.parent / "data" / "spotify_album_sample.csv",
+        SPOTIFY_ALBUM_SAMPLE,
         parse_dates=["release_date", "billboard_date"],
     )
     analyze_spotify(sample, exposure)

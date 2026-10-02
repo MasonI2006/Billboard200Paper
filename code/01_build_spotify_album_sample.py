@@ -3,8 +3,8 @@
 import numpy as np
 import pandas as pd
 
+from paths import INTERIM_DIR, SPOTIFY_ALBUM_SAMPLE
 from load_clean_data import (
-    DATA_DIR,
     GENRE_INTENSITY,
     classify_genre,
     collect_artist_genres,
@@ -86,8 +86,8 @@ def build_album_sample():
 
 def main():
     sample = build_album_sample()
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    sample.to_csv(DATA_DIR / "spotify_album_sample.csv", index=False)
+    INTERIM_DIR.mkdir(parents=True, exist_ok=True)
+    sample.to_csv(SPOTIFY_ALBUM_SAMPLE, index=False)
     genre_sample = sample.dropna(subset=["genre"])
     print(
         f"Saved {len(sample)} core albums; "

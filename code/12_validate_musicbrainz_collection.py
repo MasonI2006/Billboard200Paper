@@ -1,36 +1,27 @@
 """Validate MusicBrainz genre coverage, unresolved balance, and edition flags."""
 
-import json
-import re
-import unicodedata
-from pathlib import Path
-
-import numpy as np
 import pandas as pd
 
+from musicbrainz_helpers import infer_row_genre, read_artist_cache
+from paths import (
+    ALBUM_CANDIDATES,
+    ARTIST_MATCHES,
+    EDITION_HANDCHECK_SAMPLE,
+    GENRE_BALANCE,
+    RELEASE_GROUPS,
+    SUBGENRE_BALANCE,
+    UNRESOLVED_GENRE_BREAKDOWN,
+)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-MATCHES_PATH = DATA_DIR / "musicbrainz_artist_matches.csv"
-GROUPS_PATH = DATA_DIR / "musicbrainz_release_groups.csv"
-ALBUMS_PATH = DATA_DIR / "musicbrainz_standard_album_candidates.csv"
-CACHE_PATH = DATA_DIR / "musicbrainz_artist_search_cache.jsonl"
-GENRE_REPORT_PATH = DATA_DIR / "musicbrainz_genre_balance.csv"
-UNRESOLVED_GENRE_PATH = DATA_DIR / "musicbrainz_unresolved_genre_breakdown.csv"
-SUBGENRE_BALANCE_PATH = DATA_DIR / "musicbrainz_subgenre_balance.csv"
-EDITION_SAMPLE_PATH = DATA_DIR / "musicbrainz_edition_handcheck_sample.csv"
 
-GENRE_TERMS = {
-    "hiphop_rnb": ("hip hop", "hip-hop", "rap", "r&b", "soul", "grime", "trap"),
-    "pop": ("pop", "dance-pop", "dance pop", "synth-pop", "electropop"),
-    "latin": ("latin", "reggaeton", "salsa", "corrido", "banda", "cumbia"),
-    "electronic": ("electronic", "edm", "house", "techno", "dubstep", "trance"),
-    "rock": ("rock", "metal", "punk", "emo", "grunge", "indie", "alternative"),
-    "country": ("country", "americana", "bluegrass", "red dirt"),
-    "christian": ("christian", "gospel", "worship", "ccm"),
-    "jazz": ("jazz", "bossa", "swing"),
-    "classical": ("classical", "orchestral", "opera", "chamber"),
-}
+MATCHES_PATH = ARTIST_MATCHES
+GROUPS_PATH = RELEASE_GROUPS
+ALBUMS_PATH = ALBUM_CANDIDATES
+GENRE_REPORT_PATH = GENRE_BALANCE
+UNRESOLVED_GENRE_PATH = UNRESOLVED_GENRE_BREAKDOWN
+SUBGENRE_BALANCE_PATH = SUBGENRE_BALANCE
+EDITION_SAMPLE_PATH = EDITION_HANDCHECK_SAMPLE
+
 HEAVY = {"hiphop_rnb", "pop", "latin", "electronic"}
 RESOLVED = {
     "matched_exact_name",
@@ -52,66 +43,6 @@ UNRESOLVED = {
 }
 
 
-def normalize(value):
-    text = unicodedata.normalize("NFKC", str(value or "")).casefold()
-    return re.sub(r"[\W_]+", " ", text, flags=re.UNICODE).strip()
-
-
-def read_artist_cache():
-    cache = {}
-    with CACHE_PATH.open(encoding="utf-8") as stream:
-        for line in stream:
-            if line.strip():
-                record = json.loads(line)
-                cache[record["roster_artist_key"]] = record["response"]
-    return cache
-
-
-def genre_from_text(text):
-    lowered = text.casefold()
-    return {
-        genre for genre, terms in GENRE_TERMS.items() if any(term in lowered for term in terms)
-    }
-
-
-def candidate_genres(candidate):
-    tag_text = " ".join(tag.get("name", "") for tag in candidate.get("tags", []))
-    return genre_from_text(" ".join([candidate.get("disambiguation", ""), tag_text]))
-
-
-def exact_candidates(response, artist_name):
-    target = normalize(artist_name)
-    candidates = []
-    for candidate in response.get("artists", []):
-        names = [candidate.get("name", "")]
-        names.extend(
-            alias.get("name", "") if isinstance(alias, dict) else alias
-            for alias in candidate.get("aliases", [])
-        )
-        if any(normalize(name) == target for name in names):
-            candidates.append(candidate)
-    return {candidate.get("id"): candidate for candidate in candidates if candidate.get("id")}
-
-
-def infer_row_genre(row, response):
-    artist_id = row["musicbrainz_artist_id"]
-    if artist_id:
-        candidates = [
-            candidate
-            for candidate in response.get("artists", [])
-            if candidate.get("id") == artist_id
-        ]
-    else:
-        candidates = list(exact_candidates(response, row["artist_name"]).values())
-    genre_sets = [candidate_genres(candidate) for candidate in candidates]
-    genre_sets = [genres for genres in genre_sets if genres]
-    if len(genre_sets) == 1:
-        return next(iter(genre_sets[0]))
-    if len(genre_sets) > 1:
-        intersection = set.intersection(*genre_sets)
-        if len(intersection) == 1:
-            return next(iter(intersection))
-    return ""
 
 
 def write_csv(path, rows):

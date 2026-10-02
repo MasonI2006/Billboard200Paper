@@ -1,8 +1,8 @@
 """Question 1: did counting streams lock older albums onto the Billboard 200?
 Follows q1_analysis_plan.md exactly. Uses only the Kaggle chart files."""
 import pandas as pd, numpy as np, statsmodels.formula.api as smf
-from pathlib import Path
-DATA = Path("/mnt/user-data/uploads"); OUT = Path("results"); OUT.mkdir(exist_ok=True)
+from paths import RAW_DIR, RESULTS_P2, PART2_WEEKLY
+DATA = RAW_DIR; OUT = RESULTS_P2; OUT.mkdir(parents=True, exist_ok=True); PART2_WEEKLY.parent.mkdir(parents=True, exist_ok=True)
 RULE = pd.Timestamp("2014-12-10")        # chart dated Dec 13, 2014 (stored 3 days early)
 R2018 = pd.Timestamp("2018-07-11")       # chart dated July 14, 2018
 
@@ -48,7 +48,7 @@ def its(w, y, start, end, rule=RULE, extra_break=None):
 
 b = load("billboard200.csv")
 wb = weekly(b)
-wb.to_csv(OUT / "weekly_billboard200.csv", index=False)
+wb.to_csv(PART2_WEEKLY, index=False)
 MAIN = ("2010-01-06", "2019-12-25"); SEC = ("2010-01-06", "2024-12-31")
 
 # A. main break test (+ secondary window)

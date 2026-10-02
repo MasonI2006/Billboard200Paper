@@ -4,7 +4,8 @@ import re
 
 import pandas as pd
 
-from load_clean_data import DATA_DIR, load_chart
+from load_clean_data import load_chart
+from paths import INTERIM_DIR, ROSTER, ROSTER_CREDIT_AUDIT
 
 
 ROSTER_START = pd.Timestamp("2009-01-01")
@@ -86,9 +87,9 @@ def build_roster():
 
 def main():
     debuts, roster, credit_audit = build_roster()
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    roster.to_csv(DATA_DIR / "pre_rule_artist_roster.csv", index=False)
-    credit_audit.to_csv(DATA_DIR / "pre_rule_artist_credit_audit.csv", index=False)
+    INTERIM_DIR.mkdir(parents=True, exist_ok=True)
+    roster.to_csv(ROSTER, index=False)
+    credit_audit.to_csv(ROSTER_CREDIT_AUDIT, index=False)
 
     various = credit_audit["credit_handling"].eq("excluded_various_artists")
     feature = credit_audit["source_artist_credit"].str.contains(
@@ -115,7 +116,7 @@ def main():
             .head(30)
             .to_string(index=False)
         )
-    print(f"Roster and credit audit saved under {DATA_DIR}.")
+    print(f"Roster and credit audit saved under {INTERIM_DIR}.")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,9 @@
 import pandas as pd, numpy as np, re, statsmodels.formula.api as smf
 from scipy import stats
+from paths import PART2B_CHART_LABELLED, PART2B_ALBUM_RUNS, RESULTS_P2B
+RESULTS_P2B.mkdir(parents=True, exist_ok=True); PART2B_ALBUM_RUNS.parent.mkdir(parents=True, exist_ok=True)
 RULE = pd.Timestamp("2014-12-10")
-b = pd.read_pickle("chart_labelled.pkl")
+b = pd.read_pickle(PART2B_CHART_LABELLED)
 b["key"] = b.an + "|" + b.Song.str.lower().str.strip()
 
 # album runs: debut week, then weeks on chart within 52 / 26 weeks after debut
@@ -19,7 +21,7 @@ deb["post"] = (deb.debut >= RULE).astype(int)
 deb["year"] = deb.debut.dt.year
 deb["heavy"] = deb.heavy.astype(int)
 deb["rank_bin"] = pd.cut(deb.debut_rank, [0,10,50,100,200], labels=["1-10","11-50","51-100","101-200"])
-deb.to_csv("album_runs.csv", index=False)
+deb.to_csv(PART2B_ALBUM_RUNS, index=False)
 print("albums:", len(deb), "| artists:", deb.mbid.nunique())
 print(deb.groupby(["heavy","post"]).agg(n=("key","size"), weeks52=("weeks52","mean"), median52=("weeks52","median"), still26=("still_on_26","mean"), weeks26=("weeks26","mean")).round(2))
 
@@ -63,7 +65,7 @@ m = smf.ols("weeks52 ~ post:heavy + C(mbid) + C(year)", deb).fit(cov_type="clust
 dfe = deb[deb.groupby("mbid").post.transform("nunique") == 2]
 rows.append(["weeks52", "artist fixed effects", m.params["post:heavy"], m.bse["post:heavy"], m.pvalues["post:heavy"], np.nan, np.nan, f"{len(deb)} ({dfe.mbid.nunique()} artists with pre+post albums)"])
 R = pd.DataFrame(rows, columns=["outcome","spec","coef","se_artist","p_artist","p_wildboot_genre","genre_clusters","n"])
-R.to_csv("results_main.csv", index=False); print(R.round(4).to_string(index=False))
+R.to_csv(RESULTS_P2B / "results_main.csv", index=False); print(R.round(4).to_string(index=False))
 
 # event study
 yrs = [y for y in range(2010, 2019) if y != 2014]
@@ -75,4 +77,4 @@ pre = [n for n in es.params.index if re.search(r"year ?== ?201[0-3]\)", n)]
 R_ = np.vstack([(es.params.index == n).astype(float) for n in pre])
 print("\nEvent study (weeks in first 52, heavy minus other, ref 2014):"); print(E.round(2).to_string())
 print("joint pre-2014 test p =", round(float(es.wald_test(R_, scalar=True).pvalue), 3))
-E.to_csv("results_event_study.csv")
+E.to_csv(RESULTS_P2B / "results_event_study.csv")

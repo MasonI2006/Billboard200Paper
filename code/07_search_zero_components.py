@@ -5,21 +5,26 @@ import json
 import re
 import time
 import unicodedata
-from pathlib import Path
-
-from match_musicbrainz_artists import (
-    DATA_DIR,
+from musicbrainz_helpers import (
     REQUEST_INTERVAL_SECONDS,
+    configure_api_access,
     request_artist_search,
+)
+from paths import (
+    INTERIM_DIR,
+    TARGETED_ARTIST_SEARCHES,
+    TRUE_NOMATCH_ZERO,
+    ZERO_COMPONENT_CACHE,
+    ZERO_COMPONENT_RESULTS,
+    ZERO_COMPONENT_SUMMARY,
 )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-ZERO_LIST = PROJECT_ROOT / "true_nomatch_zero.csv"
-COMPONENT_CACHE = DATA_DIR / "musicbrainz_zero_component_searches.jsonl"
-COMPONENT_RESULTS = DATA_DIR / "musicbrainz_zero_component_results.csv"
-COMPONENT_SUMMARY = DATA_DIR / "musicbrainz_zero_component_summary.csv"
-TARGETED_RESULTS = DATA_DIR / "musicbrainz_targeted_artist_searches.csv"
+ZERO_LIST = TRUE_NOMATCH_ZERO
+COMPONENT_CACHE = ZERO_COMPONENT_CACHE
+COMPONENT_RESULTS = ZERO_COMPONENT_RESULTS
+COMPONENT_SUMMARY = ZERO_COMPONENT_SUMMARY
+TARGETED_RESULTS = TARGETED_ARTIST_SEARCHES
 COMPONENT_SEPARATOR = re.compile(
     r"\s*(?:a\s*\.\s*k\s*\.\s*a\s*\.?|a\.k\.a\.|aka|presents|"
     r"\+|&|,|\band\b|\bwith\b|\bx\b|/|\bof\b)\s*",
@@ -130,7 +135,8 @@ def write_csv(path, rows, fieldnames):
 
 
 def main():
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    configure_api_access()
+    INTERIM_DIR.mkdir(parents=True, exist_ok=True)
     cache = load_search_cache()
     zero_rows = load_zero_names()
     component_rows = []

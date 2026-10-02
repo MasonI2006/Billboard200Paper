@@ -3,19 +3,16 @@
 import csv
 import re
 import unicodedata
-from pathlib import Path
-
 import pandas as pd
 
 from load_clean_data import load_chart
+from paths import ARTIST_MATCHES, ROSTER, SPOTIFY_ALBUM_SAMPLE, UNRESOLVED_BALANCE
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-MATCHES_PATH = DATA_DIR / "musicbrainz_artist_matches.csv"
-ROSTER_PATH = DATA_DIR / "pre_rule_artist_roster.csv"
-SPOTIFY_SAMPLE_PATH = DATA_DIR / "spotify_album_sample.csv"
-OUTPUT_PATH = DATA_DIR / "musicbrainz_unresolved_balance.csv"
+MATCHES_PATH = ARTIST_MATCHES
+ROSTER_PATH = ROSTER
+SPOTIFY_SAMPLE_PATH = SPOTIFY_ALBUM_SAMPLE
+OUTPUT_PATH = UNRESOLVED_BALANCE
 RULE_CHART_DATE = pd.Timestamp("2014-12-10")
 HEAVY_GENRES = {"hiphop_rnb", "pop", "latin", "electronic"}
 RESOLVED_STATUSES = {

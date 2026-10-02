@@ -2,16 +2,15 @@
 
 import json
 from urllib.parse import parse_qs, urlparse
-from pathlib import Path
 
 import pandas as pd
 
+from paths import EDITION_HANDCHECK_SAMPLE, OFFICIAL_RELEASE_CACHE
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-SAMPLE_PATH = DATA_DIR / "musicbrainz_edition_handcheck_sample.csv"
-CACHE_PATH = DATA_DIR / "musicbrainz_official_release_cache.jsonl"
-OUTPUT_PATH = DATA_DIR / "musicbrainz_edition_handcheck_sample.csv"
+
+SAMPLE_PATH = EDITION_HANDCHECK_SAMPLE
+CACHE_PATH = OFFICIAL_RELEASE_CACHE
+OUTPUT_PATH = EDITION_HANDCHECK_SAMPLE
 
 
 def load_release_cache():

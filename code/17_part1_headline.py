@@ -1,18 +1,17 @@
 """Run the resolved-only MusicBrainz first-pass headline analysis."""
 
 import math
-from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-from analyze_musicbrainz_digital_robustness import build_data
+from musicbrainz_helpers import build_data
+from paths import ANALYSIS_SAMPLE, FINAL_DIR, RESULTS_P1
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-RESULTS_DIR = PROJECT_ROOT / "results" / "phase3_first_pass"
+RESULTS_DIR = RESULTS_P1
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+FINAL_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def wild_bootstrap_pvalue(data, draws=9999, seed=20260928):
@@ -93,7 +92,7 @@ def main():
         n=("standard_tracks", "size"),
     ).reset_index()
     means.to_csv(RESULTS_DIR / "headline_means.csv", index=False)
-    data.to_csv(RESULTS_DIR / "analysis_sample.csv", index=False)
+    data.to_csv(ANALYSIS_SAMPLE, index=False)
     print(headline.to_string(index=False))
     print(means.round(4).to_string(index=False))
 

@@ -2,16 +2,14 @@
 
 import ast
 import re
-from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
+from paths import RAW_DIR
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-RAW_DATA_DIR = PROJECT_ROOT / "OriginalDataFiles"
-DATA_DIR = PROJECT_ROOT / "data"
-RESULTS_DIR = PROJECT_ROOT / "results"
+
+RAW_DATA_DIR = RAW_DIR
 
 GENRE_RULES = [
     ("latin", r"latin|reggaeton|urbano|corrido|banda|mariachi|norte|cumbia|bachata|salsa|trap latino|mexican"),

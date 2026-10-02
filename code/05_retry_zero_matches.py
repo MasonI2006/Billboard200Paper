@@ -5,23 +5,26 @@ import csv
 import time
 from pathlib import Path
 
-from match_musicbrainz_artists import (
+from musicbrainz_helpers import (
     CACHE_PATH,
-    DATA_DIR,
+    ERROR_LOG_PATH,
     MATCHES_PATH,
-    REVIEW_PATH,
     REQUEST_INTERVAL_SECONDS,
+    CacheMissError,
+    api_allowed,
     append_cache,
+    configure_api_access,
     load_cache,
     load_roster,
     request_artist_search,
     resolve_candidate,
     write_csv,
 )
+from paths import ARTIST_MATCHES_REVIEW, TRUE_NOMATCH_ZERO
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_ZERO_LIST = PROJECT_ROOT / "true_nomatch_zero.csv"
+REVIEW_PATH = ARTIST_MATCHES_REVIEW
+DEFAULT_ZERO_LIST = TRUE_NOMATCH_ZERO
 
 
 def load_zero_list(path):
@@ -64,6 +67,7 @@ def rebuild_match_outputs(roster, cache):
 
 
 def main():
+    configure_api_access()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_ZERO_LIST)
     args = parser.parse_args()
@@ -83,6 +87,15 @@ def main():
             failed.append((name, "artist name did not map to frozen roster"))
             continue
 
+        roster_key = roster_row["roster_artist_key"]
+        if not api_allowed():
+            # Cache-only mode: replay the retry response already cached for this key.
+            if roster_key not in cache:
+                raise CacheMissError(f"No cached retry response for {name!r}")
+            response = cache[roster_key]
+            completed.append((name, response.get("count", 0), len(response.get("artists", []))))
+            continue
+
         if last_request_at is not None:
             delay = REQUEST_INTERVAL_SECONDS - (time.monotonic() - last_request_at)
             if delay > 0:
@@ -95,7 +108,6 @@ def main():
             failed.append((name, f"{type(error).__name__}: {error}"))
             continue
 
-        roster_key = roster_row["roster_artist_key"]
         append_cache(roster_key, response, query)
         cache[roster_key] = response
         completed.append((name, response.get("count", 0), len(response.get("artists", []))))
@@ -122,7 +134,7 @@ def main():
     print(f"Names re-queried: {len(completed)}")
     print(f"Still returned zero candidates: {sum(count == 0 for _, count, _ in completed)}")
     print(f"Search responses cached in {CACHE_PATH}")
-    print(f"API errors logged in {DATA_DIR / 'musicbrainz_artist_search_errors.jsonl'}")
+    print(f"API errors logged in {ERROR_LOG_PATH}")
 
 
 if __name__ == "__main__":

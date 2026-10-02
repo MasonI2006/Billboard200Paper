@@ -4,16 +4,14 @@ import csv
 import json
 import re
 import unicodedata
-from pathlib import Path
+from musicbrainz_helpers import CACHE_PATH, load_cache, load_roster
+from paths import ARTIST_MATCHES_REVIEW, FLAGGED_COMPOSITE_PARTIAL, TRUE_NOMATCH_ZERO
 
-from match_musicbrainz_artists import DATA_DIR, load_cache, load_roster
 
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-ZERO_LIST_PATH = PROJECT_ROOT / "true_nomatch_zero.csv"
-ZERO_AUDIT_PATH = PROJECT_ROOT / "true_nomatch_zero.csv"
-COMPOSITE_AUDIT_PATH = PROJECT_ROOT / "flagged_composite_partial.csv"
-REVIEW_PATH = DATA_DIR / "musicbrainz_artist_matches_review.csv"
+ZERO_LIST_PATH = TRUE_NOMATCH_ZERO
+ZERO_AUDIT_PATH = TRUE_NOMATCH_ZERO
+COMPOSITE_AUDIT_PATH = FLAGGED_COMPOSITE_PARTIAL
+REVIEW_PATH = ARTIST_MATCHES_REVIEW
 SPECIAL_CHARS = set("$+():.")
 
 PARTIAL_CREDITS = {
@@ -73,9 +71,7 @@ def main():
     roster_by_name = {row["artist_name"]: row for row in roster}
     cache = load_cache()
     query_by_key = {}
-    with (DATA_DIR / "musicbrainz_artist_search_cache.jsonl").open(
-        encoding="utf-8"
-    ) as stream:
+    with CACHE_PATH.open(encoding="utf-8") as stream:
         for line in stream:
             record = json.loads(line)
             query_by_key[record["roster_artist_key"]] = record.get("query", "")

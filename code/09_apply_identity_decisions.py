@@ -4,15 +4,18 @@ import csv
 import json
 import re
 import unicodedata
-from pathlib import Path
+from paths import (
+    ARTIST_MATCHES,
+    ARTIST_MATCHES_REVIEW,
+    TARGETED_ARTIST_SEARCHES,
+    TARGETED_IDENTITY_DECISIONS,
+)
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-MATCHES_PATH = DATA_DIR / "musicbrainz_artist_matches.csv"
-REVIEW_PATH = DATA_DIR / "musicbrainz_artist_matches_review.csv"
-TARGETED_PATH = DATA_DIR / "musicbrainz_targeted_artist_searches.csv"
-DECISIONS_PATH = DATA_DIR / "musicbrainz_targeted_identity_decisions.csv"
+MATCHES_PATH = ARTIST_MATCHES
+REVIEW_PATH = ARTIST_MATCHES_REVIEW
+TARGETED_PATH = TARGETED_ARTIST_SEARCHES
+DECISIONS_PATH = TARGETED_IDENTITY_DECISIONS
 
 DECISIONS = {
     "Frank Sinatra, Dean Martin & Sammy Davis Jr": {

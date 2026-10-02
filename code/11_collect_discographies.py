@@ -4,21 +4,30 @@ import argparse
 import csv
 import json
 import time
-from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+from musicbrainz_helpers import configure_api_access, require_api
+from paths import (
+    ALBUM_CANDIDATES,
+    ARTIST_MATCHES,
+    DISCOGRAPHY_API_ERRORS,
+    EXTERNAL_DIR,
+    OFFICIAL_RELEASE_CACHE,
+    OFFICIAL_RELEASES,
+    RELEASE_GROUP_CACHE,
+    RELEASE_GROUPS,
+)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-MATCHES_PATH = DATA_DIR / "musicbrainz_artist_matches.csv"
-GROUP_CACHE = DATA_DIR / "musicbrainz_release_group_cache.jsonl"
-RELEASE_CACHE = DATA_DIR / "musicbrainz_official_release_cache.jsonl"
-ERROR_LOG = DATA_DIR / "musicbrainz_discography_api_errors.jsonl"
-GROUPS_PATH = DATA_DIR / "musicbrainz_release_groups.csv"
-RELEASES_PATH = DATA_DIR / "musicbrainz_official_releases.csv"
-ALBUMS_PATH = DATA_DIR / "musicbrainz_standard_album_candidates.csv"
+
+MATCHES_PATH = ARTIST_MATCHES
+GROUP_CACHE = RELEASE_GROUP_CACHE
+RELEASE_CACHE = OFFICIAL_RELEASE_CACHE
+ERROR_LOG = DISCOGRAPHY_API_ERRORS
+GROUPS_PATH = RELEASE_GROUPS
+RELEASES_PATH = OFFICIAL_RELEASES
+ALBUMS_PATH = ALBUM_CANDIDATES
 API_ROOT = "https://musicbrainz.org/ws/2"
 USER_AGENT = "Billboard200Paper/0.1 (academic metadata research; contact: project workspace)"
 REQUEST_INTERVAL = 1.05
@@ -83,6 +92,7 @@ def log_error(endpoint, params, attempt, error):
 
 def request_json(endpoint, params):
     global _last_request_time
+    require_api(f"MusicBrainz {endpoint} request {params}")
     delay = REQUEST_INTERVAL - (time.monotonic() - _last_request_time) if _last_request_time else 0
     if delay > 0:
         time.sleep(delay)
@@ -413,12 +423,13 @@ def build_standard_album_candidates(groups, releases):
 
 
 def main():
+    configure_api_access()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--phase", choices=("groups", "releases", "all"), default="groups")
     parser.add_argument("--max-artists", type=int, help="Smoke-test with the first N resolved artists.")
     args = parser.parse_args()
 
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    EXTERNAL_DIR.mkdir(parents=True, exist_ok=True)
     artists = resolved_artists(args.max_artists)
     group_cache = read_jsonl_cache(GROUP_CACHE)
     release_cache = read_jsonl_cache(RELEASE_CACHE)
