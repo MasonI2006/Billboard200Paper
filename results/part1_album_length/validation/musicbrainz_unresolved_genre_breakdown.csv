@@ -1,11 +1,11 @@
 genre,n_unresolved,share_of_unresolved,unresolved_statuses
-hiphop_rnb,54,0.05432595573440644,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit | review_truncated_search
-pop,86,0.08651911468812877,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit
+hiphop_rnb,122,0.1227364185110664,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit | review_truncated_search
+pop,9,0.009054325955734407,ambiguous_same_name
 latin,8,0.008048289738430584,ambiguous_same_name | review_composite_credit
-electronic,15,0.015090543259557344,ambiguous_same_name | review_composite_credit
-rock,159,0.15995975855130784,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit | review_truncated_search
-country,45,0.04527162977867203,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit
-christian,25,0.025150905432595575,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit
-jazz,20,0.02012072434607646,ambiguous_same_name | review_composite_credit | review_truncated_search
-classical,5,0.005030181086519115,ambiguous_same_name
+electronic,23,0.023138832997987926,ambiguous_same_name | review_composite_credit
+rock,169,0.17002012072434608,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit | review_truncated_search
+country,44,0.04426559356136821,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit
+christian,22,0.022132796780684104,ambiguous_same_name | duplicate_roster_entries_same_artist_id_review | review_composite_credit
+jazz,12,0.012072434607645875,ambiguous_same_name | review_composite_credit
+classical,8,0.008048289738430584,ambiguous_same_name | review_composite_credit
 unknown,577,0.5804828973843058,ambiguous_same_name | review_composite_credit | review_truncated_search | unmatched_no_artist_entity | unmatched_no_exact_name | unresolved_band_entity_not_found

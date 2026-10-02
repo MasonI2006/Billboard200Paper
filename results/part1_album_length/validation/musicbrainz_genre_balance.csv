@@ -1,4 +1,4 @@
 genre_group,n_artists,n_unresolved,unresolved_rate,note
-streaming_heavy,1024,163,0.1591796875,MusicBrainz artist tags/disambiguation; unknown means no conservative single-group inference.
-other,1427,254,0.1779957953749124,MusicBrainz artist tags/disambiguation; unknown means no conservative single-group inference.
+streaming_heavy,903,162,0.17940199335548174,MusicBrainz artist tags/disambiguation; unknown means no conservative single-group inference.
+other,1548,255,0.16472868217054262,MusicBrainz artist tags/disambiguation; unknown means no conservative single-group inference.
 unknown,910,577,0.634065934065934,MusicBrainz artist tags/disambiguation; unknown means no conservative single-group inference.

@@ -1,6 +1,6 @@
 release_group_id,album_title,musicbrainz_tracks,musicbrainz_artist,spotify_key,key,spotify_tracks,spotify_artist,spotify_album,spotify_tracks_numeric,track_count_difference,large_difference_flag
 016d0958-01da-4d16-8da1-8328f891a3a1,Pink Friday 2,10,Nicki Minaj,nicki minaj|pink friday 2,nicki minaj|pink friday 2,22,Nicki Minaj,Pink Friday 2,22,-12,True
-028b8602-3bde-495a-a7da-15594fc4f786,Static,11,cults,cults|static,cults|static,11,Cults,Static,11,0,False
+028b8602-3bde-495a-a7da-15594fc4f786,Static,11,Cults,cults|static,cults|static,11,Cults,Static,11,0,False
 02e054f2-23f1-4e54-bf6a-53dd8ff1b7ba,Habits,8,Neon Trees,neon trees|habits,neon trees|habits,13,Neon Trees,Habits (Spotify),13,-5,True
 0304f1e1-0547-4fd9-a0cc-90bfdb7945b0,The Lumineers,11,The Lumineers,the lumineers|the lumineers,the lumineers|the lumineers,11,The Lumineers,The Lumineers,11,0,False
 03c9caee-ee5c-4741-8dd6-eed2c2883b40,Kill the Lights,13,Luke Bryan,luke bryan|kill the lights,luke bryan|kill the lights,13,Luke Bryan,Kill The Lights,13,0,False
@@ -214,7 +214,7 @@ b19df4df-8e0c-44d8-ad85-a842f7b532fd,Use Me,11,PVRIS,pvris|use me,pvris|use me,1
 b2460e22-8948-441a-b894-f031b57d4231,Trench,14,Twenty One Pilots,twenty one pilots|trench,twenty one pilots|trench,14,Twenty One Pilots,Trench,14,0,False
 b248952b-f242-4526-8877-b051b48812ce,Social Cues,13,Cage the Elephant,cage the elephant|social cues,cage the elephant|social cues,13,Cage The Elephant,Social Cues,13,0,False
 b25e6372-ae59-4ef2-b33b-677ee0cd52a4,KHALED KHALED,14,DJ Khaled,dj khaled|khaled khaled,dj khaled|khaled khaled,14,DJ Khaled,KHALED KHALED,14,0,False
-b2cbaa83-cb77-4961-8ca3-816b24e5204f,The Bones of What You Believe,16,Chvrches,chvrches|the bones of what you believe,chvrches|the bones of what you believe,12,CHVRCHES,The Bones of What You Believe,12,4,True
+b2cbaa83-cb77-4961-8ca3-816b24e5204f,The Bones of What You Believe,16,CHVRCHES,chvrches|the bones of what you believe,chvrches|the bones of what you believe,12,CHVRCHES,The Bones of What You Believe,12,4,True
 b6929844-43d3-4cef-a96b-c575dad67153,Lasers,12,Lupe Fiasco,lupe fiasco|lasers,lupe fiasco|lasers,12,Lupe Fiasco,Lasers,12,0,False
 b6c02ae3-bc37-47b8-88af-e4cf8e86342e,Going to Hell,12,The Pretty Reckless,the pretty reckless|going to hell,the pretty reckless|going to hell,12,The Pretty Reckless,Going to Hell,12,0,False
 b88655ba-7469-48b8-a296-b9011ab73ef3,DAMN.,14,Kendrick Lamar,kendrick lamar|damn,kendrick lamar|damn,14,Kendrick Lamar,DAMN.,14,0,False

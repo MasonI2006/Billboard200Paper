@@ -332,6 +332,29 @@ GENRE_TERMS = {
     "classical": ("classical", "orchestral", "opera", "chamber"),
 }
 
+# Ordered tie-break rule (docs/genre_classification.md). When an artist's tags
+# match several genres, the first genre in this list wins: specific genres that
+# define a distinct market/audience beat broad ones; pop, the vaguest tag, is last.
+# Same order as the project's Spotify GENRE_RULES (load_clean_data.py) and the
+# genre hand-check's proposed_group() (15_prepare_genre_handcheck.py).
+# Replaces next(iter(set)), whose result depended on Python's per-process
+# string hash randomisation (bug found 2026-10-02).
+GENRE_PRIORITY = (
+    "latin",
+    "hiphop_rnb",
+    "country",
+    "christian",
+    "jazz",
+    "classical",
+    "electronic",
+    "rock",
+    "pop",
+)
+
+
+def first_by_priority(genres):
+    return min(genres, key=GENRE_PRIORITY.index)
+
 
 def normalize(value):
     text = unicodedata.normalize("NFKC", str(value or "")).casefold()
@@ -387,7 +410,7 @@ def infer_row_genre(row, response):
     genre_sets = [candidate_genres(candidate) for candidate in candidates]
     genre_sets = [genres for genres in genre_sets if genres]
     if len(genre_sets) == 1:
-        return next(iter(genre_sets[0]))
+        return first_by_priority(genre_sets[0])
     if len(genre_sets) > 1:
         intersection = set.intersection(*genre_sets)
         if len(intersection) == 1:

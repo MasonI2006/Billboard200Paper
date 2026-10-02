@@ -1,5 +1,5 @@
 genre,n_artists,n_unresolved,unresolved_rate,note
-hiphop_rnb,243,54,0.2222222222222222,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
-pop,639,86,0.13458528951486698,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
-latin,69,8,0.11594202898550725,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
-electronic,73,15,0.2054794520547945,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+hiphop_rnb,637,122,0.19152276295133439,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+pop,44,9,0.20454545454545456,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+latin,77,8,0.1038961038961039,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+electronic,145,23,0.15862068965517243,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.

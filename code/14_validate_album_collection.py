@@ -168,7 +168,7 @@ def main():
             for credit in credits
             if credit.get("name")
         )
-        for name in names:
+        for name in sorted(names):  # sorted: set order varied between runs
             album_match_rows.append(
                 {
                     "release_group_id": row["release_group_id"],
