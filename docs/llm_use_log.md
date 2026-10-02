@@ -1,0 +1,11 @@
+# LLM use log
+
+The *Journal of Cultural Economics* requires the Methods section to describe any use of large language models. This log records each use, so the Methods text can be written from it. Add an entry for every session in which an LLM wrote code, ran analyses, or drafted text.
+
+| Date | Tool | What the LLM did | Human oversight | How the output was checked |
+|---|---|---|---|---|
+| 2026-09-27 – 09-28 | AI coding agent (devlog §1–20) | Fact-checking of institutional details; Kaggle/Spotify exploratory analysis; artist roster; MusicBrainz matching and collection scripts; validation; Part 1 headline analysis. | Author approved the analysis plan (frozen 2026-09-27), identity decisions and each API collection step. | Devlog records every step; hand-checks of genre (100 albums) and editions (30 albums); Wikipedia and Spotify cross-checks. |
+| 2026-09-28 | Claude (claude.ai chat) | Plans, scripts and estimation for Part 2 (chart incumbency) and Part 2b (genre staying power); devlog §21–22. | Plans written before estimation; author reviewed results. | Placebo dates, song-chart comparisons, event studies (devlog §21–22). |
+| 2026-10-02 | Claude Code (Claude Opus 5.5) | Project cleanup: file inventory, folder reorganisation, git setup, shared path module, cache-only API guard, full pipeline rerun. Found and fixed the genre-assignment bug (random tie-break between genres; `docs/genre_classification.md`) and reran all analyses. | Author approved each cleanup stage and chose the ordered genre rule. | Moved functions checked identical by syntax-tree comparison; full rerun from cached data checked against the project's reference numbers; genre labels checked against the 100-album hand-check (91/91 agree) and for determinism across five runs. |
+
+**Draft wording for the Methods section** (to be revised at write-up): "Data assembly, analysis code and parts of the robustness analysis were developed with the assistance of large language model tools (an AI coding agent, Claude, and Claude Code). All analysis decisions, including the pre-registered analysis plan and the genre classification rule, were made by the author. All code and intermediate data are version-controlled, and every reported number was reproduced from cached raw data by the full pipeline."

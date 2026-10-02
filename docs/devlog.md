@@ -530,3 +530,52 @@ Event study (reference 2014): pre-period coefficients -0.8 to +0.7, joint test p
 **Interpretation:** consistent with the counting rule favouring genres whose fans stream more: streaming-heavy albums held their first-year chart life while other-genre albums lost about 2.3 weeks. Borderline under the prespecified inference (bootstrap p = 0.055). About half the gap reflects streaming-heavy albums debuting higher. With artist fixed effects the gap disappears, so it comes from differences between artists rather than the same artist's albums changing; ageing of the fixed roster (e.g. rock and country roster artists past their peak) is a plausible alternative explanation.
 
 **Bug note:** parsing `first_release_date` (mix of full dates and bare years) with default pandas date inference silently blanked most values; fixed with explicit handling. Worth confirming the agent's pipeline does not have the same issue.
+
+---
+
+## 23. Work-environment cleanup (2026-10-02, Claude Code)
+
+Followed the staged cleanup in CLAUDE.md, with author approval between stages. No file was deleted; superseded material went to `archive/`.
+
+- **Inventory** (`docs/cleanup_inventory.md`): every file with size, date and the scripts that read/write it. Flagged the duplicate root `D_artist_exposure.csv`, root-level pipeline inputs (`true_nomatch_zero.csv`, overwritten in place by the audit script), outputs with no producing script (`results/phase1_original/`, `musicbrainz_confirmed_not_found.csv`), hard-coded `/mnt/user-data/uploads/` paths in the Q1/Q1b scripts, scripts that overwrite their own inputs, and the lack of a cache-only mode in the API scripts. `kaggle_results/` and `results/phase1_original/` were confirmed to match to floating-point precision (one tie-break difference in two rows of `S_albums_core.csv`).
+- **Layout and move map** (`docs/cleanup_move_map.md`): `data/raw` (Kaggle + Spotify, names unchanged), `data/external` (MusicBrainz caches and collected tables), `data/interim`, `data/final`, `results/part1_album_length`, `results/part2_incumbency`, `results/part2b_genre_staying_power`, `docs/`, `archive/`. Scripts renumbered 01–23 in run order.
+- **Git:** repository initialised on `main`; `core.autocrlf false`; raw data, caches, large MusicBrainz tables, `*.pkl` and the old venv gitignored. Commits: snapshot of the original layout (`c0aebb4`), reorganisation (`31cf556`), path refactor (`958405e`) and line-ending fix. The MSYS Python 3.12 `.venv/` moved to `archive/venv_msys_py312/`. Devlog §21–22 appended from the chat files.
+- **Paths:** `code/paths.py` defines every directory and file. Functions shared between scripts moved verbatim into `code/musicbrainz_helpers.py` (checked identical by syntax-tree comparison against the originals). Q1/Q1b scripts repointed (now 20–23).
+- **Cache-only guard:** MusicBrainz requests now require `--allow-api` (or `BB200_ALLOW_API=1`); otherwise a cache miss raises `CacheMissError`. Script 05 replays cached retry responses. `code/run_pipeline.py` runs the chain in order (skips 15, the one-time genre hand-check sheet).
+- **Verification rerun** (cache-only, about 5 minutes, no API calls): all 9 files in `data/external/` byte-identical after regeneration; all tracked `data/interim/` files unchanged; Kaggle debuts (1,253 / 393), roster (3,361), resolved IDs (2,367), candidates (10,913 / 7,729) and the Q1 jumps (−0.026 / +0.057) reproduced; Part 2 outputs differ only by floating-point noise. **The Part 1 headline and Part 2b did not reproduce** (Part 1: −0.0148, Webb p = 0.624 vs +0.0356, 0.247; Part 2b: +2.36, bootstrap p = 0.125 vs +2.48, 0.055). Cause traced to random genre tie-breaking; see §24.
+- The committed edition hand-check file was the un-adjudicated (`pending`) version, because script 12 had overwritten the adjudication. The rerun restores it: 30/30 pass, as in §17.
+- **Not changed, flagged for the author:** `build_data()` parses `release_date` with plain `pd.to_datetime(..., errors="coerce")`, the mixed-precision trap listed in CLAUDE.md. It may silently drop year-only or year-month dates from the Part 1 sample. Fixing it would change the headline sample, so it is left as a research decision.
+
+Files touched: whole folder layout; all scripts in `code/`; new `code/paths.py`, `code/musicbrainz_helpers.py`, `code/run_pipeline.py`, `.gitignore`, `README.md`, `docs/cleanup_inventory.md`, `docs/cleanup_move_map.md`, `docs/llm_use_log.md`; CLAUDE.md folder map.
+
+---
+
+## 24. Genre tie-break bug and the ordered rule (2026-10-02, Claude Code)
+
+**Bug.** `infer_row_genre()` (now in `code/musicbrainz_helpers.py`) returned `next(iter(genre_set))` when an artist's MusicBrainz tags matched several genres. Python's string hashing is randomised per process, so set order, and therefore the genre, changed on every run. 1,135 of 2,451 labelled artists match more than one genre (866 of them span both treatment groups). Under four fixed hash seeds the streaming-heavy group had 766, 1,267, 1,244 and 1,032 artists; 930–1,190 artists changed genre between runs. Every genre-dependent result to date was one random draw: the Part 1 headline and secondary checks, the genre balance tables, and Part 2b (which takes labels from `analysis_sample.csv`).
+
+**Fix (author decision).** Ties are broken by the project's existing ordered classification: latin, hip-hop/R&B, country, Christian, jazz, classical, electronic, rock, pop (`GENRE_PRIORITY`). Keywords per genre are unchanged; only multi-genre artists are affected. This is the order the frozen plan refers to, already used by the Spotify `GENRE_RULES` and the hand-check's `proposed_group()`. Rule, reasoning and judgement calls (notably rock + pop → rock, 326 artists) are in `docs/genre_classification.md`; dated note added at the end of `docs/analysis_plan.md`. Also made the display-name loop in script 14 deterministic (`sorted()`), which only affects a name column in the Spotify comparison table.
+
+**Checks before rerunning any regression.**
+- Determinism: labels identical under hash seeds 0–3 and a random seed (903 streaming-heavy, 1,548 other).
+- Hand-check: 91 of the 100 hand-checked albums are labelled by the new rule, and 91/91 agree with the audited streaming-heavy/other group. The old 09-28 labels agreed on 3 of the 5 hand-checked albums that were in the headline sample. The audit already used the ordered rule, so it was not redone.
+
+**Results under the ordered rule** (full cache-only rerun; steps 16, 21 and 22 byte-identical when rerun under another hash seed):
+
+| Estimate | Result |
+|---|---|
+| Part 1 headline (1,663 albums: 572 heavy / 1,091 other; 853 artists) | −0.0247, SE 0.0291, p = 0.397, **Webb p = 0.434** |
+| Part 1 same-digital-sample standard outcome (1,382 albums) | −0.0316, p = 0.273 |
+| Part 1 digital-edition alternate outcome (1,382 albums) | −0.0662, p = 0.026 (artist-clustered; no bootstrap) |
+| Part 2b weeks in first 52 (2,807 albums, 971 artists; 1,040 labelled artists: 358 heavy / 682 other) | **+3.03, SE 1.20, p = 0.012, genre bootstrap p = 0.001** |
+| Part 2b weeks in first 26 | +1.68, p = 0.016, bootstrap p = 0.013 |
+| Part 2b still on chart at week 26 | +3.5 pts, p = 0.28, bootstrap p = 0.49 |
+| Part 2b + debut-rank controls | +2.39, p = 0.011 |
+| Part 2b + artist fixed effects | +1.93, p = 0.16 |
+| Part 2b event study (ref 2014) | pre 2010–13: +2.70, −0.48, +0.78, +1.91 (all n.s.; joint p = 0.473); post 2015–18: +4.04 (p = 0.08), +4.09 (0.06), +3.96 (0.13), +3.14 (0.21) |
+| Part 2b raw mean weeks in first 52 (pre → post) | other 8.18 → 6.34; streaming-heavy 10.00 → 11.29 |
+| Album age: share of labelled slots held by albums 3+ years old, 2010 / 2014 / 2019 | other 6.7 / 15.8 / 34.0%; streaming-heavy 3.9 / 17.7 / 34.8% |
+
+**Interpretation.** Part 1 stays null (and now negative in sign). Part 2b is stronger than before, and the artist-fixed-effects estimate is no longer near zero, which weakens the earlier "between-artist only" reading. The digital alternate outcome is nominally significant at the artist-cluster level but is an alternate outcome without bootstrap inference, so it is reported, not promoted. The Part 1 secondary checks run in Claude chat (§7 of PROJECT_CONTEXT) used the random labels and must be rerun under the ordered rule; their scripts are not in the repository.
+
+Files touched: `code/musicbrainz_helpers.py`, `code/14_validate_album_collection.py`, all genre-dependent outputs in `data/final/` and `results/`, `docs/genre_classification.md` (new), `docs/analysis_plan.md` (dated note), PROJECT_CONTEXT.md, CLAUDE.md.
