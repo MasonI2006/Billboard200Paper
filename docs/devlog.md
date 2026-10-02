@@ -471,3 +471,62 @@ Fixed `code/collect_musicbrainz_discographies.py` so both headline and secondary
 The correction removes 53 albums and 17 artist clusters from the resolved-only regression and reverses the point estimate from negative to positive, but the corrected estimate is not statistically distinguishable from zero. The full 9,999-draw Webb bootstrap was rerun with seed 20260928 and nine genre clusters. The corrected first-pass outputs overwrite `results/phase3_first_pass/` and are the results to use going forward; Section 19 is retained as the pre-audit result for transparent comparison.
 
 The refreshed digital robustness sample contains 1,663 known-genre albums, 1,382 identifiable digital editions, 281 missing digital formats, and 462 differing counts. Its common-sample standard interaction is -0.0116 and the digital alternate interaction is -0.0585; these secondary figures supersede the earlier Section 18 table after the eligibility correction.
+
+---
+
+## 21. Question 1: streaming and chart incumbency on the Billboard 200 (2026-09-28)
+
+Run outside the agent (in Claude chat) using only the Kaggle `billboard200.csv`, `streaming.csv`, `digital.csv` and `radio.csv`. Plan written before estimation: `q1_incumbency/q1_analysis_plan.md`. Script: `q1_incumbency/q1_incumbency.py`. Results: `q1_incumbency/results/`.
+
+Verified before running: Billboard lifted catalog restrictions on the Billboard 200 with the chart dated Dec 5, 2009, so the main window starts in January 2010. It ends in December 2019 (before video counted, Jan 2020).
+
+**Main break test (weekly, 2010-2019, linear trend + post-rule level and trend change + week-of-year dummies, Newey-West SEs, 12 lags):**
+
+| Outcome | Pre-rule mean | Pre-rule trend | Jump at Dec 2014 | Trend change |
+|---|---:|---:|---:|---:|
+| New-entry share | 10.8% | +0.5 pts/yr | -2.6 pts (p < 0.001) | -1.3 pts/yr (p < 0.001) |
+| Share held by albums 52+ weeks on chart | 22.1% | +1.9 pts/yr | +5.7 pts (p < 0.001) | +1.7 pts/yr (p < 0.001) |
+| Re-entry share | 8.4% | +0.9 pts/yr | -1.3 pts (p = 0.024) | -1.9 pts/yr (p < 0.001) |
+| Artist concentration (HHI) | 0.0099 | ~0 | ~0 (p = 0.90) | ~0 (p = 0.26) |
+
+The 2010-2024 window gives the same picture (new-entry jump -3.2 pts; long-runner jump +5.5 pts).
+
+**Placebo dates:** fake breaks in Dec 2011 and Dec 2012 show no drop in new entries (+1.6 and +0.7 pts) and almost no jump in long runners (+0.3, +0.7 pts). Post-rule fake dates (2016, 2017) produce some significant shifts, and trend-change terms are significant at every fake date, so nominal p-values from this model overstate certainty; the level jumps are the more reliable evidence.
+
+**Song-chart comparison (new-entry share, 2013-2019):** no break on the streaming song chart (+2.5 pts, p = 0.39) or the sales song chart (-1.2 pts, p = 0.32); a significant drop on the radio chart (-2.3 pts, p < 0.001). Billboard 200 in the same window: -3.5 pts. Mixed.
+
+**July 2018 second break:** no significant additional shift; Dec 2014 results unchanged when it is included.
+
+**Debut first runs:** the share of new albums lasting only one week rose from 37.5% (2010) to 50.6% (2014) and then levelled off (53-55%). First-run length was shrinking before the rule (-6.5% per year) and stopped shrinking after (trend change +5.7%/yr, p < 0.001); no immediate jump.
+
+**Interpretation:** a large, immediate break at the rule: fewer new entries and more slots held by long-running albums, reversing a rising pre-trend in new entries. Not driven by a few superstars (artist concentration unchanged). Limitations: one treated series (time-series evidence only); no sales-only album chart in the data as a control; the radio-chart drop means the song-chart comparison does not cleanly isolate the counting rule.
+
+**Suggested next step:** scrape Billboard's sales-only Top Album Sales chart for 2010-2019 (the earlier `01_scrape_billboard.py` can do this with a different chart name, after checking the URL slug) to run a proper album-market difference-in-differences.
+
+---
+
+## 22. Question 1b: did streaming-heavy albums gain staying power? (2026-09-28)
+
+Run in Claude chat. Plan written before estimation: `q1b_genre_staying_power/q1b_analysis_plan.md`. Scripts: `build.py` (link chart rows to MusicBrainz artist IDs and genres), `analyze.py` (main test, bootstrap, event study), `album_age.py` (album-age descriptive). Data: Kaggle `billboard200.csv`; `musicbrainz_artist_matches.csv`; per-artist genre labels taken from the corrected `analysis_sample.csv` (the `musicbrainz_genre_balance.csv` file is a 3-row summary, not per-artist); `musicbrainz_release_groups.csv` for release dates.
+
+**Coverage:** 1,040 roster artists have a genre label. 41.3% of Billboard 200 slots in 2010-2019 are labelled (49% in 2010, falling to 23% in 2019 because artists who first charted after Nov 2014 are not on the roster). 21-38% of new debuts are labelled.
+
+**Sample:** 2,807 albums by 971 labelled artists that debuted Jan 2010 - Dec 2018 (full 52-week follow-up before the 2020 video change).
+
+**Raw means, weeks on chart in the first 52 weeks after debut:** other genres 5.47 before -> 3.17 after; streaming-heavy 10.73 -> 10.80.
+
+| Outcome | Streaming-heavy x post | Artist-clustered p | Genre wild bootstrap p (9 clusters) |
+|---|---:|---:|---:|
+| Weeks on chart, first 52 weeks (primary) | +2.48 weeks | 0.008 | 0.055 |
+| Weeks on chart, first 26 weeks | +1.51 weeks | 0.005 | 0.056 |
+| Still on chart 26 weeks after debut | +2.6 pts | 0.256 | 0.203 |
+| Primary + debut-rank controls | +1.28 weeks | 0.093 | - |
+| Primary + artist fixed effects | -0.23 weeks | 0.834 | - |
+
+Event study (reference 2014): pre-period coefficients -0.8 to +0.7, joint test p = 0.878; 2015 +3.6 (p = 0.04), 2016-2018 +0.9 to +1.7 (not significant).
+
+**Album age (descriptive, labelled slots with a release date, 93.7% matched):** share of slots held by albums released 3+ years earlier rose from 6.6% (2010) to 18.1% (2014) to 35.0% (2019) for streaming-heavy artists; other-genre shares are noisy (2.6%, 9.5%, 25.5%). Both were rising before the rule.
+
+**Interpretation:** consistent with the counting rule favouring genres whose fans stream more: streaming-heavy albums held their first-year chart life while other-genre albums lost about 2.3 weeks. Borderline under the prespecified inference (bootstrap p = 0.055). About half the gap reflects streaming-heavy albums debuting higher. With artist fixed effects the gap disappears, so it comes from differences between artists rather than the same artist's albums changing; ageing of the fixed roster (e.g. rock and country roster artists past their peak) is a plausible alternative explanation.
+
+**Bug note:** parsing `first_release_date` (mix of full dates and bare years) with default pandas date inference silently blanked most values; fixed with explicit handling. Worth confirming the agent's pipeline does not have the same issue.
