@@ -1,4 +1,4 @@
 spec,outcome,n_albums,coef,se_artist_cluster,p_artist_cluster,direction,p_wildboot_genre,digital_identifiable,digital_missing,count_affected
-standard_frozen_all_known_genre,ln_standard_tracks,1663,-0.024686362233361188,0.029117717679092138,0.3965424538258516,negative,,1382,281,462
-standard_same_digital_sample,ln_standard_tracks,1382,-0.03157632443052046,0.02881536641197331,0.2731595348949407,negative,,1382,281,462
-digital_alternate_same_sample,ln_digital_tracks,1382,-0.06620503310264289,0.029676025162447998,0.025685993241683178,negative,,1382,281,462
+standard_frozen_all_known_genre,ln_standard_tracks,6775,0.02275268351024486,0.015204221400233765,0.13453083785721268,positive,,5612,1163,979
+standard_same_digital_sample,ln_standard_tracks,5612,0.02295204584212583,0.01696224802394889,0.1760156251276893,positive,,5612,1163,979
+digital_alternate_same_sample,ln_digital_tracks,5612,0.019691097039002358,0.016745927745757613,0.23964532552603834,positive,,5612,1163,979

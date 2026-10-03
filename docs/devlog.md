@@ -552,6 +552,8 @@ Files touched: whole folder layout; all scripts in `code/`; new `code/paths.py`,
 
 ## 24. Genre tie-break bug and the ordered rule (2026-10-02, Claude Code)
 
+> **Results in this section are superseded by §25:** they were estimated on a sample that, because of a release-date parsing bug, contained only year-only-dated albums. The genre rule itself is unaffected.
+
 **Bug.** `infer_row_genre()` (now in `code/musicbrainz_helpers.py`) returned `next(iter(genre_set))` when an artist's MusicBrainz tags matched several genres. Python's string hashing is randomised per process, so set order, and therefore the genre, changed on every run. 1,135 of 2,451 labelled artists match more than one genre (866 of them span both treatment groups). Under four fixed hash seeds the streaming-heavy group had 766, 1,267, 1,244 and 1,032 artists; 930–1,190 artists changed genre between runs. Every genre-dependent result to date was one random draw: the Part 1 headline and secondary checks, the genre balance tables, and Part 2b (which takes labels from `analysis_sample.csv`).
 
 **Fix (author decision).** Ties are broken by the project's existing ordered classification: latin, hip-hop/R&B, country, Christian, jazz, classical, electronic, rock, pop (`GENRE_PRIORITY`). Keywords per genre are unchanged; only multi-genre artists are affected. This is the order the frozen plan refers to, already used by the Spotify `GENRE_RULES` and the hand-check's `proposed_group()`. Rule, reasoning and judgement calls (notably rock + pop → rock, 326 artists) are in `docs/genre_classification.md`; dated note added at the end of `docs/analysis_plan.md`. Also made the display-name loop in script 14 deterministic (`sorted()`), which only affects a name column in the Spotify comparison table.
@@ -579,3 +581,57 @@ Files touched: whole folder layout; all scripts in `code/`; new `code/paths.py`,
 **Interpretation.** Part 1 stays null (and now negative in sign). Part 2b is stronger than before, and the artist-fixed-effects estimate is no longer near zero, which weakens the earlier "between-artist only" reading. The digital alternate outcome is nominally significant at the artist-cluster level but is an alternate outcome without bootstrap inference, so it is reported, not promoted. The Part 1 secondary checks run in Claude chat (§7 of PROJECT_CONTEXT) used the random labels and must be rerun under the ordered rule; their scripts are not in the repository.
 
 Files touched: `code/musicbrainz_helpers.py`, `code/14_validate_album_collection.py`, all genre-dependent outputs in `data/final/` and `results/`, `docs/genre_classification.md` (new), `docs/analysis_plan.md` (dated note), PROJECT_CONTEXT.md, CLAUDE.md.
+
+---
+
+## 25. Release-date parsing bug, corrected Part 1 sample, and rerun of the secondary checks (2026-10-02, Claude Code)
+
+**How it was found.** Rebuilding the Part 1 secondary checks from Claude chat (plan written first: `docs/part1_secondary_rerun_plan.md`), the event-study design matrix was one rank short. The headline sample contained **no 2014 albums at all**.
+
+**Bug.** `build_data()` parsed `release_date` with `pd.to_datetime(..., errors="coerce")`. pandas 2.2 inferred one format from the first value in the column, which was year-only ("2009"), so it applied `%Y` to every row and blanked every day- or month-precision date. Those albums were dropped. **All 1,663 albums of the headline sample had year-only release dates.** No 2014 album could enter (2014 year-only albums are excluded by the plan; every other 2014 album has a full date). This is the mixed-precision gotcha in CLAUDE.md, and the opposite of the plan's clarification 3. The chat-era secondary checks ran on the same year-only sample, which is why the rebuilt checks reproduced them.
+
+**Fix (author approved).** `format="mixed"` parses each value on its own. Year-only dates are kept (1 January of their year, flagged by `release_date_precision`); 2014 year-only albums stay excluded. New exclusion, not covered by the plan: a month-only "2014-11" date straddles the 24 Nov threshold, so it is excluded like 2014 year-only dates (1 album). Dated note added at the end of `docs/analysis_plan.md`. No other script had the problem: Kaggle chart dates are uniform, and the Spotify loader already used `format="mixed"`.
+
+**Corrected headline sample:** 6,775 albums from 1,492 artists (2,586 streaming-heavy; 5,033 day-, 79 month- and 1,663 year-precision dates), every year 2009–2019 present. Genre clusters (albums / artists): rock 2,286 / 605, hip-hop/R&B 1,797 / 450, country 931 / 210, Christian 488 / 116, Latin 274 / 59, electronic 362 / 109, classical 253 / 54, jazz 231 / 55, pop 153 / 32.
+
+**Validation of the rebuilt secondary checks (before any new-label estimate).** `code/18_part1_secondary_checks.py` was run on the superseded 09-28 labels and year-only sample (`archive/superseded_0928_genre_labels/`) and compared with the chat numbers. Event study (2009 +0.066; 2015 +0.085, p = 0.08; 2019 +0.089, p = 0.07) and seconds per track (−3.6%, p = 0.107) reproduce exactly; debut-rank payoff (+36.9 vs +37.4), log-weeks payoff (+0.84 vs +0.91), non-charted (+0.021 vs +0.018) and multi-edition (−4.0 vs −3.7 pts) are close. Charted subsample (+0.056 vs +0.047), selection test (+0.089 vs +0.026) and UK (+0.059 vs +0.038) differ. These gaps are attributable to the charted flag (1,172 vs the chat's 1,168 albums; no exact definition survives) and the unrecorded UK comparison group. Per the plan, specifications were not tuned. The UK flag (MusicBrainz area in the UK) reproduces the chat's 47 post-rule UK albums exactly. Output: `results/part1_album_length/secondary/*_old_labels.csv`.
+
+**Results on the corrected sample, ordered genre rule.**
+
+| Estimate | Result |
+|---|---|
+| **Part 1 headline** (6,775 albums, 1,492 artists, 9 genre clusters) | **+0.0228, SE 0.0152, p = 0.135, Webb p = 0.167** |
+| Means, log tracks (pre → post) | other 2.496 → 2.462; streaming-heavy 2.596 → 2.583 |
+| Same-digital-sample standard outcome (5,612 albums) | +0.0230, p = 0.176 |
+| Digital-edition alternate outcome (5,612 albums) | +0.0197, p = 0.240 |
+| 1 Charted subsample (3,991 albums) | +0.0332, p = 0.049, **Webb p = 0.095** |
+| 2 Non-charted subsample (2,784) | +0.0165, p = 0.564, Webb p = 0.471 |
+| 3 Selection test (ln tracks × post × heavy on charted, LPM) | +0.177, p = 0.052, **Webb p = 0.060** |
+| 4a Payoff: debut rank (charted) | +21.8, p = 0.134, Webb p = 0.149 |
+| 4b Payoff: log weeks on chart (charted) | +0.51, p = 0.172, Webb p = 0.476 |
+| 5 Event study (ref 2014) | pre 2009–13: +0.016, −0.007, +0.017, −0.014, −0.004 (joint p = 0.883); post 2015–19: +0.036, +0.027, +0.003, +0.016, +0.019 (all p > 0.2) |
+| 6a Exploratory: log seconds per track (6,673) | −0.039, p = 0.002 (artist-clustered only) |
+| 6b Exploratory: day-one multi-edition launch | −0.051, p = 0.007 (artist-clustered only) |
+| 6c Exploratory: UK origin × post on >12 tracks (405 UK albums, 164 post-rule) | +0.001, p = 0.98 |
+| Exploratory rock + pop → pop variant (918 albums move rock → pop) | Part 1: +0.0159, p = 0.220, Webb p = 0.277; Part 2b: +2.45, SE 0.75, p = 0.001, **genre bootstrap p = 0.174** (artist-FE spec failed numerically on these labels and was recorded as such) |
+| **Part 2b** weeks in first 52 (4,517 albums, 1,800 artists; 1,941 labelled artists: 707 heavy / 1,234 other; 51.3% of 2010–19 slots labelled) | **+3.23, SE 0.90, p < 0.001, genre bootstrap p = 0.015** |
+| Part 2b weeks in first 26 | +1.78, p < 0.001, bootstrap p = 0.007 |
+| Part 2b still on chart at week 26 | +4.6 pts, p = 0.041, bootstrap p = 0.435 |
+| Part 2b + debut-rank controls | +2.59, p < 0.001 |
+| Part 2b + artist fixed effects (869 artists with pre and post albums) | +1.73, p = 0.100 |
+| Part 2b event study | pre 2010–13: +1.54, −0.06, +0.64, +0.83 (joint p = 0.793); post 2015–18: +3.43 (p = 0.04), +3.11 (0.04), +3.27 (0.06), +3.86 (0.05) |
+| Part 2b raw mean weeks in first 52 (pre → post) | other 6.58 → 5.23; streaming-heavy 7.81 → 9.50 |
+| Album age: share of labelled slots held by albums 3+ years old, 2010 / 2014 / 2019 | other 7.1 / 14.3 / 35.1%; streaming-heavy 4.1 / 14.4 / 32.2% |
+
+**Interpretation.**
+- **Part 1 remains a null** (Webb p = 0.167), now on four times the sample, with a flat event study (joint pre-test p = 0.88) and no post-rule year significant.
+- The charted subsample is positive and the non-charted subsample near zero. The selection test is borderline (Webb p = 0.060): longer streaming-heavy albums may have become somewhat more likely to chart after the rule. That fits the project's earlier reading that the original Spotify result reflected selection into the chart, but it is not significant at 5% under the headline inference.
+- Exploratory 6a and 6b are nominally significant at the artist-cluster level: shorter songs, and fewer same-day different-length editions, for streaming-heavy albums after the rule. They were already looked at in chat, have no bootstrap inference, and are two of many tests. They are reported as exploratory leads for a written plan, not findings.
+- **Part 2b strengthens**, with coverage up from 1,040 to 1,941 labelled artists. The artist-fixed-effects estimate stays positive (p = 0.10).
+- The rock + pop variant leaves Part 1 null (Webb p = 0.277). **For Part 2b it matters:** the estimate stays positive and conventionally significant (+2.45, artist-clustered p = 0.001), but the genre-level bootstrap p rises from 0.015 to 0.174. Part 2b's genre-level significance therefore depends on classifying rock + pop artists as rock. The ordered-rule result remains the reported one (the rule was fixed before these results), but this sensitivity must be reported alongside it.
+
+**Superseded:** every Part 1 number before this section (the 09-28 +0.0356 and §24's −0.0247 included), all chat-era secondary checks, and §24's Part 2b numbers.
+
+**Also changed:** `code/22_part2b_analyze.py` now records a numerical failure of the artist-FE regression (numpy "SVD did not converge") instead of crashing. This happened deterministically on the rock + pop variant labels, never on the reported labels; the reported outputs are unchanged by the edit. `code/inference.py` (generalised headline bootstrap, reproduces the headline p exactly), `code/18_part1_secondary_checks.py`, `code/19_genre_rule_sensitivity.py`, steps 18 and 19 added to `run_pipeline.py`, and an optional `priority` argument in the genre helpers (default unchanged; verified identical labels).
+
+Files touched: `code/musicbrainz_helpers.py`, `code/paths.py`, `code/run_pipeline.py`, `code/22_part2b_analyze.py`, new `code/inference.py`, `code/18_part1_secondary_checks.py`, `code/19_genre_rule_sensitivity.py`; `docs/part1_secondary_rerun_plan.md` (new), `docs/analysis_plan.md` (dated note), `docs/genre_classification.md`; all Part 1 and Part 2b outputs; `results/part1_album_length/secondary/` (new); `archive/superseded_0928_genre_labels/` (new); PROJECT_CONTEXT.md; CLAUDE.md.

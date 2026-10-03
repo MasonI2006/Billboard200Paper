@@ -352,8 +352,8 @@ GENRE_PRIORITY = (
 )
 
 
-def first_by_priority(genres):
-    return min(genres, key=GENRE_PRIORITY.index)
+def first_by_priority(genres, priority=GENRE_PRIORITY):
+    return min(genres, key=priority.index)
 
 
 def normalize(value):
@@ -397,7 +397,7 @@ def exact_candidates(response, artist_name):
     return {candidate.get("id"): candidate for candidate in candidates if candidate.get("id")}
 
 
-def infer_row_genre(row, response):
+def infer_row_genre(row, response, priority=GENRE_PRIORITY):
     artist_id = row["musicbrainz_artist_id"]
     if artist_id:
         candidates = [
@@ -410,7 +410,7 @@ def infer_row_genre(row, response):
     genre_sets = [candidate_genres(candidate) for candidate in candidates]
     genre_sets = [genres for genres in genre_sets if genres]
     if len(genre_sets) == 1:
-        return first_by_priority(genre_sets[0])
+        return first_by_priority(genre_sets[0], priority)
     if len(genre_sets) > 1:
         intersection = set.intersection(*genre_sets)
         if len(intersection) == 1:
@@ -463,13 +463,21 @@ def digital_track_counts():
     return pd.DataFrame.from_dict(selected, orient="index").rename_axis("release_group_id").reset_index()
 
 
-def build_data():
+def build_data(priority=GENRE_PRIORITY):
     candidates = pd.read_csv(CANDIDATES_PATH, dtype=str).fillna("")
     candidates = candidates[
         (candidates["headline_window_2009_2019"] == "True")
         & (candidates["2014_year_only_exclude_headline"] != "True")
     ].copy()
-    candidates["release_date"] = pd.to_datetime(candidates["release_date"], errors="coerce")
+    # format="mixed" parses each value on its own. The old default call inferred "%Y"
+    # from the first value ("2009") and blanked every full date, so the headline kept
+    # only year-only albums (bug found 2026-10-02; docs/analysis_plan.md dated note).
+    # Year-only dates parse to 1 January of their year and keep release_date_precision
+    # as their flag; 2014 year-only albums are already excluded above.
+    raw_dates = candidates["release_date"]
+    candidates["release_date"] = pd.to_datetime(raw_dates, format="mixed", errors="coerce")
+    # A month-only "2014-11" date straddles the 2014-11-24 threshold: exclude, like 2014 year-only.
+    candidates = candidates[~((candidates["release_date_precision"] == "month") & raw_dates.str.startswith("2014-11"))].copy()
     candidates["standard_tracks"] = pd.to_numeric(candidates["standard_track_count"], errors="coerce")
     candidates["year"] = candidates["release_date"].dt.year
     candidates["post"] = (candidates["release_date"] >= RULE_DATE).astype(int)
@@ -478,7 +486,7 @@ def build_data():
     cache = read_artist_cache()
     genre_by_id = {}
     for row in matches.to_dict("records"):
-        genre = infer_row_genre(row, cache.get(row["roster_artist_key"], {}))
+        genre = infer_row_genre(row, cache.get(row["roster_artist_key"], {}), priority)
         if genre and row["musicbrainz_artist_id"]:
             genre_by_id[row["musicbrainz_artist_id"]] = genre
 

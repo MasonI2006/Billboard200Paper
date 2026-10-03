@@ -1,0 +1,9 @@
+check,kind,outcome,term,n_albums,n_artists,n_genre_clusters,coef,se_artist,p_artist,p_wildboot_genre,labels
+1 charted subsample,secondary,ln_standard_tracks,post:heavy,3991,1414,9,0.03321512354168164,0.016874859097136766,0.04903122414761226,0.09500950095009501,ordered_rule
+2 non-charted subsample,secondary,ln_standard_tracks,post:heavy,2784,934,9,0.016454694454166828,0.028494082331122102,0.5636168621007005,0.47104710471047107,ordered_rule
+3 selection test,secondary,charted,ln_standard_tracks:post:heavy,6775,1492,9,0.17710192007083192,0.09128180983880788,0.05235944428969024,0.060006000600060005,ordered_rule
+4a payoff: debut rank,secondary,debut_rank,ln_standard_tracks:post:heavy,3991,1414,9,21.7619730354861,14.527925345715188,0.1341486155972902,0.1492149214921492,ordered_rule
+4b payoff: log weeks on chart,secondary,ln_weeks,ln_standard_tracks:post:heavy,3991,1414,9,0.5119510683946975,0.3747792269409591,0.17193674875932063,0.47584758475847583,ordered_rule
+6a seconds per track,exploratory,ln_sec_per_track,post:heavy,6673,1488,9,-0.039005665416374825,0.012342343247248996,0.0015759983980598933,,ordered_rule
+6b day-one multi-edition launch,exploratory,multi_edition,post:heavy,6775,1492,9,-0.05085286286676164,0.019006199060473364,0.0074597059894950715,,ordered_rule
+"6c UK origin x post, >12 tracks",exploratory,over12,post:uk,6775,1492,9,0.0011155545094506541,0.0503384085904429,0.9823194476219832,,ordered_rule

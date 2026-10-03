@@ -2,7 +2,7 @@
 
 Economics research project for the *Journal of Cultural Economics*: how Billboard's December 2014 switch to counting streams on the Billboard 200 album chart affected (1) what artists produce and (2) which albums the chart rewards.
 
-**Read `PROJECT_CONTEXT.md` before doing any analysis.** It has the research question, mechanisms, parameters, every result so far, and the full history. `docs/devlog.md` is the detailed chronological log (§1–20 by the previous agent; §21–22 from Claude chat; §23–24 the 2026-10-02 cleanup and genre-rule fix).
+**Read `PROJECT_CONTEXT.md` before doing any analysis.** It has the research question, mechanisms, parameters, every result so far, and the full history. `docs/devlog.md` is the detailed chronological log (§1–20 by the previous agent; §21–22 from Claude chat; §23–25 the 2026-10-02 cleanup, genre-rule fix, release-date fix and rerun of the secondary checks).
 
 ## Hard rules
 1. **Never edit, rename or delete raw data** (`data/raw/`, formerly `OriginalDataFiles/`).
@@ -24,16 +24,16 @@ Economics research project for the *Journal of Cultural Economics*: how Billboar
 - `data/external/` — MusicBrainz caches (`*.jsonl`), API error logs, and the collector's tables (release groups, official releases, standard-album candidates).
 - `data/interim/` — roster, credit audit, artist matches and review, identity decisions and audits, zero-match lists, Spotify album sample, Part 2b intermediate pickle.
 - `data/final/` — `analysis_sample.csv` (Part 1 sample; also the Part 2b genre source), `part2_weekly_billboard200.csv`, `part2b_album_runs.csv`.
-- `code/` — `paths.py` (every path), `load_clean_data.py` and `musicbrainz_helpers.py` (shared functions, genre rule), numbered scripts 01–23 in run order, `run_pipeline.py`. Step 15 (genre hand-check sheet) is one-time and skipped by the runner.
-- `results/part1_album_length/` — headline, means, digital robustness; `validation/` (coverage, genre balance, hand-check sheets); `spotify_exploratory/` (first Spotify-sample analysis).
+- `code/` — `paths.py` (every path), `load_clean_data.py`, `musicbrainz_helpers.py` (shared functions, genre rule) and `inference.py` (genre Webb bootstrap), numbered scripts 01–23 in run order, `run_pipeline.py`. Step 15 (genre hand-check sheet) is one-time and skipped by the runner.
+- `results/part1_album_length/` — headline, means, digital robustness; `secondary/` (secondary checks, event study, rock + pop sensitivity, old-label validation); `validation/` (coverage, genre balance, hand-check sheets); `spotify_exploratory/` (first Spotify-sample analysis).
 - `results/part2_incumbency/`, `results/part2b_genre_staying_power/`.
-- `docs/` — frozen `analysis_plan.md`, `q1_analysis_plan.md`, `q1b_analysis_plan.md`, `devlog.md`, `llm_use_log.md`, `genre_classification.md`, cleanup inventory and move map.
+- `docs/` — frozen `analysis_plan.md`, `q1_analysis_plan.md`, `q1b_analysis_plan.md`, `part1_secondary_rerun_plan.md`, `devlog.md`, `llm_use_log.md`, `genre_classification.md`, cleanup inventory and move map.
 - `archive/` — first-round code (`InitialAnalysisCode/`) and results (`kaggle_results/`), the phase-1 reproduction, root strays, devlog section files from chat, old venv. Don't edit.
 
 ## Known gotchas (each has caused a real bug)
 - **Kaggle chart dates are stored 3 days early** (Wednesday, not Billboard's Saturday). The first rule chart (dated 2014-12-13) is stored as **2014-12-10**. Album post-rule threshold = release on/after **2014-11-24**.
 - In `billboard200.csv` the **album title is in the `Song` column**. Read chart files with `dtype=str, low_memory=False`.
-- **Mixed-precision dates** (`"1999"` and `"1999-02-23"` in one column): default `pd.to_datetime(..., errors="coerce")` silently blanks most values. Use `format="mixed"` and handle year-only values explicitly. (`build_data()` still uses the default; flagged in devlog §23, not yet decided.)
+- **Mixed-precision dates** (`"1999"` and `"1999-02-23"` in one column): default `pd.to_datetime(..., errors="coerce")` silently blanks most values. Use `format="mixed"` and handle year-only values explicitly. This bug made the Part 1 headline sample year-only albums only until 2026-10-02 (devlog §25); fixed in `build_data()`.
 - **Never name a variable `C`** in scripts that use statsmodels formulas: it shadows patsy's `C()` and breaks every regression.
 - `heavy` (streaming-heavy genre flag) is a function of `genre`: don't include a bare `heavy` main effect alongside `C(genre)` (rank-deficient). Use `post:heavy` interactions only.
 - Mixtape/Street release groups must be excluded **before** assigning window flags (bug fixed in devlog §20; keep it fixed).
@@ -43,14 +43,14 @@ Economics research project for the *Journal of Cultural Economics*: how Billboar
 - MusicBrainz API: ≤1 request/second, descriptive User-Agent, unfielded quoted query with `dismax=true`, cache every raw response.
 
 ## Numbers that must reproduce after any refactor
-Last verified 2026-10-02 by a full cache-only rerun (devlog §23–24).
+Last verified 2026-10-02 by a full cache-only rerun (devlog §23–25).
 - Kaggle: 1,253 new Billboard 200 album debuts in 2014; 393 in 2024.
 - Roster: 3,361 roster entities; 2,367 with resolved MusicBrainz IDs.
 - Album candidates: 10,913 total; 7,729 in the 2009–2019 headline window.
 - Genre labels (ordered rule): 2,451 labelled artists, 903 streaming-heavy and 1,548 other.
-- **Part 1 headline:** 1,663 albums, 853 artists, interaction −0.0247, artist-clustered SE 0.0291, p = 0.397, Webb wild bootstrap p = 0.434. (The earlier +0.0356 / Webb p = 0.247 used random genre labels and is superseded.)
+- **Part 1 headline:** 6,775 albums, 1,492 artists, interaction +0.0228, artist-clustered SE 0.0152, p = 0.135, Webb wild bootstrap p = 0.167. (Superseded: +0.0356 / Webb p = 0.247 used random genre labels; −0.0247 / Webb p = 0.434 used the year-only sample. Both had 1,663 albums.)
 - **Q1 incumbency:** jump at the rule in new-entry share −0.026; in 52+-week share +0.057 (`results/part2_incumbency/A_break_tests.csv`).
-- **Q1b:** +3.03 weeks, artist-clustered p = 0.012, genre bootstrap p = 0.001. (The earlier +2.48 / p = 0.055 used random genre labels and is superseded.)
+- **Q1b:** +3.23 weeks, artist-clustered p < 0.001, genre bootstrap p = 0.015 (4,517 albums). (Superseded: +2.48 / bootstrap p = 0.055, random labels; +3.03 / bootstrap p = 0.001, year-only sample.)
 
 ## Cleanup (done 2026-10-02)
 The staged cleanup (inventory, move map, git, shared paths, cache-only rerun, logging) is complete; see `docs/cleanup_inventory.md`, `docs/cleanup_move_map.md` and devlog §23. Next steps are in `PROJECT_CONTEXT.md` §11.

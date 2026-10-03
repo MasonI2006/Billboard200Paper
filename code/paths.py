@@ -20,6 +20,7 @@ RESULTS_DIR = ROOT / "results"
 RESULTS_P1 = RESULTS_DIR / "part1_album_length"
 RESULTS_P1_VALIDATION = RESULTS_P1 / "validation"
 RESULTS_P1_SPOTIFY = RESULTS_P1 / "spotify_exploratory"
+RESULTS_P1_SECONDARY = RESULTS_P1 / "secondary"
 RESULTS_P2 = RESULTS_DIR / "part2_incumbency"
 RESULTS_P2B = RESULTS_DIR / "part2b_genre_staying_power"
 
@@ -64,6 +65,7 @@ PART2B_CHART_LABELLED = INTERIM_DIR / "part2b_chart_labelled.pkl"
 ANALYSIS_SAMPLE = FINAL_DIR / "analysis_sample.csv"
 PART2_WEEKLY = FINAL_DIR / "part2_weekly_billboard200.csv"
 PART2B_ALBUM_RUNS = FINAL_DIR / "part2b_album_runs.csv"
+ANALYSIS_SAMPLE_0928 = ROOT / "archive" / "superseded_0928_genre_labels" / "analysis_sample_0928.csv"  # random labels, validation only
 
 # Part 1 results and validation outputs
 DIGITAL_ROBUSTNESS = RESULTS_P1 / "digital_robustness.csv"

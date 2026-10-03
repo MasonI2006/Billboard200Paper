@@ -61,9 +61,12 @@ for y in ["weeks52", "still_on_26", "weeks26"]:
     rows.append([y, "main", m.params["post:heavy"], m.bse["post:heavy"], m.pvalues["post:heavy"], p_wb, G, len(deb)])
 m = fit("weeks52", deb, " + C(rank_bin)")
 rows.append(["weeks52", "+ debut-rank controls", m.params["post:heavy"], m.bse["post:heavy"], m.pvalues["post:heavy"], np.nan, np.nan, len(deb)])
-m = smf.ols("weeks52 ~ post:heavy + C(mbid) + C(year)", deb).fit(cov_type="cluster", cov_kwds={"groups": deb.mbid})
 dfe = deb[deb.groupby("mbid").post.transform("nunique") == 2]
-rows.append(["weeks52", "artist fixed effects", m.params["post:heavy"], m.bse["post:heavy"], m.pvalues["post:heavy"], np.nan, np.nan, f"{len(deb)} ({dfe.mbid.nunique()} artists with pre+post albums)"])
+try:
+    m = smf.ols("weeks52 ~ post:heavy + C(mbid) + C(year)", deb).fit(cov_type="cluster", cov_kwds={"groups": deb.mbid})
+    rows.append(["weeks52", "artist fixed effects", m.params["post:heavy"], m.bse["post:heavy"], m.pvalues["post:heavy"], np.nan, np.nan, f"{len(deb)} ({dfe.mbid.nunique()} artists with pre+post albums)"])
+except np.linalg.LinAlgError as error:  # ~1,800 artist dummies; record a numerical failure instead of losing all results
+    rows.append(["weeks52", "artist fixed effects", np.nan, np.nan, np.nan, np.nan, np.nan, f"{len(deb)} (failed: {error})"])
 R = pd.DataFrame(rows, columns=["outcome","spec","coef","se_artist","p_artist","p_wildboot_genre","genre_clusters","n"])
 R.to_csv(RESULTS_P2B / "results_main.csv", index=False); print(R.round(4).to_string(index=False))
 

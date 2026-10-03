@@ -56,24 +56,24 @@ Of the 2,451 artists with a genre, **1,135 have tags matching more than one genr
 | electronic + pop | 18 | electronic |
 | latin + pop | 17 | latin |
 
-**Effect on the genre clusters in the Part 1 headline sample (1,663 albums):**
+**Effect on the genre clusters in the Part 1 headline sample.** The corrected sample (6,775 albums, after the release-date fix in devlog §25) is the current one. The 1,663-album columns are the superseded year-only sample, kept for the record.
 
-| Genre | Albums (ordered rule) | Artists (ordered rule) | Albums (09-28 random draw) |
-|---|---|---|---|
-| rock | 593 | 338 | 353 |
-| hip-hop/R&B | 340 | 222 | 82 |
-| country | 249 | 130 | 118 |
-| latin | 96 | 39 | 42 |
-| electronic | 94 | 61 | 30 |
-| classical | 86 | 37 | 33 |
-| jazz | 82 | 42 | 53 |
-| Christian | 81 | 51 | 87 |
-| pop | 42 | 18 | 865 |
+| Genre | Albums, corrected sample | Artists, corrected sample | Albums, year-only sample, ordered rule | Albums, year-only sample, 09-28 random draw |
+|---|---|---|---|---|
+| rock | 2,286 | 605 | 593 | 353 |
+| hip-hop/R&B | 1,797 | 450 | 340 | 82 |
+| country | 931 | 210 | 249 | 118 |
+| Christian | 488 | 116 | 81 | 87 |
+| electronic | 362 | 109 | 94 | 30 |
+| latin | 274 | 59 | 96 | 42 |
+| classical | 253 | 54 | 86 | 33 |
+| jazz | 231 | 55 | 82 | 53 |
+| pop | 153 | 32 | 42 | 865 |
 
-Because pop is last, it keeps only artists tagged with pop and nothing else, so it becomes the smallest of the 9 bootstrap clusters. The streaming-heavy group is now led by hip-hop/R&B rather than pop. In the 09-28 draw, pop happened to win many ties and held more than half the sample.
+Because pop is last, it keeps only artists tagged with pop and nothing else, so it is the smallest of the 9 bootstrap clusters. The streaming-heavy group is led by hip-hop/R&B rather than pop. In the 09-28 draw, pop happened to win many ties and held more than half the sample.
 
 **Judgement calls to be aware of:**
-- **Rock + pop → rock is the decision that matters most** (326 artists). Many "pop rock" acts are mainstream radio acts, and you could argue they belong with pop. The rule follows the specific-beats-broad principle (pop is the catch-all), but because this is the largest group the rule decides, a robustness check that sends rock + pop to pop would be informative. That check is not in the frozen plan; it would be reported as exploratory.
+- **Rock + pop → rock is the decision that matters most** (326 artists). Many "pop rock" acts are mainstream radio acts, and you could argue they belong with pop. The rule follows the specific-beats-broad principle (pop is the catch-all), but because this is the largest group the rule decides, a robustness check that sends rock + pop to pop would be informative. That check is not in the frozen plan; it was run as an exploratory check (plan: `docs/part1_secondary_rerun_plan.md` §D; results in §6 below). **It matters for Part 2b**: sending rock + pop to pop leaves Part 1 null but raises Part 2b's genre bootstrap p from 0.015 to 0.174.
 - "Indie pop" becomes rock, because "indie" is a rock keyword.
 - Keyword matching is by substring, so "rap" also matches inside words such as "trap" (already a hip-hop keyword) and "soul" counts as R&B.
 
@@ -101,18 +101,25 @@ Because the audit already used the ordered rule and agrees fully with the new la
 
 ## 6. Results under the ordered rule
 
-Full pipeline rerun from cached data, 2026-10-02 (`docs/devlog.md` §24). Results are byte-identical when rerun under a different hash seed.
+Full cache-only pipeline reruns on 2026-10-02. The **current** column uses the corrected release-date parsing (devlog §25). The two superseded columns are kept for the record: the 09-28 random labels, and the ordered rule on the year-only sample (devlog §24). Genre labels are byte-identical when rerun under a different hash seed.
 
-| Estimate | 09-28 (random labels, superseded) | Ordered rule (current) |
+| Estimate | 09-28: random labels, year-only sample (superseded) | Ordered rule, year-only sample (superseded) | **Ordered rule, corrected sample (current)** |
+|---|---|---|---|
+| Labelled artists: streaming-heavy / other | random (766–1,267 heavy) | 903 / 1,548 | 903 / 1,548 |
+| **Part 1 headline**: post × heavy on log tracks | +0.0356, SE 0.0289, p = 0.218, Webb p = 0.247 (1,663 albums) | −0.0247, SE 0.0291, p = 0.397, Webb p = 0.434 (1,663 albums) | **+0.0228, SE 0.0152, p = 0.135, Webb p = 0.167** (6,775 albums, 1,492 artists) |
+| Part 1 albums: heavy / other | — | 572 / 1,091 | 2,586 / 4,189 |
+| Part 1 digital-edition alternate outcome | — | −0.066, p = 0.026 | +0.020, p = 0.240 |
+| **Part 2b**: post × heavy on weeks in first 52 | +2.48, p = 0.008, bootstrap p = 0.055 (2,807 albums) | +3.03, p = 0.012, bootstrap p = 0.001 (2,807 albums) | **+3.23, SE 0.90, p < 0.001, genre bootstrap p = 0.015** (4,517 albums, 1,800 artists) |
+| Part 2b weeks in first 26 | +1.51, bootstrap p = 0.056 | +1.68, bootstrap p = 0.013 | +1.78, bootstrap p = 0.007 |
+| Part 2b with debut-rank controls | +1.28, p = 0.09 | +2.39, p = 0.011 | +2.59, p < 0.001 |
+| Part 2b with artist fixed effects | −0.23, p = 0.83 | +1.93, p = 0.16 | +1.73, p = 0.10 |
+| Part 2b joint pre-2014 event-study test | p = 0.88 | p = 0.47 | p = 0.79 |
+
+**Exploratory sensitivity, rock + pop → pop** (rock and pop swapped in the priority order; 918 albums move from rock to pop; corrected sample):
+
+| Estimate | Ordered rule (reported) | Variant: pop before rock (exploratory) |
 |---|---|---|
-| Labelled artists: streaming-heavy / other | random (766–1,267 heavy) | 903 / 1,548 |
-| **Part 1 headline**: post × heavy on log tracks (1,663 albums, 853 artists) | +0.0356, SE 0.0289, p = 0.218, Webb p = 0.247 | **−0.0247, SE 0.0291, p = 0.397, Webb p = 0.434** |
-| Part 1 albums: heavy / other | — | 572 / 1,091 |
-| Part 1 same-sample digital-edition alternate outcome (artist-clustered) | — | −0.066, p = 0.026 (no bootstrap; alternate outcome) |
-| **Part 2b**: post × heavy on weeks in first 52 (2,807 albums, 971 artists) | +2.48, p = 0.008, bootstrap p = 0.055 | **+3.03, SE 1.20, p = 0.012, genre bootstrap p = 0.001** |
-| Part 2b weeks in first 26 | +1.51, bootstrap p = 0.056 | +1.68, p = 0.016, bootstrap p = 0.013 |
-| Part 2b with debut-rank controls | +1.28, p = 0.09 | +2.39, p = 0.011 |
-| Part 2b with artist fixed effects | −0.23, p = 0.83 | +1.93, p = 0.16 |
-| Part 2b joint pre-2014 event-study test | p = 0.88 | p = 0.47 |
+| Part 1 headline | +0.0228, Webb p = 0.167 | +0.0159, p = 0.220, Webb p = 0.277 |
+| Part 2b weeks in first 52 | +3.23, p < 0.001, bootstrap p = 0.015 | +2.45, p = 0.001, bootstrap p = 0.174 |
 
-Part 1 remains a null result. Part 2b gets stronger, and the artist-fixed-effects estimate is no longer near zero. The Part 1 secondary checks run in Claude chat (charted/non-charted subsamples, selection test, chart payoff, event study; `PROJECT_CONTEXT.md` §7) used the random 09-28 labels and must be rerun under the ordered rule before they are reported.
+Part 1 is a null result under every labelling. Part 2b is positive and conventionally significant under both rules, but its genre-level bootstrap significance depends on the rock + pop decision, so the sensitivity check must be reported alongside it. The ordered rule stays the reported one because it was fixed before these results were seen.

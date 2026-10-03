@@ -36,10 +36,12 @@ STEPS = [
     ("14", "14_validate_album_collection.py", []),
     ("16", "16_part1_digital_robustness.py", []),
     ("17", "17_part1_headline.py", []),
+    ("18", "18_part1_secondary_checks.py", []),
     ("20", "20_part2_incumbency.py", []),
     ("21", "21_part2b_build.py", []),
     ("22", "22_part2b_analyze.py", []),
     ("23", "23_part2b_album_age.py", []),
+    ("19", "19_genre_rule_sensitivity.py", []),  # exploratory; needs 17 and 21-23 first
 ]
 
 

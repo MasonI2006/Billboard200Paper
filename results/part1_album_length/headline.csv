@@ -1,2 +1,2 @@
 spec,window,outcome,n_albums,n_artists,n_genre_clusters,coef_post_by_streaming_heavy,se_artist_cluster,p_artist_cluster,t_artist_cluster,p_wildboot_genre_webb_9999,t_wildboot_observed,seed
-resolved-only headline,2009-2019,log standard-edition track count,1663,853,9,-0.024686362233361188,0.029117717679092138,0.3965424538258516,-0.8478124043041716,0.43444344434443444,-0.8478124043041716,20260928
+resolved-only headline,2009-2019,log standard-edition track count,6775,1492,9,0.02275268351024486,0.015204221400233765,0.13453083785721268,1.496471467450154,0.16741674167416742,1.496471467450154,20260928
