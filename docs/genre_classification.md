@@ -106,7 +106,7 @@ Full cache-only pipeline reruns on 2026-10-02. The **current** column uses the c
 | Estimate | 09-28: random labels, year-only sample (superseded) | Ordered rule, year-only sample (superseded) | **Ordered rule, corrected sample (current)** |
 |---|---|---|---|
 | Labelled artists: streaming-heavy / other | random (766–1,267 heavy) | 903 / 1,548 | 903 / 1,548 |
-| **Part 1 headline**: post × heavy on log tracks | +0.0356, SE 0.0289, p = 0.218, Webb p = 0.247 (1,663 albums) | −0.0247, SE 0.0291, p = 0.397, Webb p = 0.434 (1,663 albums) | **+0.0228, SE 0.0152, p = 0.135, Webb p = 0.167** (6,775 albums, 1,492 artists) |
+| **Part 1 headline**: post × heavy on log tracks | +0.0356, SE 0.0289, p = 0.218, Webb p = 0.247 (1,663 albums) | −0.0247, SE 0.0291, p = 0.397, Webb p = 0.434 (1,663 albums) | **+0.0228, SE 0.0151, p = 0.133, Webb p = 0.161** (6,775 albums, 1,942 artists; artist clusters fixed 2026-10-03, devlog §26) |
 | Part 1 albums: heavy / other | — | 572 / 1,091 | 2,586 / 4,189 |
 | Part 1 digital-edition alternate outcome | — | −0.066, p = 0.026 | +0.020, p = 0.240 |
 | **Part 2b**: post × heavy on weeks in first 52 | +2.48, p = 0.008, bootstrap p = 0.055 (2,807 albums) | +3.03, p = 0.012, bootstrap p = 0.001 (2,807 albums) | **+3.23, SE 0.90, p < 0.001, genre bootstrap p = 0.015** (4,517 albums, 1,800 artists) |
@@ -119,7 +119,7 @@ Full cache-only pipeline reruns on 2026-10-02. The **current** column uses the c
 
 | Estimate | Ordered rule (reported) | Variant: pop before rock (exploratory) |
 |---|---|---|
-| Part 1 headline | +0.0228, Webb p = 0.167 | +0.0159, p = 0.220, Webb p = 0.277 |
+| Part 1 headline | +0.0228, Webb p = 0.161 | +0.0159, p = 0.233, Webb p = 0.288 |
 | Part 2b weeks in first 52 | +3.23, p < 0.001, bootstrap p = 0.015 | +2.45, p = 0.001, bootstrap p = 0.174 |
 
 Part 1 is a null result under every labelling. Part 2b is positive and conventionally significant under both rules, but its genre-level bootstrap significance depends on the rock + pop decision, so the sensitivity check must be reported alongside it. The ordered rule stays the reported one because it was fixed before these results were seen.

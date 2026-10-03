@@ -1,0 +1,4 @@
+spec,n_albums,n_artists,n_heavy_albums,coef,se_artist,p_artist,p_wildboot_genre,note
+baseline (Part 1 sample labels),4517,1800,1585,3.2278349628430982,0.8994020764201377,0.0003321174599391456,0.010901090109010901,same sample as results_main.csv; inference.py bootstrap (artist-clustered t)
+album order control (chart-career debut ordinal),4517,1800,1585,3.104877251944257,0.8950214221749795,0.0005222953162196234,0.012301230123012302,"bins 1,2,3,4-5,6-9,10+ of Billboard 200 debuts since 1963"
+labels from artist_genres.csv,4696,1882,1644,3.2873411288345067,0.8868979696113928,0.00021009292834543177,0.009600960096009602,"2034 labelled artists; Part 2b script's own estimate +3.287, p=0.0002, its bootstrap p=0.0125"

@@ -1,6 +1,6 @@
 # PROJECT_CONTEXT.md — Chart Rules and the Streaming Era
 
-Full research context for the Billboard200Paper project, current as of 2026-10-02. `CLAUDE.md` has the working rules; `docs/devlog.md` has the detailed chronological history.
+Full research context for the Billboard200Paper project, current as of 2026-10-03. `CLAUDE.md` has the working rules; `docs/devlog.md` has the detailed chronological history.
 
 ---
 
@@ -66,25 +66,30 @@ Kaggle quirks: dates stored 3 days early (Dec 13, 2014 chart → 2014-12-10); al
 | Resolved-only, before mixtape fix | 1,716 | −0.0487 | p = 0.135; Webb p = 0.112 |
 | Corrected headline, random genre labels, year-only sample (superseded) | 1,663 / 853 | +0.0356 (SE 0.0289) | p = 0.218; Webb p = 0.247 |
 | Ordered genre rule, year-only sample (superseded) | 1,663 / 853 | −0.0247 (SE 0.0291) | p = 0.397; Webb p = 0.434 |
-| **Headline, ordered rule, corrected dates (current)** | **6,775 albums / 1,492 artists** | **+0.0228** (SE 0.0152) | **p = 0.135; Webb p = 0.167** |
+| **Headline, ordered rule, corrected dates, artist clusters (current)** | **6,775 albums / 1,942 artists** | **+0.0228** (SE 0.0151) | **p = 0.133; Webb p = 0.161** |
 
-**Conclusion: no evidence albums got longer.** The headline is null on the corrected sample, the event study is flat (pre-2014 joint p = 0.88, no post-rule year significant), and the result does not depend on the genre rule (rock + pop → pop variant: +0.016, Webb p = 0.28). The early positive Spotify result reflected which albums reached the chart. Digital-edition checks: same-sample standard outcome +0.023 (p = 0.18); digital alternate outcome +0.020 (p = 0.24).
+**Conclusion: no evidence albums got longer.** The headline is null on the corrected sample, the event study is flat (pre-2014 joint p = 0.88, no post-rule year significant), and the result does not depend on the genre rule (rock + pop → pop variant: +0.016, Webb p = 0.29) or on the album-order (career-stage) control (+0.021, Webb p = 0.21). The early positive Spotify result reflected which albums reached the chart. Digital-edition checks: same-sample standard outcome +0.023 (p = 0.16); digital alternate outcome +0.020 (p = 0.23).
 
-**Two bugs found 2026-10-02, both fixed; all earlier Part 1 numbers are superseded.**
+**Three bugs found 2026-10-02/03, all fixed; all earlier Part 1 numbers are superseded.**
 1. *Genre labels* (devlog §24): artists matching several genres were assigned at random on each run (Python set order). Now the ordered rule (`docs/genre_classification.md`).
-2. *Release dates* (devlog §25): the date parser blanked every full date, so the headline sample held only the 1,663 albums with year-only MusicBrainz dates and no 2014 albums. The corrected sample has 6,775 albums. Dated notes for both are at the end of `docs/analysis_plan.md`.
+2. *Release dates* (devlog §25): the date parser blanked every full date, so the headline sample held only the 1,663 albums with year-only MusicBrainz dates and no 2014 albums. The corrected sample has 6,775 albums.
+3. *Artist clusters* (devlog §26): the artist-cluster variable was the first word of the artist's name (a pandas regex split), so SEs, p-values and artist counts were off; coefficients were not affected. Dated notes for all three are at the end of `docs/analysis_plan.md`.
 
 **Secondary checks** (rebuilt from the Claude-chat versions, `code/18_part1_secondary_checks.py`, plan `docs/part1_secondary_rerun_plan.md`; corrected sample, ordered rule; artist-clustered p, then genre Webb bootstrap p):
-- Charted subsample (3,991 albums matched to the Billboard 200): +0.033 (p = 0.049; Webb p = 0.095). Non-charted (2,784): +0.016 (p = 0.56; Webb p = 0.47).
-- Selection test (ln tracks × post × heavy on charting, linear probability): +0.177 (p = 0.052; **Webb p = 0.060**). Borderline: long streaming-heavy albums may have become somewhat more likely to chart after the rule.
-- Chart payoff among charted albums: debut rank +21.8 (Webb p = 0.15); log weeks on chart +0.51 (Webb p = 0.48). Null.
-- Event study (ref 2014): pre 2009–13 between −0.014 and +0.017 (joint p = 0.88); post 2015–19 +0.036, +0.027, +0.003, +0.016, +0.019 (all p > 0.2).
-- Exploratory (already looked at in chat; artist-clustered only, no bootstrap): seconds per track −3.9% (p = 0.002); day-one multi-edition launches −5.1 pts (p = 0.007); UK-origin × post on >12 tracks +0.001 (p = 0.98; 405 UK albums, 164 post-rule). The first two are nominally significant but remain exploratory leads; any follow-up needs a written plan first.
+- Charted subsample (3,991 albums matched to the Billboard 200): +0.033 (p = 0.035; Webb p = 0.084). Non-charted (2,784): +0.016 (p = 0.57; Webb p = 0.47).
+- Selection test (ln tracks × post × heavy on charting, linear probability): +0.177 (p = 0.058; **Webb p = 0.063**). Borderline: long streaming-heavy albums may have become somewhat more likely to chart after the rule.
+- Chart payoff among charted albums: debut rank +21.8 (Webb p = 0.14); log weeks on chart +0.51 (Webb p = 0.45). Null.
+- Event study (ref 2014): pre 2009–13 between −0.014 and +0.017 (joint p = 0.85); post 2015–19 +0.036, +0.027, +0.003, +0.016, +0.019 (all p > 0.2).
+- Exploratory (already looked at in chat; artist-clustered only, no bootstrap): seconds per track −3.9% (p = 0.002); day-one multi-edition launches −5.1 pts (p = 0.008); UK-origin × post on >12 tracks +0.001 (p = 0.98; 405 UK albums, 164 post-rule). The first two are nominally significant but remain exploratory leads; any follow-up needs a written plan first.
 - Validation of the rebuild on the old labels: event study and seconds per track reproduce the chat numbers exactly; payoff, non-charted and multi-edition are close; charted, selection and UK differ somewhat (charted flag 1,172 vs 1,168 albums; UK comparison group unrecorded). Details in devlog §25.
 
 Validation already done (devlog §17–18): genre hand-check 0/100 clear errors (it already used the ordered rule; the new labels agree on 91/91 labelled albums); edition hand-check 30/30; Spotify vs MusicBrainz count mismatches 12% and not concentrated post-rule; Wikipedia checks favour MusicBrainz standard counts (caveat: physical vs digital standard editions can differ, e.g. *Pink Friday 2* 10 vs 22). Unresolved artist rates (ordered rule): hip-hop/R&B 19.2%, pop 20.5% (44 artists), Latin 10.4%, electronic 15.9%; streaming-heavy 17.9% vs other 16.5%.
 
-**Not yet run from the plan:** album-order control; drop-pre-debut-albums check; artist fixed effects; mixtape robustness sample; 2009–2024 window; 2010–2019 window; continuous intensity; drop electronic; running time, >12 and ≥18 track outcomes under the frozen model. Check `results/part1_album_length/` before rerunning.
+**Frozen-plan secondary checks** (`code/24_part1_plan_checks.py`, plan `docs/items4_5_plan.md`; artist-clustered p, then Webb p):
+- **Album-order (career-stage) control**, ordinal among the artist's MusicBrainz studio albums since career start: +0.021 (p = 0.18; Webb p = 0.21). Since-2009 ordinal: +0.011 (Webb p = 0.37).
+- Artist fixed effects (within; 1,394 artists with pre and post albums): +0.019 (Webb p = 0.30). Drop albums on/before the artist's first qualifying debut (4,491 albums): +0.029 (Webb p = 0.20). With Mixtape/Street (+670): −0.016 (Webb p = 0.74). 2009–2024 window: +0.013 (Webb p = 0.45). 2010–2019: +0.026 (Webb p = 0.12). Continuous intensity: +0.012 per ratio point (Webb p = 0.11). Without electronic: +0.020 (Webb p = 0.23). Log running time: −0.015 (Webb p = 0.81). More than 12 tracks: +0.009 (Webb p = 0.75).
+- **18 or more tracks: +4.3 pts (p = 0.004; Webb p = 0.012).** The one significant check of 12 (about 0.6 expected by chance at 5%). Mean length and the >12 share do not move, so if anything the rule is associated with more very long albums in streaming-heavy genres, not longer albums overall. Prespecified secondary outcome; reported, not promoted; any follow-up (distributional outcomes) needs a written plan.
+- Not run: the plan's "broader major-label list" (never assembled).
 
 ## 8. Part 2 — chart incumbency (run in Claude chat)
 
@@ -118,23 +123,24 @@ Plan: `docs/q1b_analysis_plan.md`. Scripts: `code/21_part2b_build.py`, `22_part2
 - Weeks in first 26: +1.78 (bootstrap p = 0.007); still on chart at week 26: +4.6 pts (p = 0.04; bootstrap p = 0.44).
 - With debut-rank controls: +2.59 (p < 0.001). With artist fixed effects: +1.73 (p = 0.10; 869 artists with pre and post albums), positive but imprecise.
 - Event study: pre-2014 +1.54, −0.06, +0.64, +0.83 (joint p = 0.79); post 2015–18 +3.4, +3.1, +3.3, +3.9 (p = 0.04, 0.04, 0.06, 0.05).
+- **Album-order (career-stage) control** (ordinal of the album's Billboard 200 debut in the artist's chart career since 1963): +3.10 (p < 0.001; bootstrap p = 0.012). The effect is not explained by roster ageing along this dimension.
+- **Labels from the per-artist genre file** (`data/final/artist_genres.csv`, 2,034 artists; secondary, since the Part 2b plan names the Part 1 sample as the label source): 4,696 albums, +3.29 (p < 0.001; bootstrap p = 0.010).
+- Note on the artist-FE SE: the reported +1.73 (p = 0.10) uses a small-sample correction that counts the ~1,800 absorbed artist dummies. The within-artist estimator gives the identical coefficient with SE 0.81 (p ≈ 0.03), the standard treatment when fixed effects are nested in clusters. Not switched after seeing it; author's decision (devlog §26).
 - **Genre-rule sensitivity (exploratory):** with rock + pop artists counted as pop, +2.45 weeks (artist-clustered p = 0.001) but **genre bootstrap p = 0.174**. The genre-level significance depends on that classification call; report it alongside the main result.
 - Album age (descriptive): share of labelled slots held by albums 3+ years old, streaming-heavy 4.1% (2010) → 14.4% (2014) → 32.2% (2019); other 7.1% → 14.3% → 35.1%. Rising before the rule in both groups.
 
 ## 10. Overall story so far
 
-Counting streams did **not** measurably change what artists produced (Part 1 null on the corrected 6,775-album sample, flat event study, robust to the genre rule), but it **did** change what the chart rewards: long-running albums gained slots and new releases lost them (Part 2, strong). Streaming-heavy albums gained more staying power than others (Part 2b: +3.2 weeks, genre bootstrap p = 0.015); this survives debut-rank controls and is positive within artists, but its genre-level significance is sensitive to how rock + pop artists are classified (bootstrap p = 0.17 under the alternative).
+Counting streams did **not** measurably change what artists produced on average (Part 1 null on the corrected 6,775-album sample, flat event study, robust to the genre rule and the album-order control; the one exception among 12 frozen-plan checks is a 4-point rise in the share of albums with 18+ tracks in streaming-heavy genres), but it **did** change what the chart rewards: long-running albums gained slots and new releases lost them (Part 2, strong). Streaming-heavy albums gained more staying power than others (Part 2b: +3.2 weeks, genre bootstrap p = 0.015); this survives debut-rank and album-order (career-stage) controls and the broader per-artist label file, and is positive within artists, but its genre-level significance is sensitive to how rock + pop artists are classified (bootstrap p = 0.17 under the alternative).
 
 ## 11. Open issues and next steps (priority order)
 
-1. ~~Clean up the work environment~~ (devlog §23). ~~Genre tie-break bug~~ (§24). ~~Release-date parsing bug~~ and ~~rerun of the Part 1 secondary checks~~, plus the exploratory rock + pop check (§25).
-2. Exploratory leads from §7 (shorter songs; fewer same-day multi-edition launches for streaming-heavy albums after the rule) would need a written plan before any further estimation.
-3. **Export a per-artist genre file** from the MusicBrainz tag classification (~2,450 classified artists) and rerun Q1b with it (Q1b currently takes labels for 1,941 artists from the Part 1 sample).
-4. **Album-order (career stage) control** for Part 1 and Q1b; finish the remaining frozen-plan secondary checks for Part 1 (§7 "not yet run").
-5. **Get Billboard's sales-only Top Album Sales chart, 2010–2019** (needs scraping — ask first; `01_scrape_billboard.py` from the first round can be adapted after checking the URL slug). Enables a proper difference-in-differences for Part 2. Billboard's Top Current Albums chart would also help.
-6. Resolve the 994 unmatched roster artists (587 same-name ambiguities); add post-2014 newcomers for Part 2 only (not Part 1, which would reintroduce selection).
-7. Further questions answerable with collected data: deluxe re-release timing (official releases table); release cadence and format mix (release groups); song length (official releases).
-8. Write-up.
+1. ~~Clean up the work environment~~ (devlog §23). ~~Genre tie-break bug~~ (§24). ~~Release-date parsing bug~~ and ~~rerun of the Part 1 secondary checks~~, plus the exploratory rock + pop check (§25). ~~Artist-cluster bug~~, ~~per-artist genre file~~, ~~album-order control~~ and ~~remaining frozen-plan checks~~ (§26).
+2. **Decisions for the author:** (a) whether Part 2b should adopt the per-artist genre file as its primary label source (needs a dated note); (b) which SE correction to report for the Part 2b artist-FE estimate (§9); (c) whether to plan a distributional follow-up of the 18+-track result and the exploratory leads (shorter songs; fewer same-day multi-edition launches), each needing a written plan first.
+3. **Get Billboard's sales-only Top Album Sales chart, 2010–2019** (needs scraping — ask first; `01_scrape_billboard.py` from the first round can be adapted after checking the URL slug). Enables a proper difference-in-differences for Part 2. Billboard's Top Current Albums chart would also help.
+4. Resolve the 994 unmatched roster artists (587 same-name ambiguities); add post-2014 newcomers for Part 2 only (not Part 1, which would reintroduce selection).
+5. Further questions answerable with collected data: deluxe re-release timing (official releases table); release cadence and format mix (release groups); song length (official releases).
+6. Write-up.
 
 ## 12. Literature (verified)
 

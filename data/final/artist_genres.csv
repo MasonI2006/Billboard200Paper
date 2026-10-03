@@ -1,0 +1,2035 @@
+roster_artist_key,artist_name,musicbrainz_artist_id,genre,heavy,matched_genres,decided_by_ordered_rule
+!mayday!,!MAYDAY!,944ae2ab-c98f-4cb5-bc30-dd3adbb2cc91,hiphop_rnb,1,hiphop_rnb | rock,True
+"""frank sinatra, dean martin & sammy davis jr""","""Frank Sinatra, Dean Martin & Sammy Davis Jr""",35e227e5-f724-4699-91b2-d5184cdc7411,jazz,0,jazz,False
+'68,'68,c2a7fb29-eb0d-4ecc-82da-24f94af0c6da,rock,0,rock,False
+*nsync,*NSync,603ba565-3967-4be1-931e-9cb945394e86,hiphop_rnb,1,hiphop_rnb | pop,True
+10 years,10 Years,b18bc9c4-6f22-4f1b-a918-e9c86a39fe7a,rock,0,rock,False
+12 stones,12 Stones,6f81a7dc-be31-4498-ae95-6d994ffec614,christian,0,christian | rock,True
+2 chainz,2 Chainz,dff0d392-4cd5-4052-9fbb-f485df3891e5,hiphop_rnb,1,hiphop_rnb | electronic,True
+2cellos,2Cellos,c8e94c78-0e17-4d9a-b1f6-96e1b22ebe97,classical,0,classical | rock | pop,True
+2ne1,2ne1,e119e5ff-0de0-421c-a630-0516c6acede8,hiphop_rnb,1,hiphop_rnb | pop,True
+3 doors down,3 Doors Down,2386cd66-e923-4e8e-bf14-2eebe2e9b973,rock,0,rock | pop,True
+3 inches of blood,3 Inches Of Blood,ba85753c-671a-409e-b813-1e3be41e2a2e,rock,0,rock,False
+311,311,bf600e2b-dc2d-4839-a1be-6ebef4087cd0,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+36 crazyfists,36 Crazyfists,781167d7-b9e5-48ea-9f66-67c4a6739562,rock,0,rock,False
+3ballmty,3BallMTY,26a3bf81-5bf6-477f-8097-e4bc05e1e7ba,latin,1,latin,False
+3oh!3,3OH!3,125948ec-7f91-4d1a-8b83-accbf50fae3d,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+5 seconds of summer,5 Seconds of Summer,830e5c4e-6b7d-431d-86ab-00c751281dc5,rock,0,rock | pop,True
+50 cent,50 Cent,8e68819d-71be-4e7d-b41d-f1df81b01d3f,hiphop_rnb,1,hiphop_rnb | pop,True
+98 degrees,98 Degrees,177fde26-5a95-46d9-922f-0933940d97e5,hiphop_rnb,1,hiphop_rnb | pop,True
+9th wonder,9th Wonder,48513f24-37d5-423f-b9b7-2b712af7f50d,hiphop_rnb,1,hiphop_rnb,False
+a day to remember,A Day to Remember,db008806-16f6-48fc-8521-3d953709689d,rock,0,rock | pop,True
+a fine frenzy,A Fine Frenzy,ccd4426f-aef3-48e3-b04e-2e1de3d1f8d6,rock,0,rock | pop,True
+a great big world,A Great Big World,6958e806-1e14-4844-a0a7-07a27756aa0f,rock,0,rock | pop,True
+a perfect circle,A Perfect Circle,078a9376-3c04-4280-b7d7-b20e158f345d,electronic,1,electronic | rock,True
+a skylit drive,A Skylit Drive,33464f19-aa8b-4bbf-982d-05f5e78643c8,rock,0,rock,False
+a$ap ferg,A$AP Ferg,8ab5d936-49d1-415e-92c8-151e0e7dd912,hiphop_rnb,1,hiphop_rnb,False
+a$ap rocky,A$AP Rocky,25b7b584-d952-4662-a8b9-dd8cdfbfeb64,hiphop_rnb,1,hiphop_rnb | pop,True
+ac newman,AC Newman,bb40af12-0dfd-4a53-bfe1-666a9e49dfb2,rock,0,rock | pop,True
+afi,AFI,1c3919b2-43ca-4a4a-935d-9d50135ec0ef,rock,0,rock,False
+awolnation,AWOLNATION,77b29df2-056e-409e-a1b2-5e2bbfe421c4,rock,0,rock | pop,True
+aaron gillespie,Aaron Gillespie,0c3db5f8-372a-4825-9e31-decf2d176333,christian,0,christian | rock,True
+aaron neville,Aaron Neville,2f53411b-ec29-4979-aa46-62786a2bb377,hiphop_rnb,1,hiphop_rnb | country | christian | jazz | pop,True
+aaron shust,Aaron Shust,fc2c638d-3735-43a2-b455-eb49b44f4808,christian,0,christian,False
+aaron watson,Aaron Watson,36bb2418-3fa0-40c6-8805-a15498aec764,country,0,country,False
+ab-soul,Ab-Soul,acc12019-10e3-40aa-b4bf-66fbb4a692af,hiphop_rnb,1,hiphop_rnb,False
+abandon all ships,Abandon All Ships,4a90622e-fc29-4c60-845b-d1752cd286cd,electronic,1,electronic,False
+ace frehley,Ace Frehley,33d700ce-064f-44f6-ab9e-60f9eed0fca1,rock,0,rock,False
+ace hood,Ace Hood,986ee464-cf8a-4e59-a71f-74756102067f,hiphop_rnb,1,hiphop_rnb,False
+action bronson,Action Bronson,031bc934-28c9-491a-8648-c078450187dc,hiphop_rnb,1,hiphop_rnb,False
+adam lambert,Adam Lambert,e942594a-91cc-427a-8beb-6815c28e9254,hiphop_rnb,1,hiphop_rnb | classical | electronic | rock | pop,True
+adelitas way,Adelitas Way,6ae6a016-91d7-46cc-be7d-5e8e5d320c54,rock,0,rock,False
+adrenaline mob,Adrenaline Mob,b623b6ce-09a6-4d92-b996-ddd4111bfda5,rock,0,rock | pop,True
+aerosmith,Aerosmith,3d2b98e5-556f-4451-a3ff-c50ea18d57cb,rock,0,rock | pop,True
+aesop rock,Aesop Rock,aba64937-3334-4c65-90a1-4e6b9d4d7ada,hiphop_rnb,1,hiphop_rnb | rock,True
+afrojack,Afrojack,a3ee920f-4e7f-4993-8aca-4b8538cfaa4a,electronic,1,electronic | pop,True
+against me!,Against Me!,a66ebddc-ff04-46b8-820a-15c63e80dba1,country,0,country | rock | pop,True
+agnetha faltskog,Agnetha Faltskog,aebbb417-0d18-4fec-a2e2-ce9663d1fa7e,rock,0,rock | pop,True
+aimee mann,Aimee Mann,db3c0a20-bf05-4b30-ac22-f294aea24172,rock,0,rock | pop,True
+airbourne,Airbourne,5365f55c-b1e1-48f9-b09f-078f7a14cb1f,rock,0,rock,False
+al b. sure!,Al B. Sure!,92787b5b-23c4-4f60-a74d-bf2469740b60,hiphop_rnb,1,hiphop_rnb | jazz,True
+al jarreau,Al Jarreau,3e54ba8b-f4cc-4192-9813-890d570e2b7a,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+alabama shakes,Alabama Shakes,40419b33-18e9-4d5a-a674-30b4bb14bac2,hiphop_rnb,1,hiphop_rnb | rock,True
+alan jackson,Alan Jackson,7291957b-c463-4275-a41c-a104c9e2337f,country,0,country | christian,True
+alanis morissette,Alanis Morissette,4bdcee62-4902-4773-8cd1-e252e2e31225,jazz,0,jazz | rock | pop,True
+alejandro fernandez,Alejandro Fernandez,772a8360-e81e-4647-92e2-195c19efddad,latin,1,latin | rock | pop,True
+alejandro sanz,Alejandro Sanz,9bacf78f-9132-43da-8873-8a9eb49da0e9,latin,1,latin | rock | pop,True
+alesana,Alesana,1079b087-a5b3-4a07-abbc-88043ceda334,rock,0,rock | pop,True
+alex clare,Alex Clare,e8c8a3c3-29b6-421e-b977-fb6796231d41,hiphop_rnb,1,hiphop_rnb | electronic | rock,True
+alexisonfire,AlexisOnFire,bc1c8f3f-6f36-4086-a470-87ed813dd429,rock,0,rock | pop,True
+alice cooper,Alice Cooper,4d7928cd-7ed2-4282-8c29-c0c9f966f1bd,rock,0,rock | pop,True
+alice in chains,Alice in Chains,4bd95eea-b9f6-4d70-a36c-cfea77431553,rock,0,rock,False
+alicia keys,Alicia Keys,8ef1df30-ae4f-4dbd-9351-1a32b208a01e,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+alkaline trio,Alkaline Trio,69421e11-e4c3-4854-951b-ceab4972e38e,rock,0,rock | pop,True
+all shall perish,All Shall Perish,eb55f2c5-e7dc-4697-9ed7-864438d10eb6,rock,0,rock,False
+all that remains,All That Remains,4f8b7186-b2a2-40db-97ae-6e1cd46d57b1,rock,0,rock,False
+allison iraheta,Allison Iraheta,0c7f8ad2-fbef-4148-b86d-0ebff49ed36e,rock,0,rock,False
+aloe blacc,Aloe Blacc,4bf89e02-6c30-4603-9f6a-52619b1bea1a,hiphop_rnb,1,hiphop_rnb | pop,True
+alt-j,Alt-J,fc7bbf00-fbaa-4736-986b-b3ac0266ca9b,electronic,1,electronic | rock | pop,True
+alter bridge,Alter Bridge,60a23fda-a440-4ab9-a344-7dfdd2ed341a,rock,0,rock,False
+amanda blank,Amanda Blank,a6cf5c5c-7432-4ac7-801a-cef2b03e81bb,hiphop_rnb,1,hiphop_rnb,False
+amaranthe,Amaranthe,eb380962-99bb-46c0-af40-1c7790a7822a,electronic,1,electronic | rock,True
+american authors,American Authors,9ce0515d-cc88-4df6-8a2e-d231c13cb2c2,classical,0,classical | rock | pop,True
+american bang,American Bang,64e04566-3e71-4dd7-9632-8e6143365cd1,rock,0,rock,False
+american football,American Football,4ebb5ad3-9018-407d-8c24-c03011ab9ac6,rock,0,rock,False
+amerie,Amerie,56ef1af4-5184-49f8-a972-583f35c2485c,hiphop_rnb,1,hiphop_rnb | pop,True
+amon amarth,Amon Amarth,5b687684-ad34-4a9f-b425-0e7aa81fbd38,rock,0,rock,False
+amos lee,Amos Lee,332228ce-fe8c-4a5e-90e0-e1361553e5ff,rock,0,rock,False
+amy grant,Amy Grant,3cd18a93-1797-4bbb-9b8a-c096d5e7864c,christian,0,christian | rock | pop,True
+amy winehouse,Amy Winehouse,dfe9a7c4-8cf2-47f4-9dcb-d233c2b86ec3,hiphop_rnb,1,hiphop_rnb | jazz | pop,True
+ana isabelle,Ana Isabelle,ea72b56a-68f4-40dc-81f0-35242c7c495c,latin,1,latin | pop,True
+anamanaguchi,Anamanaguchi,e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6,electronic,1,electronic | rock | pop,True
+anberlin,Anberlin,c648509e-9916-4c56-ab63-652a03da16dd,christian,0,christian | rock,True
+andre rieu,Andre Rieu,0eaa4a38-6bc3-46aa-91be-563f1fa86e16,classical,0,classical,False
+andrea bocelli,Andrea Bocelli,c5a0a216-c33c-42dc-92b8-4b60236f8dad,classical,0,classical | pop,True
+andrew belle,Andrew Belle,246b1060-628e-4b02-ba6a-afd4868a6814,rock,0,rock,False
+andrew jackson jihad,Andrew Jackson Jihad,5e1dbdb2-87ac-41ff-9960-4a42a872327a,jazz,0,jazz | rock | pop,True
+andy grammer,Andy Grammer,9e60ea29-9607-4f7d-aa96-2092ef41f0d3,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+angel olsen,Angel Olsen,185527bf-c293-4c24-8213-ed98fb8976be,country,0,country | rock | pop,True
+angie stone,Angie Stone,82f8dd22-0319-4f35-953c-358b3f883027,hiphop_rnb,1,hiphop_rnb,False
+animal collective,Animal Collective,0c751690-c784-4a4f-b1e4-c1de27d47581,electronic,1,electronic | rock | pop,True
+animals as leaders,Animals as Leaders,5c2d2520-950b-4c78-84fc-78a9328172a3,rock,0,rock,False
+anita wilson,Anita Wilson,0616bdc9-6aa2-47b9-b42c-abbac1976e58,hiphop_rnb,1,hiphop_rnb | christian,True
+annie lennox,Annie Lennox,3e30aebd-0557-4cfd-8fb9-3945afa5d72b,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+anoushka shankar,Anoushka Shankar,40ee8fa3-c6d7-4556-b4e2-9f4114565043,classical,0,classical,False
+anti-flag,Anti-Flag,b88f21a7-a1b9-48fd-bbc4-ae758026f17f,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+anuna,Anuna,a6e8ab8b-3035-4145-b740-0b94aebbe357,classical,0,classical,False
+aoife o'donovan,Aoife O'Donovan,cbc1b396-9719-4c82-9549-067f6b1a0d36,country,0,country,False
+arcade fire,Arcade Fire,52074ba6-e495-4ef3-9bb4-0703888a9f68,classical,0,classical | rock | pop,True
+arch enemy,Arch Enemy,e631bb92-3e2b-43e3-a2cb-b605e2fb53bd,rock,0,rock,False
+arctic monkeys,Arctic Monkeys,ada7a83c-e3e1-40f1-93f9-3e73dbc9298a,electronic,1,electronic | rock | pop,True
+aretha franklin,Aretha Franklin,2f9ecbed-27be-40e6-abca-6de49d50299e,hiphop_rnb,1,hiphop_rnb | christian | jazz | rock | pop,True
+ariana grande,Ariana Grande,f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+ariel pink's haunted graffiti,Ariel Pink's Haunted Graffiti,4ac6c2fd-daad-4c31-b266-017c79d2e9a9,pop,1,pop,False
+armin van buuren,Armin van Buuren,477b8c0c-c5fc-4ad2-b5b2-191f0bf2a9df,electronic,1,electronic | pop,True
+army of the pharaohs,Army Of The Pharaohs,7d40d33b-35e7-422e-b688-ed61726df745,hiphop_rnb,1,hiphop_rnb,False
+art garfunkel,Art Garfunkel,fc0a5289-4b77-4246-9c8d-857c8b617f5d,rock,0,rock | pop,True
+art of dying,Art Of Dying,61dedf14-34cf-41ff-af89-68d66faf3860,rock,0,rock,False
+as blood runs black,As Blood Runs Black,5a3857f8-af2d-4f27-a1dd-438d02deceb8,rock,0,rock,False
+as cities burn,As Cities Burn,d570eb4d-557b-41c2-9753-bd4cd08defe7,rock,0,rock,False
+as i lay dying,As I Lay Dying,ba147ea0-60c4-4a40-9da6-0d5c2b2e7b03,christian,0,christian | rock,True
+as tall as lions,As Tall As Lions,71f17703-cd11-4579-b08a-1b1c8e6f5ac2,rock,0,rock,False
+asher roth,Asher Roth,c7d35b71-961e-4713-b65d-35a98591204a,hiphop_rnb,1,hiphop_rnb | pop,True
+ashley monroe,Ashley Monroe,63e42c4d-88b5-4d4e-b3a0-1330c14a6954,country,0,country,False
+ashley tisdale,Ashley Tisdale,1fa14a96-c25c-4bb7-b94d-ff453519eab3,rock,0,rock | pop,True
+at the gates,At the Gates,35f92c4a-69d0-4ed1-ab9e-05259db89d14,rock,0,rock,False
+atlas genius,Atlas Genius,967234b5-bef9-4fee-8dfe-61fbcd400d8b,rock,0,rock,False
+atlas sound,Atlas Sound,1a02453e-5f86-4220-abd6-1d889d2fa517,rock,0,rock,False
+atoms for peace,Atoms For Peace,9e299bee-d7e2-49f3-8cd7-d6b28ab204d1,electronic,1,electronic | rock,True
+atreyu,Atreyu,17e137fb-59e5-4fd7-af48-afc34995396c,rock,0,rock,False
+attack attack!,Attack Attack!,82e44166-4b5f-42bf-bf34-05637d5096db,christian,0,christian | electronic | rock | pop,True
+audio adrenaline,Audio Adrenaline,f12a9472-02be-40f4-9ff3-a836e2b9ece8,christian,0,christian | rock,True
+audrey assad,Audrey Assad,280e4d8f-4ed1-43ae-8927-cd040ad58655,christian,0,christian | pop,True
+august alsina,August Alsina,7c24178a-8658-4e7f-889f-82013f8fd3f6,hiphop_rnb,1,hiphop_rnb,False
+august burns red,August Burns Red,5bac9b4f-2f1c-4d39-8d11-231d5b6650ce,christian,0,christian | rock,True
+augustana,Augustana,919ccb96-12da-48f5-bd91-ec410d956048,rock,0,rock,False
+austin mahone,Austin Mahone,b69b9854-f568-4a50-b076-309c459946a8,hiphop_rnb,1,hiphop_rnb | pop,True
+austrian death machine,Austrian Death Machine,6778f7b9-5da5-43dc-a890-72d169042723,rock,0,rock,False
+avenged sevenfold,Avenged Sevenfold,24e1b53c-3085-4581-8472-0b0088d2508c,rock,0,rock,False
+averysunshine,AverySunshine,730e2789-465c-4d9f-a8db-ed491b5eb2ae,hiphop_rnb,1,hiphop_rnb,False
+avicii,Avicii,c85cfd6b-b1e9-4a50-bd55-eb725f04f7d5,electronic,1,electronic | pop,True
+avril lavigne,Avril Lavigne,0103c1cc-4a09-4a5d-a344-56ad99a77193,rock,0,rock | pop,True
+axewound,Axewound,f3dc9429-dd55-4eeb-9428-fbf944f4f9c1,rock,0,rock,False
+azealia banks,Azealia Banks,0c3505e7-d884-43cf-9028-d318607190a4,hiphop_rnb,1,hiphop_rnb | electronic,True
+b-real,B-Real,9c8b5123-d994-4c0c-85c0-465636ae241e,hiphop_rnb,1,hiphop_rnb,False
+b.g.,B.G.,435837d0-9896-48f1-a80f-66579628ca06,hiphop_rnb,1,hiphop_rnb,False
+babymetal,Babymetal,27e2997f-f7a1-4353-bcc4-57b9274fa9a4,electronic,1,electronic | rock | pop,True
+backstreet boys,Backstreet Boys,2f569e60-0a1b-4fb9-95a4-3dc1525d1aad,rock,0,rock | pop,True
+bad meets evil,Bad Meets Evil,87f27b14-cbd0-44ea-93a3-6fead5cb45e7,hiphop_rnb,1,hiphop_rnb,False
+bad religion,Bad Religion,149e6720-4e4a-41a4-afca-6d29083fc091,christian,0,christian | rock,True
+bad suns,Bad Suns,95015b4c-1aef-4e28-9d36-c9546c194f0c,rock,0,rock,False
+ballyhoo!,Ballyhoo!,148350d7-1b04-4518-b216-4519eb0bcc08,rock,0,rock,False
+band of horses,Band of Horses,07b6020a-c539-4d68-aeef-f159f3befc76,country,0,country | rock | pop,True
+band of skulls,Band of Skulls,1641141b-3c9c-4772-a5cc-7e23fdf17382,rock,0,rock,False
+banda los recoditos,Banda los Recoditos,9d63e93e-70fe-44e9-a198-f58cf806ad3c,latin,1,latin,False
+barbra streisand,Barbra Streisand,56cd15a1-0d74-438b-8244-c96ffe1cae03,jazz,0,jazz | rock | pop,True
+barenaked ladies,Barenaked Ladies,86e736b4-93e2-40ff-9e1c-fb7c63fef5f6,jazz,0,jazz | rock | pop,True
+barlowgirl,BarlowGirl,30e5f6c5-089c-4378-9805-0dbd0e4d0ee3,christian,0,christian | rock,True
+barry manilow,Barry Manilow,7bb60591-46f3-4147-b692-1814a87e832e,jazz,0,jazz | rock | pop,True
+basement jaxx,Basement Jaxx,28cbf94d-0700-4095-a188-37e373b069a7,latin,1,latin | electronic | pop,True
+bassnectar,Bassnectar,5d7c4cfc-29e7-4c83-8893-ae02679fc9f4,electronic,1,electronic,False
+bat for lashes,Bat for Lashes,10000730-525f-4ed5-aaa8-92888f060f5f,rock,0,rock | pop,True
+battlecross,Battlecross,cc5785c3-82b7-4ebe-b238-4e4e4754f722,rock,0,rock,False
+battles,Battles,8522b9b6-b295-48d7-9a10-8618fb80beb8,electronic,1,electronic | rock,True
+bayside,Bayside,5f821136-9935-403c-abb5-e78ddda35e9f,rock,0,rock,False
+bebe winans,BeBe Winans,8c86f18c-6703-473c-a1ca-482abd0cca27,hiphop_rnb,1,hiphop_rnb | christian | pop,True
+bea miller,Bea Miller,5b0d71ae-eb06-4be1-adbe-89d8fb73a574,rock,0,rock | pop,True
+beach house,Beach House,d5cc67b8-1cc4-453b-96e8-44487acdebea,rock,0,rock | pop,True
+beady eye,Beady Eye,a0e10984-0eca-4920-a171-5fd7a62ee069,rock,0,rock | pop,True
+beanie sigel,Beanie Sigel,b544133a-b262-451e-84b6-7bea2e61ce60,hiphop_rnb,1,hiphop_rnb,False
+beartooth,Beartooth,98a1e0ab-35fa-40dd-b62c-9fda46fdb061,rock,0,rock,False
+beastie boys,Beastie Boys,9beb62b2-88db-4cea-801e-162cd344ee53,hiphop_rnb,1,hiphop_rnb | rock,True
+bebo norman,Bebo Norman,0f7159a9-9029-4011-863e-6e2b81015ae8,christian,0,christian,False
+bee gees,Bee Gees,bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+beirut,Beirut,0af78501-5647-4c18-9a0d-66ac8789e13b,classical,0,classical | rock | pop,True
+ben folds,Ben Folds,51b7f46f-6c0f-46f2-9496-08c9ec2624d4,rock,0,rock | pop,True
+ben folds five,Ben Folds Five,abe2669a-a612-4bf6-9193-bb4f4b8a9088,rock,0,rock | pop,True
+ben kweller,Ben Kweller,ff9deaae-da4f-42b7-a19e-36fedd3fc706,rock,0,rock | pop,True
+ben rector,Ben Rector,9f478f13-554c-49fc-b5f6-fcf110010c39,rock,0,rock | pop,True
+benjamin booker,Benjamin Booker,51b13502-903f-4c6c-b0a2-9cccfbfea9b1,rock,0,rock,False
+best coast,Best Coast,5ab8835e-ac44-4055-9c11-7878199606b5,rock,0,rock | pop,True
+beth orton,Beth Orton,214d84a5-e9e5-4432-af95-8c84da7ba4c0,electronic,1,electronic | rock | pop,True
+bethel music,Bethel Music,d736e4c1-94ef-4bf6-b9f1-63b09eda2702,christian,0,christian,False
+betraying the martyrs,Betraying the Martyrs,f38ebbf0-bff3-4f34-811e-39a6d29798d9,rock,0,rock,False
+bette midler,Bette Midler,ed333e8b-d18a-49fc-b361-4ec9731dfdba,rock,0,rock | pop,True
+better than ezra,Better Than Ezra,7986c185-d91d-4204-8ee2-eac5d503fe39,rock,0,rock | pop,True
+betty who,Betty Who,3712a76d-8dbd-40fd-9bd1-27ae08f1cd51,electronic,1,electronic | rock | pop,True
+bettye lavette,Bettye LaVette,af558762-abed-4f46-8324-34fc51f57b2b,hiphop_rnb,1,hiphop_rnb | country | christian | rock,True
+beyonce,Beyonce,859d0860-d480-4efd-970c-c05d5f1776b8,hiphop_rnb,1,hiphop_rnb | country | electronic | rock | pop,True
+big bad voodoo daddy,Big Bad Voodoo Daddy,d3118da8-ff3f-4396-9ddd-06168c875d56,jazz,0,jazz,False
+big boi,Big Boi,9724aa19-fdf9-49d0-9f9d-944e462e2a5c,hiphop_rnb,1,hiphop_rnb | rock,True
+big daddy weave,Big Daddy Weave,d330ab6a-d70d-4e0e-8feb-a2e10cb1e7c5,christian,0,christian | rock,True
+big k.r.i.t.,Big K.R.I.T.,7e966957-9b0b-4e19-b8a0-4206535d8052,hiphop_rnb,1,hiphop_rnb,False
+big sean,Big Sean,942a9807-9c1a-4a0e-a285-1fde2c5be9d1,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+big smo,Big Smo,745e71ab-1c3d-4c53-9334-dd450ade9585,hiphop_rnb,1,hiphop_rnb,False
+big time rush,Big Time Rush,94785e0f-81be-4360-a9e1-a00df5dc8bc6,pop,1,pop,False
+bill callahan,Bill Callahan,c309d914-93af-4b3f-8058-d79c75ea89da,country,0,country | rock | pop,True
+billie holiday,Billie Holiday,d59c4cda-11d9-48db-8bfe-b557ee602aed,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+billy currington,Billy Currington,dbf94c49-0dd9-4f72-85d5-f548beb453f6,country,0,country | pop,True
+billy idol,Billy Idol,47c8f88b-987a-4b64-9175-2b1b57809727,electronic,1,electronic | rock | pop,True
+billy joe shaver,Billy Joe Shaver,2af8def8-db31-4998-8bd9-18fdd76db088,country,0,country,False
+billy joel,Billy Joel,64b94289-9474-4d43-8c93-918ccc1920d1,classical,0,classical | rock | pop,True
+billy ray cyrus,Billy Ray Cyrus,63e8d6f9-e247-45c9-aaf2-e079cddbdd54,country,0,country | rock | pop,True
+billy talent,Billy Talent,fd429857-5ace-4609-ae54-1502c3bdac11,rock,0,rock | pop,True
+bing crosby,Bing Crosby,2437980f-513a-44fc-80f1-b90d9d7fcf8f,jazz,0,jazz | pop,True
+bizzle,Bizzle,0dce87f0-bfb2-4931-90d0-d03b04df0c43,hiphop_rnb,1,hiphop_rnb | christian,True
+bjork,Bjork,87c5dedd-371d-4a53-9f7f-80522fb7f3cb,latin,1,latin | hiphop_rnb | jazz | electronic | rock | pop,True
+black country communion,Black Country Communion,9ebaa4d9-d8ca-4783-a262-cd895c5ad168,rock,0,rock,False
+black label society,Black Label Society,a8e935c6-3fcc-414c-900c-77e8170e7e7c,rock,0,rock,False
+black lips,Black Lips,e940d7a3-01d0-468c-86ea-5dc4d89dcf80,rock,0,rock,False
+black milk,Black Milk,7f4e8866-a462-4785-ae83-5c35adef2db3,hiphop_rnb,1,hiphop_rnb,False
+black rebel motorcycle club,Black Rebel Motorcycle Club,32b90c92-9978-4a07-90eb-caa4b22f4907,country,0,country | rock,True
+black sabbath,Black Sabbath,5182c1d9-c7d2-4dad-afa0-ccfeada921a8,jazz,0,jazz | rock | pop,True
+black stone cherry,Black Stone Cherry,1801bd47-46ae-49ff-bfcd-6e01b562d880,rock,0,rock,False
+black tide,Black Tide,091547f6-bf0d-47e3-bb4d-e3b5c5f4caab,rock,0,rock,False
+black veil brides,Black Veil Brides,33319aed-9bd7-4cd1-903c-716845c1b7cd,rock,0,rock | pop,True
+blackberry smoke,Blackberry Smoke,1576a26e-f77d-47ac-87f2-4f610c141ac6,rock,0,rock,False
+blakroc,BlakRoc,5ebe0c73-b673-404a-aa5d-a9db12fe4bc5,hiphop_rnb,1,hiphop_rnb,False
+blake lewis,Blake Lewis,f3f97f85-322b-461f-b67d-e990e0bacb05,hiphop_rnb,1,hiphop_rnb | pop,True
+blake mills,Blake Mills,c13101d0-cc31-4df3-a156-b9a29ca39825,rock,0,rock,False
+blake shelton,Blake Shelton,2ad66473-ccb3-41d2-8756-b56680cdfe62,country,0,country | pop,True
+blaqk audio,Blaqk Audio,f94bf2b7-6f66-447a-9929-ac9f3c5452fc,electronic,1,electronic,False
+blaze ya dead homie,Blaze Ya Dead Homie,09fe76e7-076e-430f-9196-11c105eee59d,hiphop_rnb,1,hiphop_rnb,False
+bleachers,Bleachers,58e235fc-f6ea-4614-9ed4-9855a5665ae1,rock,0,rock,False
+bleeding through,Bleeding Through,55fd865d-4a0d-4fd0-af19-7e6feb168ab8,rock,0,rock,False
+blind guardian,Blind Guardian,7fa7fc04-1011-4876-8095-ecd232edea87,rock,0,rock,False
+blind pilot,Blind Pilot,215f057c-fb64-4b27-abf2-1871e71912d9,rock,0,rock,False
+blitzen trapper,Blitzen Trapper,a186c93d-0f30-4c56-9265-98c0eba19242,country,0,country | rock,True
+bloc party,Bloc Party,8c538f11-c141-4588-8ecb-931083524186,electronic,1,electronic | rock | pop,True
+blonde redhead,Blonde Redhead,6821bf3f-5d5b-4b0f-8fa4-79d2ab2d9219,rock,0,rock,False
+blondie,Blondie,4d2956d1-a3f7-44bb-9a41-67563e1a0c94,rock,0,rock | pop,True
+blood on the dance floor,Blood On The Dance Floor,49238391-5d65-41e7-90dc-195e73a11560,electronic,1,electronic | pop,True
+blue october,Blue October,d6a3eeec-cde0-4c10-89b2-93e0bd5f34e6,rock,0,rock | pop,True
+blues traveler,Blues Traveler,6b28ecf0-94e6-48bb-aa2a-5ede325b675b,rock,0,rock | pop,True
+bluetree,Bluetree,dd0b0d37-4a50-47ac-b4fe-cedac4589212,christian,0,christian | rock,True
+bo bice,Bo Bice,531ae81a-19c3-4b0f-8d56-bc3e235f0b94,rock,0,rock,False
+bo burnham,Bo Burnham,889db25c-d1df-457a-b0d1-c405f34a01f3,rock,0,rock,False
+bodeans,BoDeans,84c38d3a-3400-4c28-b988-90558bb6fae0,rock,0,rock,False
+bob dylan,Bob Dylan,72c536dc-7137-4477-a521-567eeb840fa8,country,0,country | christian | jazz | rock | pop,True
+bob mould,Bob Mould,d7f5305a-15fc-4af4-a61b-f6f45510cc8f,rock,0,rock,False
+bob seger,Bob Seger,4382b934-64c3-47ac-98db-65f26d845c48,rock,0,rock | pop,True
+bobby womack,Bobby Womack,48e78462-2f0b-4a1a-9fa4-0585e2991e80,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+bombay bicycle club,Bombay Bicycle Club,0ae49abe-d6af-44fa-8ab0-b9ace5690e6f,rock,0,rock | pop,True
+bomshel,Bomshel,c12d26b7-3d4e-4579-8383-fc679021ca7b,country,0,country,False
+bon iver,Bon Iver,437a0e49-c6ae-42f6-a6c1-84f25ed366bc,classical,0,classical | electronic | rock | pop,True
+bon jovi,Bon Jovi,5dcdb5eb-cb72-4e6e-9e63-b7bace604965,country,0,country | rock | pop,True
+bone thugs-n-harmony,Bone Thugs-N-Harmony,2fa45bbb-0efb-4950-9d40-94bf23cbfec1,hiphop_rnb,1,hiphop_rnb,False
+boney james,Boney James,7ef63058-495c-42a1-b326-ddbea57fe1b5,jazz,0,jazz,False
+"bonnie ""prince"" billy","Bonnie ""Prince"" Billy",7b0a63b2-b8e8-490e-b724-1d30cb5edfe3,country,0,country | rock,True
+bonnie raitt,Bonnie Raitt,0f0da09c-3940-4cb5-879f-4cea28907810,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+booker t. jones,Booker T. Jones,b0ee191c-7b75-445e-8416-b8f9918d3b6b,hiphop_rnb,1,hiphop_rnb | rock,True
+borgore,Borgore,215e2b5d-06f8-4c68-b33b-8fccec27a077,electronic,1,electronic,False
+born of osiris,Born Of Osiris,132ca1ea-0891-420f-b129-50247bb144b5,rock,0,rock,False
+bow wow,Bow Wow,6fd44ae7-097d-4979-94ba-5dfc40d9f7ad,hiphop_rnb,1,hiphop_rnb | pop,True
+bowling for soup,Bowling For Soup,bcb95908-5c6e-453a-97fc-d69003d250ff,rock,0,rock | pop,True
+boys like girls,Boys Like Girls,d6e65033-b56a-49df-8744-6fc3ffd75edd,country,0,country | rock | pop,True
+boyz ii men,Boyz II Men,b42eca0f-9381-43db-badb-1cba080a7dc2,hiphop_rnb,1,hiphop_rnb | jazz | pop,True
+boz scaggs,Boz Scaggs,18a33653-bbaf-4aa7-884c-73f02a7a4515,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+brad paisley,Brad Paisley,6cfd7ffc-824f-4219-8e27-4b9417700f44,country,0,country | rock | pop,True
+braid,Braid,12269eae-3c21-4586-acf2-6cb03c92f4e7,rock,0,rock,False
+brandi carlile,Brandi Carlile,baf05baf-69fb-47dd-93c2-033536b8c385,country,0,country | rock,True
+brandon flowers,Brandon Flowers,5b9dc76b-8574-4cb5-9496-ab1bc0d35c29,rock,0,rock | pop,True
+brandon heath,Brandon Heath,e961fc8a-df96-4608-8b6c-d202ed91bb3b,christian,0,christian,False
+brandy clark,Brandy Clark,d264a026-7485-4d3a-b4f1-f13fea5c76e2,country,0,country,False
+brantley gilbert,Brantley Gilbert,9ad8aede-6938-48f2-93fa-908bc4da9ef6,country,0,country | rock,True
+breaking benjamin,Breaking Benjamin,854a1807-025b-42a8-ba8c-2a39717f1d25,rock,0,rock,False
+breathe carolina,Breathe Carolina,0509d076-7e31-4f53-bad3-80ee246e23b7,electronic,1,electronic | rock | pop,True
+brendan benson,Brendan Benson,f1999057-4be4-40f5-bfc9-c33b362a94e5,rock,0,rock | pop,True
+bret michaels,Bret Michaels,4d4af9d3-3775-4f87-8f7c-abc198a64018,country,0,country | rock,True
+brett dennen,Brett Dennen,9960700d-2017-40bd-b2d4-1d365d668c81,rock,0,rock,False
+brett eldredge,Brett Eldredge,46510d46-ce20-4dde-b9ea-207e474353f4,country,0,country,False
+brian courtney wilson,Brian Courtney Wilson,d90a74eb-840c-4ec8-8fb3-fd7c393dc818,christian,0,christian,False
+brian culbertson,Brian Culbertson,4bb39356-0c2d-4318-a20b-12323f05eeaa,hiphop_rnb,1,hiphop_rnb | jazz,True
+brian mcknight,Brian McKnight,bf75ef89-7b4c-4771-ac43-4d5c10617190,hiphop_rnb,1,hiphop_rnb | pop,True
+brian setzer,Brian Setzer,7878a1ce-1f6d-4e44-8a2c-39e7bc547dde,jazz,0,jazz | rock,True
+bridgit mendler,Bridgit Mendler,f59f7cee-8f6a-4a6f-b23c-f3b5fdf6208f,hiphop_rnb,1,hiphop_rnb | pop,True
+bright eyes,Bright Eyes,78f797e3-4913-4026-aad0-1cd858bd735b,country,0,country | rock | pop,True
+bring me the horizon,Bring Me the Horizon,074e3847-f67f-49f9-81f1-8c8cea147e8e,electronic,1,electronic | rock | pop,True
+britney spears,Britney Spears,45a663b5-b1cb-4a91-bff6-2bef7bbfdd76,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+britt nicole,Britt Nicole,9519eba5-d329-417e-b69a-9ebb2faffca4,hiphop_rnb,1,hiphop_rnb | christian | pop,True
+broken bells,Broken Bells,62d364d2-550b-420e-b918-b3bd1e4a2efc,rock,0,rock | pop,True
+broken social scene,Broken Social Scene,2eada8f8-056a-4093-bbc2-004909ce743b,rock,0,rock | pop,True
+brokencyde,Brokencyde,1f2b4a72-1f47-45fe-8349-0c14cc190801,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+broods,Broods,68205c8f-9518-4b49-8df7-bd297da67599,electronic,1,electronic | rock | pop,True
+brooke fraser,Brooke Fraser,56ccd34b-6167-441f-9a8b-dce55c419022,christian,0,christian | rock | pop,True
+brooke hyland,Brooke Hyland,c9e75ecd-bb65-4545-83df-d27cc0059e64,pop,1,pop,False
+brotha lynch hung,Brotha Lynch Hung,f1fa0780-a922-4f0f-b43e-30331b520238,hiphop_rnb,1,hiphop_rnb,False
+brother ali,Brother Ali,e0b267df-9e16-4fd3-abb2-b47e61e7a2aa,hiphop_rnb,1,hiphop_rnb,False
+bruce springsteen,Bruce Springsteen,70248960-cb53-4ea4-943a-edb18f7d336f,country,0,country | jazz | rock | pop,True
+bruno mars,Bruno Mars,afb680f2-b6eb-4cd7-a70b-a63b25c763d5,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+brutha,Brutha,c66fe6e5-9dc1-4238-b17d-15fc20235abf,hiphop_rnb,1,hiphop_rnb,False
+bryan adams,Bryan Adams,4dbf5678-7a31-406a-abbe-232f8ac2cd63,rock,0,rock | pop,True
+bryan ferry,Bryan Ferry,4ef7a9e2-2cf5-483a-8616-ef7791a98026,rock,0,rock | pop,True
+buckcherry,Buckcherry,822e92ef-72ea-42e0-9af1-b987816b487a,rock,0,rock,False
+buddy guy,Buddy Guy,4336a134-d091-4e54-9967-c7c433db6d4e,country,0,country | rock,True
+buddy holly,Buddy Holly,d352f5dd-3023-4565-a7bb-52396bf8821d,rock,0,rock | pop,True
+building 429,Building 429,aee5893e-e848-4d71-8418-782ee2324fa5,christian,0,christian | rock,True
+built to spill,Built to Spill,3ac482b8-1494-4071-a0e9-f192f9d2c2b0,rock,0,rock,False
+bullet for my valentine,Bullet for My Valentine,d530dbf9-69b1-404f-98f2-0431104f5a1e,rock,0,rock,False
+bun-b,Bun-B,c1f5d7c6-1bce-45f1-bb80-f9c74bb9c740,hiphop_rnb,1,hiphop_rnb,False
+burl ives,Burl Ives,086c1936-9eaa-4091-b140-ad33a51a3b71,country,0,country | rock | pop,True
+burn halo,Burn Halo,ae4e8868-020e-4e7b-b703-4de5eeeed9cf,rock,0,rock,False
+bury your dead,Bury Your Dead,27784398-3ad0-4baf-bf17-82b37fe03efb,rock,0,rock,False
+busta rhymes,Busta Rhymes,10a9ff92-9637-4498-afea-7044b2ab0dc0,hiphop_rnb,1,hiphop_rnb,False
+butcher babies,Butcher Babies,e43b7e0e-0927-4a66-8cd4-8a6bfb162bd8,rock,0,rock,False
+bwb,Bwb,e3fdd870-c5e6-4bb4-8165-ef2ccc663dc5,jazz,0,jazz,False
+byron cage,Byron Cage,ad1a8b51-4a74-4cb9-a6a9-7ea9ebfce607,christian,0,christian,False
+cky,CKY,4ed35152-5207-4101-8904-6cb5d159b545,rock,0,rock,False
+cage the elephant,Cage the Elephant,b41b38d4-ef3e-4f37-8c75-cfe9af999696,rock,0,rock | pop,True
+calexico,Calexico,5e372a49-5672-4fb8-ba14-18c90780c4f9,country,0,country | rock,True
+calibre 50,Calibre 50,28c7230b-cf8f-49c8-aac9-92d36fb7a067,latin,1,latin,False
+california breed,California Breed,35802caa-fcac-4be5-9a81-d1f2fd907385,rock,0,rock,False
+cam'ron,Cam'Ron,ea6b7199-901d-4c0e-8242-6d7bc2bf62b7,hiphop_rnb,1,hiphop_rnb,False
+candice glover,Candice Glover,e502b863-c08b-41f4-9fde-bd18fbea2935,hiphop_rnb,1,hiphop_rnb,False
+candlebox,Candlebox,8e9516ba-f417-47dd-a8a5-8998b94553f8,rock,0,rock,False
+cannibal corpse,Cannibal Corpse,af8e4cc5-ef54-458d-a194-7b210acf638f,rock,0,rock,False
+canton jones,Canton Jones,7efcd333-5640-47b4-8f1d-32254d9120ae,hiphop_rnb,1,hiphop_rnb | christian,True
+capital cities,Capital Cities,119a2c67-e6d6-41cf-a58c-c51b75c80daa,electronic,1,electronic | rock | pop,True
+capone -n- noreaga,Capone -N- Noreaga,bcecd780-8f0f-40c5-91e1-be6bf34c51fb,hiphop_rnb,1,hiphop_rnb,False
+capture the crown,Capture The Crown,eb97c0c5-03a0-4281-b825-1a7cb8159148,rock,0,rock,False
+carbon leaf,Carbon Leaf,d3fb1614-78fd-4555-9c68-f8b25add2de7,country,0,country | rock,True
+carlos vives,Carlos Vives,ac367c2e-7783-41e5-a184-131da6b0c166,latin,1,latin | rock | pop,True
+carly rae jepsen,Carly Rae Jepsen,09887aa7-226e-4ecc-9a0c-02d2ae5777e1,rock,0,rock | pop,True
+carly simon,Carly Simon,c4df30f5-5487-4806-9189-b69c9f27532c,jazz,0,jazz | electronic | rock | pop,True
+carman,Carman,d7224e34-b61f-41fe-9901-d84edffab4b9,christian,0,christian,False
+carolina liar,Carolina Liar,8a4bd6ab-acd4-4f1b-b1c6-bee1cee43fff,rock,0,rock,False
+carpenters,Carpenters,4580d83b-093e-4241-91fb-2dd71f5f1f3f,country,0,country | classical | rock | pop,True
+carrie underwood,Carrie Underwood,70f0e309-5418-49b6-a130-666e2f76eecd,country,0,country | rock | pop,True
+casey donahew band,Casey Donahew Band,f8425aba-3ed5-478c-ac30-538685c30142,country,0,country,False
+cassadee pope,Cassadee Pope,4b714531-2c81-48d2-b134-4197f820caa1,country,0,country | rock | pop,True
+casting crowns,Casting Crowns,51013eb4-dcd1-4fd2-945c-e5cf1eb85e84,christian,0,christian | rock,True
+cat power,Cat Power,05755bf1-380c-487f-983f-d1a02401fa28,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+cavalera conspiracy,Cavalera Conspiracy,5bd1060b-8608-4817-93ca-207f7c828e2f,rock,0,rock,False
+cavo,Cavo,574f0e62-6e1c-4408-9adf-437f295922cf,rock,0,rock,False
+cecilia bartoli,Cecilia Bartoli,043a40c7-fb90-42f7-89a8-077a8ff61db6,classical,0,classical,False
+ceelo green,CeeLo Green,2c69465c-0f76-45ce-90a2-1ed0fdacc997,hiphop_rnb,1,hiphop_rnb | pop,True
+celine dion,Celine Dion,847e8a0c-cc20-4213-9e16-975515c2a926,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+celtic woman,Celtic Woman,4d483147-c871-48c4-8470-85e5a66381c5,classical,0,classical,False
+ces cru,Ces Cru,2b27cd36-5b31-419d-8b0a-dbed361ba35f,hiphop_rnb,1,hiphop_rnb,False
+chairlift,Chairlift,a3cd61ef-7fd4-44af-a27f-99641a82b22b,electronic,1,electronic | rock | pop,True
+charles bradley,Charles Bradley,dc6d2ba1-012c-47a7-ba3f-d74e76c30d53,hiphop_rnb,1,hiphop_rnb,False
+charlie zaa,Charlie Zaa,7328abbc-9f15-4004-8bda-64b2597cbd34,latin,1,latin,False
+charlotte gainsbourg,Charlotte Gainsbourg,6efa29c6-9995-48e0-9eaf-3809464a39a7,rock,0,rock | pop,True
+chase rice,Chase Rice,79c478c4-9bd7-42f1-8d26-f3c45ac49258,country,0,country | pop,True
+chayanne,Chayanne,327e24c0-95b4-4754-b509-108dc7f8abfa,latin,1,latin | pop,True
+cheap trick,Cheap Trick,9f870653-72b0-4c6d-8c59-439a95963e09,rock,0,rock | pop,True
+chely wright,Chely Wright,d4e538ad-2936-42ef-9259-77052c4fcdd2,country,0,country,False
+cher,Cher,bfcc6d75-a6a5-4bc6-8282-47aec8531818,rock,0,rock | pop,True
+cher lloyd,Cher Lloyd,48fbfb0b-92ee-45eb-99c2-0bde4c05962e,hiphop_rnb,1,hiphop_rnb | pop,True
+chet faker,Chet Faker,a21b2652-62ed-4767-a3d2-0aa802abf080,hiphop_rnb,1,hiphop_rnb | electronic,True
+chevelle,Chevelle,8456e9f7-debf-4579-a86c-33a325a35d2d,rock,0,rock,False
+chickenfoot,Chickenfoot,28830d2c-95d7-492c-82d3-7d1240bb1c6b,rock,0,rock,False
+chico debarge,Chico DeBarge,1c8b2b9d-5cab-43ec-b6a4-0a7e35bbd0a9,hiphop_rnb,1,hiphop_rnb,False
+chiddy bang,Chiddy Bang,d452681b-41e0-46a0-bb17-e77d23dfc220,hiphop_rnb,1,hiphop_rnb,False
+childish gambino,Childish Gambino,7fb57fba-a6ef-44c2-abab-2fa3bdee607e,hiphop_rnb,1,hiphop_rnb | rock,True
+children of bodom,Children of Bodom,f57e14e4-b030-467c-b202-539453f504ec,rock,0,rock,False
+chimaira,Chimaira,d624df22-b03d-4746-ac28-a4bd72aeec26,rock,0,rock,False
+chiodos,Chiodos,b755836a-0cb6-4577-a678-55a5a6402d70,rock,0,rock | pop,True
+chris botti,Chris Botti,0939452b-0c6f-422a-997f-e7c496ce1113,jazz,0,jazz,False
+chris cagle,Chris Cagle,533aaba8-82a2-451b-a99b-a24392696543,country,0,country,False
+chris cornell,Chris Cornell,cbf9738d-8f81-4a92-bc64-ede09341652d,rock,0,rock | pop,True
+chris isaak,Chris Isaak,479497d4-e7c2-4e78-972e-56e78fac3995,rock,0,rock | pop,True
+chris robinson brotherhood,Chris Robinson Brotherhood,21e31312-bfc1-4425-a93b-bab5cc5969af,rock,0,rock,False
+chris thile,Chris Thile,ca452a01-b9db-461d-8e62-23d68747f6ab,country,0,country,False
+chris tomlin,Chris Tomlin,b50b36b5-aec1-401f-a722-e5ab673af14d,christian,0,christian,False
+chris webby,Chris Webby,4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c,hiphop_rnb,1,hiphop_rnb,False
+chrisette michele,Chrisette Michele,197db30d-0886-41ad-908e-c9dd70e62739,hiphop_rnb,1,hiphop_rnb | jazz,True
+chrissie hynde,Chrissie Hynde,a5d79c54-81c3-4a73-af6a-ad5c143d3f21,rock,0,rock | pop,True
+christina aguilera,Christina Aguilera,b202beb7-99bd-47e7-8b72-195c8d72ebdd,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+christina grimmie,Christina Grimmie,94d40ba7-2b35-48ae-86f1-66ea06102693,rock,0,rock | pop,True
+christina perri,Christina Perri,38d363c7-fdcb-4308-9474-a0d14ab8d9b7,rock,0,rock | pop,True
+christon gray,Christon Gray,91ca296c-5f86-4e68-a652-83e168df7fe9,christian,0,christian,False
+chromeo,Chromeo,647221d0-f6b1-4e03-924c-c59b8059536f,electronic,1,electronic | pop,True
+chuck berry,Chuck Berry,592a3b6d-c42b-4567-99c9-ecf63bd66499,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+chuck ragan,Chuck Ragan,97417292-3fb0-40ea-8837-5540cfb4de71,rock,0,rock,False
+chvrches,Chvrches,6a93afbb-257f-4166-b389-9f2a1e5c5df8,electronic,1,electronic | rock | pop,True
+cibo matto,Cibo Matto,dc4968ba-1fe0-43b9-bba0-81c09acd6326,electronic,1,electronic | rock,True
+circa survive,Circa Survive,a2496a3c-8f42-4b98-b780-6f8d64f56441,rock,0,rock,False
+citizen cope,Citizen Cope,9b21f670-8359-4e11-be1d-bf75b649a719,rock,0,rock,False
+civil twilight,Civil Twilight,36ecdd8b-ed83-4ccf-a930-52cf582d3c9d,rock,0,rock,False
+clap your hands say yeah,Clap Your Hands Say Yeah,4b2d6a23-034d-4a29-9bb9-d2462796da4e,rock,0,rock,False
+clay aiken,Clay Aiken,a25f3156-ef58-4c07-9927-ce18bd6e103b,rock,0,rock | pop,True
+clay walker,Clay Walker,961eb4d5-df1a-4959-a6fb-039278927ac4,country,0,country,False
+clean bandit,Clean Bandit,dacc2d64-7e59-42a8-87a9-10c53919aff2,electronic,1,electronic | rock | pop,True
+clint black,Clint Black,dcd522c9-ac64-4c53-b080-6aab4abf2b44,country,0,country,False
+clipse,Clipse,e6424fa5-08d3-41c6-96f3-8549f733708c,hiphop_rnb,1,hiphop_rnb,False
+cloud cult,Cloud Cult,a33a9cd6-8c03-4047-b62d-59f76f494c20,rock,0,rock | pop,True
+cloud nothings,Cloud Nothings,29c91854-8c45-469b-b36d-a11fb650638b,rock,0,rock,False
+cobra starship,Cobra Starship,ffb390b8-8df4-4b72-97d1-7b2fc008a452,electronic,1,electronic | rock | pop,True
+cody johnson,Cody Johnson,faabeed5-3dd0-4be5-aec5-e6486e68db2f,country,0,country,False
+cody simpson,Cody Simpson,afa02917-17ce-439d-8e8d-09980d82d7cf,hiphop_rnb,1,hiphop_rnb | pop,True
+coffey anderson,Coffey Anderson,2a0b5b60-130a-4d0e-a95a-3c3ad585fcd7,country,0,country,False
+colbie caillat,Colbie Caillat,efc8a006-d0c6-4a9b-8cb1-91ca770fa2b9,country,0,country | rock | pop,True
+cold 187um,Cold 187um,933f0e55-05e4-4ee5-8b30-5d5e930ca836,hiphop_rnb,1,hiphop_rnb,False
+coldplay,Coldplay,cc197bad-dc9c-440d-a5b5-d52ba2e14234,rock,0,rock | pop,True
+cole swindell,Cole Swindell,365247e5-db90-4d0e-bf2c-ca18b54fcab9,country,0,country | pop,True
+collective soul,Collective Soul,aa266ac7-d919-4132-982e-76cbd95591a7,christian,0,christian | rock | pop,True
+colony house,Colony House,5f3987e9-20f7-4f45-8187-7ef2102e712a,rock,0,rock,False
+colt ford,Colt Ford,52730e29-8ffa-43b3-a341-8750f3d1496e,hiphop_rnb,1,hiphop_rnb | country | rock,True
+conor oberst,Conor Oberst,0eee89dc-7d86-4a15-97be-011652c49288,rock,0,rock,False
+corinne bailey rae,Corinne Bailey Rae,bc85c6f6-6b06-44c1-8754-ef32c1e6b824,hiphop_rnb,1,hiphop_rnb,False
+corrosion of conformity,Corrosion of Conformity,0f6e80ef-1972-4dee-8896-dc9955f1beeb,rock,0,rock | pop,True
+cosculluela,Cosculluela,2deb0058-8571-4f57-8470-1e63cdc9ef98,latin,1,latin | hiphop_rnb,True
+counting crows,Counting Crows,a0327dc2-dc76-44d5-aec6-47cd2dff1469,country,0,country | rock | pop,True
+court yard hounds,Court Yard Hounds,bddb5921-75fb-423d-92de-671c615d39cb,country,0,country | rock | pop,True
+courtney barnett,Courtney Barnett,55111838-f001-494a-a1b5-9d818db85810,rock,0,rock,False
+cowboy junkies,Cowboy Junkies,b52211f1-49a2-4cd2-8535-dd1ba37ea90b,country,0,country | rock,True
+cracker,Cracker,ca48bfb8-37c5-4a04-9837-a07975ee0cd3,country,0,country | rock,True
+cradle of filth,Cradle of Filth,7e26cbe1-b8f5-4215-af82-e43d5f8ff308,rock,0,rock,False
+craig finn,Craig Finn,6a62a034-cee3-490c-a2ad-621eca2f25a4,rock,0,rock,False
+craig morgan,Craig Morgan,1415b94a-ae0d-4918-9100-1943e8227f1b,country,0,country,False
+creedence clearwater revisited,Creedence Clearwater Revisited,44c48a1b-defd-4222-bee6-03f9ee9a7be9,rock,0,rock | pop,True
+creedence clearwater revival,Creedence Clearwater Revival,109958eb-a335-4c5e-907e-597ff4c6af46,country,0,country | rock | pop,True
+cristian castro,Cristian Castro,8cc00e45-94c9-40e0-882b-0e76dd5b472b,latin,1,latin | pop,True
+cross canadian ragweed,Cross Canadian Ragweed,5db6febe-4179-459c-8d31-37cfc8d191a9,country,0,country | rock,True
+crowded house,Crowded House,9854d99f-d954-4c0f-9ae5-58a0cdd885f5,rock,0,rock | pop,True
+crowder,Crowder,6bcf61d5-3a08-4194-8112-5e155b7afffa,christian,0,christian,False
+crown the empire,Crown The Empire,5cf3bae7-166f-44c2-b48f-63ddea9d4fb2,electronic,1,electronic | rock,True
+crystal bowersox,Crystal Bowersox,23644c2d-7351-4690-81c0-0153e4652847,hiphop_rnb,1,hiphop_rnb | rock,True
+crystal castles,Crystal Castles,b1570544-93ab-4b2b-8398-131735394202,electronic,1,electronic | rock | pop,True
+cults,Cults,4c671d5a-7027-4398-8055-03e61d1a3967,rock,0,rock | pop,True
+curren$y,Curren$y,4ce1c576-305a-4b82-82fa-5e5359056219,hiphop_rnb,1,hiphop_rnb | rock,True
+cursive,Cursive,c4153c51-b4ac-4183-beb3-c5dbfce39176,rock,0,rock,False
+cut copy,Cut Copy,caaba574-dfbc-4681-8e56-19b5150897d2,rock,0,rock | pop,True
+cyndi lauper,Cyndi Lauper,7bd9e20e-74b9-446a-a2ed-a223f82a36e7,rock,0,rock | pop,True
+cypress hill,Cypress Hill,51508c1f-8d07-4a00-9cf1-26c570fe7b78,latin,1,latin | hiphop_rnb | rock,True
+d-block,D-Block,34483ca8-7f09-40b7-8f5a-52854d812386,electronic,1,electronic,False
+dj kayslay,DJ KaySlay,57cad114-d0e2-435f-841f-0946df0d4611,hiphop_rnb,1,hiphop_rnb,False
+dj khaled,DJ Khaled,081a2d60-9791-4e05-a075-f1890355eeee,hiphop_rnb,1,hiphop_rnb | pop,True
+dj quik,DJ Quik,542f4f08-4d8f-48db-a414-d3a33a62929f,hiphop_rnb,1,hiphop_rnb,False
+dmx,DMX,f3bf61f8-97d4-4e52-a73d-2ddbbe8196c8,hiphop_rnb,1,hiphop_rnb,False
+da' t.r.u.t.h.,Da' T.R.U.T.H.,7d68bb41-856b-4e2c-a039-b9df50f12e98,hiphop_rnb,1,hiphop_rnb | christian,True
+dada life,Dada Life,5b3cc848-942f-4363-8e89-b63a13c3fd0e,electronic,1,electronic,False
+daddy yankee,Daddy Yankee,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,latin,1,latin | hiphop_rnb | electronic | pop,True
+daft punk,Daft Punk,056e4f3e-d505-4dad-8ec1-d04f521cbb56,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+damien jurado,Damien Jurado,f4805b9d-68f8-438e-8f13-ec7bcb4c8581,rock,0,rock,False
+damon albarn,Damon Albarn,7d7a5fdd-0d04-4c36-8bee-906feeae239c,rock,0,rock | pop,True
+dan + shay,Dan + Shay,33cf3954-10af-4dcb-985f-9420d1fa4168,country,0,country | pop,True
+dan deacon,Dan Deacon,8dd73d1a-0424-4581-af8c-ade3edb44c5a,electronic,1,electronic | rock | pop,True
+dan fogelberg,Dan Fogelberg,b1a7ac99-2ea9-4d3e-b17f-1cad379e46ae,country,0,country | rock | pop,True
+dance gavin dance,Dance Gavin Dance,16456fed-c9f2-4adf-b6ea-97b648c474d2,rock,0,rock | pop,True
+dangerkids,Dangerkids,d5518610-eedb-4291-bf95-cc125e9ca324,hiphop_rnb,1,hiphop_rnb | rock,True
+daniel rossen,Daniel Rossen,39d64c18-3018-40b7-af86-b2f658a57b4d,classical,0,classical | rock,True
+danielle bradbery,Danielle Bradbery,efe7d853-d381-4887-be9b-dec26ff27705,country,0,country | pop,True
+danny gokey,Danny Gokey,2bfdbebe-e54a-4cab-9087-88141d440479,christian,0,christian,False
+danzig,Danzig,8925a01a-8608-411d-a90b-f3a52d061208,rock,0,rock,False
+dar williams,Dar Williams,f9908eb1-30ac-4fc9-929c-81fe2dcf2266,pop,1,pop,False
+darius rucker,Darius Rucker,3ae70f76-ea53-4cc5-906e-d47a384202a1,country,0,country | rock | pop,True
+darkest hour,Darkest Hour,e0ededb4-6085-4f68-90f7-89bc560930a3,rock,0,rock,False
+darryl worley,Darryl Worley,fac3bb7e-4e51-4fb7-85e4-741d69b6d779,country,0,country,False
+daryl hall,Daryl Hall,31a4c5ca-1899-4a44-a4b1-31e1921ddf17,hiphop_rnb,1,hiphop_rnb | rock,True
+daryl hall john oates,Daryl Hall  John Oates,debabff3-2559-46e5-862d-ef2a906d7010,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+das racist,Das Racist,68528e6a-82d8-4b3b-ab4b-0ae23ab31185,hiphop_rnb,1,hiphop_rnb,False
+dash berlin,Dash Berlin,ccfa0410-bd90-4fd1-ab85-8995a57e265b,electronic,1,electronic,False
+dashboard confessional,Dashboard Confessional,50549203-9602-451c-b49f-ff031ba8635c,rock,0,rock | pop,True
+daughtry,Daughtry,21e3292e-dac8-4609-b57d-402f926aa41f,rock,0,rock | pop,True
+dave hause,Dave Hause,feb265ec-e510-4277-9451-914e3c6ceac5,rock,0,rock,False
+dave koz,Dave Koz,461b7812-cc9c-4e30-ab22-1b42bdba15fd,jazz,0,jazz,False
+dave matthews band,Dave Matthews Band,07e748f1-075e-428d-85dc-ce3be434e906,jazz,0,jazz | rock | pop,True
+david allan coe,David Allan Coe,d6ad0ad1-2a7c-4d5f-8776-331a3732360c,country,0,country | rock,True
+david archuleta,David Archuleta,150c1fdf-3fc1-4672-93fa-a1aca0a85a53,pop,1,pop,False
+david bisbal,David Bisbal,95c8b6b7-1e24-4987-804c-024f6b05cd91,latin,1,latin | pop,True
+david bowie,David Bowie,5441c29d-3602-4898-b1a1-b77fa23b8e50,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+david crosby,David Crosby,e90f9815-221d-4e10-8675-e75c07988113,rock,0,rock,False
+david guetta,David Guetta,302bd7b9-d012-4360-897a-93b00c855680,electronic,1,electronic | pop,True
+david nail,David Nail,a73662ac-647d-4ca4-b26d-162a0d5c5a8e,country,0,country | pop,True
+dawes,Dawes,59bc9caa-5700-4c77-9ab7-f089aa7a357f,country,0,country | rock,True
+dawn richard,Dawn Richard,1a10b34d-293a-42f6-856c-fb44d19210f6,hiphop_rnb,1,hiphop_rnb | pop,True
+dayshell,Dayshell,266bfe04-2ef2-47e9-bcf5-fde2c7d062c9,rock,0,rock,False
+dead can dance,Dead Can Dance,ccda046a-2674-4f7d-97e6-f23d6c156432,classical,0,classical | rock | pop,True
+dead by sunrise,Dead by Sunrise,10a0bbc1-4236-4de2-b827-f9fc25f3655c,electronic,1,electronic | rock,True
+deadmau5,Deadmau5,4a00ec9d-c635-463a-8cd4-eb61725f0c60,classical,0,classical | electronic | pop,True
+deafheaven,Deafheaven,f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302,rock,0,rock,False
+dean brody,Dean Brody,55daeec5-3f2f-4d61-b51e-0c6a30241b9e,country,0,country,False
+dean martin,Dean Martin,5e6c760b-42e0-4df4-a221-0269355da00a,country,0,country | jazz | rock | pop,True
+death cab for cutie,Death Cab for Cutie,0039c7ae-e1a7-4a7d-9b49-0cbc716821a6,rock,0,rock | pop,True
+death from above 1979,Death From Above 1979,92dc699f-fcbc-4278-afbe-40b5ad060a55,electronic,1,electronic | rock | pop,True
+death grips,Death Grips,f9133036-ab3d-4e97-bd11-7a2c98ad148a,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+deep purple,Deep Purple,79491354-3d83-40e3-9d8e-7592d58d790a,rock,0,rock | pop,True
+deer tick,Deer Tick,c8c64bcc-48c6-47c9-8411-f5c4fd5a97bb,rock,0,rock,False
+deerhoof,Deerhoof,11eabe0c-2638-4808-92f9-1dbd9c453429,rock,0,rock | pop,True
+deerhunter,Deerhunter,4f416ed7-dda2-45de-a6f1-b986e861cf4b,rock,0,rock | pop,True
+def leppard,Def Leppard,7249b899-8db8-43e7-9e6e-22f1e736024e,rock,0,rock | pop,True
+defeater,Defeater,5ad43538-b4d1-426d-8796-091817cda1db,rock,0,rock,False
+deftones,Deftones,7527f6c2-d762-4b88-b5e2-9244f1e34c46,rock,0,rock,False
+delta spirit,Delta Spirit,574a5acd-3e0a-418b-9a8e-fb260be389bf,country,0,country | rock,True
+deltron 3030,Deltron 3030,ce886f30-8b8f-4cc8-b854-3749291350fd,hiphop_rnb,1,hiphop_rnb | rock,True
+demi lovato,Demi Lovato,faf4cefb-036c-4c88-b93a-5b03dd0a0e6b,rock,0,rock | pop,True
+demon hunter,Demon Hunter,73fe4a37-6860-4bb5-b3ec-0d0c367900ea,christian,0,christian | rock,True
+deon kipping,Deon Kipping,77b5e8a2-393e-428e-8ac8-d6d371c7b168,christian,0,christian,False
+depeche mode,Depeche Mode,8538e728-ca0b-4321-b7e5-cff6565dd4c0,electronic,1,electronic | rock | pop,True
+derek minor,Derek Minor,b2e73cf7-9093-4d50-b3ab-7195ca52b4d2,hiphop_rnb,1,hiphop_rnb,False
+despised icon,Despised Icon,c8dd5b47-a9c7-4dc8-be8f-ec089a622599,rock,0,rock,False
+destiny's child,Destiny's Child,a796b92e-c137-4895-9c89-10f900617a4f,hiphop_rnb,1,hiphop_rnb | pop,True
+destroy rebuild until god shows,Destroy Rebuild Until God Shows,4a40140f-0e68-4ab0-9d6e-6e097957d85e,rock,0,rock,False
+dethklok,Dethklok,1afcd689-9be4-4d1a-a9fa-49e086250f51,rock,0,rock,False
+devendra banhart,Devendra Banhart,0110e63e-0a9b-4818-af8e-41e180c20b9a,rock,0,rock,False
+devil you know,Devil You Know,e35d3678-25e6-48e3-a40d-3059b9831bf3,rock,0,rock,False
+devildriver,DevilDriver,1aded574-9e16-4648-861a-24fd6f1c309e,rock,0,rock,False
+devin the dude,Devin the Dude,b4e1a0b3-af92-4a4b-8f44-9633f59f7138,hiphop_rnb,1,hiphop_rnb,False
+diana krall,Diana Krall,67d2cb7a-9ddb-4a7f-82bf-5a2d1a038e98,jazz,0,jazz | pop,True
+diane birch,Diane Birch,6d94f018-38ea-403c-9b42-1e94785e06b3,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+diddy - dirty money,Diddy - Dirty Money,480cdd78-e54e-4518-9ec9-572a62d7e1e1,hiphop_rnb,1,hiphop_rnb | pop,True
+die antwoord,Die Antwoord,7e07ffb5-c0f6-4891-a74d-a5e12a247785,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+dierks bentley,Dierks Bentley,6bd7faa9-601f-44db-a2a6-239209f83156,country,0,country,False
+diggy,Diggy,0b2ed911-7761-4379-aaba-3a1c49e6b387,hiphop_rnb,1,hiphop_rnb,False
+dilated peoples,Dilated Peoples,c71abd83-9d66-4c7b-9f0d-c9c36e85a955,hiphop_rnb,1,hiphop_rnb | rock,True
+dillon francis,Dillon Francis,1c294418-722f-45a3-a24d-910f9b6f1502,hiphop_rnb,1,hiphop_rnb | electronic,True
+dimmu borgir,Dimmu Borgir,17167af8-c1da-45cc-bba2-9d23f068b7a3,rock,0,rock,False
+dinosaur jr.,Dinosaur Jr.,77c167d2-4965-4421-830a-9815e4956475,rock,0,rock,False
+diplo,Diplo,a56bd8f9-8ef8-4d63-89a4-794ed1360dd2,latin,1,latin | hiphop_rnb | country | electronic | rock | pop,True
+dir en grey,Dir En Grey,ab309b83-904f-4e2c-8d11-a0223bba51f9,rock,0,rock,False
+dirty loops,Dirty Loops,e1ee0672-96a8-44f6-b069-bddaa2553c20,jazz,0,jazz | pop,True
+dirty projectors,Dirty Projectors,71a94ed8-03cc-459a-bd35-a081ca88a402,rock,0,rock,False
+divine heresy,Divine Heresy,66e6aaeb-2d1c-403f-9b28-f0fb99a00616,rock,0,rock,False
+dixie chicks,Dixie Chicks,3248ed2d-bada-41b5-a7b6-ac88faa1f1ac,country,0,country | rock | pop,True
+dizzy wright,Dizzy Wright,6a12275f-4e18-4909-ba4d-7394224de7d2,hiphop_rnb,1,hiphop_rnb,False
+doe b,Doe B,544f94c4-632c-4e66-9ed3-aa43f44a5af6,hiphop_rnb,1,hiphop_rnb,False
+dokken,Dokken,09ade3bd-b110-4277-b923-7dc32e6a3f92,rock,0,rock,False
+dolly parton,Dolly Parton,1d543e07-d0d2-4834-a8db-d65c50c2a856,hiphop_rnb,1,hiphop_rnb | country | christian | rock | pop,True
+dom kennedy,Dom Kennedy,4081ce68-316d-4104-bece-5ed7e9f11296,hiphop_rnb,1,hiphop_rnb,False
+don omar,Don Omar,afbdfac9-2955-4404-ae22-c08bf1c1b51e,latin,1,latin,False
+donald fagen,Donald Fagen,70047e57-0153-4117-b0fc-a1d2e322e5ef,jazz,0,jazz | rock | pop,True
+donald lawrence,Donald Lawrence,eb0584c6-69b0-412a-8b39-00886c792589,christian,0,christian,False
+donell jones,Donell Jones,ff1d04f2-2bbd-47d8-b722-6ac8c53b71b3,hiphop_rnb,1,hiphop_rnb,False
+donnie mcclurkin,Donnie McClurkin,1cef08dc-0429-4353-9916-9f6f421d61e9,christian,0,christian,False
+doris day,Doris Day,3db5dfb1-1b91-4038-8268-ae04d15b6a3e,jazz,0,jazz | pop,True
+dorrough,Dorrough,ab55429e-23c7-4702-a84c-026df5758145,hiphop_rnb,1,hiphop_rnb,False
+dr. dog,Dr. Dog,e9aed5e5-ed35-4244-872e-194862290295,rock,0,rock | pop,True
+draco rosa,Draco Rosa,88a06128-ab9b-4761-8fbf-ab5ecfce4736,latin,1,latin | rock | pop,True
+dragonforce,DragonForce,ef58d4c9-0d40-42ba-bfab-9186c1483edd,rock,0,rock,False
+dream theater,Dream Theater,28503ab7-8bf2-4666-a7bd-2644bfc7cb1d,classical,0,classical | rock,True
+dredg,Dredg,7b2f87f6-db90-464e-a27a-deb4f7219e90,rock,0,rock,False
+drive-by truckers,Drive-By Truckers,8eae1e0a-1696-4532-9e3c-0a072217ef4c,country,0,country | rock,True
+dropkick murphys,Dropkick Murphys,e8374874-4178-4869-b92e-fef6bf30dc04,country,0,country | rock,True
+duane allman,Duane Allman,bb45bbe4-172e-4d1d-9d43-9708504f150f,rock,0,rock,False
+duelo,Duelo,0cf753d5-8885-4bbe-8c3d-4242147fa44e,latin,1,latin,False
+duke ellington,Duke Ellington,3af06bc4-68ad-4cae-bb7a-7eeeb45e411f,jazz,0,jazz,False
+dum dum girls,Dum Dum Girls,ca405011-906d-4090-992f-f230739278b1,rock,0,rock | pop,True
+duncan sheik,Duncan Sheik,2d1829d9-ff1b-4000-b6c6-41d2cfbf3e52,rock,0,rock | pop,True
+duran duran,Duran Duran,1a1cd7f3-e5df-4eca-bae2-2757c9e656b5,electronic,1,electronic | rock | pop,True
+dustin kensrue,Dustin Kensrue,7f18104b-ef7e-4635-b05f-96577c79334b,christian,0,christian | rock,True
+dustin lynch,Dustin Lynch,64f8c7a9-1074-4ab7-bb2c-8397884cd38a,country,0,country,False
+dusty springfield,Dusty Springfield,b896aa8c-2761-40ce-b485-0e1fffd26167,hiphop_rnb,1,hiphop_rnb | pop,True
+dwele,Dwele,808c1fbb-ccfb-4b15-a541-72bec155e696,hiphop_rnb,1,hiphop_rnb,False
+dwight yoakam,Dwight Yoakam,0fb711af-c7ba-4bdc-b0b6-b8495fc0a590,country,0,country,False
+dying fetus,Dying Fetus,f76167bb-c117-4022-8b6b-54c796edf5c9,rock,0,rock,False
+e-40,E-40,a449973b-074b-4cf0-a4d6-f11fa2d1073f,hiphop_rnb,1,hiphop_rnb,False
+erra,ERRA,5c14e10e-735e-4108-a8a5-74d8771672da,rock,0,rock,False
+earl sweatshirt,Earl Sweatshirt,8b22acd6-20e6-4463-a75c-c14b5cfdb666,hiphop_rnb,1,hiphop_rnb | rock,True
+easton corbin,Easton Corbin,c6ada25c-8590-4b75-8013-883a8df55882,country,0,country | pop,True
+easy star all-stars,Easy Star All-Stars,0cee95e3-a61d-4cd1-a39c-75464a05b606,rock,0,rock,False
+echosmith,Echosmith,53317371-09a4-4bf4-a832-22a9c6704be2,rock,0,rock | pop,True
+ed kowalczyk,Ed Kowalczyk,bf22d8ea-2872-4b51-85d5-0772e7db505f,rock,0,rock,False
+eddie vedder,Eddie Vedder,1a60d6dd-9d3e-40fc-a66d-3184f9ee0d61,rock,0,rock,False
+ednita nazario,Ednita Nazario,0cb38216-4daf-452a-ab93-9a943f807de0,latin,1,latin | pop,True
+eels,Eels,14387b0f-765c-4852-852f-135335790466,classical,0,classical | rock | pop,True
+egypt central,Egypt Central,e76b3a0a-e658-4478-b31e-5a5a24eb65d7,rock,0,rock,False
+el debarge,El DeBarge,68eabc1f-f304-46cb-8015-6f9cb7af33c6,hiphop_rnb,1,hiphop_rnb | christian | jazz | pop,True
+el gran combo,El Gran Combo,a34ab81e-a7e0-4d0c-b5f8-2438f104733d,latin,1,latin,False
+el-p,El-P,d9241f5b-721a-4e08-a25a-acd83ed878cc,hiphop_rnb,1,hiphop_rnb | jazz | rock,True
+electric light orchestra,Electric Light Orchestra,0c502791-4ee9-4c5f-9696-0602b721ff3b,electronic,1,electronic | rock | pop,True
+electric wizard,Electric Wizard,da7d57e6-0619-4f0f-8d15-d0b4195c3f55,rock,0,rock,False
+elevation worship,Elevation Worship,f3bb45c8-dcb3-4358-ab21-645e6d0935e4,hiphop_rnb,1,hiphop_rnb | christian,True
+eli young band,Eli Young Band,80737f69-60c5-4c0d-9562-88faf8d8f2f4,country,0,country,False
+ella fitzgerald,Ella Fitzgerald,54799c0e-eb45-4eea-996d-c4d71a63c499,jazz,0,jazz | rock | pop,True
+elle varner,Elle Varner,e05648ac-93c8-489f-b7a0-759e1001a6d9,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+ellie goulding,Ellie Goulding,33ca19f4-18c8-4411-98df-ac23890ce9f5,hiphop_rnb,1,hiphop_rnb | classical | electronic | rock | pop,True
+elton john,Elton John,b83bc61f-8451-4a5d-8b8e-7e9ed295e822,hiphop_rnb,1,hiphop_rnb | country | electronic | rock | pop,True
+eluveitie,Eluveitie,8000598a-5edb-401c-8e6d-36b167feaf38,rock,0,rock,False
+elvis costello,Elvis Costello,8a338e06-d182-46f2-bd16-30a09bc840ba,country,0,country | rock | pop,True
+elvis perkins,Elvis Perkins,ca2f9ff7-c53d-4b8b-a687-a5001ce5fcf6,country,0,country | rock,True
+elvis presley,Elvis Presley,01809552-4f87-45b0-afff-2c6f0730a3be,hiphop_rnb,1,hiphop_rnb | country | christian | rock | pop,True
+emarosa,Emarosa,4b4b24bb-a553-4726-8c4d-a571a881fe59,rock,0,rock,False
+emblem3,Emblem3,2ff61fb7-cf59-4a82-a15c-fa24dc8b16d0,pop,1,pop,False
+emily osment,Emily Osment,882728bd-a6b9-464f-beab-23d3e66143b5,pop,1,pop,False
+eminem,Eminem,b95ce3ff-3d05-4e87-9e01-c97b66af13d4,hiphop_rnb,1,hiphop_rnb | pop,True
+emmure,Emmure,98ef1696-cb7e-4ecc-be1d-22f62bb308a4,rock,0,rock,False
+emmylou harris,Emmylou Harris,35ef61ca-43db-4772-ba27-0489e9ebcb69,country,0,country | rock | pop,True
+empire of the sun,Empire of the Sun,ac7e838c-3d95-47c2-92a9-81767ad7c217,electronic,1,electronic | rock | pop,True
+enter shikari,Enter Shikari,329f95db-f02e-40bf-a5f7-0dea11529ce3,electronic,1,electronic | rock,True
+enya,Enya,4967c0a1-b9f3-465e-8440-4598fd9fc33c,electronic,1,electronic | pop,True
+erasure,Erasure,43b58c98-3779-4b04-9a23-1c95cca3a145,electronic,1,electronic | rock | pop,True
+eric benet,Eric Benet,f5bad1a5-53cf-40c1-b03b-c5cf05c65768,hiphop_rnb,1,hiphop_rnb,False
+eric church,Eric Church,15856215-cc51-4423-879c-9ac955ccb11a,country,0,country | rock | pop,True
+eric clapton,Eric Clapton,618b6900-0618-4f1e-b835-bccb17f84294,rock,0,rock | pop,True
+eric hutchinson,Eric Hutchinson,3347dae7-1a86-4630-844e-e631f969c252,rock,0,rock | pop,True
+eric paslay,Eric Paslay,4b624758-58a1-42b3-9133-55a687f417ad,country,0,country,False
+eric roberson,Eric Roberson,b65a7a21-3200-4da1-925e-17cbc92b696c,hiphop_rnb,1,hiphop_rnb | electronic,True
+erin mccarley,Erin McCarley,97f067d5-ccfe-4d94-ba46-d0803862a9b2,rock,0,rock | pop,True
+erykah badu,Erykah Badu,321531fc-db73-4ffa-a959-61a61a2908c1,hiphop_rnb,1,hiphop_rnb | jazz,True
+escape the fate,Escape The Fate,b9ca7096-68de-455f-8a36-1f1ebb2abf2a,rock,0,rock | pop,True
+esperanza spalding,Esperanza Spalding,5c12b265-5e59-44e0-b657-5cf4169f7316,hiphop_rnb,1,hiphop_rnb | jazz,True
+espinoza paz,Espinoza Paz,3c540922-e986-4f7f-87c9-8fe34ec72bb9,latin,1,latin,False
+etta james,Etta James,e22d2f66-881e-41ca-9356-544697ee5f90,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+evanescence,Evanescence,f4a31f0a-51dd-4fa7-986d-3095c40c5ed9,rock,0,rock | pop,True
+eve 6,Eve 6,ebd2ac91-6249-4e4b-bde1-353a424138c9,rock,0,rock,False
+everclear,Everclear,3604c99d-c146-4276-aa0c-9376d333aeb8,country,0,country | rock | pop,True
+everlast,Everlast,7cf0efe3-2f58-43f7-bb34-d39c34d7b0a5,rock,0,rock,False
+every avenue,Every Avenue,27cb81c2-0a39-444c-bd73-101c14393a4a,rock,0,rock | pop,True
+everyday sunday,Everyday Sunday,901502fb-3759-47c2-afac-064cacb8d8a1,christian,0,christian | rock | pop,True
+ex hex,Ex Hex,2f64e1fd-44b3-44f1-a586-b9916966b39f,rock,0,rock,False
+expire,Expire,498e46e2-59c9-4320-8ccf-12c67a29b125,rock,0,rock,False
+explosions in the sky,Explosions in the Sky,4236acde-2ce2-441c-a3d4-38d55f1b5474,rock,0,rock | pop,True
+eyehategod,Eyehategod,742e54f5-debd-4fc1-a7c1-00edf9b673a5,rock,0,rock,False
+eyes set to kill,Eyes Set To Kill,5c56a575-f1f4-4290-9f41-d7193c9657c4,rock,0,rock,False
+fka twigs,FKA Twigs,1e4e9db7-5068-4a9c-bdd0-5777e47172c8,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+fabolous,Fabolous,d2299099-e617-46dd-b013-ba0b4c72bc63,hiphop_rnb,1,hiphop_rnb | pop,True
+faith evans,Faith Evans,ebcd0bad-75ef-4203-b7b3-7af38a9ef198,hiphop_rnb,1,hiphop_rnb,False
+fall out boy,Fall Out Boy,516cef4d-0718-4007-9939-f9b38af3f784,rock,0,rock | pop,True
+falling in reverse,Falling in Reverse,e56ab1ae-1cfa-4d0e-b33b-af31bff677c7,rock,0,rock | pop,True
+fallujah,Fallujah,54fc6a93-57bb-4192-a4cb-c5850d64afd2,rock,0,rock,False
+family force 5,Family Force 5,64b58850-3d5d-48cb-82be-74921fb5ecdf,christian,0,christian | rock | pop,True
+famous last words,Famous Last Words,ff57ff49-92ff-4201-9728-12f61c04747c,rock,0,rock,False
+far*east movement,Far*East Movement,6bd5655c-b7fe-48ee-8925-c2d2d8798618,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+farruko,Farruko,d2b3524f-67e8-45ef-bfc1-693cac525135,latin,1,latin | hiphop_rnb,True
+fates warning,Fates Warning,17fbada3-6dac-42f3-8a6c-8c1c1484f730,rock,0,rock,False
+father john misty,Father John Misty,172053e5-a7fb-4548-a64d-c53858b5e775,rock,0,rock,False
+fear factory,Fear Factory,c17f08f4-2542-46fb-97f3-3202d60c225a,rock,0,rock,False
+feed me,Feed Me,c8eec78b-f3c5-4d59-a010-e709f7be4508,electronic,1,electronic,False
+fiction family,Fiction Family,9b96bbdb-8d9b-4568-ad1f-73f90a4250c5,rock,0,rock,False
+fifth harmony,Fifth Harmony,e565610b-9a8f-451d-b594-ea658d76f725,latin,1,latin | hiphop_rnb | pop,True
+finger eleven,Finger Eleven,0b76f632-25fa-4681-9862-86499c28afd3,rock,0,rock | pop,True
+fiona apple,Fiona Apple,a9ee533f-8871-4f62-a6bb-91eb264abc90,jazz,0,jazz | rock | pop,True
+fireflight,Fireflight,d921e76e-0877-47a4-b7e2-42332afa62c2,christian,0,christian | rock,True
+fistful of mercy,Fistful Of Mercy,a6e70253-7f00-4347-8cda-652f34526ebb,rock,0,rock,False
+fit for a king,Fit For A King,6eaab7b4-f2cb-4c80-9b36-7e7d5c2fa8c5,rock,0,rock,False
+five finger death punch,Five Finger Death Punch,7e8571b1-7c5a-4739-bc51-73d422ee9d74,rock,0,rock,False
+five iron frenzy,Five Iron Frenzy,d9064234-e39a-42fe-b24b-4ca81f38311c,christian,0,christian | rock | pop,True
+five for fighting,Five for Fighting,23eeaeaf-423d-4859-8c91-2175ece74287,rock,0,rock | pop,True
+flatfoot 56,Flatfoot 56,f6d41c99-7ec5-43e8-bd17-bccaf1312e99,christian,0,christian | rock,True
+fleet foxes,Fleet Foxes,fa97dd36-1b82-43d7-a6e4-2adeafd59cef,classical,0,classical | rock,True
+fleetwood mac,Fleetwood Mac,bd13909f-1c29-4c27-a874-d4aaf27c5b1a,rock,0,rock | pop,True
+flight of the conchords,Flight of the Conchords,1f574ab1-a46d-4586-9331-f0ded23e0411,rock,0,rock,False
+flo rida,Flo Rida,4593d49a-7f67-46ba-9ec0-126bd676286f,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+flobots,Flobots,7892c869-1e2b-4b38-8540-4caff7dd2b49,hiphop_rnb,1,hiphop_rnb | rock,True
+flogging molly,Flogging Molly,c3694ddc-f7e5-40dd-9fad-90d11a2c50fa,rock,0,rock,False
+florence + the machine,Florence + The Machine,5fee3020-513b-48c2-b1f7-4681b01db0c6,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+florida georgia line,Florida Georgia Line,c16817df-0160-490d-a437-c128cbca9218,country,0,country | pop,True
+flux pavilion,Flux Pavilion,3ce513c5-bdd4-492c-a875-07e0f3e1993b,electronic,1,electronic,False
+flying colors,Flying Colors,c9ef4e0c-ac8d-4d99-9356-62a11128f15f,rock,0,rock,False
+flying lotus,Flying Lotus,fc7376fe-1a6f-4414-b4a7-83f50ed59c92,hiphop_rnb,1,hiphop_rnb | jazz | electronic | rock,True
+flyleaf,Flyleaf,9011971a-df29-4b57-8889-2e5e9a645cbe,christian,0,christian | rock,True
+foals,Foals,6a65d878-fcd0-42cf-aff9-ca1d636a8bcc,rock,0,rock,False
+foo fighters,Foo Fighters,67f66c07-6e61-4026-ade5-7e782fad3a5d,rock,0,rock | pop,True
+for the fallen dreams,For The Fallen Dreams,6fca6647-1dce-4028-8348-68238b8d2237,rock,0,rock,False
+for today,For Today,be33d914-c169-4630-9116-335fac9e6895,christian,0,christian | rock,True
+forever came calling,Forever Came Calling,c114f39a-281e-4e66-82c6-6a0d763c5cb2,rock,0,rock | pop,True
+forever the sickest kids,Forever The Sickest Kids,5c6f8874-cb53-4f4d-9168-cc2af8c7ecf9,rock,0,rock | pop,True
+foster the people,Foster the People,e0e1a584-dd0a-4bd1-88d1-c4c62895039d,rock,0,rock | pop,True
+fountains of wayne,Fountains of Wayne,0f82d6b5-12fb-4569-b047-a00194f572a7,rock,0,rock | pop,True
+four tet,Four Tet,3bcff06f-675a-451f-9075-99e8657047e8,electronic,1,electronic | rock,True
+four year strong,Four Year Strong,c0a138e2-cef7-471b-8fbb-524e1076256a,rock,0,rock | pop,True
+foxy shazam,Foxy Shazam,919e82ff-f3f3-4b05-a7e9-c28d1c7ac981,rock,0,rock,False
+foxygen,Foxygen,913e6848-6865-4717-ac5e-3bd9c22826be,rock,0,rock | pop,True
+foy vance,Foy Vance,6ef3b33e-848c-4773-867b-5fb1397ef408,rock,0,rock | pop,True
+fozzy,Fozzy,d6cc88c5-5d20-4997-ab0c-3e455c6e3c24,rock,0,rock,False
+francesca battistelli,Francesca Battistelli,9e8b297d-e183-4524-a325-7a4b214dfbf1,christian,0,christian,False
+franco de vita,Franco De Vita,2cbd0554-99bf-4a1b-99bf-d11b3c58a50b,latin,1,latin | pop,True
+franco el gorila,Franco El Gorila,3811f6dc-9b82-48fd-9832-5b392d0bc8e5,latin,1,latin,False
+frank ocean,Frank Ocean,e520459c-dff4-491d-a6e4-c97be35e0044,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+frank sinatra,Frank Sinatra,197450cd-0124-4164-b723-3c22dd16494d,jazz,0,jazz | pop,True
+frankie ballard,Frankie Ballard,639a9766-297d-4053-821b-91abb3e4d275,country,0,country,False
+franz ferdinand,Franz Ferdinand,aa7a2827-f74b-473c-bd79-03d065835cf7,rock,0,rock | pop,True
+fred hammond,Fred Hammond,7fec1c34-13e2-4cb5-ba15-3e478d716c6d,christian,0,christian,False
+french montana,French Montana,45dc5f07-6609-4760-a933-8c9e0f858d05,hiphop_rnb,1,hiphop_rnb,False
+friendly fires,Friendly Fires,ef656595-bbe8-4386-8953-be8df9f54472,rock,0,rock,False
+frightened rabbit,Frightened Rabbit,dc21d171-7204-4759-9fd0-77d031aeb40c,classical,0,classical | rock | pop,True
+from indian lakes,From Indian Lakes,b7765a33-ed19-4d99-bc93-1e54efdbe255,rock,0,rock,False
+further seems forever,Further Seems Forever,2bc3d11f-58fe-4adb-bfd9-6d316973005a,rock,0,rock,False
+future islands,Future Islands,74963434-dcb6-4b14-98cc-99873b06db66,rock,0,rock | pop,True
+g unit,G Unit,3a212655-d7d5-4570-9d31-4b7b1ef02629,hiphop_rnb,1,hiphop_rnb,False
+g-dragon,G-Dragon,b4f66d7f-3282-404e-a682-97374d63b5ab,hiphop_rnb,1,hiphop_rnb | pop,True
+g-eazy,G-Eazy,db48610c-6d8f-4d10-90ca-c4d14bb1a8b1,hiphop_rnb,1,hiphop_rnb,False
+gwar,GWAR,f7ccd53a-234c-4800-8d1b-21b201bad1de,rock,0,rock,False
+gaither vocal band,Gaither Vocal Band,ad8648f9-95ca-4fc1-bc19-9cee86e468d3,christian,0,christian,False
+garth brooks,Garth Brooks,b76645c5-78b0-4e4c-8f95-003f40013a45,country,0,country | rock | pop,True
+gary allan,Gary Allan,d211333a-22eb-4be7-a2ac-ca12c73646db,country,0,country | rock,True
+gary clark jr.,Gary Clark Jr.,c733c4e6-22a2-499d-ace7-17b832356aff,hiphop_rnb,1,hiphop_rnb | rock,True
+gary numan,Gary Numan,6cb79cb2-9087-44d4-828b-5c6fdff2c957,jazz,0,jazz | electronic | rock | pop,True
+gateway worship,Gateway Worship,17d3108b-d3ef-47b7-95c7-ebe89f2585dd,christian,0,christian,False
+gavin degraw,Gavin DeGraw,3f2a12e9-6398-42fd-b257-2f6abd4aa5fc,rock,0,rock | pop,True
+george duke,George Duke,fd180bc2-7b01-4b07-9597-451e7383f1b4,hiphop_rnb,1,hiphop_rnb | jazz | rock,True
+george strait,George Strait,5ab2cf34-517e-48eb-b3a5-34e1cbcd600a,country,0,country,False
+george thorogood,George Thorogood,444e7c50-7f72-4954-b61c-1717332a27d1,rock,0,rock,False
+gerald albright,Gerald Albright,a4fff57d-026a-4e32-8c8f-05a7ccb16e7b,jazz,0,jazz,False
+gerald levert,Gerald Levert,9363bf34-2bc4-471e-b6c9-9e8aac379551,hiphop_rnb,1,hiphop_rnb,False
+gerard way,Gerard Way,53dc88bd-cdcb-440d-81aa-51a40ef07848,rock,0,rock | pop,True
+gerardo ortiz,Gerardo Ortiz,fb5b1cdc-007e-49b2-aea0-c7ffa9316120,latin,1,latin,False
+get scared,Get Scared,24a60384-83b0-4cfb-abba-d97075e83e52,rock,0,rock,False
+ghost b.c.,Ghost B.C.,2bcf2e02-5bc3-4c76-bf76-41126cb11444,rock,0,rock | pop,True
+ghostface killah,Ghostface Killah,3b39abeb-0064-4eed-9ddd-ee47a45c54cb,hiphop_rnb,1,hiphop_rnb | pop,True
+ghostland observatory,Ghostland Observatory,b0fa8b31-87cb-43ad-9f15-179725c1e3b6,electronic,1,electronic | rock,True
+gillian welch,Gillian Welch,2ff49515-1701-4bac-a53a-04345893f3f3,country,0,country | rock,True
+gin blossoms,Gin Blossoms,1c42b705-d3fc-452e-93ee-d0030bdd70f3,rock,0,rock | pop,True
+gin wigmore,Gin Wigmore,cb0b7933-a5bc-48dc-a36b-00315d12ca8c,rock,0,rock | pop,True
+ginuwine,Ginuwine,9e5fd95d-c0c1-412c-be11-06e7fbe99556,hiphop_rnb,1,hiphop_rnb,False
+girls' generation,Girls' Generation,b7442f18-d9be-4185-8b51-482510046156,hiphop_rnb,1,hiphop_rnb | pop,True
+girls' generation-tts,Girls' Generation-TTS,506c92c3-0d1f-4bc9-b6ee-848c99ef5fd4,pop,1,pop,False
+glass cloud,Glass Cloud,840a70c3-12e3-442e-81a1-06ab55d1524f,rock,0,rock,False
+glasses malone,Glasses Malone,93fae984-0b8a-45cc-8558-0f4e130249a5,hiphop_rnb,1,hiphop_rnb,False
+glasvegas,Glasvegas,da785f6e-86e2-4efa-aca6-6c3cbd15d91c,rock,0,rock | pop,True
+glen campbell,Glen Campbell,57976431-1a5c-4968-a422-b92c5e9b0d4f,country,0,country | rock | pop,True
+glen hansard,Glen Hansard,57f89cad-d2ef-48df-9119-8287b106716a,rock,0,rock,False
+glenn frey,Glenn Frey,a717be4f-8b3d-4355-b33c-2b84f88fe40d,rock,0,rock | pop,True
+gloria estefan,Gloria Estefan,becd8cc6-a453-4183-af88-dedaaec859a6,latin,1,latin | rock | pop,True
+gloria trevi,Gloria Trevi,f5b33d1b-e8bc-444e-bc5c-490473aa0f50,latin,1,latin | rock | pop,True
+gloriana,Gloriana,45ee3bf0-7ef7-4a87-81e3-a5867473b93d,country,0,country | pop,True
+go radio,Go Radio,6bcdd659-b1f6-4b6e-afc4-20f4473d7306,rock,0,rock | pop,True
+goapele,Goapele,fc272874-7f58-40ab-979c-1a1250f365f1,hiphop_rnb,1,hiphop_rnb | electronic,True
+goatwhore,Goatwhore,eb7c29b4-6951-4ac6-8516-4374fb51e6bc,rock,0,rock,False
+god forbid,God Forbid,5ff2b813-ced5-4e1a-8b8d-408f681a0748,rock,0,rock,False
+godsmack,Godsmack,ac2d1c91-3667-46aa-9fe7-170ca7fce9e2,rock,0,rock,False
+godspeed you! black emperor,Godspeed You! Black Emperor,3648db01-b29d-4ab9-835c-83f6a5068fe4,classical,0,classical | rock | pop,True
+gogol bordello,Gogol Bordello,f47fc54d-b334-4321-8218-00c5b11d4dd1,latin,1,latin | rock,True
+goldfrapp,Goldfrapp,7b885d42-3c41-4f43-9944-a5855ec5155e,classical,0,classical | electronic | rock | pop,True
+goo goo dolls,Goo Goo Dolls,e2c00c56-8365-4160-9f40-a64682917633,rock,0,rock | pop,True
+good charlotte,Good Charlotte,b267ca80-034e-4dc1-9ed4-ec45f1fed41d,rock,0,rock | pop,True
+good old war,Good Old War,b0612eb8-5462-4248-a9d1-5ec70a1f2466,rock,0,rock,False
+goodie mob,Goodie Mob,ade9b668-e38f-41a8-a6e5-51442c5d6468,hiphop_rnb,1,hiphop_rnb,False
+gorilla zoe,Gorilla Zoe,e7840b1b-0fc5-42a7-b05a-ffca943308ad,hiphop_rnb,1,hiphop_rnb,False
+gorillaz,Gorillaz,e21857d5-3256-4547-afb3-4b6ded592596,latin,1,latin | hiphop_rnb | electronic | rock | pop,True
+gotye,Gotye,6f6fd596-76e0-4b82-aa37-f558ac2d337b,classical,0,classical | electronic | rock | pop,True
+gov't mule,Gov't Mule,f8796712-19fd-49ca-9cc7-99c30215b3cd,rock,0,rock,False
+graffiti6,Graffiti6,894f5940-10a2-4134-a0ff-b678bd593305,rock,0,rock | pop,True
+granger smith,Granger Smith,d0134923-5506-4768-b8d0-6eb318005707,country,0,country,False
+grateful dead,Grateful Dead,6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6,country,0,country | rock | pop,True
+great big sea,Great Big Sea,41a52c92-753f-4da4-bd9d-a01186cbbf6a,rock,0,rock | pop,True
+greeley estates,Greeley Estates,0c559a85-776c-4cf4-b18a-f3fe6a105e18,rock,0,rock | pop,True
+green day,Green Day,084308bd-1654-436f-ba03-df6697104e19,rock,0,rock | pop,True
+green river ordinance,Green River Ordinance,fa1d45af-ceeb-445f-afe2-65308eef7780,rock,0,rock | pop,True
+greensky bluegrass,Greensky Bluegrass,199596a3-a1af-49f8-8795-259eff8461fb,country,0,country,False
+gregg allman,Gregg Allman,679a4fa1-f7f3-44ca-b440-ad6fb163b10d,country,0,country | christian | rock,True
+gregory alan isakov,Gregory Alan Isakov,5c61efe6-3cdf-4160-b43c-9274944369e6,country,0,country | rock,True
+gregory porter,Gregory Porter,7ac1e33f-0cdf-4e81-b914-41830700d746,hiphop_rnb,1,hiphop_rnb | christian | jazz | pop,True
+gretchen wilson,Gretchen Wilson,11d9fc14-e6ac-4c50-81e7-062dd82566ce,country,0,country,False
+greyson chance,Greyson Chance,5dd013b1-31fb-4ef1-b0b5-e697b4b546ba,pop,1,pop,False
+grieves,Grieves,c0bfa680-6c3f-4b79-8034-dacc23b929a7,hiphop_rnb,1,hiphop_rnb,False
+grinderman,Grinderman,611f1230-7c2b-4610-b9e6-5a4fcb6e3cc7,rock,0,rock,False
+grizzly bear,Grizzly Bear,59a7fbcb-ff74-494d-abd0-9c82359040c9,classical,0,classical | rock | pop,True
+group 1 crew,Group 1 Crew,d893c21c-c149-40a4-a2f9-aa98eedcc5b6,hiphop_rnb,1,hiphop_rnb | christian,True
+grouplove,Grouplove,d8e41375-bd8d-4e39-9da7-f0c171e97086,rock,0,rock | pop,True
+guster,Guster,6cbe1e63-5895-4168-ac7e-f0d2836ba0c1,rock,0,rock | pop,True
+guy clark,Guy Clark,e885f72e-4617-46de-9454-5485061f29b3,country,0,country,False
+guy penrod,Guy Penrod,90f45c1b-9bbe-409b-a1d4-832571a6bbab,christian,0,christian,False
+gym class heroes,Gym Class Heroes,f4d4b515-0b74-423f-a161-db184330c37c,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+gyptian,Gyptian,c70a1a51-caf3-4667-b956-11e27a00fe37,hiphop_rnb,1,hiphop_rnb,False
+halestorm,Halestorm,eaed2193-e026-493b-ac57-113360407b06,country,0,country | rock | pop,True
+haley reinhart,Haley Reinhart,d774c8ff-2b2b-423d-94ba-a827b3554785,hiphop_rnb,1,hiphop_rnb,False
+halford,Halford,9b96dcab-ed89-42f4-9863-ca5ec473860e,rock,0,rock,False
+halsey,Halsey,3377f3bb-60fc-4403-aea9-7e800612e060,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+handguns,Handguns,1d8d3253-bcc2-4ead-93dd-fc64568b8b52,rock,0,rock | pop,True
+hands like houses,Hands Like Houses,5f4ad442-76d1-4cd3-8677-3cff7be4c8d4,rock,0,rock,False
+hank williams jr.,Hank Williams Jr.,1d8010a0-b642-4c8f-9c8d-8dc66b7bb81a,country,0,country | rock,True
+hardwell,Hardwell,170d6637-36e0-49dd-a225-c4fd5b77a285,electronic,1,electronic,False
+haste the day,Haste The Day,bcbc08d6-4615-4f40-963c-5158ebe2b9e0,christian,0,christian | rock,True
+hatebreed,Hatebreed,40b7efb7-1268-4a80-b354-600afdcbe9e2,rock,0,rock,False
+hawk nelson,Hawk Nelson,d176915b-71d9-49ca-ba47-da52d46d0e4a,christian,0,christian | rock | pop,True
+hawthorne heights,Hawthorne Heights,194eeda1-e662-43bc-b9be-32fc1afecc8b,rock,0,rock | pop,True
+hayes carll,Hayes Carll,89c83caa-7f08-4e0d-bee9-db0139044e38,country,0,country,False
+he is legend,He Is Legend,b9fb5447-7f95-4a6a-a157-afed2d7b9f4c,rock,0,rock,False
+heartless bastards,Heartless Bastards,584eadcd-e493-4c59-a1f2-9eea9ee399a3,rock,0,rock,False
+heather headley,Heather Headley,a373933d-555c-446f-a7a2-b8b8a291659f,hiphop_rnb,1,hiphop_rnb,False
+heffron drive,Heffron Drive,5c0c82b3-6bd0-4739-8c45-5360c395491a,rock,0,rock | pop,True
+hellyeah,HellYeah,680d9f43-3287-4f16-a9ab-b5904746f745,rock,0,rock,False
+hellogoodbye,Hellogoodbye,3fa7095b-4447-465e-a784-14b07789d7a1,electronic,1,electronic | rock | pop,True
+helloween,Helloween,765774a0-2060-469b-8b7d-612eea48579b,rock,0,rock,False
+herb alpert,Herb Alpert,012ef4f9-2d35-4000-86e5-bc761f87dab9,jazz,0,jazz | pop,True
+herbie hancock,Herbie Hancock,27613b78-1b9d-4ec3-9db5-fa0743465fdd,hiphop_rnb,1,hiphop_rnb | jazz | classical,True
+hey monday,Hey Monday,fb45c8d9-4c85-4edf-b41b-af69ad344735,rock,0,rock | pop,True
+hezekiah walker,Hezekiah Walker,f503aeb7-6c16-4a99-abc4-747639ce0fe5,christian,0,christian,False
+high on fire,High on Fire,720249d5-62c5-4679-8ead-dcda3329d6e7,rock,0,rock,False
+highlands worship,Highlands Worship,ea4a3ea8-bf18-4221-a0a8-2e69dead766e,christian,0,christian,False
+hilary weeks,Hilary Weeks,8c822d42-ef69-4890-aa91-f33a2fd95aee,christian,0,christian,False
+hillsong united,Hillsong United,a29ae051-283b-4703-be3d-2accfa3a75a2,christian,0,christian,False
+hillsong worship,Hillsong Worship,dabaab7a-e807-435e-b2d7-1403fcdc0671,christian,0,christian,False
+hinder,Hinder,39b22a9e-59dd-412b-ac3c-0725c807c72b,rock,0,rock,False
+hit the lights,Hit The Lights,b0442f82-6322-4096-8535-b3bb776019d3,rock,0,rock | pop,True
+holly williams,Holly Williams,0aac51db-d89e-420b-a2e4-515ca763eadd,country,0,country,False
+hollywood undead,Hollywood Undead,321fdfbb-426b-43f7-8295-fa9aca6348d9,hiphop_rnb,1,hiphop_rnb | rock,True
+home free,Home Free,178131a1-bb63-44dd-8097-a5ac99933c30,country,0,country,False
+hoobastank,Hoobastank,2fa0d3ac-b64c-401a-b0a1-4915ba6cc157,rock,0,rock | pop,True
+hoodie allen,Hoodie Allen,b28ac005-27fe-4bb9-86a2-dbf55ef21469,hiphop_rnb,1,hiphop_rnb | pop,True
+hopsin,Hopsin,d4fde760-6aaf-4cbb-9736-1ae22f8a1b0d,hiphop_rnb,1,hiphop_rnb | pop,True
+hot chelle rae,Hot Chelle Rae,20aee940-3b65-4d04-8768-9a5918db2973,pop,1,pop,False
+hot chip,Hot Chip,d8915e13-d67a-4aa0-9c0b-1f126af951af,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+hot water music,Hot Water Music,c83907ee-8b5a-4547-8f68-96572243ea7f,rock,0,rock,False
+how to destroy angels,How To Destroy Angels,143b396d-a678-43aa-8c74-628fea8e381f,electronic,1,electronic | rock,True
+how to dress well,How To Dress Well,50a5520c-454a-4d5d-ab74-d442b58e7304,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+howie day,Howie Day,1aff9117-5820-490d-9938-ccad96669292,rock,0,rock | pop,True
+hozier,Hozier,b4691384-50c3-4afd-9988-51d3ec5db65d,hiphop_rnb,1,hiphop_rnb | classical | rock | pop,True
+huey mack,Huey Mack,c52e92e5-41aa-452d-9565-e335bcaa9e4d,hiphop_rnb,1,hiphop_rnb,False
+hugh laurie,Hugh Laurie,4b90c344-31bd-48d1-aa58-8e061a8251c9,jazz,0,jazz,False
+hundredth,Hundredth,66b2f925-e924-4cde-b09f-27ec21d29564,rock,0,rock | pop,True
+hurray for the riff raff,Hurray for the Riff Raff,b053efc9-e8ea-474a-981f-a3c6fffcc694,country,0,country,False
+i am the avalanche,I Am The Avalanche,8e8e27cb-8553-496e-98bc-67bbd72e98dc,rock,0,rock | pop,True
+i see stars,I See Stars,e571db0f-fcbc-4ede-b5da-57b093b263e6,electronic,1,electronic | rock,True
+i the breather,I The Breather,355e1f31-d0ad-40a1-8388-0a7b04f05b1f,rock,0,rock,False
+ice cube,Ice Cube,1d11e2a1-4531-4d61-a8c7-7b5c6a608fd2,hiphop_rnb,1,hiphop_rnb | pop,True
+ice nine kills,Ice Nine Kills,d8f0f6ac-a0a7-47bd-9786-f9106d7bdd11,rock,0,rock,False
+iced earth,Iced Earth,8a0e10a9-80c7-40e0-bf5b-89f1d57f9537,rock,0,rock,False
+icon for hire,Icon for Hire,bfce9c6d-eff7-4965-b20e-cb21397470f5,electronic,1,electronic | rock | pop,True
+icona pop,Icona Pop,c5f259d0-abd8-418e-81ee-3965fd4e4e9a,electronic,1,electronic | rock | pop,True
+idina menzel,Idina Menzel,929ca8c3-5df3-4fe9-bc59-f8d603780bce,pop,1,pop,False
+iggy azalea,Iggy Azalea,3a052c99-8c18-484a-8beb-9873b4fb3106,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+iggy pop,Iggy Pop,f37b3f31-b1f8-4b88-8cb5-b34f709b17d7,rock,0,rock | pop,True
+il divo,Il Divo,e555f0c3-0a83-4c57-8a67-e657aac27ace,classical,0,classical | pop,True
+ill nino,Ill Nino,91e2e08f-abd7-44d6-9a84-b8a4afa8a265,rock,0,rock,False
+imagine dragons,Imagine Dragons,012151a8-0f9a-44c9-997f-ebd68b5389f9,rock,0,rock | pop,True
+imelda may,Imelda May,cf7560ef-7714-477e-b4cd-59de0a2d11fb,jazz,0,jazz | rock,True
+imogen heap,Imogen Heap,328d146c-79f1-4eb6-9e40-8ee5710c14e5,electronic,1,electronic | rock | pop,True
+impending doom,Impending Doom,694d9b58-f440-450c-9e2c-212fa69d7fda,christian,0,christian | rock,True
+in flames,In Flames,31745282-b1ea-4d62-939f-226b14d68e7c,rock,0,rock,False
+in this moment,In This Moment,29266b3d-b5ae-4d09-b721-326246adf68f,rock,0,rock,False
+india.arie,India.Arie,38c7a3b2-17fb-4166-b964-4e445d69efdd,hiphop_rnb,1,hiphop_rnb,False
+indigo girls,Indigo Girls,00c49f40-d715-4b79-b223-432048602cce,rock,0,rock | pop,True
+infant sorrow,Infant Sorrow,0b24712e-deb9-487c-b542-a252e7cfe15e,pop,1,pop,False
+infected mushroom,Infected Mushroom,eab76c9f-ff91-4431-b6dd-3b976c598020,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+ingrid michaelson,Ingrid Michaelson,1fc494a1-9109-4081-a455-2d05bea9d2bf,pop,1,pop,False
+insane clown posse,Insane Clown Posse,7a1eb805-2242-4daa-bd90-c1ed350e2e48,hiphop_rnb,1,hiphop_rnb,False
+intocable,Intocable,40b032dc-8035-4f2a-b478-eb15ddcf6674,latin,1,latin | country | rock,True
+iration,Iration,8d6a2958-37a1-407f-842c-7793eedb836c,rock,0,rock,False
+iris dement,Iris DeMent,e06aa44d-4c98-40c6-bf1d-d54637fa0bde,country,0,country,False
+isaac carree,Isaac Carree,508f3b76-0584-4ec7-835b-bf6e937ab184,christian,0,christian,False
+isaiah rashad,Isaiah Rashad,37547347-ea75-45fa-9766-ff36b44d8147,hiphop_rnb,1,hiphop_rnb | jazz,True
+ivy queen,Ivy Queen,ff06ecc0-72a5-4a81-a253-d840d9aefb32,latin,1,latin | hiphop_rnb | pop,True
+j dilla,J Dilla,cbcbb22c-3a8d-46af-b4ba-09c98f0d7931,hiphop_rnb,1,hiphop_rnb,False
+j mascis,J Mascis,82315599-2215-4c3e-a36f-87be58d06ec0,rock,0,rock,False
+j moss,J Moss,4395fe6e-3304-46b2-9f99-a2d2fd63e0b5,christian,0,christian,False
+j. cole,J. Cole,875203e1-8e58-4b86-8dcb-7190faf411c5,hiphop_rnb,1,hiphop_rnb,False
+j. holiday,J. Holiday,4995a475-1580-4217-a11b-448711e41910,hiphop_rnb,1,hiphop_rnb,False
+j.j. cale,J.J. Cale,4b0be624-6b87-47e8-bbf0-588a2c6c0439,country,0,country | rock | pop,True
+jd mcpherson,JD McPherson,84c7cb93-0622-4b90-8d53-ee2b4650097f,rock,0,rock,False
+jeff the brotherhood,JEFF the Brotherhood,51b13b20-dc03-4d51-8c6d-f3b0c52476a6,rock,0,rock,False
+jj doom,JJ Doom,edc0f73d-6290-4d11-ae34-6b447f850162,hiphop_rnb,1,hiphop_rnb,False
+jj lawhorn,JJ Lawhorn,8f1603e6-d6db-4ff2-84ac-0a36ed52b913,country,0,country,False
+ja rule,Ja Rule,b504f625-4ef6-4a5a-81e8-870a61e8dc9c,hiphop_rnb,1,hiphop_rnb | pop,True
+jack ingram,Jack Ingram,ef99a425-baac-4a0b-87c0-4cc99d77f97d,country,0,country,False
+jack's mannequin,Jack's Mannequin,2b6514cd-d424-45fe-ab85-bd8719f4492d,rock,0,rock | pop,True
+jackie evancho,Jackie Evancho,111fc571-075e-4b95-baed-dfa526fbca5d,classical,0,classical,False
+jackson 5,Jackson 5,e5257dc5-1edd-4fca-b7e6-1158e00522c8,hiphop_rnb,1,hiphop_rnb | pop,True
+jackson browne,Jackson Browne,88527d26-7496-47c5-8358-ebdb1868a90f,rock,0,rock | pop,True
+jackyl,Jackyl,ef1af9dd-8d22-4430-8d00-baafcb67d592,rock,0,rock,False
+jadakiss,Jadakiss,83735edd-f2a3-41d0-a31d-652bc3cadb3e,hiphop_rnb,1,hiphop_rnb,False
+jaheim,Jaheim,3a9cf658-0f0b-410e-b07e-8cf7eee53169,hiphop_rnb,1,hiphop_rnb,False
+jake bugg,Jake Bugg,0d9905e6-add6-4713-94ca-9f686f9b5e9b,rock,0,rock,False
+jakob dylan,Jakob Dylan,2f877714-727d-490b-94fb-a8d32ee4cea5,country,0,country | rock,True
+james blunt,James Blunt,ebee61b4-bbdd-4087-9bcb-d5aa099088ec,rock,0,rock | pop,True
+james durbin,James Durbin,c0e02814-abda-4423-8fe7-7fb05fcbcdda,rock,0,rock,False
+james labrie,James LaBrie,cc7d3375-dabd-4091-8884-4638069f5909,rock,0,rock,False
+james otto,James Otto,a2eec222-7e07-4dd5-a0e3-f1484b79954a,country,0,country,False
+james vincent mcmorrow,James Vincent McMorrow,3b7b1fd3-6952-4aa8-9467-40b105d1039b,rock,0,rock | pop,True
+jamey johnson,Jamey Johnson,8bbb18d5-69d0-465f-8f57-7b293223f02e,country,0,country,False
+jana kramer,Jana Kramer,7ccdfc16-1b38-4368-b286-13e0c8b0bd0e,country,0,country,False
+jane's addiction,Jane's Addiction,e3434cc7-d348-491a-9dc8-325af3d9086d,rock,0,rock,False
+janis joplin,Janis Joplin,76c9a186-75bd-436a-85c0-823e3efddb7f,hiphop_rnb,1,hiphop_rnb | christian | rock | pop,True
+japandroids,Japandroids,2008d65c-31ee-4382-8960-5188523568d5,rock,0,rock | pop,True
+jarren benton,Jarren Benton,c81fea7f-4900-4047-8532-ed4a33301db2,hiphop_rnb,1,hiphop_rnb,False
+jars of clay,Jars of Clay,ca1ca0e3-8506-40b4-ac29-dbfb60c5a0bd,christian,0,christian | rock,True
+jarvis cocker,Jarvis Cocker,38550441-d437-4aff-867e-e79bf0c04142,rock,0,rock | pop,True
+jason aldean,Jason Aldean,f24df11a-7e35-4979-a4db-a3b2a170ce27,country,0,country | rock | pop,True
+jason crabb,Jason Crabb,0add9e65-414a-4cd1-88ad-998abc720a24,christian,0,christian,False
+jason derulo,Jason Derulo,6de0f914-3e60-4418-be3b-42e0feb6eb4d,latin,1,latin | hiphop_rnb | electronic | rock | pop,True
+jason isbell,Jason Isbell,4c501a41-5f23-41c9-a36a-5b86e894e08d,country,0,country | rock,True
+jason michael carroll,Jason Michael Carroll,7e54e412-bb31-481c-9a5b-cd5ba7199f46,country,0,country,False
+jason mraz,Jason Mraz,82eb8936-7bf6-4577-8320-a2639465206d,rock,0,rock | pop,True
+jason nevins,Jason Nevins,c9df45d4-b84b-499f-ae58-3d5a4b94d5e8,electronic,1,electronic,False
+javier colon,Javier Colon,2c82d814-6ee6-4ed3-a9f7-0799b5f0ffd9,hiphop_rnb,1,hiphop_rnb,False
+jay reatard,Jay Reatard,6338a3a4-1676-4a99-b2fb-a3f0072f6b42,rock,0,rock,False
+jay rock,Jay Rock,9880800a-f6f8-4f8f-a00e-b4b664776c0c,hiphop_rnb,1,hiphop_rnb,False
+jay sean,Jay Sean,e03cf5b6-d2ec-4465-adee-226b518bcfcd,hiphop_rnb,1,hiphop_rnb | pop,True
+jay-z,Jay-Z,f82bcf78-5b69-4622-a5ef-73800768d9ac,hiphop_rnb,1,hiphop_rnb | pop,True
+jazmine sullivan,Jazmine Sullivan,6f92929a-6381-48ac-b348-83b43b9cf646,hiphop_rnb,1,hiphop_rnb,False
+jedi mind tricks,Jedi Mind Tricks,c7732cf8-e9a1-46f1-9133-84d930f3187a,hiphop_rnb,1,hiphop_rnb,False
+jeff buckley,Jeff Buckley,e6e879c0-3d56-4f12-b3c5-3ce459661a8e,hiphop_rnb,1,hiphop_rnb | rock,True
+jeff loomis,Jeff Loomis,fde7fd2b-2b00-42fb-8c61-9d96046eadac,rock,0,rock,False
+jeff lynne,Jeff Lynne,372304d0-5e6a-4030-bc2b-09bdb0ee8abb,rock,0,rock,False
+jekalyn carr,Jekalyn Carr,76ae7c4d-3aa9-4f93-a11e-14d29f4f36b6,christian,0,christian,False
+jencarlos canela,Jencarlos Canela,6501a1ee-0af8-4913-9d0a-0a50589110f4,latin,1,latin | pop,True
+jenni rivera,Jenni Rivera,bc6826d1-955f-44e3-9502-266e70213502,latin,1,latin | pop,True
+jennifer hudson,Jennifer Hudson,95b5d5b5-46c4-4c3e-89d5-ffe9236427ac,hiphop_rnb,1,hiphop_rnb | pop,True
+jennifer knapp,Jennifer Knapp,09e6b7fd-09ee-4679-8985-9e2ea6ad9130,christian,0,christian | rock,True
+jennifer nettles,Jennifer Nettles,3f13323d-8659-4aeb-978f-880694f3feea,country,0,country,False
+jenny lewis,Jenny Lewis,9ad6d1e3-427f-4921-b603-7e9eda94a061,rock,0,rock,False
+jens lekman,Jens Lekman,41aa2734-ec86-4197-a074-d44886e7da8d,rock,0,rock | pop,True
+jeremih,Jeremih,1c009a08-74d1-4682-bc56-8bfbe9e66b62,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+jeremy camp,Jeremy Camp,bb0814de-3de2-4f00-811f-7c2d9ada7e51,christian,0,christian | rock | pop,True
+jerrod niemann,Jerrod Niemann,0b88f9de-7c37-4800-9d6a-04ce6c20b76c,country,0,country,False
+jerry douglas,Jerry Douglas,f94a59be-8e2f-456b-9ccb-e742048c6654,country,0,country | christian | rock,True
+jerry garcia band,Jerry Garcia Band,3f7a73e5-cb7f-4488-bd7e-f5e26c87fe1b,rock,0,rock,False
+jerry lee lewis,Jerry Lee Lewis,b59ac58d-036e-4bba-8112-c32a34c4575b,country,0,country | christian | rock | pop,True
+jesse mccartney,Jesse McCartney,9d075d6e-9492-4343-ac95-93a808f61477,pop,1,pop,False
+jessica sanchez,Jessica Sanchez,fdfc7c9b-e1a2-427c-99ec-c03fcdab0a75,hiphop_rnb,1,hiphop_rnb,False
+jessica simpson,Jessica Simpson,fe37acd4-893c-4b2c-8ad2-7fd394280354,pop,1,pop,False
+jessie j,Jessie J,d24fb461-dee8-41fc-bb15-2f13bb2644a6,hiphop_rnb,1,hiphop_rnb | pop,True
+jessie james decker,Jessie James Decker,752e42c0-0f40-4541-8b02-5305976597b5,country,0,country,False
+jesus culture,Jesus Culture,e7613fa4-85a4-4b2b-a439-2f5fcd60bdd5,christian,0,christian | rock,True
+jethro tull's ian anderson,Jethro Tull's Ian Anderson,12fffb1f-39af-4efe-9426-92e05bb651d1,classical,0,classical | rock | pop,True
+jill scott,Jill Scott,b1fb6a18-1626-4011-80fb-eaf83dfebcb6,hiphop_rnb,1,hiphop_rnb,False
+jim brickman,Jim Brickman,e573ad8c-d829-4c68-a9be-0d4460cca073,pop,1,pop,False
+jimi hendrix,Jimi Hendrix,06fb1c8b-566e-4cb2-985b-b467c90781d4,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+jimmy buffett,Jimmy Buffett,16fdd9af-467f-47ce-bd29-3413b445b90f,country,0,country | rock | pop,True
+jimmy cliff,Jimmy Cliff,2caa54a7-b08c-41da-b892-3a41abe778be,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+jimmy eat world,Jimmy Eat World,bbc5b66b-d037-4f26-aecf-0b129e7f876a,rock,0,rock | pop,True
+jimmy webb,Jimmy Webb,04e296d1-ab98-46e9-ba88-a42b5024e518,country,0,country | rock | pop,True
+jo dee messina,Jo Dee Messina,3f8ee838-9e81-4a22-975a-bce739631165,country,0,country | pop,True
+joan osborne,Joan Osborne,746916c9-fd36-44e6-823d-03185e596f58,country,0,country | rock | pop,True
+joan sebastian,Joan Sebastian,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,latin,1,latin | pop,True
+joanna newsom,Joanna Newsom,cb69e1f1-bc76-4df5-93c9-cf97dd8a3b5c,classical,0,classical | rock,True
+job for a cowboy,Job For A Cowboy,709b6c87-4870-4596-b981-afdc61f39476,rock,0,rock,False
+joe bonamassa,Joe Bonamassa,984f8239-8fe1-4683-9c54-10ffb14439e9,rock,0,rock,False
+joe budden,Joe Budden,02e81a75-461f-4b9d-b635-9cc916cef9c0,hiphop_rnb,1,hiphop_rnb,False
+joe nichols,Joe Nichols,e45692e4-69f6-4493-888b-7ab89d21d0a4,country,0,country,False
+joe satriani,Joe Satriani,29762c82-bb92-4acd-b1fb-09cc4da250d2,rock,0,rock,False
+joell ortiz,Joell Ortiz,ab791743-29b5-4888-a9ea-9b3ded2211f1,hiphop_rnb,1,hiphop_rnb,False
+joey + rory,Joey + Rory,47c70105-e0d5-46fe-961e-026651754d77,country,0,country | christian,True
+joey ramone,Joey Ramone,2f3f8fb1-e5dc-4548-9601-fada0485e561,rock,0,rock,False
+john butler trio,John Butler Trio,7952b266-9fd4-4a09-a324-7dc84f11b5fc,rock,0,rock | pop,True
+john fogerty,John Fogerty,c3649208-0ebe-449b-b1d7-4bd6c560f109,rock,0,rock | pop,True
+john frusciante,John Frusciante,f1571db1-c672-4a54-a2cf-aaa329f26f0b,rock,0,rock,False
+john fullbright,John Fullbright,39b416a2-56e6-46f4-9310-2fa60f4e2365,country,0,country | rock | pop,True
+john hiatt,John Hiatt,e78202c9-7717-435c-9aac-dd5ebc4e64d5,rock,0,rock | pop,True
+john legend,John Legend,75a72702-a5ef-4513-bca5-c5b944903546,hiphop_rnb,1,hiphop_rnb,False
+john lennon,John Lennon,4d5447d7-c61c-4120-ba1b-d7f471d385b9,rock,0,rock | pop,True
+john mark mcmillan,John Mark McMillan,8223aab8-64cd-4211-9be5-eabc4c6390de,christian,0,christian,False
+john mellencamp,John Mellencamp,0aad6b52-fd93-4ea4-9c5d-1f66e1bc9f0a,country,0,country | rock | pop,True
+john prine,John Prine,e86492c1-0376-4df0-8042-8ba058c83960,country,0,country | rock | pop,True
+john waller,John Waller,5debb1f0-d42e-4de5-8d7c-e3eb68c38719,christian,0,christian,False
+johnny cash,Johnny Cash,d43d12a1-2dc9-4257-a2fd-0a3bb1081b86,country,0,country | christian | rock | pop,True
+johnny gill,Johnny Gill,7dc35846-c93a-4261-b665-ae750e3afdfb,hiphop_rnb,1,hiphop_rnb | jazz | pop,True
+johnny marr,Johnny Marr,ff621094-2a76-401f-8398-b75b5fd2be24,rock,0,rock,False
+johnny winter,Johnny Winter,8300d0fa-d120-47f6-a84e-91f140c74767,rock,0,rock,False
+johnnyswim,Johnnyswim,f73fb555-9bce-4c67-b101-311efd2e9f79,hiphop_rnb,1,hiphop_rnb | pop,True
+jon pardi,Jon Pardi,ad590765-191c-4c07-9d64-49633488e9a8,country,0,country,False
+jonas brothers,Jonas Brothers,6e019bc6-5c23-4935-94f0-4a896631d846,rock,0,rock | pop,True
+jonathan coulton,Jonathan Coulton,d8df7087-06d5-4545-9024-831bb8558ad1,rock,0,rock,False
+jonathan mcreynolds,Jonathan McReynolds,62df7415-ddc3-452b-80bb-4ef7f99709f2,christian,0,christian,False
+jonathan nelson,Jonathan Nelson,9f01a6a5-7828-44a9-bb82-40ef1200a9eb,christian,0,christian,False
+jonny lang,Jonny Lang,6a60adeb-c68a-4efd-b16f-04da75a866a5,christian,0,christian | rock,True
+jonsi,Jonsi,af00f655-402f-4d80-bb83-de525cde7a8d,classical,0,classical | rock | pop,True
+jordan knight,Jordan Knight,3aa1d833-e4a6-48e0-9f32-47b661792aca,pop,1,pop,False
+jordin sparks,Jordin Sparks,5508631d-697f-4839-a669-06637e5bcb90,hiphop_rnb,1,hiphop_rnb | pop,True
+jose james,Jose James,481c8894-c898-4332-8882-db5a90c318e1,jazz,0,jazz,False
+josh abbott band,Josh Abbott Band,07c34688-0032-4600-86be-34736d18f1a2,country,0,country,False
+josh groban,Josh Groban,12be5b16-915f-44bc-978a-8ddfab235b79,christian,0,christian | classical | pop,True
+josh kelley,Josh Kelley,4e5d156b-d8c1-4758-818a-f23f9abd887b,country,0,country | rock | pop,True
+josh rouse,Josh Rouse,023d64c9-93db-4a20-8c5c-2efa1a53481a,country,0,country | rock | pop,True
+josh thompson,Josh Thompson,d60f5fe7-4833-4603-9aac-d4b60d41d652,country,0,country,False
+joshua ledet,Joshua Ledet,bb3446c8-e83f-4ded-86c9-a1d6e8c0b6a7,hiphop_rnb,1,hiphop_rnb,False
+joshua radin,Joshua Radin,24762087-34ce-4f65-b743-7d8402cf30dd,rock,0,rock,False
+joss stone,Joss Stone,dbbc47a5-1338-4830-9298-a8d0b11c0a46,hiphop_rnb,1,hiphop_rnb | jazz,True
+joyce manor,Joyce Manor,945d3b69-27cd-45fa-b491-52553a63dead,rock,0,rock | pop,True
+juan gabriel,Juan Gabriel,bc9b7500-0afc-41ba-a056-b0bc81669702,latin,1,latin | rock | pop,True
+juan luis guerra 4.40,Juan Luis Guerra 4.40,1659a41f-27d3-4823-8a15-bf7cd295cf59,latin,1,latin | pop,True
+juanes,Juanes,8b0f05ce-354e-4121-9e0b-8b4732ea844f,latin,1,latin | rock | pop,True
+judas priest,Judas Priest,6b335658-22c8-485d-93de-0bc29a1d0349,rock,0,rock | pop,True
+jukebox the ghost,Jukebox The Ghost,43dcec48-1764-4055-91ac-afe8a4d25cd1,rock,0,rock | pop,True
+julian casablancas,Julian Casablancas,c5ce487b-0462-444e-a184-4de0fef7e028,rock,0,rock | pop,True
+julian casablancas + the voidz,Julian Casablancas + The Voidz,6a93cb2b-d33a-42fc-a41a-542e3a887ba6,rock,0,rock,False
+julian plenti,Julian Plenti,b786b1c2-be35-497e-8d0f-089265f177da,rock,0,rock,False
+junip,Junip,fb2df245-81b0-4a2b-9d01-e0955ba68be7,rock,0,rock,False
+justin bieber,Justin Bieber,e0140a67-e4d1-4f13-8a01-364355bee46e,latin,1,latin | hiphop_rnb | country | electronic | rock | pop,True
+justin furstenfeld,Justin Furstenfeld,70f63f45-3eff-43ef-95db-750eda3a8f76,rock,0,rock,False
+justin nozuka,Justin Nozuka,f8471a38-0575-4dcf-b657-401377ad293c,pop,1,pop,False
+justin timberlake,Justin Timberlake,596ffa74-3d08-44ef-b113-765d43d12738,latin,1,latin | hiphop_rnb | pop,True
+k'naan,K'Naan,ee421ee4-f861-405d-8730-29cb512dfdbd,hiphop_rnb,1,hiphop_rnb | pop,True
+k. michelle,K. Michelle,72f56d5f-b786-4d58-936e-cd04da86350a,hiphop_rnb,1,hiphop_rnb | pop,True
+kongos,KONGOS,7bbd2f4c-b5b3-4ed1-92ce-53aef244f00d,rock,0,rock,False
+kt tunstall,KT Tunstall,951d2103-9c7d-4849-ae60-88bf6aa4790b,rock,0,rock | pop,True
+kxm,KXM,a4d58597-f741-4953-a70d-7e006e8fccdb,rock,0,rock,False
+kacey musgraves,Kacey Musgraves,d1393ecb-431b-4fde-a6ea-d769f2f040cb,country,0,country | rock | pop,True
+kaki king,Kaki King,451f8f16-990a-412c-ab3a-b61e5d265b55,jazz,0,jazz | rock | pop,True
+kamelot,Kamelot,2449300a-6ca7-45da-8102-22789d256475,rock,0,rock,False
+karen clark-sheard,Karen Clark-Sheard,7a000fe1-3297-44ca-81af-b6e46aa5a0b1,christian,0,christian,False
+kari jobe,Kari Jobe,9f38e1f2-36f9-4989-a6bb-03c671b08a38,christian,0,christian,False
+kasabian,Kasabian,69b39eab-6577-46a4-a9f5-817839092033,rock,0,rock,False
+kaskade,Kaskade,29ed4a49-fb99-4a5c-8713-609cabe6f34a,electronic,1,electronic | pop,True
+kat edmonson,Kat Edmonson,98b42b24-6db9-4de6-bd0c-16d4b86c3724,jazz,0,jazz | pop,True
+katatonia,Katatonia,61ed9c9c-79eb-4e8f-8015-bd599ac0ab49,rock,0,rock,False
+kate bush,Kate Bush,4b585938-f271-45e2-b19a-91c634b5e396,hiphop_rnb,1,hiphop_rnb | classical | rock | pop,True
+kate earl,Kate Earl,d5199c98-612a-479c-8257-1768662c11fe,hiphop_rnb,1,hiphop_rnb | pop,True
+kate nash,Kate Nash,49018fd2-95ef-4f7e-92bb-813159909314,rock,0,rock | pop,True
+kate voegele,Kate Voegele,5c0c9c6a-e85b-4544-a139-a8bb028ce69d,rock,0,rock | pop,True
+katharine mcphee,Katharine McPhee,7473425a-05ff-41d2-b375-9b213b8bbde8,pop,1,pop,False
+katherine jenkins,Katherine Jenkins,864f4d00-ce12-400d-8942-9af0ca4b1c94,classical,0,classical,False
+katy perry,Katy Perry,122d63fc-8671-43e4-9752-34e846d62a9c,hiphop_rnb,1,hiphop_rnb | christian | electronic | rock | pop,True
+kavinsky,Kavinsky,eb6de5f6-98f8-4b5a-bfdc-f87fa4936baa,electronic,1,electronic | pop,True
+ke$ha,Ke$ha,fab34286-b8e1-4879-bce3-194e1358fbd2,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+keke wyatt,KeKe Wyatt,32c38fdf-bb6c-4773-b80e-3703d48cdff1,hiphop_rnb,1,hiphop_rnb,False
+keith sweat,Keith Sweat,33ecb3d1-9ece-4462-b231-ce6e7a82dd50,hiphop_rnb,1,hiphop_rnb | jazz | pop,True
+keith urban,Keith Urban,f45da029-7b00-4bf3-962c-0eeb20309cc4,country,0,country | rock | pop,True
+kelis,Kelis,1239d1bc-cc09-43e0-bcd0-374f60346138,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+kellie pickler,Kellie Pickler,4c567ed6-8bc9-447a-bbd5-1dce18e4ee81,country,0,country,False
+kelly clarkson,Kelly Clarkson,d339efbb-77b9-4147-ba9e-59f2f24550b2,rock,0,rock | pop,True
+kelly price,Kelly Price,76afa937-2afb-4359-923f-5faa18070e81,hiphop_rnb,1,hiphop_rnb,False
+kelly rowland,Kelly Rowland,31bea673-d23a-4889-8da1-7cb040863268,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+kendrick lamar,Kendrick Lamar,381086ea-f511-4aba-bdf9-71c753dc5077,hiphop_rnb,1,hiphop_rnb | jazz | electronic | rock | pop,True
+kenny chesney,Kenny Chesney,5dca4d22-d6c8-4e70-8ca1-4543e43353c7,country,0,country | pop,True
+kenny rogers,Kenny Rogers,c3d14b41-a48d-488f-bfed-ce0597bb0b1f,country,0,country | pop,True
+keri hilson,Keri Hilson,b76c616a-ec0d-4f0c-b986-f249c4a04d77,hiphop_rnb,1,hiphop_rnb | pop,True
+kerli,Kerli,acf295f0-a10c-4c6a-ad0b-b01f82009153,electronic,1,electronic | rock | pop,True
+kevin devine,Kevin Devine,6cb35b9f-1972-404a-8882-e915c39d33da,rock,0,rock,False
+kevin fowler,Kevin Fowler,18548bf1-fd39-4da2-b364-85685f27bfe9,country,0,country,False
+kevin rudolf,Kevin Rudolf,2a0cce30-071b-4ba9-bf78-ae76c9eb7316,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+kevon edmonds,Kevon Edmonds,10d716c8-d564-4db7-a2a0-12081c5124dd,hiphop_rnb,1,hiphop_rnb,False
+keyshia cole,Keyshia Cole,ef73e6ed-9096-4ddb-9799-b94874d0ce33,hiphop_rnb,1,hiphop_rnb | pop,True
+kid cudi,Kid Cudi,e0e1db18-f7ba-4dee-95ff-7ae8cf545460,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+kid ink,Kid Ink,60614320-9caf-4ae4-bded-7140672fdf8a,hiphop_rnb,1,hiphop_rnb | pop,True
+kidz bop kids,Kidz Bop Kids,31c0df3c-2d23-41d3-a772-ec3cfc3cc625,pop,1,pop,False
+kierra sheard,Kierra Sheard,83d102d1-c13b-483b-ba25-b23900e689d1,christian,0,christian,False
+kiesza,Kiesza,87ff5ccd-64cd-45d6-bba3-ba2647e85d74,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+kill the noise,Kill the Noise,a9930a14-8fbb-435a-ad25-f4b6cae71523,hiphop_rnb,1,hiphop_rnb | electronic,True
+killer be killed,Killer Be Killed,ace678cd-7e04-4844-9971-8e71bb3fc5e3,rock,0,rock,False
+killer mike,Killer Mike,47864525-aea7-439a-800f-17c57e51cbcc,hiphop_rnb,1,hiphop_rnb | jazz,True
+killswitch engage,Killswitch Engage,8295ee00-0096-461d-95c7-c2263d2a4c6d,rock,0,rock,False
+kim walker-smith,Kim Walker-Smith,e96bdc05-e9c7-4020-abb3-6378592f2be8,christian,0,christian | rock,True
+kimbra,Kimbra,fad2875e-ba81-4637-b859-4684622dcb1c,rock,0,rock | pop,True
+king krule,King Krule,c0daae21-ec2a-4dd0-a323-4f53f5945d04,hiphop_rnb,1,hiphop_rnb | jazz | electronic | rock | pop,True
+king tuff,King Tuff,4e442c83-b547-4d6e-9270-cdd35e3c3195,rock,0,rock | pop,True
+kingdom of sorrow,Kingdom Of Sorrow,897fe6e4-a708-4a0c-971b-f1568f58a7d5,rock,0,rock,False
+kings kaleidoscope,Kings Kaleidoscope,dde55c12-c221-47a0-81f3-4101655dd394,christian,0,christian | rock,True
+kings of convenience,Kings of Convenience,cf0f4547-ffbd-4011-98ad-0bec9ba022db,rock,0,rock | pop,True
+kings of leon,Kings of Leon,6ffb8ea9-2370-44d8-b678-e9237bbd347b,rock,0,rock | pop,True
+kip moore,Kip Moore,3afa378a-4a7f-46f5-b686-f41ee2287c0c,country,0,country,False
+kirk franklin,Kirk Franklin,685332a4-12ed-4c3b-8d0e-04e6a37e28f0,christian,0,christian,False
+kishi bashi,Kishi Bashi,7c340ac5-6eda-4981-91d6-d5b1f4d1bbbf,rock,0,rock | pop,True
+kodaline,Kodaline,74aab3b7-93a5-473c-a729-f975234c58b6,rock,0,rock,False
+kokane,Kokane,57d9c868-317b-4d3c-baa9-8e1357385411,hiphop_rnb,1,hiphop_rnb,False
+korn,Korn,ac865b2e-bba8-4f5a-8756-dd40d5e39f46,rock,0,rock,False
+kottonmouth kings,Kottonmouth Kings,b2a92fa4-ba29-431f-a9ea-08a2956e9b25,hiphop_rnb,1,hiphop_rnb | rock,True
+kreator,Kreator,39822e8d-f24e-4f07-b51b-28b22e59fbdb,rock,0,rock,False
+kreayshawn,Kreayshawn,b87b38cc-b446-4a0c-968a-addb0e244c9d,hiphop_rnb,1,hiphop_rnb,False
+krewella,Krewella,d87475fa-76a1-4e12-962c-fc9941fdda72,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+kris allen,Kris Allen,9ce29a24-b118-41a3-9297-2618f26b124d,country,0,country | pop,True
+kris kristofferson,Kris Kristofferson,cb1ca13a-4821-4e66-aff0-0fd6b3dc9a81,country,0,country | pop,True
+kristin chenoweth,Kristin Chenoweth,9031b393-ced7-4685-9e25-d0b43996158a,pop,1,pop,False
+krizz kaliko,Krizz Kaliko,eacc6d9c-199e-45fb-960b-e21fa503f82b,hiphop_rnb,1,hiphop_rnb,False
+kurt vile,Kurt Vile,e07a111e-4e8a-4651-a849-01ac60551ab2,rock,0,rock,False
+kutless,Kutless,e8585cbe-912f-47b9-a253-fca09d013769,christian,0,christian | rock,True
+kylesa,Kylesa,e6ed56ae-c477-48fa-a53b-63f6cbc4a3c3,rock,0,rock,False
+kylie minogue,Kylie Minogue,2fddb92d-24b2-46a5-bf28-3aed46f4684c,hiphop_rnb,1,hiphop_rnb | classical | electronic | rock | pop,True
+lcd soundsystem,LCD Soundsystem,2aaf7396-6ab8-40f3-9776-a41c42c8e26b,electronic,1,electronic | rock | pop,True
+ll cool j,LL Cool J,a4dd0e77-83b8-4e92-89b7-effb0e47fd8c,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+lmfao,LMFAO,ed5d9086-e8cd-473a-b96c-d81ad6c98f0d,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+la coka nostra,La Coka Nostra,0051db34-6ac5-4e73-ae8e-b11d3a7746b8,hiphop_rnb,1,hiphop_rnb,False
+la dispute,La Dispute,2ec89bcc-5bf9-4d2a-ac5e-44b7496d115a,rock,0,rock,False
+la roux,La Roux,88d1360a-bc2d-47df-90d1-d2de285560aa,electronic,1,electronic | pop,True
+lacuna coil,Lacuna Coil,6fea1339-260c-40fe-bb7a-ace5c8438955,rock,0,rock,False
+lady antebellum,Lady Antebellum,0eedfc95-e79a-4fd9-832a-cd816a0b3fda,country,0,country | pop,True
+lady gaga,Lady Gaga,650e7db6-b795-4eb5-a702-5ea2fc46c848,country,0,country | jazz | electronic | rock | pop,True
+ladytron,Ladytron,b45335d1-5219-4262-a44d-936aa36eeaed,electronic,1,electronic | rock | pop,True
+lagwagon,Lagwagon,c7788fba-e635-4d8b-a937-01a68ab154e3,rock,0,rock,False
+lake street dive,Lake Street Dive,584758b2-306b-4aea-8694-3876943c9968,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+lalah hathaway,Lalah Hathaway,3f0f4358-4c48-4bce-be34-acf61d24df0b,hiphop_rnb,1,hiphop_rnb | jazz,True
+lamb of god,Lamb of God,298909e4-ebcb-47b8-95e9-cc53b087fc65,rock,0,rock,False
+landon pigg,Landon Pigg,142db9a8-d42d-44f4-8f3c-db20e5bdfd78,rock,0,rock | pop,True
+laura izibor,Laura Izibor,ef67afe9-450d-4a0b-a169-3ad3d037f565,hiphop_rnb,1,hiphop_rnb,False
+laura marling,Laura Marling,cd9713d6-6e5f-4143-9412-4d12b7bd47f2,rock,0,rock,False
+laura mvula,Laura Mvula,37d067eb-495e-4888-ad97-4b5708ffd3a9,hiphop_rnb,1,hiphop_rnb,False
+laura story,Laura Story,733d807e-745f-427d-b242-7ce96f6045bf,christian,0,christian | pop,True
+laura veirs,Laura Veirs,8951c87f-f730-4247-b442-52ed14ad6a97,country,0,country | rock,True
+lauren alaina,Lauren Alaina,f2506ff4-4091-4e57-ac5b-156110732aa9,country,0,country | pop,True
+leann rimes,LeAnn Rimes,9092d8e1-9b38-4372-a96d-000b8561a8bc,country,0,country | rock | pop,True
+letoya,LeToya,b2f1149b-171a-4bc5-ac8f-3baf9a566abf,hiphop_rnb,1,hiphop_rnb,False
+lecrae,Lecrae,ffe54de6-5cee-4c0f-8329-f5946f9bc3ff,hiphop_rnb,1,hiphop_rnb | christian | pop,True
+led zeppelin,Led Zeppelin,678d88b2-87b0-403b-b63d-5da7465aecc3,rock,0,rock | pop,True
+ledisi,Ledisi,617a2fbd-fef9-420f-981c-bda2ca103d38,hiphop_rnb,1,hiphop_rnb,False
+lee ann womack,Lee Ann Womack,16c5bb7a-35b7-418d-880e-7ed3399f1b40,country,0,country | pop,True
+lee brice,Lee Brice,48a6d065-1fda-4280-ae39-df1394d419cd,country,0,country,False
+lee dewyze,Lee DeWyze,4006c69a-c50f-483a-bd1f-4f55e32ea7c9,rock,0,rock,False
+leela james,Leela James,86a4c4dd-653e-47e4-95fc-485ded6de9da,hiphop_rnb,1,hiphop_rnb | electronic,True
+leeland,Leeland,c4f279af-c8f3-4752-b34d-c6d8fbc0c560,christian,0,christian | rock,True
+lenny cooper,Lenny Cooper,3c8fefab-364c-4ad8-b6c9-b725b5ee3b6a,hiphop_rnb,1,hiphop_rnb | country,True
+lenny kravitz,Lenny Kravitz,0ef3f425-9bd2-4216-9dd2-219d2fe90f1f,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+leon russell,Leon Russell,d4cc0ed5-0f76-4188-9e14-2a23ca12188a,country,0,country | rock | pop,True
+leona lewis,Leona Lewis,8d552dfc-648f-401f-90de-e925013ca537,hiphop_rnb,1,hiphop_rnb | pop,True
+leonard cohen,Leonard Cohen,65314b12-0e08-43fa-ba33-baaa7b874c15,rock,0,rock | pop,True
+les claypool,Les Claypool,0b9deb50-f518-4205-99e3-80ac3f35e7a3,rock,0,rock,False
+les claypool's duo de twang,Les Claypool's Duo De Twang,e8f4c4d5-21d8-4919-9ac8-4a88693902d9,country,0,country,False
+leslie west,Leslie West,a415f8c5-3b22-43bb-a1a8-cf9646ea21e0,rock,0,rock,False
+less than jake,Less Than Jake,e54e065f-0ce6-4779-9a9a-afd7b997471f,christian,0,christian | rock,True
+levon helm,Levon Helm,392baa89-ea47-4de6-8dc0-fdac3ec85509,rock,0,rock,False
+lianne la havas,Lianne La Havas,680466d6-f05b-44f6-858d-625d1b5087f6,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+liars,Liars,03098741-08b3-4dd7-b3f6-1b0bfa2c879c,electronic,1,electronic | rock,True
+lifehouse,Lifehouse,04591295-6d94-45cb-b6c7-1ae17c6f380e,rock,0,rock | pop,True
+like moths to flames,Like Moths To Flames,6f0777a9-50f2-4577-966d-de0943b0b766,rock,0,rock,False
+lil jon,Lil Jon,a95384b1-6aec-468c-ae0d-8c6daf87c4c2,hiphop_rnb,1,hiphop_rnb,False
+lil wayne,Lil Wayne,ac9a487a-d9d2-4f27-bb23-0f4686488345,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+lil wyte,Lil Wyte,9b5ce0c1-1bc0-4ea2-a8d3-f5ee7af9eda8,hiphop_rnb,1,hiphop_rnb,False
+lily allen,Lily Allen,6e0c7c0e-cba5-4c2c-a652-38f71ef5785d,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+limp bizkit,Limp Bizkit,8f9d6bb2-dba4-4cca-9967-cc02b9f4820c,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+linda ronstadt,Linda Ronstadt,498f2581-be21-4eef-8756-fbb89d79b1c0,country,0,country | rock | pop,True
+lindsey buckingham,Lindsey Buckingham,5d12875c-a197-43b2-8f29-41dc0ad895c3,rock,0,rock,False
+lindsey stirling,Lindsey Stirling,53e40f93-f4af-4f8c-819c-7bbe4b6f0a1c,classical,0,classical | electronic,True
+lionel richie,Lionel Richie,3cb25fb2-5547-4b05-adec-1a5e37830d46,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+lisa hannigan,Lisa Hannigan,8d0d65cf-3d01-4110-bf36-7e1aa27b68f2,rock,0,rock | pop,True
+lisa marie presley,Lisa Marie Presley,4635869b-1f1a-452e-af87-f6c2e2ef6e74,rock,0,rock | pop,True
+lissie,Lissie,ae7dc88a-f3c7-4008-9eb8-2aafda1be759,country,0,country | rock,True
+little big town,Little Big Town,76e78b58-f301-4975-8058-7f84d8360738,country,0,country,False
+little mix,Little Mix,38f59974-2f4d-4bfa-b2e3-d2696de1b675,hiphop_rnb,1,hiphop_rnb | pop,True
+living colour,Living Colour,dc6f8c1f-626b-42b0-9115-7e66ae4cecd6,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+local natives,Local Natives,1bbf31dc-dbc0-4a7a-bf3f-48bc665878e1,rock,0,rock | pop,True
+london grammar,London Grammar,4dbe08c1-b40a-43b3-ab89-210000bd8ab2,electronic,1,electronic | rock | pop,True
+lonestar,Lonestar,407592bd-6b6e-4803-80fd-f17e59446734,country,0,country | rock | pop,True
+lord huron,Lord Huron,51c76d97-0635-433c-b26d-66beb81657f8,rock,0,rock,False
+lorde,Lorde,8e494408-8620-4c6a-82c2-c2ca4a1e4f12,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+los bukis,Los Bukis,6291431a-b8c0-425b-8e37-e4c9980ef751,latin,1,latin | pop,True
+los lonely boys,Los Lonely Boys,98fe243c-3685-4491-8135-edc713963be4,rock,0,rock,False
+los tigres del norte,Los Tigres del Norte,75cdc7ad-63b6-48b3-8de2-617d08a9ddf8,latin,1,latin,False
+los tucanes de tijuana,Los Tucanes de Tijuana,f1802d84-5885-4cc0-81c6-c4823510ebf4,latin,1,latin,False
+lostprophets,Lostprophets,ef6e2e49-aa93-41bd-89b0-8c7d2f260a83,rock,0,rock | pop,True
+lou reed,Lou Reed,9d1ebcfe-4c15-4d18-95d3-d919898638a1,rock,0,rock | pop,True
+lower dens,Lower Dens,3dee0ca7-99ae-4421-9c3b-f42d8caf4c88,rock,0,rock | pop,True
+luciano pavarotti,Luciano Pavarotti,705076ef-a0c5-472f-bebd-3e72174fcaf4,classical,0,classical,False
+lucinda williams,Lucinda Williams,21685b15-3074-446e-aa1d-ff7157014f53,country,0,country,False
+ludacris,Ludacris,0638ba22-040f-438d-83a5-9b670c4adaf5,hiphop_rnb,1,hiphop_rnb | pop,True
+luis fonsi,Luis Fonsi,d68fda90-ab8d-4799-be56-317ba4ae700f,latin,1,latin | pop,True
+luis miguel,Luis Miguel,90270118-8ed0-4446-bf97-8a09b3f9e8f3,latin,1,latin | pop,True
+luke bryan,Luke Bryan,aab35942-f176-4f77-bbf9-1d6aa98ccf3f,country,0,country | rock | pop,True
+lupe fiasco,Lupe Fiasco,cf15719f-51f9-4db8-a15d-5eed9664ce69,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+luther vandross,Luther Vandross,816d9b5d-eaf9-4a97-b5f7-6e82cd01aafe,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+lyfe jennings,Lyfe Jennings,7a638e6c-50f4-48fd-ad04-f245ff20b0d5,hiphop_rnb,1,hiphop_rnb,False
+lykke li,Lykke Li,cc7d4686-ea02-45fd-956e-94c1a322558c,electronic,1,electronic | rock | pop,True
+lyle lovett,Lyle Lovett,7241e3ed-5ad4-4849-94df-6858ea833472,country,0,country | jazz | rock,True
+lynyrd skynyrd,Lynyrd Skynyrd,c544ed4d-2390-4442-a83e-1ea2883b09c8,country,0,country | rock | pop,True
+m83.,M83.,6d7b7cd4-254b-4c25-83f6-dd20f98ceacd,electronic,1,electronic | rock | pop,True
+mgk,MGK,f6af669a-56ea-448a-a044-de76181ada33,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+mgmt,MGMT,c485632c-b784-4ee9-8ea1-c5fb365681fc,hiphop_rnb,1,hiphop_rnb | country | classical | electronic | rock | pop,True
+mutemath,MUTEMATH,6e855495-c063-4052-a26d-959c3f226c87,electronic,1,electronic | rock,True
+mac demarco,Mac DeMarco,f2492c31-54a8-4347-a1fc-f81f72873bbf,jazz,0,jazz | rock | pop,True
+mack 10,Mack 10,c3b4e25b-977f-4cb6-96d7-f68afbac732f,hiphop_rnb,1,hiphop_rnb,False
+macy gray,Macy Gray,48772747-4cda-4ba8-b470-cfd5a32e05f7,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+madchild,Madchild,9d952001-c886-4ed3-b971-568e79d83607,hiphop_rnb,1,hiphop_rnb,False
+madeleine peyroux,Madeleine Peyroux,7f260b9c-bea7-469b-9ba8-0daec7d2c85c,jazz,0,jazz,False
+madonna,Madonna,79239441-bfd5-4981-a70c-55c3f15c1287,hiphop_rnb,1,hiphop_rnb | country | jazz | electronic | rock | pop,True
+major lazer,Major Lazer,75be165a-ad83-4d12-bd28-f589a15c479f,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+make me famous,Make Me Famous,ac308028-e4ca-4236-ac37-c529524f1121,rock,0,rock,False
+man man,Man Man,4e210d41-b3e3-4e34-8c3b-3b8cc2116562,rock,0,rock,False
+manchester orchestra,Manchester Orchestra,dd91eb4b-6d08-4c14-9eb2-197a02a35f6c,rock,0,rock,False
+mandy moore,Mandy Moore,9dc9f4b0-a7b4-43c5-8f6b-fcd43c426a4b,pop,1,pop,False
+mannheim steamroller,Mannheim Steamroller,922a18b1-0aba-4868-8f38-2aa4f324fe16,classical,0,classical | rock,True
+marc anthony,Marc Anthony,25607613-aceb-445a-8519-83a2ee0f8402,latin,1,latin | rock | pop,True
+marc broussard,Marc Broussard,c9584c27-f240-4f0e-8e82-3470111f24be,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+marc cohn,Marc Cohn,ddf18377-0bf5-4972-90d2-7de878b5eec4,rock,0,rock,False
+marcus canty,Marcus Canty,872e8a9c-c753-48c1-a880-a4018c0c48d6,hiphop_rnb,1,hiphop_rnb,False
+mariah carey,Mariah Carey,494e8d09-f85b-4543-892f-a5096aed1cd4,hiphop_rnb,1,hiphop_rnb | pop,True
+marianne faithfull,Marianne Faithfull,14ed9dea-1bb0-4743-ba32-39674a71da89,rock,0,rock | pop,True
+marilyn manson,Marilyn Manson,5dfdca28-9ddc-4853-933c-8bc97d87beec,rock,0,rock,False
+mark knopfler,Mark Knopfler,e49f69da-17d5-4c5c-bac0-dadcb0e588f5,rock,0,rock,False
+maroon 5,Maroon 5,0ab49580-c84f-44d4-875f-d83760ea2cfe,rock,0,rock | pop,True
+marques houston,Marques Houston,94df7b45-d847-4ed4-8606-0cbe6e5a5573,hiphop_rnb,1,hiphop_rnb,False
+marsha ambrosius,Marsha Ambrosius,24285231-f192-42f1-baea-0f467dd1d8aa,hiphop_rnb,1,hiphop_rnb,False
+martina mcbride,Martina McBride,b0a55bd8-60c7-45c1-b78e-f20e4c8adba1,country,0,country | pop,True
+marty friedman,Marty Friedman,e43bc702-b387-44eb-865b-3e4f93461c44,classical,0,classical | rock | pop,True
+marvin sapp,Marvin Sapp,a2bff7aa-390e-4412-9a0b-c18526fc233a,christian,0,christian,False
+mary chapin carpenter,Mary Chapin Carpenter,ba1bf556-2af2-4772-835f-ed2e15070758,country,0,country | pop,True
+mary j. blige,Mary J. Blige,db76c5ca-d555-4f09-b1db-baa1b713d875,hiphop_rnb,1,hiphop_rnb | jazz | pop,True
+mason jennings,Mason Jennings,eb7a42aa-36d2-4dc2-9cc2-d083a13e1788,rock,0,rock,False
+massive attack,Massive Attack,10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+mat kearney,Mat Kearney,320d40d6-28dd-42d7-b05f-7e6e8d399a2e,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+mat zo,Mat Zo,c0fe9d3b-526c-491e-9814-a81571ebf2e5,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+matchbox twenty,Matchbox Twenty,75af9d25-cf32-49c0-9192-60bd8e9784e6,rock,0,rock | pop,True
+matisyahu,Matisyahu,e8993e9d-9313-4447-ad23-791459a3790d,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+matt hires,Matt Hires,b4e725d0-a177-4802-9b1a-b7aeb8917dda,rock,0,rock | pop,True
+matt maher,Matt Maher,52722de9-8e80-45dd-becc-74ffb913e205,christian,0,christian,False
+matt nathanson,Matt Nathanson,e28dbf43-a2d9-4651-908f-1879ad67d30e,rock,0,rock,False
+matt redman,Matt Redman,16a99fc7-e323-4d04-81ab-46b09a0cb4eb,christian,0,christian,False
+matt wertz,Matt Wertz,aac7d2e7-4e25-40ca-873e-3930acac4626,rock,0,rock,False
+matthew west,Matthew West,40baf67d-1490-47e2-95e4-c83273df7c9f,christian,0,christian | rock | pop,True
+mavis staples,Mavis Staples,04f57a2d-2449-400e-8fff-5b1c5af9560b,hiphop_rnb,1,hiphop_rnb | christian,True
+mayday parade,Mayday Parade,39076047-fce8-44cc-a388-4f6baba4acb4,rock,0,rock | pop,True
+mayer hawthorne,Mayer Hawthorne,029fbb43-ea37-47a0-8c68-803d69abfa5e,hiphop_rnb,1,hiphop_rnb,False
+mazzy star,Mazzy Star,c48d4327-8122-4286-af66-05e1ee6ac4d8,country,0,country | rock | pop,True
+meshell ndegeocello,MeShell Ndegeocello,55a8b485-1cbf-47ee-ae15-d106200fafe8,hiphop_rnb,1,hiphop_rnb | jazz,True
+meat loaf,Meat Loaf,b134d1bf-c7c7-4427-93ac-9fdbc2b59ef1,classical,0,classical | rock | pop,True
+meek mill,Meek Mill,31bcadcc-e1da-4cad-bec8-2f4f1d41b095,hiphop_rnb,1,hiphop_rnb,False
+megadeth,Megadeth,a9044915-8be3-4c7e-b11f-9e2d2ea0a91e,rock,0,rock,False
+melanie fiona,Melanie Fiona,209e47f9-df65-47bd-9a40-4fb4c5c9c349,hiphop_rnb,1,hiphop_rnb,False
+melinda doolittle,Melinda Doolittle,99210e7f-5107-43b9-be3b-b27c4b96b015,hiphop_rnb,1,hiphop_rnb | christian,True
+melissa etheridge,Melissa Etheridge,b3ae82c2-e60b-4551-a76d-6620f1b456aa,rock,0,rock | pop,True
+mellowhype,MellowHype,9ccc5e22-85f7-4b03-b8f1-19b03980906f,hiphop_rnb,1,hiphop_rnb,False
+melody gardot,Melody Gardot,c47267ed-7482-40bb-a4ea-e1399cc8ce04,jazz,0,jazz | pop,True
+memphis may fire,Memphis May Fire,681b5ab2-b7dd-4dff-85e9-1e84503ad36a,rock,0,rock,False
+menomena,Menomena,ad386705-fb8c-40ec-94d7-e690e079e979,rock,0,rock,False
+mercyme,MercyMe,c5a016d4-567e-4698-96a2-af134adb8395,christian,0,christian | rock | pop,True
+meredith andrews,Meredith Andrews,f517cbbd-043c-4a94-9e43-70bd54dd63fa,christian,0,christian,False
+merle haggard,Merle Haggard,deb2448c-6fdf-4d31-921e-757630515dbd,country,0,country,False
+meshuggah,Meshuggah,cf8b3b8c-118e-4136-8d1d-c37091173413,rock,0,rock,False
+metallica,Metallica,65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+michael bolton,Michael Bolton,e8bee5d1-a3a5-4c1a-ada4-f1ca22101e84,classical,0,classical | rock | pop,True
+michael buble,Michael Buble,611700cf-27f0-4dc9-ae80-c513a767853e,jazz,0,jazz | pop,True
+michael kiwanuka,Michael Kiwanuka,11f570ff-44d9-4e9c-8812-e6d56103c5c1,hiphop_rnb,1,hiphop_rnb,False
+michael w. smith,Michael W. Smith,1f444240-5397-4e63-a3e8-a3eac2aace32,christian,0,christian | rock | pop,True
+mickey avalon,Mickey Avalon,5879a47f-c54f-4ebe-8d63-cdc9c6310dd2,hiphop_rnb,1,hiphop_rnb,False
+middle brother,Middle Brother,6ea28f86-a4fc-4902-9594-2e913db54059,country,0,country | rock,True
+midlake,Midlake,da90b5da-349e-4906-a0b4-805f5e46190d,rock,0,rock | pop,True
+migos,Migos,0221734a-35a8-40f7-b5c5-2f61a200bc7c,hiphop_rnb,1,hiphop_rnb,False
+miike snow,Miike Snow,753a1564-aaef-4d39-bc68-4a8d5e328cf7,electronic,1,electronic | rock | pop,True
+mikal cronin,Mikal Cronin,c1a217e0-4b3e-46d7-9613-6a14c9e70895,rock,0,rock,False
+mike doughty,Mike Doughty,f3bcf7b3-be33-493b-8557-b201b3567828,rock,0,rock,False
+mike posner,Mike Posner,5b64e344-b2fb-47bd-bd7b-4c793b17d472,hiphop_rnb,1,hiphop_rnb | pop,True
+mike stud,Mike Stud,7f6f5368-fcc9-4e4a-9105-d17547364340,hiphop_rnb,1,hiphop_rnb,False
+mila j,Mila J,7ffcff92-d71b-4f0b-a578-c959ded4ba49,hiphop_rnb,1,hiphop_rnb,False
+miles davis,Miles Davis,561d854a-6a28-4aa7-8c99-323e6ce46c2a,jazz,0,jazz | classical | rock,True
+milky chance,Milky Chance,6d230d98-fb8d-4421-a6e8-daca4e55d53e,rock,0,rock | pop,True
+milo greene,Milo Greene,43107061-a4fe-4efc-81ba-5515ddd26053,rock,0,rock | pop,True
+mims,Mims,f57ceb78-1e1d-427e-8fad-30d63acf9d4a,hiphop_rnb,1,hiphop_rnb | pop,True
+mindless self indulgence,Mindless Self Indulgence,44f42386-a733-4b51-8298-fe5c807d03aa,hiphop_rnb,1,hiphop_rnb | electronic | rock,True
+mindy mccready,Mindy McCready,05950280-7d03-4816-aecb-438c9e4cb312,country,0,country,False
+ministry,Ministry,13df2a46-f72f-40e7-aa63-26fcf62c7048,electronic,1,electronic | rock | pop,True
+mint condition,Mint Condition,a81f7041-7cd7-4080-ba88-9ce5fe50dc19,hiphop_rnb,1,hiphop_rnb | jazz | rock,True
+minus the bear,Minus The Bear,c1e98e4a-4628-4c89-a7a6-0e0171600b05,rock,0,rock,False
+miranda cosgrove,Miranda Cosgrove,75285014-bdd1-4ca2-81c9-c6c642bfdec7,pop,1,pop,False
+miranda lambert,Miranda Lambert,4eca1aa0-c79f-481b-af8a-4a2d6c41aa5c,country,0,country | rock | pop,True
+miss may i,Miss May I,ddd38886-728c-4cc7-8593-0c42edbef734,rock,0,rock,False
+missy higgins,Missy Higgins,3ac2a4a2-52b3-498b-bbc8-31443c68dfe0,rock,0,rock | pop,True
+misterwives,MisterWives,5b6bac92-9b60-4e96-ac13-935bb6941b96,rock,0,rock | pop,True
+misty edwards,Misty Edwards,cfbce0f0-df83-41cd-a249-e93784473434,christian,0,christian | rock,True
+mitchel musso,Mitchel Musso,5fa27bba-a086-4363-a6a7-ff1b3be6cc7e,pop,1,pop,False
+mobb deep,Mobb Deep,d75d1f08-bbb8-4eae-9877-399ca9121197,hiphop_rnb,1,hiphop_rnb,False
+moby,Moby,8970d868-0723-483b-a75b-51088913d3d4,electronic,1,electronic | rock | pop,True
+modern baseball,Modern Baseball,e3513b4f-2a13-45f5-8ead-e79b1af0bf68,rock,0,rock | pop,True
+modest mouse,Modest Mouse,a96ac800-bfcb-412a-8a63-0a98df600700,rock,0,rock | pop,True
+monster magnet,Monster Magnet,a0955511-1324-4e9b-834f-e1e140502850,rock,0,rock,False
+monsters of folk,Monsters Of Folk,e003d316-67fa-4509-8aac-779bae553bee,rock,0,rock,False
+montgomery gentry,Montgomery Gentry,d39f9276-32c1-4b84-9389-d77dbc3801ae,country,0,country,False
+morbid angel,Morbid Angel,4355a36d-805e-478d-8589-64f0292724b2,rock,0,rock,False
+mos def,Mos Def,f5c4c27e-5902-4fc0-adfb-7775da3d5363,hiphop_rnb,1,hiphop_rnb,False
+motion city soundtrack,Motion City Soundtrack,190e78ac-8f44-4bf1-a4ff-95ed9376ad9e,rock,0,rock | pop,True
+motionless in white,Motionless in White,1c5b9bd6-76e8-4fe7-a6df-3bc0b5a452cc,rock,0,rock,False
+motley crue,Motley Crue,26f07661-e115-471d-a930-206f5c89d17c,rock,0,rock,False
+motorhead,Motorhead,57961a97-3796-4bf7-9f02-a985a8979ae9,rock,0,rock | pop,True
+muddy waters,Muddy Waters,f86f1f07-d182-45ce-ae93-ef610880ca72,jazz,0,jazz | rock | pop,True
+mudvayne,Mudvayne,f1c8da15-b408-4149-b863-f1cbe9971f19,rock,0,rock,False
+murder by death,Murder By Death,115eda90-a9f4-4437-9e4d-513daa0d5f35,rock,0,rock,False
+murderdolls,Murderdolls,355facf3-c72c-45b1-9727-8d9cc6a5ed39,rock,0,rock,False
+mushroomhead,Mushroomhead,6e755d2d-0b47-449d-b03f-fcacec33aab2,rock,0,rock,False
+musiq soulchild,Musiq Soulchild,01872118-3238-4f46-a849-26a0901a0da7,hiphop_rnb,1,hiphop_rnb,False
+my chemical romance,My Chemical Romance,c07f0676-9143-4217-8a9f-4c26bd636f13,classical,0,classical | rock | pop,True
+my darkest days,My Darkest Days,056bb0bc-6af7-4c25-bbfe-f96c6e6d9feb,rock,0,rock,False
+my morning jacket,My Morning Jacket,ea5883b7-68ce-48b3-b115-61746ea53b8c,country,0,country | rock,True
+mychildren mybride,MyChildren MyBride,5d87bfe0-0562-483d-83a8-8a10c36b5cff,rock,0,rock,False
+myron butler,Myron Butler,8a8ea91d-cc74-4d4f-ad32-0c3e06af8afa,christian,0,christian,False
+mystery skulls,Mystery Skulls,769930ba-9724-41a6-9c25-7d55504415bf,electronic,1,electronic | rock | pop,True
+n'klabe,N'Klabe,ad4cb58a-c272-441f-a107-c067099703fe,latin,1,latin,False
+n*e*r*d,N*E*R*D,3fb49f5a-fdc0-4789-9c84-22b38b3f3cb5,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+nkotbsb,NKOTBSB,4e0f7df4-b74d-4ae7-9f7b-d5426f9deb9f,pop,1,pop,False
+nofx,NOFX,dcaa4f81-bfb7-44eb-8594-4e74f004b6e4,rock,0,rock | pop,True
+nada surf,Nada Surf,b9a2a9a6-7a40-48a6-bcb1-8eff5b89ad5b,rock,0,rock,False
+nat king cole,Nat King Cole,fbe054ec-a143-4101-9e9e-64abc5ff5ac9,hiphop_rnb,1,hiphop_rnb | jazz | pop,True
+natalia kills,Natalia Kills,bc2ed01e-bca4-410c-a081-e12cf1f0b567,pop,1,pop,False
+natalie cole,Natalie Cole,eb45032c-80da-469c-be20-1d09f08ef37f,hiphop_rnb,1,hiphop_rnb | jazz | pop,True
+natalie grant,Natalie Grant,f1ef4954-8ab5-45c8-a677-fa9b06e20027,christian,0,christian,False
+natalie maines,Natalie Maines,4c47e18a-c034-4ab6-98a6-110e14b63965,country,0,country | rock,True
+natalie merchant,Natalie Merchant,ba03daa8-0a45-4432-881f-4de8e0e05305,country,0,country | classical | rock | pop,True
+natasha bedingfield,Natasha Bedingfield,8b477559-946e-4ef2-9fe1-446cff8fdd79,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+nathan east,Nathan East,aa82f6eb-ded9-4c0b-951d-2e638ca25c76,jazz,0,jazz,False
+ne-yo,Ne-Yo,a4a01f5d-18e7-4571-8c3a-76ec0e24e2d7,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+neal e. boyd,Neal E. Boyd,b46f0a90-ca39-4d67-a937-3dd1018fd3de,classical,0,classical | pop,True
+needtobreathe,Needtobreathe,c5c2f1bb-09db-429f-8f77-ed9dfe39a36b,country,0,country | christian | rock,True
+nehruviandoom,NehruvianDOOM,d37ba334-7141-4a16-9e27-4c511143ac72,hiphop_rnb,1,hiphop_rnb,False
+neil finn,Neil Finn,3b7c93ab-40a5-4745-ab6b-eaafed2308bb,rock,0,rock | pop,True
+neil sedaka,Neil Sedaka,577d92bd-32ac-48b6-86df-4db6b0b52fbf,rock,0,rock | pop,True
+neko case,Neko Case,e13d2935-8c42-4c0a-96d7-654062acf106,country,0,country | rock,True
+nellie mckay,Nellie McKay,881cf2b4-bada-4cd6-8563-c827d997fb66,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+nelly furtado,Nelly Furtado,13655113-cd16-4b43-9dca-cadbbf26ee05,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+neon indian,Neon Indian,e8238c02-1cf0-4a51-bfd0-cee93904d351,electronic,1,electronic,False
+neon trees,Neon Trees,16243662-8538-4746-a0fb-0d15b5828b8e,rock,0,rock,False
+never shout never,Never Shout Never,2d5b19d2-2e63-4416-a99e-044ab302811c,rock,0,rock | pop,True
+new boyz,New Boyz,8e1d63a3-2980-4d69-ba61-1024e8a6df4b,hiphop_rnb,1,hiphop_rnb | pop,True
+new found glory,New Found Glory,6acb932e-840d-47ac-8e0d-725ad8a6e52c,rock,0,rock | pop,True
+new kids on the block,New Kids on the Block,090dafe5-818c-4bba-9ebf-7e3a651a5c43,hiphop_rnb,1,hiphop_rnb | pop,True
+new politics,New Politics,e1062c06-50de-4475-95df-edaccbddb487,rock,0,rock,False
+new york dolls,New York Dolls,1b96b9c9-0832-40cb-9f8d-7274de3733fc,rock,0,rock | pop,True
+newsong,NewSong,b902715e-669a-4761-8008-9f56b0389008,christian,0,christian,False
+newsboys,Newsboys,df0a1dad-f15b-4e4c-9f47-60cfca58a255,christian,0,christian | rock | pop,True
+newsted,Newsted,ec1a8486-b66e-418b-87f2-63933c08d4d5,rock,0,rock,False
+nicholas david,Nicholas David,339cf7e9-22eb-4b31-a6ac-a76fa3fc4e67,hiphop_rnb,1,hiphop_rnb,False
+nickel creek,Nickel Creek,365144f7-85af-4c83-b24b-b1d0b26160bb,country,0,country,False
+nickelback,Nickelback,bc710bcf-8815-42cf-bad2-3f1d12246aeb,rock,0,rock | pop,True
+nicki minaj,Nicki Minaj,1036b808-f58c-4a3e-b461-a2c4492ecf1b,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+nicole atkins,Nicole Atkins,637e3261-3f47-402c-9dac-980de5317100,country,0,country,False
+nicole c. mullen,Nicole C. Mullen,8e8c6fd6-c96a-4296-9c11-90452394b1bc,hiphop_rnb,1,hiphop_rnb,False
+night ranger,Night Ranger,2eabf78f-61fd-43d5-a4b4-0e9b376d9849,rock,0,rock,False
+nikki yanofsky,Nikki Yanofsky,003db9dd-163b-45e4-b880-6aa759340bd8,jazz,0,jazz | pop,True
+niykee heaton,Niykee Heaton,0fbb027d-9529-4265-94ee-7c3145dcb823,pop,1,pop,False
+no age,No Age,55821c25-bd47-4f67-baf8-17ccd2cf1c86,rock,0,rock | pop,True
+no doubt,No Doubt,fbd2a255-1d57-4d31-ac11-65b671c19958,rock,0,rock | pop,True
+noel gallagher's high flying birds,Noel Gallagher's High Flying Birds,d5f54887-117b-42a1-9aee-8780b84ebaba,rock,0,rock | pop,True
+noisettes,Noisettes,5221de81-b3cb-48d6-8e60-7c04b5daf02a,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+nonpoint,Nonpoint,f10177e4-b7f7-4e63-92b6-c805c6cc54d6,rock,0,rock,False
+norah jones,Norah Jones,985c709c-7771-4de3-9024-7bda29ebe3f9,hiphop_rnb,1,hiphop_rnb | country | jazz | rock | pop,True
+north mississippi allstars,North Mississippi Allstars,62fa3eb2-1b73-4029-ba35-16ab66d29d02,rock,0,rock,False
+nothing more,Nothing More,6def3fa9-836f-4b50-8815-b96cc92e63b8,rock,0,rock,False
+o.a.r.,O.A.R.,16aae9fa-d8f7-4e2c-a907-44aee1ad67fc,rock,0,rock,False
+odesza,ODESZA,2e222fce-02ae-4221-b1c6-3c3242b423b6,electronic,1,electronic | rock | pop,True
+ok go,OK Go,e132d370-2a59-4437-8610-756df28a5a02,rock,0,rock,False
+oakenfold,Oakenfold,7bf1f441-ccf1-4258-9797-07c8d16eb44c,electronic,1,electronic,False
+obie trice,Obie Trice,c0f98b1d-1133-46d6-ab05-723a95cb5453,hiphop_rnb,1,hiphop_rnb,False
+obituary,Obituary,2e8ac3ed-2a89-4377-ba80-790106aba554,rock,0,rock,False
+odd future,Odd Future,519336c2-f5a3-4137-a88e-58fecc604575,hiphop_rnb,1,hiphop_rnb,False
+of montreal,Of Montreal,8475297d-fb78-4630-8d74-9b87b6bb7cc8,electronic,1,electronic | rock | pop,True
+oh land,Oh Land,73700583-9245-4a62-b73b-68f3904a0ef3,electronic,1,electronic | rock | pop,True
+okkervil river,Okkervil River,9fa07bb4-8312-4cd7-a19a-4fdbc5797148,rock,0,rock,False
+old 97's,Old 97's,8dd216da-6db2-4130-9a7c-ece756d1394d,country,0,country | rock | pop,True
+old crow medicine show,Old Crow Medicine Show,0202af38-ac32-48d0-a546-87caaef2dee2,country,0,country,False
+olly murs,Olly Murs,0b108024-ccb5-468f-b2e9-77ed4f5615c6,pop,1,pop,False
+one direction,One Direction,1a425bbd-cca4-4b2c-aeb7-71cb176c828a,rock,0,rock | pop,True
+onerepublic,OneRepublic,c33c2065-b1c3-4406-b066-d33a9e2ea71a,rock,0,rock | pop,True
+opeth,Opeth,c14b4180-dc87-481e-b17a-64e4150f90f6,rock,0,rock,False
+orianthi,Orianthi,15674cab-ca9c-4704-b15f-c601d2f4409b,rock,0,rock | pop,True
+otep,Otep,83766a73-9c8a-481e-82ca-11853015cd2d,rock,0,rock,False
+our lady peace,Our Lady Peace,78661da3-894c-4947-a34b-fb7edf585d9b,rock,0,rock | pop,True
+our last night,Our Last Night,5466b02a-4465-4e87-b372-584cd5f97bff,rock,0,rock,False
+over the rhine,Over The Rhine,88afd639-e4bd-4abd-b396-2c2d18e3157e,rock,0,rock,False
+owl city,Owl City,ad279295-653f-42e1-9aaa-b731df2e78ba,electronic,1,electronic | pop,True
+ozomatli,Ozomatli,7e54639b-ee66-4452-a612-918d4c3c73c4,latin,1,latin | pop,True
+ozzy osbourne,Ozzy Osbourne,8aa5b65a-5b3c-4029-92bf-47a544356934,rock,0,rock | pop,True
+p!nk,P!nk,f4d5cc07-3bc9-4836-9b15-88a08359bc63,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+partynextdoor,PARTYNEXTDOOR,f23ef341-33bd-47c1-b83c-846a78581f05,hiphop_rnb,1,hiphop_rnb | rock,True
+phox,PHOX,525707c0-0538-4725-a54a-43a988eaea8e,rock,0,rock | pop,True
+pj harvey,PJ Harvey,e795e03d-b5d5-4a5f-834d-162cfb308a2c,classical,0,classical | electronic | rock,True
+pj morton,PJ Morton,d0bb100a-c0d6-4ef7-bde2-cc5095a31d24,hiphop_rnb,1,hiphop_rnb | christian | pop,True
+pallbearer,Pallbearer,4d263664-5418-4f6c-b46a-36f413044e73,rock,0,rock,False
+paloma faith,Paloma Faith,f23f6dd0-bfb0-43d5-bf06-eae4315db502,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+panic! at the disco,Panic! At The Disco,b9472588-93f3-4922-a1a2-74082cdf9ce8,classical,0,classical | rock | pop,True
+paolo nutini,Paolo Nutini,24ea074c-59cc-41c5-a5de-f68c2952965f,rock,0,rock | pop,True
+papa roach,Papa Roach,c5eb9407-caeb-4303-b383-6929aa94021c,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+paper tongues,Paper Tongues,0d92cfc7-bc7c-4ff1-95e3-3ea7a66ca126,rock,0,rock,False
+parkway drive,Parkway Drive,a436dd02-0549-4c91-b608-df451217fdeb,rock,0,rock,False
+parmalee,Parmalee,66980f96-2716-48e6-88c2-cbbb81b8e888,country,0,country,False
+parquet courts,Parquet Courts,e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c,rock,0,rock,False
+passion band,Passion Band,9610d6ae-dcd9-4981-bc97-a82b626297ae,christian,0,christian,False
+passion pit,Passion Pit,daeec599-bf5d-4428-994a-e76ba5f86e2f,rock,0,rock,False
+pastor troy,Pastor Troy,a016df3e-736e-415d-8026-d4c15552bbc1,hiphop_rnb,1,hiphop_rnb,False
+pat benatar,Pat Benatar,6bc658ea-005f-486b-8f94-33a2e40f7a72,rock,0,rock | pop,True
+pat green,Pat Green,0b610792-6d9b-45a4-b5de-0304b4007c3f,country,0,country,False
+pat metheny,Pat Metheny,7daac7f9-8fcc-485f-a14f-f8091d98cf25,jazz,0,jazz,False
+patrick stump,Patrick Stump,563abe5e-06b1-430d-99d4-7abf981c6e5a,rock,0,rock,False
+patsy cline,Patsy Cline,ad82dd72-0df3-4a09-8d7a-1af9c9e80522,country,0,country | christian | rock | pop,True
+patterson hood,Patterson Hood,701312f1-3bef-40fd-9144-e7d1280af6b7,country,0,country | rock,True
+patti smith,Patti Smith,d135874d-9cae-4fef-97e3-36acbd9f5a26,rock,0,rock | pop,True
+patty griffin,Patty Griffin,6fddcfc3-20b6-48d0-87ba-8211eca3420c,country,0,country | rock | pop,True
+patty loveless,Patty Loveless,e6cb4a73-6253-41c9-9450-f1862d30584e,country,0,country,False
+paul anka,Paul Anka,420c6768-0885-415a-bb59-d6a275121125,jazz,0,jazz | pop,True
+paul baloche,Paul Baloche,e793cb09-28b8-4120-872f-109b2b8fb0bd,christian,0,christian,False
+paul mccartney,Paul McCartney,ba550d0e-adac-4864-b88b-407cab5e76af,hiphop_rnb,1,hiphop_rnb | classical | rock | pop,True
+paul potts,Paul Potts,b4921a31-4f42-4cef-ac81-824c6260c910,classical,0,classical | pop,True
+paul rodgers,Paul Rodgers,723f72bc-b000-42cb-a20d-9f43fee17456,rock,0,rock,False
+paul thorn,Paul Thorn,f560cffe-c225-4b91-8511-403219819200,country,0,country | rock,True
+paul wall,Paul Wall,505cc7ac-b92c-46dd-94f2-e22b18fdcf57,hiphop_rnb,1,hiphop_rnb,False
+paul weller,Paul Weller,e4b3b07c-b564-43b6-8051-b12db8f487d7,hiphop_rnb,1,hiphop_rnb,False
+paul van dyk,Paul van Dyk,092ca127-2e07-4cbd-9cba-e412b4ddddd9,electronic,1,electronic,False
+paulina rubio,Paulina Rubio,5938c629-1d06-480b-9780-859b153af11e,latin,1,latin | hiphop_rnb | electronic | rock | pop,True
+pavement,Pavement,36bfa85f-737b-41db-a8fc-b8825850ffc3,rock,0,rock | pop,True
+pearl jam,Pearl Jam,83b9cbe7-9857-49e2-ab8e-b57b01038103,rock,0,rock | pop,True
+pentatonix,Pentatonix,79c67eb5-3851-4b28-bfe0-3adfcd6f58d7,pop,1,pop,False
+perfect pussy,Perfect Pussy,259b44e5-95de-454d-8d1d-1c3ff5799e95,rock,0,rock,False
+perfume genius,Perfume Genius,c4ff10e0-ae5a-467d-a409-6e0b4bf241eb,classical,0,classical | electronic | rock | pop,True
+pesado,Pesado,d184d50f-c0e0-455c-a14f-420f906304bd,latin,1,latin,False
+pet shop boys,Pet Shop Boys,be540c02-7898-4b79-9acc-c8122c7d9e83,electronic,1,electronic | pop,True
+pete yorn,Pete Yorn,3533dea4-218c-4fc9-ab6e-2e3dc0ffde6e,rock,0,rock,False
+peter frampton,Peter Frampton,638206ee-0e3d-47cf-9769-d73330b15a87,rock,0,rock | pop,True
+phantogram,Phantogram,dfe78af2-779e-4137-826a-3073a16e3278,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+pharoahe monch,Pharoahe Monch,a4d62ced-2f87-488a-9c76-ab88ea7a2cbf,hiphop_rnb,1,hiphop_rnb,False
+pharrell williams,Pharrell Williams,149f91ef-1287-46da-9a8e-87fee02f1471,hiphop_rnb,1,hiphop_rnb | pop,True
+phil vassar,Phil Vassar,2b95a657-9729-4dc7-a02f-7d8624d2c970,country,0,country,False
+phil wickham,Phil Wickham,b635a97f-a971-4d53-8317-b21d3ca4f901,christian,0,christian,False
+phillip phillips,Phillip Phillips,838483d3-a803-4194-9754-ad634fba8553,rock,0,rock | pop,True
+phish,Phish,e01646f2-2a04-450d-8bf2-0d993082e058,jazz,0,jazz | rock,True
+phonte,Phonte,136986bb-6e39-4e79-9945-cf9aa37a4a0b,hiphop_rnb,1,hiphop_rnb,False
+phosphorescent,Phosphorescent,739da2f1-0741-4c60-a6ed-f42d49bf2eb1,country,0,country | rock,True
+pierce the veil,Pierce the Veil,8ed919fb-eaee-45a1-ba99-b3ede9ca5f1d,rock,0,rock | pop,True
+pig destroyer,Pig Destroyer,5c0d3974-33d5-4f7a-bebc-8f50c057927e,rock,0,rock,False
+pimp c,Pimp C,03f77665-e514-49c1-b398-067c3e3e51e0,hiphop_rnb,1,hiphop_rnb,False
+pinback,Pinback,1f16a425-2606-4137-a6b7-234b6dabe037,electronic,1,electronic | rock,True
+pink martini,Pink Martini,113e0972-077f-423b-9b5f-3cc8a5bafa0f,jazz,0,jazz | pop,True
+pistol annies,Pistol Annies,c8b457e5-cfb7-42bf-99a2-af151867f6cc,country,0,country,False
+pixies,Pixies,b6b2bb8d-54a9-491f-9607-7b546023b433,rock,0,rock | pop,True
+placido domingo,Placido Domingo,521df2bd-01f6-456e-9d5f-f081068819c2,classical,0,classical,False
+plain white t's,Plain White T's,49576e42-fbbd-4d73-968d-93c8dcf7f065,rock,0,rock | pop,True
+playaz circle,Playaz Circle,176706f4-edc7-4f58-90c8-b1f81162b725,hiphop_rnb,1,hiphop_rnb,False
+pleasure p,Pleasure P,76ac0243-204f-4769-bd1e-160bbda66f65,hiphop_rnb,1,hiphop_rnb,False
+plies,Plies,72f62a4c-0042-49f6-b4dc-2f5b27dd289f,hiphop_rnb,1,hiphop_rnb | pop,True
+plumb,Plumb,7840325d-75a2-4bf1-94b6-8be56ac7a387,christian,0,christian | rock,True
+point of grace,Point Of Grace,0b68034d-215d-48db-b671-edf76739d637,christian,0,christian,False
+poison the well,Poison The Well,5275425d-3cdb-4a9a-b9eb-3e246ec69881,rock,0,rock,False
+polyphia,Polyphia,344bfb00-27f0-4ff2-b96b-048ed1c6a968,hiphop_rnb,1,hiphop_rnb | electronic | rock,True
+pop evil,Pop Evil,8e3ce660-79ed-4072-bd3d-e8db7a409946,rock,0,rock,False
+porcupine tree,Porcupine Tree,169c4c28-858e-497b-81a4-8bc15e0026ea,rock,0,rock | pop,True
+porter robinson,Porter Robinson,4ae36ade-1798-48c4-b06b-cc68b7d3d83f,electronic,1,electronic | rock | pop,True
+portugal. the man,Portugal. The Man,3599a39e-4e10-4cb5-90d4-c8a015ebc73b,electronic,1,electronic | rock | pop,True
+powerman 5000,Powerman 5000,0a41f86c-ced1-44e0-95a2-5c8b2368ab1d,rock,0,rock,False
+preashea hilliard,Preashea Hilliard,a5cc858e-87d2-4ee5-b25c-d99f82d1de70,christian,0,christian,False
+preservation hall jazz band,Preservation Hall Jazz Band,1a9b4e0d-05e2-4491-83f0-a4a676283f99,jazz,0,jazz,False
+pretty lights,Pretty Lights,3a07764c-7cc5-42e9-8205-3de7532f4771,hiphop_rnb,1,hiphop_rnb | jazz | electronic,True
+pretty ricky,Pretty Ricky,b79247ee-9870-4a26-8cbc-88d13044d7f6,hiphop_rnb,1,hiphop_rnb,False
+prince royce,Prince Royce,d1689304-23ac-4eae-a147-bd2e4100581a,latin,1,latin | pop,True
+prodigy of mobb deep,Prodigy Of Mobb Deep,2996c6a2-215d-4f78-aed6-81a130b04816,hiphop_rnb,1,hiphop_rnb,False
+project pat,Project Pat,8b8985eb-f71f-4229-9f11-171a7aac98c1,hiphop_rnb,1,hiphop_rnb,False
+propagandhi,Propagandhi,cc546218-cc08-4ae9-9592-ac1596c1470d,rock,0,rock,False
+protest the hero,Protest The Hero,6318e724-7e6b-4e41-a35b-080065077c80,rock,0,rock,False
+puddle of mudd,Puddle of Mudd,ff460a70-fdf4-4aa2-b021-8a04da76d88e,rock,0,rock | pop,True
+punch brothers,Punch Brothers,5508509b-5481-4341-94ae-209eb371afe7,country,0,country | classical,True
+purity ring,Purity Ring,fdb53441-e5e6-4657-9aad-8dab672e1cdc,electronic,1,electronic | rock | pop,True
+puscifer,Puscifer,6e4277d8-7b64-44a3-b823-13bd15114e22,rock,0,rock,False
+pusha t,Pusha T,14ecd19f-7121-4192-8549-e5056241a42f,hiphop_rnb,1,hiphop_rnb,False
+puss n boots,Puss N Boots,adf57be4-b0cc-460b-9a07-62da74c90135,country,0,country,False
+pvris,Pvris,de210c9e-fbf6-4827-987f-dd8885f5d890,electronic,1,electronic | rock | pop,True
+quasimoto,Quasimoto,b614843c-bec3-421f-9af1-03169cdd4b63,hiphop_rnb,1,hiphop_rnb,False
+queen + paul rodgers,Queen + Paul Rodgers,9dcffd99-eca6-4a09-8dbd-c6c4ed2f20fd,rock,0,rock,False
+queen latifah,Queen Latifah,7a305f29-539a-456e-93b7-61b0e2ba3ef2,hiphop_rnb,1,hiphop_rnb | jazz,True
+queens of the stone age,Queens Of The Stone Age,7dc8f5bd-9d0b-4087-9f73-dc164950bbd8,rock,0,rock,False
+queensryche,Queensryche,deeea939-7f89-4762-b09f-79269cd70d3b,electronic,1,electronic | rock,True
+quincy jones,Quincy Jones,5803c81e-739a-4057-9a5c-cf84e55db630,hiphop_rnb,1,hiphop_rnb | jazz | rock | pop,True
+r. kelly,R. Kelly,c2d25856-a09a-4d15-b404-77dd19c19e63,hiphop_rnb,1,hiphop_rnb | christian | jazz | electronic | pop,True
+r.a the rugged man,R.A The Rugged Man,6ade6e8f-2e84-4b90-88f0-17b623bb4165,hiphop_rnb,1,hiphop_rnb,False
+r.e.m.,R.E.M.,ea4dfa26-f633-4da6-a52a-f49ea4897b58,country,0,country | classical | electronic | rock | pop,True
+r5,R5,b52e99bd-e49d-4371-9fbd-cf1a0c2512ce,rock,0,rock | pop,True
+reo speedwagon,REO Speedwagon,bdc70372-7e8a-4cb9-8d33-f036b3b7cdc1,rock,0,rock | pop,True
+rx bandits,RX Bandits,71fc5761-1ad7-4756-85ed-291d55bc677e,rock,0,rock,False
+ra ra riot,Ra Ra Riot,d8f63b51-73e0-4f65-8bd3-bcfe6892fb0e,rock,0,rock | pop,True
+rachael yamagata,Rachael Yamagata,fdf9fd10-8a2a-4cb4-bed0-3c476c976ce0,rock,0,rock | pop,True
+radiohead,Radiohead,a74b1b7f-71a5-4011-9441-d0b5e4122711,hiphop_rnb,1,hiphop_rnb | classical | electronic | rock | pop,True
+raekwon,Raekwon,4e954b02-fae2-4bd7-9547-e055a6ac0527,hiphop_rnb,1,hiphop_rnb,False
+raheem devaughn,Raheem DeVaughn,103d9720-942a-4400-8c3b-3eaf76852a2c,hiphop_rnb,1,hiphop_rnb,False
+rammstein,Rammstein,b2d122f9-eadb-4930-a196-8f221eeb0c66,rock,0,rock | pop,True
+random axe,Random Axe,6c6ca962-f1bd-4e61-a0d7-13097e6a0ffc,hiphop_rnb,1,hiphop_rnb,False
+randy houser,Randy Houser,50e3dd64-6b87-4b9a-a511-c375ae4ff1ca,country,0,country,False
+randy rogers band,Randy Rogers Band,14c0a2e6-146e-4ba8-a4e6-1acbf72ce78a,country,0,country,False
+randy travis,Randy Travis,09b697e3-a849-4670-ae49-e0b821a6271a,country,0,country | christian | rock | pop,True
+raphael saadiq,Raphael Saadiq,a2eb319d-a45e-43c3-bb14-d0ffb577222c,hiphop_rnb,1,hiphop_rnb,False
+rapture ruckus,Rapture Ruckus,31b7bfa7-591d-4c0a-a5f5-4afa1563fe79,hiphop_rnb,1,hiphop_rnb | christian | rock,True
+rascal flatts,Rascal Flatts,6e0ae159-8449-4262-bba5-18ec87fa529f,country,0,country | rock | pop,True
+ratatat,Ratatat,f467181e-d5e0-4285-b47e-e853dcc89ee7,hiphop_rnb,1,hiphop_rnb | electronic | rock,True
+ratt,Ratt,e0827234-3be3-4973-be59-1aa9575b9c76,rock,0,rock,False
+ray lamontagne,Ray LaMontagne,b5c4ffa2-82e1-4b72-b7f3-c60afb74b860,rock,0,rock,False
+real friends,Real Friends,9ac8bee0-1c34-46c6-9eee-ee1eb96df282,rock,0,rock | pop,True
+rebecca st. james,Rebecca St. James,302716e4-a702-4bbc-baac-591f8a8e20bc,christian,0,christian,False
+rebelution,Rebelution,bf225245-fce7-4d30-b648-887cb33529e4,rock,0,rock,False
+reckless kelly,Reckless Kelly,c021780e-b6f4-48cf-8c4f-44a18f72dc50,country,0,country | rock,True
+red fang,Red Fang,fb2cc158-0ad2-4dc5-a6b6-b2a1a8e2fe65,rock,0,rock,False
+red hot chili peppers,Red Hot Chili Peppers,8bfac288-ccc5-448d-9573-c33ea2aa5c30,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+red wanting blue,Red Wanting Blue,c3fa12d9-4057-4495-a81b-b7fc3441f997,country,0,country | rock,True
+redlight king,Redlight King,30228d9e-83f5-4369-840f-0b84d86e1ccb,rock,0,rock,False
+redman,Redman,1f1f6737-b930-46fc-8d25-110bb99f7490,hiphop_rnb,1,hiphop_rnb,False
+reel big fish,Reel Big Fish,5e5480be-eded-44ad-9c45-f6136ec2f5db,rock,0,rock,False
+regina spektor,Regina Spektor,fbb375f9-48bb-4635-824e-4120273b3ba7,classical,0,classical | rock | pop,True
+relient k,Relient K,a49b5d41-7399-49ef-bcb8-a5779a30d2e9,christian,0,christian | rock | pop,True
+remmy valenzuela,Remmy Valenzuela,294f71b3-e120-424a-bae9-34acbd56d64f,latin,1,latin,False
+renee fleming,Renee Fleming,c0cc5761-007e-44ec-918f-bac00d14d7a2,jazz,0,jazz | classical,True
+renee spearman,Renee Spearman,7d272feb-2c09-4a3c-b75c-6cecdc17cd30,christian,0,christian,False
+rev theory,Rev Theory,6514b0d2-54c1-47a1-affd-d1ab6e03d778,rock,0,rock,False
+reverend horton heat,Reverend Horton Heat,cbf71c15-17c2-484f-8406-cfce12fd3e46,country,0,country | rock,True
+revocation,Revocation,2441c9e6-7e05-44f1-8da9-62025df367ab,rock,0,rock,False
+rhett miller,Rhett Miller,bb861349-25f2-4e90-ab38-bde20ef9849e,country,0,country | rock,True
+rhett walker band,Rhett Walker Band,58b8d5c8-4b63-4be4-96e2-9ae3265b6408,christian,0,christian,False
+rhonda vincent,Rhonda Vincent,5ae23016-8069-4a23-91ba-6b7d636ba304,country,0,country,False
+rhye,Rhye,aa914efa-d6cb-4816-906f-8edafb08418e,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+ricardo arjona,Ricardo Arjona,40627299-0979-45ba-8924-2af5fdc36ea8,latin,1,latin | pop,True
+richard marx,Richard Marx,e33c460f-011a-469a-b934-08932a3729c4,rock,0,rock | pop,True
+richie sambora,Richie Sambora,3ae4a23a-80a2-408f-9079-d6571c2525ae,rock,0,rock,False
+rick braun,Rick Braun,5b6b8e54-c62b-4b9b-b191-788a5460ae03,jazz,0,jazz,False
+rick springfield,Rick Springfield,88543892-2eef-4a6a-a84c-5b8502b80421,rock,0,rock | pop,True
+rickie lee jones,Rickie Lee Jones,9cd9232e-7a3e-4eb9-8043-ee05c1e396ec,rock,0,rock | pop,True
+rilo kiley,Rilo Kiley,eaf6a7ca-105d-4a94-ba02-8c3e4040319a,rock,0,rock | pop,True
+ringo starr,Ringo Starr,300c4c73-33ac-4255-9d57-4e32627f5e13,country,0,country | rock | pop,True
+rise against,Rise Against,606bf117-494f-4864-891f-09d63ff6aa4b,rock,0,rock | pop,True
+rival sons,Rival Sons,2aff9c10-2145-4851-a656-898aeb434ad5,rock,0,rock,False
+rob zombie,Rob Zombie,c995a379-60b9-404b-bd97-a7e2de0751d3,rock,0,rock,False
+robbie robertson,Robbie Robertson,a0920ae6-2968-4f92-ac14-67448452bd18,rock,0,rock,False
+robbie seay band,Robbie Seay Band,93f8727c-23d2-49f8-9d7a-9bc206bca9e2,christian,0,christian | rock,True
+robbie williams,Robbie Williams,db4624cf-0e44-481e-a9dc-2142b833ec2f,jazz,0,jazz | rock | pop,True
+robert earl keen,Robert Earl Keen,c81d48a8-5c86-4160-b3d4-1275e7ba3212,country,0,country,False
+robert glasper experiment,Robert Glasper Experiment,0ec3c9dc-45e7-4bc1-9813-a866acaae772,jazz,0,jazz,False
+robert plant,Robert Plant,bd53f9a7-8be9-46b0-bf7d-1deea3cb57bc,country,0,country | rock | pop,True
+roberta flack,Roberta Flack,5298bbcb-7330-49bf-a780-2d757f10a20a,hiphop_rnb,1,hiphop_rnb | jazz | electronic | pop,True
+roberto tapia,Roberto Tapia,0694cc53-1aaf-44ac-bc7a-9a90e3e26fef,latin,1,latin,False
+robin thicke,Robin Thicke,ddfd9b2f-186e-4b2c-ad09-01aa5380c225,hiphop_rnb,1,hiphop_rnb | pop,True
+rodney atkins,Rodney Atkins,51e607d4-e28d-468d-8e21-429aa9ce0206,country,0,country,False
+rodney carrington,Rodney Carrington,89b2959b-a1e9-4ac8-bd8d-4e2c085ab0d0,country,0,country,False
+rodney crowell,Rodney Crowell,a201fa9d-5896-423d-b629-327228c62a7c,country,0,country,False
+rodrigo y gabriela,Rodrigo y Gabriela,a8ed28e3-5c08-4448-b889-867483e251f5,latin,1,latin | jazz | rock,True
+rogue wave,Rogue Wave,6aa55ee1-4c46-4f7c-9a6d-5051dfe2c06d,rock,0,rock | pop,True
+romeo santos,Romeo Santos,35f343df-3b87-4475-b0e4-d2ba5cc26eea,latin,1,latin,False
+ronnie dunn,Ronnie Dunn,9b0636eb-1275-4370-94cc-6ac85d9fb5e8,country,0,country,False
+ronnie milsap,Ronnie Milsap,f5d7d748-256e-4875-a065-78cf2f1e3d39,hiphop_rnb,1,hiphop_rnb | country | christian | rock,True
+rosanne cash,Rosanne Cash,5ff6f6eb-31ad-4903-a3c3-4c9283fcde8b,country,0,country,False
+roscoe dash,Roscoe Dash,2d79c678-e9e6-4456-a941-8ca436747a43,hiphop_rnb,1,hiphop_rnb | rock,True
+roy orbison,Roy Orbison,0bbbc496-c7b5-4b3f-bb6d-bd312827d6e5,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+royal tailor,Royal Tailor,93f1d214-0a9a-43c9-803b-3ec738be0f9d,christian,0,christian | rock | pop,True
+"royce da 5'9""","Royce da 5'9""",a818c24f-d7c0-4420-afe9-09971652b87e,hiphop_rnb,1,hiphop_rnb,False
+royksopp,Royksopp,1c70a3fc-fa3c-4be1-8b55-c3192db8a884,electronic,1,electronic | rock | pop,True
+rupaul,RuPaul,15257a48-d9f6-4fd1-b30e-323576b15aca,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+ruben studdard,Ruben Studdard,5f5efe60-0461-4c3a-bad9-93d1eaa72da1,hiphop_rnb,1,hiphop_rnb,False
+rufus wainwright,Rufus Wainwright,78e46ae5-9bfd-433b-be3f-19e993d67ecc,classical,0,classical | rock | pop,True
+rumer,Rumer,a30e3a7b-cd14-4e63-ba22-04d02ee6fe26,hiphop_rnb,1,hiphop_rnb | country | pop,True
+run the jewels,Run the Jewels,a80c5dc5-b12e-4667-9f5a-b568961f3839,hiphop_rnb,1,hiphop_rnb,False
+rusko,Rusko,ed962474-bb85-47f9-b108-073184f09bc8,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+russian circles,Russian Circles,cca40a67-e959-46f8-a3f3-8a3f77d2da9e,rock,0,rock,False
+ry cooder,Ry Cooder,a4e2650b-938b-4b72-95bc-6e229cd34601,country,0,country | rock | pop,True
+ryan adams,Ryan Adams,c80f38a6-9980-485d-997c-5c1a9cbd0d64,country,0,country | rock,True
+ryan beatty,Ryan Beatty,81277a03-d1e0-49cd-971b-8582a5653d4e,hiphop_rnb,1,hiphop_rnb | pop,True
+ryan star,Ryan Star,ae36ec75-b6d0-4018-ab79-a660b0d0f165,rock,0,rock,False
+sbtrkt,SBTRKT,7f2aa196-cfd4-4a3d-ace3-28b7b6a79af7,electronic,1,electronic,False
+sohn,SOHN,8014af67-1b04-4123-8b02-6ca85840c514,electronic,1,electronic | rock | pop,True
+strfkr,STRFKR,0a19e3e4-7970-4adf-8439-90bdcc9c8661,electronic,1,electronic | rock | pop,True
+swv,SWV,fffc6a35-ae65-48be-bcc0-9d604e05665e,hiphop_rnb,1,hiphop_rnb | jazz,True
+sza,SZA,272989c8-5535-492d-a25c-9f58803e027f,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+sabaton,Sabaton,39a31de6-763d-48b6-a45c-f7cfad58ffd8,rock,0,rock | pop,True
+safetysuit,SafetySuit,9247edb7-1bb5-43f2-a58f-185a8ba6044f,rock,0,rock | pop,True
+sage francis,Sage Francis,c8fc1732-d191-4a29-a33a-410f98eff13b,hiphop_rnb,1,hiphop_rnb,False
+sage the gemini,Sage The Gemini,c211af3d-65e0-46a7-ac49-6c84837a0d16,hiphop_rnb,1,hiphop_rnb,False
+sammy adams,Sammy Adams,2d187d80-9d67-4ab6-99e4-a466b222554a,hiphop_rnb,1,hiphop_rnb | pop,True
+sammy hagar,Sammy Hagar,e68b06a4-d47f-432e-89d8-db43c48a2726,rock,0,rock | pop,True
+sanctus real,Sanctus Real,194ebc6c-f088-4267-a449-f01e8608a144,christian,0,christian | rock,True
+sandi patty,Sandi Patty,48bf5d11-ea2b-45b2-a68c-e14a6cd9331b,christian,0,christian,False
+santigold,Santigold,97b20fe3-0924-4a5f-9955-d0b5c5f9587f,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+saosin,Saosin,47b8b42a-96e8-46fa-9ea6-70c5136ae971,rock,0,rock | pop,True
+sara bareilles,Sara Bareilles,e54be6b7-5c26-4b47-bb3f-c137429b9b55,rock,0,rock | pop,True
+sara evans,Sara Evans,773af101-792f-48b8-a588-09a07cff5e53,country,0,country,False
+sara groves,Sara Groves,2f32fd81-76d6-4505-96f4-390f4597010a,christian,0,christian,False
+sarah brightman,Sarah Brightman,896f0194-8ab2-4278-81e0-c56a0444b569,classical,0,classical | rock | pop,True
+sarah buxton,Sarah Buxton,70462fb1-10ea-4f1f-8b35-84cf96d1740d,country,0,country,False
+sarah jarosz,Sarah Jarosz,6c44e99b-3450-45b7-b240-6e7026d0bcff,country,0,country | rock | pop,True
+sarah mclachlan,Sarah McLachlan,ce58d854-7430-4231-aa44-97f0144b3372,rock,0,rock | pop,True
+saves the day,Saves the Day,593f8594-83ad-4df4-a9b8-e4d225f55440,rock,0,rock | pop,True
+saving abel,Saving Abel,1c3c7d51-4679-476c-8cb0-580a35da018b,rock,0,rock,False
+say anything,Say Anything,ee90d1b3-a4e2-4d18-9092-111d856e7e7a,rock,0,rock | pop,True
+schoolboy q,ScHoolboy Q,bce6d667-cde8-485e-b078-c0a05adea36d,hiphop_rnb,1,hiphop_rnb,False
+scale the summit,Scale the Summit,37221dd7-41b1-49fa-ac32-08f8277f72cf,rock,0,rock,False
+scar the martyr,Scar The Martyr,3a8ee67d-c722-423e-8c85-4e54dd1ad0f1,rock,0,rock,False
+school of seven bells,School Of Seven Bells,57843aed-c1c1-4f45-9859-478dd999bc18,electronic,1,electronic | pop,True
+scissor sisters,Scissor Sisters,4236d929-9a81-4c8e-97c3-8d3306780f50,rock,0,rock | pop,True
+scott stapp,Scott Stapp,82ee7141-6b93-42fa-9fbc-faf2fc964870,christian,0,christian | rock,True
+scotty mccreery,Scotty McCreery,2294c553-58e4-425b-8bab-bee01f2d477a,country,0,country,False
+sea wolf,Sea Wolf,81be1ffb-da44-4449-abdb-40d5b34192f9,rock,0,rock,False
+sean paul,Sean Paul,c3da3346-2643-48a7-93cd-011f6834b3d7,latin,1,latin | hiphop_rnb | pop,True
+sebadoh,Sebadoh,d98c8149-0c01-4151-93e1-48fdc3d5027f,rock,0,rock | pop,True
+secondhand serenade,Secondhand Serenade,c4caa34e-57b5-432b-ad9d-7e6543944d96,rock,0,rock,False
+seether,Seether,fbcd7b29-455f-49e6-9c4f-8249d20a055e,rock,0,rock,False
+selena gomez,Selena Gomez,e4bc69e2-a064-4f93-ada1-f7f209cc1cc3,latin,1,latin | hiphop_rnb | electronic | rock | pop,True
+senses fail,Senses Fail,b4946461-dacb-4aa9-a77c-7b3231317794,rock,0,rock | pop,True
+serj tankian,Serj Tankian,e471b63c-c3b5-4f62-a971-cd0b2273838f,hiphop_rnb,1,hiphop_rnb | classical | electronic | rock | pop,True
+set your goals,Set Your Goals,03d8f83e-a647-4bde-968a-189c0f147783,rock,0,rock | pop,True
+seth macfarlane,Seth MacFarlane,e7d458f6-e006-4d83-ba86-bf7d4d8985b0,jazz,0,jazz,False
+seven lions,Seven Lions,75c016da-48e4-4992-8a10-b7128189b272,electronic,1,electronic | pop,True
+sevendust,Sevendust,52b9e109-44a0-45eb-a197-226c4abab232,rock,0,rock,False
+seventh day slumber,Seventh Day Slumber,56e7a15e-8b19-4f09-b3e7-c5fb830e3120,christian,0,christian | rock,True
+sevyn streeter,Sevyn Streeter,ec3e1298-23c5-4c39-bb2b-ae6a588afdeb,hiphop_rnb,1,hiphop_rnb,False
+shabazz palaces,Shabazz Palaces,6462c4f6-6f69-4636-a835-02eebe81c90f,hiphop_rnb,1,hiphop_rnb | rock,True
+shadows fall,Shadows Fall,2e3b75d8-00a8-486a-b4e7-a1f8f65e64c9,rock,0,rock,False
+shakey graves,Shakey Graves,24ca022c-653e-4379-812a-71f729b900ef,country,0,country | rock,True
+sharon van etten,Sharon Van Etten,5a2e9cd3-010a-4aae-9f83-629253284202,country,0,country | rock,True
+shawn colvin,Shawn Colvin,42222090-c5e5-4243-8582-c29bc8b63ec6,rock,0,rock,False
+shawn mcdonald,Shawn McDonald,4e44554d-8398-4775-951f-1d2686213ca9,christian,0,christian,False
+shawn mendes,Shawn Mendes,b7d92248-97e3-4450-8057-6fe06738f735,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+she wants revenge,She Wants Revenge,f434ae2b-b203-490d-a8ac-aa9cd51c0e73,rock,0,rock,False
+sheek louch,Sheek Louch,339ed05f-5f9f-4222-8e95-5bf5ec3af22a,hiphop_rnb,1,hiphop_rnb,False
+shelby lynne,Shelby Lynne,f4992dae-69f2-4c0d-95fa-0b65f47906f2,country,0,country | rock,True
+shellac,Shellac,604f273a-d3c1-4b5b-ab83-99541f9368ea,hiphop_rnb,1,hiphop_rnb | rock,True
+sheryl crow,Sheryl Crow,80ccfede-c258-4575-a7ad-c982e9932e0f,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+shinedown,Shinedown,adc0f033-95c2-4e0b-87bc-c23ed3f26ce6,rock,0,rock | pop,True
+shiny toy guns,Shiny Toy Guns,ad61e25e-5516-41e1-b60d-744e8220986e,electronic,1,electronic | rock | pop,True
+shirley caesar,Shirley Caesar,2bb81df0-e9e2-42ee-9708-d30b0c85d946,christian,0,christian,False
+sho baraka,Sho Baraka,04abca83-827b-4a53-81ee-fbd1d0378c34,hiphop_rnb,1,hiphop_rnb | christian,True
+shontelle,Shontelle,cfb2b49e-a921-4171-b089-853d9fc16d2c,hiphop_rnb,1,hiphop_rnb | pop,True
+shooter jennings,Shooter Jennings,9cbd1b43-83a7-4a94-9515-d4684ec8e699,country,0,country | rock,True
+shout out louds,Shout Out Louds,25a757f1-9fbe-4c52-be2e-1a5294fb25b9,rock,0,rock | pop,True
+shwayze,Shwayze,e84a64f9-cf28-477d-a31a-f43514011918,hiphop_rnb,1,hiphop_rnb | rock,True
+sick puppies,Sick Puppies,86f78011-5087-48d2-8922-c381d2eb0c40,rock,0,rock,False
+sidewalk prophets,Sidewalk Prophets,252da874-e460-4523-b94f-4c2450a70c77,christian,0,christian,False
+sigur ros,Sigur Ros,f6f2326f-6b25-4170-b89d-e235b25508e8,classical,0,classical | electronic | rock | pop,True
+silverstein,Silverstein,d89de379-665d-425c-b2e9-41b95d1edb36,rock,0,rock | pop,True
+silversun pickups,Silversun Pickups,b5bd9f88-962e-4730-84a7-795592ba42e8,rock,0,rock,False
+simple plan,Simple Plan,b345af35-205e-4eca-8006-029e5c20127e,rock,0,rock | pop,True
+sinead o'connor,Sinead O'Connor,c78a77fa-507c-4c07-947a-0355029453bd,rock,0,rock | pop,True
+sir michael rocks,Sir Michael Rocks,daf0293c-8ad3-45b2-a533-b662d9035df8,hiphop_rnb,1,hiphop_rnb | pop,True
+sir sly,Sir Sly,bd9b60e5-f008-4e1d-a059-ca9c665789d3,rock,0,rock | pop,True
+sister hazel,Sister Hazel,3b141e34-8c02-4074-b68a-7d64e3212acd,rock,0,rock | pop,True
+sixx: a.m.,Sixx: A.M.,b6cca708-1083-4bbb-8ba1-237d832088e4,rock,0,rock,False
+skeletonwitch,Skeletonwitch,99b3468f-ade6-45b9-b3b8-edbcfd9d553a,rock,0,rock,False
+skinny puppy,Skinny Puppy,5a24bc1a-c093-4a82-84ed-8d7f2da0570d,electronic,1,electronic,False
+skrillex,Skrillex,ae002c5d-aac6-490b-a39a-30aa9e2edf2b,latin,1,latin | hiphop_rnb | electronic | rock | pop,True
+sky ferreira,Sky Ferreira,05f3353e-e2d9-4344-a3c9-8009dd8e0427,rock,0,rock | pop,True
+skylar grey,Skylar Grey,bd01c9d7-89dd-4cb4-9baa-a43bfa292bed,rock,0,rock | pop,True
+skyzoo,Skyzoo,0805f934-4170-4292-b74f-901bdb316374,hiphop_rnb,1,hiphop_rnb,False
+sleater-kinney,Sleater-Kinney,e36e78eb-3ace-4acd-882c-16789e700ab7,rock,0,rock,False
+sleigh bells,Sleigh Bells,95f7536d-b2f7-4087-8668-a663ec201f5a,rock,0,rock | pop,True
+slightly stoopid,Slightly Stoopid,2c7e21ad-9b16-42df-9f9b-d583ce70a88a,hiphop_rnb,1,hiphop_rnb | rock,True
+slim thug,Slim Thug,e0f5273c-637e-4e10-8304-81f2f9a31523,hiphop_rnb,1,hiphop_rnb | christian,True
+smile empty soul,Smile Empty Soul,c0d35199-d7a8-4d13-bf8f-8997934a0a4c,rock,0,rock,False
+smith westerns,Smith Westerns,1541f1ff-e249-4c85-84d9-6125bb3fe4b9,rock,0,rock,False
+smokey robinson,Smokey Robinson,c19ff12b-058f-44a8-b245-b0efb4752925,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+snootie wild,Snootie Wild,b3e80856-2629-4267-afd4-e4b559ce9d43,hiphop_rnb,1,hiphop_rnb,False
+snow patrol,Snow Patrol,a66999a7-ae5c-460e-ba94-1a01143ae847,rock,0,rock | pop,True
+somo,SoMo,bd83292c-242b-45cd-bd8d-6bd362c60e6e,hiphop_rnb,1,hiphop_rnb,False
+social distortion,Social Distortion,e1e05cce-3922-44e1-8f20-015abe5e309d,rock,0,rock,False
+soilwork,Soilwork,d8d1b067-78bb-4db7-8f91-db2ff9a83ee5,rock,0,rock,False
+something corporate,Something Corporate,8dacf242-9bf7-44f5-b2eb-18305b904551,rock,0,rock | pop,True
+son volt,Son Volt,ecbd1331-95b6-4a77-b739-b4bd8ef222a7,country,0,country | rock,True
+sondre lerche,Sondre Lerche,a1c29c2f-778f-4b02-9ac7-80f0c37cdea9,rock,0,rock | pop,True
+sonic youth,Sonic Youth,5cbef01b-cc35-4f52-af7b-d0df0c4f61b9,rock,0,rock | pop,True
+sons of sylvia,Sons Of Sylvia,82e47e13-c13f-4f1e-b37a-9b7d079adb28,rock,0,rock,False
+soul asylum,Soul Asylum,b10db9ad-b4c3-47f3-a7a4-37864b134f65,rock,0,rock | pop,True
+soundgarden,Soundgarden,153c9281-268f-4cf3-8938-f5a4593e5df4,rock,0,rock,False
+spinal tap,Spinal Tap,d0a0b3a2-ea58-4a7a-b18c-849d589bfac7,rock,0,rock,False
+spiritualized,Spiritualized,65041e06-83d2-4987-ae52-c17a915fc82a,classical,0,classical | rock | pop,True
+st. lucia,St. Lucia,d996eadd-029d-4478-aa4b-fc9446653548,rock,0,rock | pop,True
+staind,Staind,777a21a8-0d0f-4cf3-86b4-65bc0eba5649,rock,0,rock,False
+starbomb,Starbomb,5cee58e4-224e-4f0a-b41d-ce0466e1bf46,hiphop_rnb,1,hiphop_rnb | pop,True
+starlito,Starlito,89e1d59f-4e8b-43e6-b1fd-aca7491c5520,hiphop_rnb,1,hiphop_rnb,False
+starset,Starset,edf078bd-ab50-477a-9e3d-f4c0c1d3470b,electronic,1,electronic | rock,True
+state radio,State Radio,e3003c05-9b18-415b-b4dc-2f2369eafb56,rock,0,rock,False
+statik selektah,Statik Selektah,b0bc78bc-6f67-487b-a571-bdf4a24da486,hiphop_rnb,1,hiphop_rnb,False
+steel panther,Steel Panther,f82927e4-b905-4e3b-a82e-5184fbb68b29,rock,0,rock,False
+steve aoki,Steve Aoki,a39acc4a-985e-4173-a9ed-f325f2d3bc1c,electronic,1,electronic,False
+steve cropper,Steve Cropper,4387a8ed-8a80-453c-a863-73dc0b23900c,hiphop_rnb,1,hiphop_rnb,False
+steve holy,Steve Holy,75e5143e-45dd-40e8-817c-cd89d20bf6a5,country,0,country,False
+steve vai,Steve Vai,5e7ccd92-6277-451a-aab9-1efd587c50f3,rock,0,rock,False
+steven curtis chapman,Steven Curtis Chapman,810ae1de-02f8-4fca-9909-cb9119022749,country,0,country | christian,True
+stevie nicks,Stevie Nicks,b7f2cca2-72c6-41fb-ae33-53370fc62fe7,country,0,country | rock | pop,True
+stevie ray vaughan,Stevie Ray Vaughan,f5426431-f490-4678-ad44-a75c71097bb4,jazz,0,jazz | rock,True
+stick to your guns,Stick To Your Guns,07ef6bdd-20c8-4f2b-ac87-463f65b90768,rock,0,rock,False
+stone sour,Stone Sour,4ca783b7-5bf7-4348-b494-46680660050f,rock,0,rock,False
+stone temple pilots,Stone Temple Pilots,8c32bb01-58a3-453b-8050-8c0620edb0e5,country,0,country | rock | pop,True
+stoney larue,Stoney LaRue,e7f70247-bf9b-4bf2-96cc-433c6700ada0,country,0,country,False
+storm corrosion,Storm Corrosion,4f1f3fbc-a043-4280-9a42-f238f4740065,rock,0,rock,False
+story of the year,Story of the Year,e2c3c508-f0ab-49af-92c9-a81d66d67405,rock,0,rock | pop,True
+stray from the path,Stray From The Path,0fff8ab2-c500-4564-b4f1-f4da7642d986,rock,0,rock,False
+street sweeper social club,Street Sweeper Social Club,fdde76e2-6450-4fab-8b6a-64ab21f1d8fe,hiphop_rnb,1,hiphop_rnb | rock,True
+streetlight manifesto,Streetlight Manifesto,cbc9199f-944b-42e9-a945-627c9fc0ba6e,rock,0,rock,False
+strung out,Strung Out,0220a594-56a1-47ca-8288-001ead3a3546,rock,0,rock,False
+stryper,Stryper,89621490-e0ef-4915-8b1f-6ad57dba3d7a,christian,0,christian | rock,True
+sturgill simpson,Sturgill Simpson,f6e61750-a6b7-4d88-979b-052345cd0e4a,country,0,country,False
+styles p,Styles P,6c81c5d0-5159-4be8-b774-aa8397ed5a93,hiphop_rnb,1,hiphop_rnb,False
+sufjan stevens,Sufjan Stevens,01d3c51b-9b98-418a-8d8e-37f6fab59d8c,classical,0,classical | electronic | rock | pop,True
+sugar ray,Sugar Ray,9968756b-d504-4c90-a184-776ba1dd32ea,rock,0,rock | pop,True
+sugarland,Sugarland,f87b740a-c22b-4fae-9987-1f3e16f840c4,country,0,country | rock | pop,True
+suicidal tendencies,Suicidal Tendencies,e9e2a634-984f-4c10-bf7b-7970179e1ef1,hiphop_rnb,1,hiphop_rnb | rock,True
+suicide silence,Suicide Silence,4fd53e84-ffa1-4434-9146-3fab25ece7e0,rock,0,rock,False
+sully erna,Sully Erna,0d4c8428-9355-44db-af56-ec8523f20258,rock,0,rock,False
+sum 41,Sum 41,f2eef649-a6d5-4114-afba-e50ab26254d2,rock,0,rock | pop,True
+sun kil moon,Sun Kil Moon,ef2c6449-d02b-415b-ad8c-c14c08266552,rock,0,rock | pop,True
+sundy best,Sundy Best,84109fcd-9507-442e-bca1-4053fe5c0254,country,0,country,False
+sunny sweeney,Sunny Sweeney,8582240e-2992-4d9f-aff8-ef03b5eeeedf,country,0,country,False
+superheavy,SuperHeavy,7c891f6b-1abd-4b35-bb48-b163bdbf9c0e,rock,0,rock,False
+superchunk,Superchunk,61653550-fd9b-4401-8248-44f2d064d384,rock,0,rock,False
+surfer blood,Surfer Blood,f11ab2aa-4a60-49b2-b37b-505a05b5d179,rock,0,rock | pop,True
+susan boyle,Susan Boyle,eefcf168-6b1b-46ec-9b75-f8a01161abb5,classical,0,classical | pop,True
+suzanne vega,Suzanne Vega,cf119120-7df5-47d7-9dec-49f8837a4e40,classical,0,classical | rock | pop,True
+swedish house mafia,Swedish House Mafia,99075985-0d80-4692-a15e-b16f78831792,electronic,1,electronic | pop,True
+switchfoot,Switchfoot,ff865aa0-4603-4f79-ae8b-8735332e2cfa,christian,0,christian | rock,True
+swollen members,Swollen Members,7ff86f63-f50b-45ca-8eb6-c391926e022d,hiphop_rnb,1,hiphop_rnb | rock,True
+swoope,Swoope,075203cc-9825-40ee-a996-cce950923e49,hiphop_rnb,1,hiphop_rnb | christian,True
+sworn in,Sworn In,02d1a7e3-abd8-4908-bbff-e53da5881407,rock,0,rock,False
+syleena johnson,Syleena Johnson,16eb7e6c-2eb8-400c-97d5-33891fa3303e,hiphop_rnb,1,hiphop_rnb,False
+sylvan esso,Sylvan Esso,c4593b34-2a94-4e44-ae10-4a0f4c0b4da8,electronic,1,electronic | rock | pop,True
+t-pain,T-Pain,ce55e49a-32f4-4757-9849-bf04d06d5fcc,hiphop_rnb,1,hiphop_rnb | pop,True
+tnght,TNGHT,1fdf897c-54c5-4721-9e59-a0ad8b5e006e,hiphop_rnb,1,hiphop_rnb | electronic,True
+tobacco,TOBACCO,7d3996ec-e9e9-41ec-8f4d-e336f64fc7c6,hiphop_rnb,1,hiphop_rnb | rock,True
+tv on the radio,TV On The Radio,eb872766-98f6-453d-883f-2ae908a18315,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+taeyang,Taeyang,d84e5667-3cbe-4556-b551-9d7e4be95d71,pop,1,pop,False
+taio cruz,Taio Cruz,ba7d2626-38ce-4859-8495-bdb5732715c4,hiphop_rnb,1,hiphop_rnb | pop,True
+taking back sunday,Taking Back Sunday,350bce49-c21b-4137-b50a-0766ded07e4d,rock,0,rock | pop,True
+talib kweli,Talib Kweli,bb3cbea2-5ad4-4917-bc84-8a1975d40315,hiphop_rnb,1,hiphop_rnb,False
+talking heads,Talking Heads,a94a7155-c79d-4409-9fcf-220cb0e4dc3a,rock,0,rock | pop,True
+tamar braxton,Tamar Braxton,ffb5f70c-cd10-48a5-92d0-cea440e6fd40,hiphop_rnb,1,hiphop_rnb,False
+tame impala,Tame Impala,63aa26c3-d59b-4da4-84ac-716b54f1ef4d,rock,0,rock | pop,True
+tantric,Tantric,3829f10b-821e-4c9b-88d8-7bc486637741,rock,0,rock,False
+tanya tucker,Tanya Tucker,45677914-89de-4267-aeae-8c1661b2c859,country,0,country | pop,True
+tapes 'n tapes,Tapes 'n Tapes,a83ec79e-bcbf-4872-92e5-8c7ca1bb8ff2,rock,0,rock,False
+taproot,Taproot,05851234-4e8f-4cc8-b682-a55c23277d9c,rock,0,rock,False
+tasha cobbs,Tasha Cobbs,82091270-4f04-49f2-bb02-1aa9a32aa46f,christian,0,christian,False
+taylor hicks,Taylor Hicks,b8b5895b-6c8c-4e1d-867c-b4ff96a074a7,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+tech n9ne,Tech N9ne,dde3d9b1-0e44-48bc-b0c9-d739b3570000,hiphop_rnb,1,hiphop_rnb,False
+ted nugent,Ted Nugent,e491fae8-3a5a-438e-8368-925753fb41a1,rock,0,rock,False
+tedashii,Tedashii,3acca2e8-3d1a-4f83-ad5c-47096f0da0c2,hiphop_rnb,1,hiphop_rnb | christian,True
+teddy pendergrass,Teddy Pendergrass,293029f7-ac9e-4a8b-bb50-67935b373c47,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+tedeschi trucks band,Tedeschi Trucks Band,e33e1ccf-a3b9-4449-a66a-0091e8f55a60,hiphop_rnb,1,hiphop_rnb | rock,True
+teena marie,Teena Marie,98cb2d05-0b47-4bc6-b345-792eecbe8449,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+tenacious d,Tenacious D,148ddea2-6839-4354-8e2c-5dfadf136b7f,rock,0,rock,False
+tennessee ernie ford,Tennessee Ernie Ford,947163f5-f306-4d78-a316-8c3fb317ae50,country,0,country | christian,True
+tessanne chin,Tessanne Chin,e7fd6685-38da-4b3b-9796-09a2562e3cd7,hiphop_rnb,1,hiphop_rnb,False
+texas hippie coalition,Texas Hippie Coalition,74390d37-22d9-469f-8909-9704345319dd,rock,0,rock,False
+texas in july,Texas in July,f6aafb74-bb30-40af-bdcd-f08574b13ed9,rock,0,rock,False
+the 1975,The 1975,5b6ebfe0-f72b-4902-bba9-74c8af0f1af0,rock,0,rock | pop,True
+the acacia strain,The Acacia Strain,08bebce9-33fa-4ae9-9992-4e5d137d655b,rock,0,rock,False
+the afghan whigs,The Afghan Whigs,2feb192c-2363-46d6-b476-1c88a25cb294,hiphop_rnb,1,hiphop_rnb | rock,True
+the afters,The Afters,487daeb5-ba48-4e2c-9f01-173c9deefa4b,christian,0,christian | rock | pop,True
+the airborne toxic event,The Airborne Toxic Event,892fb2e4-0af4-42be-9e60-22898de51d32,rock,0,rock,False
+the all-american rejects,The All-American Rejects,09885b8e-f235-4b80-a02a-055539493173,rock,0,rock | pop,True
+the allman brothers band,The Allman Brothers Band,72359492-22be-4ed9-aaa0-efa434fb2b01,country,0,country | rock | pop,True
+the almost,The Almost,92e1f515-fc89-4577-9f77-addacdaf7559,christian,0,christian | rock | pop,True
+the amity affliction,The Amity Affliction,0bfb9d2b-e732-4f28-b2fe-e1d3db9665f1,rock,0,rock,False
+the animals,The Animals,4d8afa16-4018-4ca8-8b5e-ede8f9314562,rock,0,rock,False
+the antlers,The Antlers,ff0d20a7-a69e-4207-a18f-ca808759499d,classical,0,classical | rock | pop,True
+the aquabats!,The Aquabats!,0396220e-d266-4980-b5f2-b0926d905bec,rock,0,rock | pop,True
+the avett brothers,The Avett Brothers,0a176d0a-ef46-4e7f-b018-9f4d65614668,country,0,country | rock,True
+the band perry,The Band Perry,28955336-2348-488a-9381-e3a7b0107343,country,0,country,False
+the bangles,The Bangles,f31ec2ac-9071-4306-acd1-d2c8321033b5,rock,0,rock | pop,True
+the big pink,The Big Pink,a4584a84-3a14-430c-933f-cc2147842d04,electronic,1,electronic | rock | pop,True
+the birthday massacre,The Birthday Massacre,83d8a06a-4145-444a-b4ae-49e1e986206f,electronic,1,electronic | rock,True
+the black crowes,The Black Crowes,02ceff75-7363-493e-a78d-912dc86c7460,rock,0,rock,False
+the black dahlia murder,The Black Dahlia Murder,21f3573f-10cf-44b3-aeaa-26cccd8448b5,rock,0,rock,False
+the black keys,The Black Keys,d15721d8-56b4-453d-b506-fc915b14cba2,rock,0,rock,False
+the booth brothers,The Booth Brothers,e86fd11d-cc4b-42b7-98be-6a46e6281721,christian,0,christian,False
+the both,The Both,ceeaa939-d794-404b-a25b-c71fd098cef3,rock,0,rock | pop,True
+the bouncing souls,The Bouncing Souls,429d5f26-329c-41cc-bdff-17c29dbf1fb8,rock,0,rock | pop,True
+the bravery,The Bravery,7e30debb-3308-49ab-a5ac-6d49319a5705,rock,0,rock,False
+the brian setzer orchestra,The Brian Setzer Orchestra,3c98e32e-5bf5-4484-bdab-bd8d1736112a,jazz,0,jazz | rock,True
+the budos band,The Budos Band,b6fa9b9b-41cf-45a6-adc0-0a4c9a8c0d3c,hiphop_rnb,1,hiphop_rnb | jazz | rock,True
+the cars,The Cars,092b603f-eb4c-4958-b10e-02420de5885b,rock,0,rock | pop,True
+the chariot,The Chariot,22fb55ab-41ca-4fed-bffd-9e85c772486b,rock,0,rock,False
+the chemical brothers,The Chemical Brothers,1946a82a-f927-40c2-8235-38d64f50d043,electronic,1,electronic | rock,True
+the chipmunks,The Chipmunks,14553432-e492-420d-99ed-6e2fd6b4543f,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+the civil wars,The Civil Wars,91dad7e7-0bf6-47e8-bd42-ef1fac32c729,country,0,country | rock,True
+the classic crime,The Classic Crime,821eaa7e-79b9-4aeb-837c-6acc868ce5f1,rock,0,rock,False
+the color morale,The Color Morale,97916e3f-2152-43ba-8190-63a269c3030c,christian,0,christian | rock,True
+the cool kids,The Cool Kids,fca8cdfa-120d-49ec-b1da-0ff8aa90c3ab,hiphop_rnb,1,hiphop_rnb | pop,True
+the crabb family,The Crabb Family,dd849055-f582-4bc5-953d-7c0c9c41fa67,christian,0,christian,False
+the cranberries,The Cranberries,c98d40fd-f6cf-4b26-883e-eaa515ee2851,classical,0,classical | rock | pop,True
+the crystal method,The Crystal Method,aaf09f31-bb5c-43e5-9f54-bb6554c33a71,electronic,1,electronic,False
+the cure,The Cure,69ee3720-a7cb-4402-b48d-a02c366f2bcf,rock,0,rock | pop,True
+the damnwells,The Damnwells,d47367b1-a847-41f9-8123-8f1e80e27db1,country,0,country | rock,True
+the dandy warhols,The Dandy Warhols,5f572b31-8fd9-45ae-9beb-358c98d839df,rock,0,rock | pop,True
+the dangerous summer,The Dangerous Summer,1999a33b-e56e-467d-af1a-53ea14f5a2cd,rock,0,rock | pop,True
+the dead weather,The Dead Weather,334bd887-9044-4c38-aebd-4baab851efb4,rock,0,rock,False
+the dear hunter,The Dear Hunter,75f30e15-549a-440d-b9b9-3d08daadef9d,rock,0,rock,False
+the decemberists,The Decemberists,97b1142f-c71e-4971-8736-4a8ceaf6b4c3,rock,0,rock | pop,True
+the derek trucks band,The Derek Trucks Band,bb110dbc-8daa-407f-a04b-f569e7a5ee7e,hiphop_rnb,1,hiphop_rnb | jazz | rock,True
+the devil makes three,The Devil Makes Three,66e5bc0f-7cc6-4e44-937b-4a92466f3c37,country,0,country,False
+the devil wears prada,The Devil Wears Prada,43c0958c-27ef-46c4-b4cc-83cfca54170d,christian,0,christian | rock,True
+the devin townsend project,The Devin Townsend Project,b00cb756-0259-4a50-bbcb-ad22186c5518,rock,0,rock,False
+the dillinger escape plan,The Dillinger Escape Plan,1bc41dff-5397-4c53-bb50-469d2c277197,jazz,0,jazz | rock,True
+the dodos,The Dodos,c310b8e8-468f-4189-9b72-9589a2ff275d,rock,0,rock,False
+the doors,The Doors,9efff43b-3b29-4082-824e-bc82f646f93d,rock,0,rock | pop,True
+the earls of leicester,The Earls Of Leicester,547bcf4d-f125-471a-b615-a9aef7385922,country,0,country,False
+the early november,The Early November,8448783d-a68c-490f-b5c5-4a6364ef5537,rock,0,rock,False
+the expendables,The Expendables,d94403dd-0446-4b6b-a47c-340b03365390,rock,0,rock,False
+the faint,The Faint,a1419808-65d3-4d40-998c-1a0bac65eabc,electronic,1,electronic | rock,True
+the flaming lips,The Flaming Lips,1f43d76f-8edf-44f6-aaf1-b65f05ad9402,rock,0,rock | pop,True
+the floacist,The Floacist,188b8e84-21c6-4f08-998c-4fe9b340c1b9,hiphop_rnb,1,hiphop_rnb,False
+the foreign exchange,The Foreign Exchange,597fd37b-5ce2-4522-9370-9f3d7e1c81f2,hiphop_rnb,1,hiphop_rnb,False
+the fratellis,The Fratellis,512de9f2-f6ad-4b7c-8e18-cb505b35db47,rock,0,rock,False
+the friday night boys,The Friday Night Boys,655e6ba0-5285-4c37-a2fb-e30bda9f4c41,rock,0,rock | pop,True
+the front bottoms,The Front Bottoms,622b6000-ff0d-4ab3-9e98-c4916f3692c3,rock,0,rock | pop,True
+the gaslight anthem,The Gaslight Anthem,f208f09e-b5b3-4b06-87cd-f7230fae17e3,rock,0,rock,False
+the get up kids,The Get Up Kids,1b54e90c-638e-4fdd-a20e-4ab09db9fdaf,rock,0,rock | pop,True
+the ghost inside,The Ghost Inside,6fbd58c3-e9b3-4419-a197-0a0f22baed94,rock,0,rock,False
+the ghost of a saber tooth tiger,The Ghost Of A Saber Tooth Tiger,ecedc002-b517-4547-9362-b9e9b3ed4fbd,pop,1,pop,False
+the glitch mob,The Glitch Mob,2e62daef-dc0d-40ad-b430-fd6872e992aa,electronic,1,electronic,False
+the go! team,The Go! Team,8a396a9c-2e4f-47e2-a587-c26e93a0953f,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+the grascals,The Grascals,8fec36ae-abfa-4ab9-bd48-87f42203255b,country,0,country,False
+the helio sequence,The Helio Sequence,b6ab8d01-0cb3-4515-bc05-d928397e7429,electronic,1,electronic | rock | pop,True
+the hit crew,The Hit Crew,af3d3c30-fcd5-4012-91a2-7a2845827ccc,latin,1,latin | hiphop_rnb | country | christian | jazz | pop,True
+the hives,The Hives,487bfd74-71bf-46dd-b89c-80b7a0f06f2f,rock,0,rock,False
+the hold steady,The Hold Steady,4883523d-fc0e-4d0d-802c-91379e767083,rock,0,rock,False
+the hoppers,The Hoppers,1df401fe-8a30-45ce-90bc-9f14834b2546,christian,0,christian,False
+the horrible crowes,The Horrible Crowes,9e7ce6e9-8d13-43f1-ac85-79277e9269a9,rock,0,rock,False
+the human abstract,The Human Abstract,04762fb6-7671-4b1a-9d24-b39e88592741,rock,0,rock,False
+the janedear girls,The JaneDear Girls,3718efd7-012d-4811-873a-dda4a3640ee8,country,0,country | pop,True
+the jimi hendrix experience,The Jimi Hendrix Experience,33b3c323-77c2-417c-a5b4-af7e6a111cc9,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+the joy formidable,The Joy Formidable,072d4c31-8fd7-4073-9efc-7e192b517906,rock,0,rock | pop,True
+the killjoy club,The Killjoy Club,b57c526d-6a62-4b40-9581-337cbbdfdc35,hiphop_rnb,1,hiphop_rnb,False
+the kills,The Kills,2c629b8c-d751-4131-b785-5690bb5e0fd7,rock,0,rock,False
+the lox,The LOX,76e9341b-ce5e-4eb7-8734-4cede9c7a993,hiphop_rnb,1,hiphop_rnb,False
+the lacs,The Lacs,b0b9093d-fa6b-40a4-9ec0-71513164d930,hiphop_rnb,1,hiphop_rnb | country | rock,True
+the lawrence arms,The Lawrence Arms,e7edc301-cd55-41ce-b3d8-c3f83cd90a60,rock,0,rock,False
+the letter black,The Letter Black,2b665045-9a27-463a-af3a-3822ff073e91,christian,0,christian | rock,True
+the little willies,The Little Willies,e4b3177f-8131-462f-805a-5d2583a69bac,country,0,country | rock,True
+the lone bellow,The Lone Bellow,20e8af26-f1d8-4612-9517-1aa05b2c5fa4,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+the lonely island,The Lonely Island,028e1863-cab4-4a3d-9dd9-91c682c91005,hiphop_rnb,1,hiphop_rnb,False
+the lumineers,The Lumineers,bfcb6630-9b31-4e63-b11f-7b0363be72b5,country,0,country | rock | pop,True
+the magnetic fields,The Magnetic Fields,3ff72a59-f39d-411d-9f93-2d4a86413013,rock,0,rock | pop,True
+the maine,The Maine,7bd47e67-ecd5-49d5-837f-c692df38da4e,rock,0,rock | pop,True
+the mars volta,The Mars Volta,20883363-1ea4-4d72-ad72-c0e767038f3e,rock,0,rock,False
+the melvins,The Melvins,96f51a19-c4fb-4e57-9bb9-287967c8852e,rock,0,rock,False
+the menzingers,The Menzingers,3071d829-b9ca-4499-b4f5-74d6d8531aed,country,0,country | rock | pop,True
+the miles davis quintet,The Miles Davis Quintet,fe7245e7-d734-4ca1-8e26-691883f58201,jazz,0,jazz,False
+the monkees,The Monkees,b8549efe-f4fd-4dc0-8ef1-226e9c400233,country,0,country | rock | pop,True
+the mountain goats,The Mountain Goats,9639cd52-c351-4a17-9797-58880e95a7ef,rock,0,rock,False
+the national,The National,664c3e0e-42d8-48c1-b209-1efca19c0325,country,0,country | classical | rock | pop,True
+the neighbourhood,The Neighbourhood,97b8d224-5660-419c-8dff-4b3bf0c33983,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+the new pornographers,The New Pornographers,25b75a66-ce83-4db3-b136-395a3c3784c4,rock,0,rock | pop,True
+the oak ridge boys,The Oak Ridge Boys,1089f50b-10c3-47ef-8b21-b0b899c827d8,country,0,country | christian | pop,True
+the orb,The Orb,42c14c80-bd17-47e4-9bb2-a35897638c4d,electronic,1,electronic,False
+the original 7ven,The Original 7ven,3bfa8f23-2dbb-43e2-b1da-3cfaa6c5ff9d,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+the pains of being pure at heart,The Pains Of Being Pure At Heart,46f4e349-ddec-4131-9367-91b630a821d0,rock,0,rock | pop,True
+the piano guys,The Piano Guys,322d2e0e-7df2-4208-a46c-26cb6c60ba56,classical,0,classical | rock,True
+the plot in you,The Plot In You,c2e7d4ac-5e30-4b55-99b7-e49d99fd7c63,rock,0,rock,False
+the pretty reckless,The Pretty Reckless,54f8c12e-571c-4c5a-9f79-5336b39e84b0,rock,0,rock | pop,True
+the prodigy,The Prodigy,4a4ee089-93b1-4470-af9a-6ff575d32704,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+the ramones,The Ramones,d6ed7887-a401-47a8-893c-34b967444d26,rock,0,rock | pop,True
+the raveonettes,The Raveonettes,79255a50-40df-447f-9612-2cf669080196,rock,0,rock | pop,True
+the ready set,The Ready Set,3979bb32-59b4-442e-aafa-de4ae2439400,rock,0,rock,False
+the red chord,The Red Chord,d1322057-e047-45ee-a573-769b37a395dc,rock,0,rock,False
+the red jumpsuit apparatus,The Red Jumpsuit Apparatus,f0e820ab-f31a-400d-9c5e-8be1c8c38726,christian,0,christian | rock | pop,True
+the replacements,The Replacements,dc0d05ce-2f47-4962-b4fa-8631a0a51987,christian,0,christian | rock | pop,True
+the rocket summer,The Rocket Summer,9fdd9163-9824-413e-91ad-d01e561b4078,rock,0,rock | pop,True
+the script,The Script,4c98aa1b-34eb-4336-987f-5e50aa059c00,rock,0,rock | pop,True
+the secret sisters,The Secret Sisters,7389422f-074f-45ff-a9b8-5790d3c84c08,country,0,country,False
+the shins,The Shins,6c8b9855-ba8b-48f9-ac1d-42167f7f7b18,rock,0,rock | pop,True
+the smashing pumpkins,The Smashing Pumpkins,ba0d6274-db14-4ef5-b28d-657ebde1a396,electronic,1,electronic | rock | pop,True
+the spill canvas,The Spill Canvas,98091205-c85e-49b0-954b-d84dab308138,rock,0,rock,False
+the statler brothers,The Statler Brothers,8f0c7db9-6d1c-446b-913c-b5c6811ca6fc,country,0,country | christian,True
+the steve miller band,The Steve Miller Band,e57f0cac-4f56-473c-8d7e-d93f753fd586,country,0,country | rock | pop,True
+the string cheese incident,The String Cheese Incident,cff95140-6d57-498a-8834-10eb72865b29,country,0,country | rock,True
+the strokes,The Strokes,f181961b-20f7-459e-89de-920ef03c7ed0,rock,0,rock | pop,True
+the swon brothers,The Swon Brothers,d3889afd-e4d4-41f3-b548-09036264a2f4,country,0,country,False
+the sword,The Sword,40dc452a-6b63-4b7e-a106-062739155866,rock,0,rock,False
+the temper trap,The Temper Trap,bb6eaced-69dd-4636-829f-9f987acc4fc3,rock,0,rock | pop,True
+the thermals,The Thermals,7cd2d860-c6d7-4be2-af50-57c51ee45687,rock,0,rock,False
+the ting tings,The Ting Tings,e618770f-e994-41c3-856f-1eedf56b6d74,rock,0,rock | pop,True
+the tragically hip,The Tragically Hip,e86ab653-bec8-46f3-b4b6-a1a866919ef6,rock,0,rock | pop,True
+the uncluded,The Uncluded,fd8001ae-21d0-4370-8290-a04af255c115,hiphop_rnb,1,hiphop_rnb | rock,True
+the used,The Used,8262d8e4-9137-4bb3-a787-3caabbbc13e9,rock,0,rock | pop,True
+the veronicas,The Veronicas,fd1baeb3-0ee9-4838-b4c7-615c78d68d10,rock,0,rock | pop,True
+the walkmen,The Walkmen,b7834ebd-64ae-46c3-a930-2d3a52ee743a,rock,0,rock,False
+the wallflowers,The Wallflowers,d9c90718-d54d-4ccf-a92e-37a5415ce299,country,0,country | rock | pop,True
+the walls group,The Walls Group,714787d6-7fab-4259-ad67-3acd57c9dabb,christian,0,christian,False
+the war on drugs,The War on Drugs,87b9b3b8-ab93-426c-a200-4012d667a626,rock,0,rock | pop,True
+the weeknd,The Weeknd,c8b03190-306c-4120-bb0b-6f2ebfc06ea9,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+the weepies,The Weepies,59d34d63-e209-4f26-8a09-b08d12202082,rock,0,rock | pop,True
+the white buffalo,The White Buffalo,a3f36ee1-c236-49eb-b598-078c788781d8,country,0,country,False
+the white stripes,The White Stripes,11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5,rock,0,rock | pop,True
+the who,The Who,9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa,classical,0,classical | rock | pop,True
+the wild feathers,The Wild Feathers,a4cc0286-3f4f-476c-b64d-ffae2cc8eda8,country,0,country | rock,True
+the winery dogs,The Winery Dogs,cd59e6bf-9720-4c9e-bac8-bf77db63824c,rock,0,rock,False
+the wonder years,The Wonder Years,ae13e1fc-a2b1-4e3c-bfb9-737d3aeb7dab,rock,0,rock | pop,True
+the word alive,The Word Alive,e2cd69b3-ef80-4d53-aa86-a97d6f44573a,rock,0,rock,False
+the xx,The xx,c5c2ea1c-4bde-4f4d-bd0b-47b200bf99d6,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+the-dream,The-Dream,66a4b9d2-d5a6-40b8-93d5-0bdd1dbb4b43,hiphop_rnb,1,hiphop_rnb,False
+them crooked vultures,Them Crooked Vultures,4bc09c51-5d42-4c93-9ba6-8cc21a0edb8d,rock,0,rock,False
+theophilus london,Theophilus London,806df23f-ad74-45c1-9c07-f3d1a20748d6,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+theory of a deadman,Theory Of A Deadman,183e636e-d41c-43fe-a428-8a034eb20c7b,rock,0,rock,False
+there for tomorrow,There For Tomorrow,6a8de993-ffd5-414d-a81a-88e11e27d01a,rock,0,rock,False
+they might be giants,They Might Be Giants,183d6ef6-e161-47ff-9085-063c8b897e97,rock,0,rock | pop,True
+thi'sl,Thi'sl,6a38b3e3-4bd4-4926-b872-1b7f1bf010ba,hiphop_rnb,1,hiphop_rnb | christian,True
+thievery corporation,Thievery Corporation,a505bb48-ad65-4af4-ae47-29149715bff9,jazz,0,jazz | electronic,True
+thin lizzy,Thin Lizzy,6a726ac6-019e-455c-8bbb-571a77bed52e,rock,0,rock | pop,True
+third day,Third Day,93585c1b-ec0f-4d47-9cae-bd8ebcc52e9f,christian,0,christian | rock,True
+third eye blind,Third Eye Blind,92a42e82-b36f-4308-82c1-68bad2e03c89,rock,0,rock | pop,True
+thirty seconds to mars,Thirty Seconds To Mars,d8354b38-e942-4c89-ba93-29323432abc3,electronic,1,electronic | rock | pop,True
+this providence,This Providence,f92671a4-1635-45b2-bc04-20d029a4cd49,rock,0,rock,False
+this wild life,This Wild Life,be76cc4b-0fe7-4936-b75f-f341769ef638,rock,0,rock,False
+thomas bergersen,Thomas Bergersen,152f56df-321c-45d9-8fe0-6076c9b45b08,classical,0,classical,False
+thomas rhett,Thomas Rhett,bca8bfc0-9d5b-449b-b713-914596f88d56,country,0,country | pop,True
+thompson square,Thompson Square,ddf152b8-584e-47a5-a7f4-280a21b0b8ca,country,0,country | pop,True
+thousand foot krutch,Thousand Foot Krutch,1339fab0-3ad8-4b8e-afac-7b7ae34509c7,hiphop_rnb,1,hiphop_rnb | christian | rock | pop,True
+three days grace,Three Days Grace,fabb37f8-eb2a-4cc1-a72a-b56935bbb72d,rock,0,rock,False
+three dog night,Three Dog Night,1a48176d-1414-4a18-9792-50ba585d4d59,rock,0,rock | pop,True
+thrice,Thrice,244afcb7-fa9a-49b1-9aa6-0149512d1c52,rock,0,rock,False
+thriving ivory,Thriving Ivory,2017e87a-60f7-46d7-b2bc-8c4ad5e14bfd,rock,0,rock,False
+throwdown,Throwdown,af7c56d2-8584-424a-97f9-f365f50e8868,rock,0,rock,False
+thundercat,Thundercat,044fd265-79dd-43eb-afc4-8b20becf7e17,hiphop_rnb,1,hiphop_rnb | jazz | electronic | rock | pop,True
+thursday,Thursday,0acae232-d31a-4211-b6d0-6af1b6350274,rock,0,rock,False
+thurston moore,Thurston Moore,8ba48525-d922-42ee-9775-97b7b8f9712e,rock,0,rock,False
+tiesto,Tiesto,aabb1d9f-be12-45b3-a84d-a1fc3e8181fd,electronic,1,electronic | pop,True
+tigers jaw,Tigers Jaw,3cdf1327-39eb-4ffe-9ce3-20599ac6a468,rock,0,rock | pop,True
+tim mcgraw,Tim McGraw,7e5cfc9a-e9e1-46f1-b81a-861b12049488,country,0,country | pop,True
+timbaland,Timbaland,daa09819-5da5-4c7a-8bef-eb372bb27ff1,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+timeflies,Timeflies,4388976f-9e02-42d9-b66f-1b9e124e3ca6,hiphop_rnb,1,hiphop_rnb | electronic | pop,True
+times of grace,Times Of Grace,1d0be398-09d9-49ae-b854-119477048bc7,rock,0,rock,False
+tina turner,Tina Turner,9072df14-b61e-42e2-b4f4-6bbb7fdb5586,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+tinashe,Tinashe,396a9525-0994-4542-b480-c4587feeb476,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+tinie tempah,Tinie Tempah,3cce3d37-d44f-46a2-b1e3-cd7247d5015c,hiphop_rnb,1,hiphop_rnb,False
+tired pony,Tired Pony,768d9d72-53f6-4ea3-b66f-5a9a9328d1be,country,0,country | rock,True
+tite curet alonso,Tite Curet Alonso,4d818ac8-437e-4042-9ac0-7bc6097c2c5e,latin,1,latin,False
+title fight,Title Fight,1154d345-8061-4d04-a52a-6214288523ac,rock,0,rock,False
+titus andronicus,Titus Andronicus,d38c47f6-d9bb-4a77-aaea-df53a6616a68,rock,0,rock,False
+toby keith,Toby Keith,2f951906-5629-4fef-a260-5033151c162a,country,0,country | rock | pop,True
+todd snider,Todd Snider,25c13ec7-fad4-4da4-8d98-9607ff615d68,country,0,country | rock,True
+todd terje,Todd Terje,a0cded3a-4ca3-4ddb-8e46-ed9037f30aea,electronic,1,electronic,False
+tokio hotel,Tokio Hotel,462a85b4-83ac-4164-86b3-e5ac6a7ec040,electronic,1,electronic | rock | pop,True
+tokyo police club,Tokyo Police Club,35a6a353-b186-4c13-a264-d18d5e2ce853,rock,0,rock,False
+tom keifer,Tom Keifer,4a138e60-128c-40d8-a789-02e5b4f6ad2d,rock,0,rock,False
+tom waits,Tom Waits,c3aeb863-7b26-4388-94e8-5a240f2be21b,country,0,country | jazz | rock | pop,True
+tommy torres,Tommy Torres,a3d655dd-4202-42b2-b1ba-bb96d2c4d4b3,latin,1,latin | pop,True
+toni braxton,Toni Braxton,3c8a8696-e176-4c46-a2d3-48b6b1525c7f,hiphop_rnb,1,hiphop_rnb | pop,True
+tonight alive,Tonight Alive,712dbd18-d8fd-4bd0-a5b5-edb9577c493f,rock,0,rock | pop,True
+tony touch,Tony Touch,5b76422b-82b1-44c5-bfe6-f71d7e54c4de,latin,1,latin | hiphop_rnb,True
+too $hort,Too $hort,8e0fe7bd-bd17-4d25-9b68-1e6a60705477,hiphop_rnb,1,hiphop_rnb,False
+torche,Torche,a04428a8-f7df-42fe-95dc-47762fe346f6,rock,0,rock | pop,True
+tori amos,Tori Amos,c0b2500e-0cef-4130-869d-732b23ed9df5,jazz,0,jazz | classical | electronic | rock | pop,True
+tori kelly,Tori Kelly,e4b87494-a5eb-439d-b3bf-5f1b46d4dc6b,hiphop_rnb,1,hiphop_rnb | christian | pop,True
+toro y moi,Toro y Moi,3a6d6481-142d-423f-91d4-55bbfff318ed,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+tortoise,Tortoise,e0953daa-860f-4dc8-9f1a-b12587cdaf17,jazz,0,jazz | electronic | rock,True
+tove lo,Tove Lo,56756959-1e78-429c-b897-e1d056cb0225,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+trace adkins,Trace Adkins,3dc9c919-508f-4255-b05e-0eed6a28137d,country,0,country | rock | pop,True
+tracey thorn,Tracey Thorn,6dbd7f8b-20ac-4287-8dd3-b4cae5c5f82f,electronic,1,electronic | rock,True
+tracy lawrence,Tracy Lawrence,56ff58b3-7a73-4c02-a0ae-70bebf3354f2,country,0,country,False
+trailer choir,Trailer Choir,0066792b-9454-42eb-972a-0d8c44bc88d9,country,0,country,False
+trampled by turtles,Trampled by Turtles,c6a5a49b-9885-42e6-9fb5-ccaaec05f753,country,0,country | rock,True
+trans-siberian orchestra,Trans-Siberian Orchestra,d2b83114-af3e-4397-b570-10d81f1dd650,classical,0,classical | rock,True
+transplants,Transplants,29f3e1bf-aec1-4d0a-9ef3-0cb95e8a3699,hiphop_rnb,1,hiphop_rnb | rock,True
+trapt,Trapt,8876c0be-ccff-4d46-aa91-7f935a3b3b6b,rock,0,rock,False
+travie mccoy,Travie McCoy,76bf7aec-83f0-47a9-8964-eea180b99ac2,hiphop_rnb,1,hiphop_rnb | pop,True
+travis barker,Travis Barker,3aebd566-7ff8-4b29-b017-051b6ec55861,hiphop_rnb,1,hiphop_rnb | rock,True
+travis cottrell,Travis Cottrell,55bf8339-8b97-40b4-9b4b-093321138274,christian,0,christian,False
+travis porter,Travis Porter,53423220-42b5-4082-a374-417ce6f8a919,hiphop_rnb,1,hiphop_rnb,False
+travis tritt,Travis Tritt,615caab0-9cc2-4c24-9667-f46894be726e,country,0,country,False
+tremonti,Tremonti,a06adf47-5d72-43ce-ad0b-d1e92707f133,rock,0,rock,False
+trey anastasio,Trey Anastasio,d942f71b-09d3-406c-8f7d-c52eba3135c1,jazz,0,jazz | rock,True
+trey songz,Trey Songz,4d7304f6-7fe3-4959-9d98-01a5af84afe6,hiphop_rnb,1,hiphop_rnb | pop,True
+tribal seeds,Tribal Seeds,dbf44fed-7445-4808-ae8a-c5c4cf5f529d,rock,0,rock,False
+trin-i-tee 5:7,Trin-i-tee 5:7,73d38a37-c64d-4830-9ba0-95b044a5d332,christian,0,christian,False
+trina,Trina,017c9e9a-0bed-4c8c-8423-dadb7389654a,christian,0,christian | rock | pop,True
+trinidad james,Trinidad James,4da8a075-9db8-422e-a154-57386c572d88,hiphop_rnb,1,hiphop_rnb,False
+triple c's,Triple C's,08b17ac2-fe5e-4946-bd3f-4d43124047b5,hiphop_rnb,1,hiphop_rnb,False
+triptykon,Triptykon,a939eab5-3d20-40e8-8edb-7207bc99cfc4,rock,0,rock,False
+trivium,Trivium,1f5ff245-2837-4d4a-a609-e93e544478c3,rock,0,rock,False
+trombone shorty,Trombone Shorty,cae4fd51-4d58-4d48-92c1-6198cc2e45ed,jazz,0,jazz,False
+troye sivan,Troye Sivan,e5712ceb-c37a-4c49-a11c-ccf4e21852d4,rock,0,rock | pop,True
+trust company,Trust Company,6ae8c8fe-143b-4386-882e-eb23a331f318,rock,0,rock,False
+turnpike troubadours,Turnpike Troubadours,607edb17-d439-48db-8482-da92167e4a59,country,0,country | rock,True
+tweet,Tweet,db21a231-40ee-4c18-9604-bd7508a05998,hiphop_rnb,1,hiphop_rnb,False
+twenty one pilots,Twenty One Pilots,a6c6897a-7415-4f8d-b5a5-3a5e05f3be67,hiphop_rnb,1,hiphop_rnb | electronic | rock | pop,True
+twin shadow,Twin Shadow,8d831383-b22b-4237-8059-12bee111e4b6,pop,1,pop,False
+twiztid,Twiztid,cbf882cd-5fb3-4324-b212-32ed0b985ba8,hiphop_rnb,1,hiphop_rnb | rock,True
+two door cinema club,Two Door Cinema Club,6f1de078-6684-4792-820d-2ffad64c15ed,rock,0,rock | pop,True
+two gallants,Two Gallants,7095f4e4-1f60-4098-a4ad-8fc451a8ee76,rock,0,rock,False
+ty dolla $ign,Ty Dolla $ign,7bd66c18-cb33-49aa-9279-140acedbdb49,hiphop_rnb,1,hiphop_rnb | pop,True
+ty segall,Ty Segall,07a17571-81fc-4cf8-a634-98f0d926d313,rock,0,rock,False
+tye tribbett,Tye Tribbett,8e001bd1-ac61-4115-88da-3bab06b4d20a,christian,0,christian,False
+tyler hilton,Tyler Hilton,4ce300da-25fb-407a-9b6d-f2754f069f8e,rock,0,rock,False
+tyler ward,Tyler Ward,21462e8d-d20b-4049-bcbd-57e0a4b9be5c,country,0,country | pop,True
+tyrese,Tyrese,975d94b4-7ca8-4eec-ae48-1aa4660995d3,hiphop_rnb,1,hiphop_rnb | pop,True
+u2,U2,a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432,electronic,1,electronic | rock | pop,True
+ugk,UGK,9603810b-5d6d-41a6-aca8-330ef966d55c,hiphop_rnb,1,hiphop_rnb | country,True
+umphrey's mcgee,Umphrey's McGee,3826a6e0-9ea5-4007-941c-25b9dd943981,jazz,0,jazz | rock,True
+uncle kracker,Uncle Kracker,1a02e1e4-000e-46fa-83de-f3a36674e4fc,hiphop_rnb,1,hiphop_rnb | country | rock | pop,True
+underoath,Underoath,674a7e8c-9682-419a-8e05-2358e28b5359,christian,0,christian | electronic | rock | pop,True
+unknown mortal orchestra,Unknown Mortal Orchestra,e2305342-0bde-4a2c-aed0-4b88694834de,rock,0,rock | pop,True
+unspoken,Unspoken,ecb8da54-071b-4427-a9bd-5d0738f1f303,hiphop_rnb,1,hiphop_rnb | christian | pop,True
+upon a burning body,Upon A Burning Body,3df17d31-f9a4-4ca4-8570-c7d70c362b04,rock,0,rock,False
+v v brown,V V Brown,2834bd83-3101-45c0-9ae3-c2d9cea20415,rock,0,rock | pop,True
+vnv nation,VNV Nation,8385f26a-f374-4a04-9aad-4442ce24db2b,electronic,1,electronic | pop,True
+valerie june,Valerie June,b76c1bf7-f33b-460c-bfc3-f140d023fc94,hiphop_rnb,1,hiphop_rnb | country | christian | pop,True
+vampire weekend,Vampire Weekend,af37c51c-0790-4a29-b995-456f98a6b8c9,hiphop_rnb,1,hiphop_rnb | classical | rock | pop,True
+van cliburn,Van Cliburn,0a8a7571-a0cd-4626-a10a-3dd57e0e559e,classical,0,classical,False
+van halen,Van Halen,b665b768-0d83-4363-950c-31ed39317c15,rock,0,rock | pop,True
+van morrison,Van Morrison,a41ac10f-0a56-4672-9161-b83f9b223559,hiphop_rnb,1,hiphop_rnb | country | jazz | classical | rock | pop,True
+vance joy,Vance Joy,df36f6db-5987-46ed-9d02-0cf36ed4e060,rock,0,rock | pop,True
+vanessa carlton,Vanessa Carlton,c1a61bb0-e4fe-4064-bc8d-954a2dafda79,rock,0,rock | pop,True
+veil of maya,Veil Of Maya,32e740e5-95ea-42e3-b5e2-29f6630488e4,rock,0,rock,False
+vertical horizon,Vertical Horizon,e25216bf-b0ac-4bd3-bc5a-1f82a7d0274f,rock,0,rock | pop,True
+vicente fernandez,Vicente Fernandez,3b829056-d975-4ae7-be3c-20661ce980e8,latin,1,latin,False
+vince gill,Vince Gill,ec37ecfe-65b4-49a4-83c7-ee1ccaeec2e3,country,0,country | pop,True
+vince guaraldi trio,Vince Guaraldi Trio,744b52c8-509b-4451-abfd-a17d18d4bd1d,jazz,0,jazz,False
+vince neil,Vince Neil,ce39ec95-5476-4c65-a862-fec96ff851ec,rock,0,rock,False
+vince staples,Vince Staples,78e854b8-9713-4ff2-9218-6b3784893bff,hiphop_rnb,1,hiphop_rnb,False
+vinnie paz,Vinnie Paz,e6b27418-4972-42ba-9868-feb663e8840c,hiphop_rnb,1,hiphop_rnb,False
+violent j,Violent J,d876c957-5424-499b-a0b8-b3175c2cb308,hiphop_rnb,1,hiphop_rnb,False
+vivian green,Vivian Green,2b78b6fc-6c31-4786-9cc4-4c3897e1842c,hiphop_rnb,1,hiphop_rnb,False
+volbeat,Volbeat,4753fcb7-9270-493a-974d-8daca4e49125,country,0,country | rock,True
+volcano choir,Volcano Choir,7d57bab8-3c1f-4c91-8dd2-dd51c89155a2,rock,0,rock,False
+volumes,Volumes,9d397404-907d-4355-b5d6-299bae93f6d9,rock,0,rock,False
+wzrd,WZRD,6ac58f4e-d8b1-476d-aa93-efb126ea1b4c,hiphop_rnb,1,hiphop_rnb | rock,True
+wade bowen,Wade Bowen,fe510c08-2449-45b4-9463-e55ecf0efc55,country,0,country,False
+waka flocka flame,Waka Flocka Flame,59eda569-b380-4958-b98c-051d1667b3e1,hiphop_rnb,1,hiphop_rnb,False
+wale,Wale,e34e41f2-f480-45d3-8190-a3ce5ab34fab,hiphop_rnb,1,hiphop_rnb,False
+walk off the earth,Walk Off the Earth,e2a5eaeb-7de7-4ffe-a519-e18e427a5060,rock,0,rock | pop,True
+wanda jackson,Wanda Jackson,550fbe01-42e9-4006-bcd0-6a1854dceb8f,country,0,country | christian | rock,True
+war of ages,War Of Ages,9320918d-5143-4846-bab8-7ad48ec17d58,christian,0,christian | rock,True
+warren haynes,Warren Haynes,4b3b9c7e-c32e-4e62-bbdb-d2e8aaffe66e,rock,0,rock,False
+watain,Watain,8c51b06d-b678-4bbf-aeac-7295dfb69d13,rock,0,rock,False
+watsky,Watsky,518bc0da-3674-463d-833c-deefd884c068,hiphop_rnb,1,hiphop_rnb,False
+wavves,Wavves,763cf642-45ad-42ed-a1c3-e977eaa3b260,rock,0,rock | pop,True
+waylon jennings,Waylon Jennings,1a46826b-4d73-4e04-8590-f36c9d832f9e,country,0,country | rock,True
+wayne static,Wayne Static,7d4b7cd2-b6c7-473f-8ea3-f9948de34f45,rock,0,rock,False
+we are the in crowd,We Are The In Crowd,962ae8bb-9e0d-45c0-bfc1-542f3c019e3c,rock,0,rock | pop,True
+we are the fallen,We Are the Fallen,ffafc8e1-1190-4b9e-a406-203f70e2ec11,rock,0,rock,False
+we as human,We As Human,11feab62-7795-44f3-aaf6-ee9b0ecde962,christian,0,christian | rock,True
+we came as romans,We Came as Romans,dc0da7d1-231c-4058-8e6e-1c0801848602,electronic,1,electronic | rock,True
+we were promised jetpacks,We Were Promised Jetpacks,8f0e0596-5a39-4bd5-9dfa-f2b12030ffdc,rock,0,rock,False
+we the kings,We the Kings,6ec79457-b06b-4e3b-83f9-9b26fc7a99bc,rock,0,rock | pop,True
+webbie,Webbie,d3f12a9c-5df8-4a7b-8bbe-6a697e299a5c,hiphop_rnb,1,hiphop_rnb,False
+weezer,Weezer,6fe07aa5-fec0-4eca-a456-f29bff451b04,classical,0,classical | rock | pop,True
+whiskey myers,Whiskey Myers,921e6603-320c-4dde-8611-3049332d2b61,rock,0,rock,False
+white denim,White Denim,42e49814-6058-431c-80e2-a3aab424060d,rock,0,rock,False
+white rabbits,White Rabbits,d794450f-e4a8-43f6-9883-12bb67874119,rock,0,rock,False
+whitesnake,Whitesnake,5dedf5cf-a598-4408-9556-3bf3f149f3ba,rock,0,rock | pop,True
+whitney houston,Whitney Houston,0307edfc-437c-4b48-8700-80680e66a228,hiphop_rnb,1,hiphop_rnb | christian | jazz | pop,True
+wild belle,Wild Belle,0da6296c-a562-4d06-85d2-5e2740885d07,jazz,0,jazz | rock | pop,True
+wild flag,Wild Flag,4473e47b-81bb-47af-8cb0-1cad6f68d8bc,rock,0,rock,False
+wild nothing,Wild Nothing,a181595e-5b84-4439-a5f4-f548ddfb64df,rock,0,rock | pop,True
+will downing,Will Downing,29945238-4232-4755-8feb-a8d3bd242e00,hiphop_rnb,1,hiphop_rnb | jazz | electronic | rock | pop,True
+will hoge,Will Hoge,32e5a1c5-13a8-464b-b3b7-28f36c690b45,country,0,country | rock,True
+william fitzsimmons,William Fitzsimmons,4f13e8cb-11aa-4b1a-8bb5-0ad1437dbdee,rock,0,rock,False
+willie nelson,Willie Nelson,668fd73c-bf54-4310-a139-305517f05311,country,0,country | rock | pop,True
+willie nile,Willie Nile,40fb02de-afc3-441c-a6ec-21fee861d478,rock,0,rock,False
+wilson phillips,Wilson Phillips,32b2e717-9e01-4f45-ac73-9542ccf18d4d,rock,0,rock | pop,True
+winds of plague,Winds Of Plague,37661f69-2801-409e-847d-3c8b58d2ad0a,rock,0,rock,False
+winger,Winger,614b892d-4f1a-4d1a-b382-dcc17ee159bc,rock,0,rock,False
+wisin,Wisin,6a6eea03-b435-446c-bab1-312b45580aee,latin,1,latin,False
+within temptation,Within Temptation,eace2373-31c8-4aba-9a5c-7bce22dd140a,rock,0,rock,False
+within the ruins,Within The Ruins,6d4da93f-6fc3-4aa0-9801-cd85a7673f0a,rock,0,rock,False
+wiz khalifa,Wiz Khalifa,f5dfa020-ad69-41cd-b3d4-fd7af0414e94,hiphop_rnb,1,hiphop_rnb | pop,True
+wolf parade,Wolf Parade,b7ddce8b-9e5c-46bd-9d33-41b134ce1a7f,electronic,1,electronic | rock,True
+wolfmother,Wolfmother,f0c8f75f-8736-4b1d-b312-9349fcff321d,rock,0,rock,False
+wolves at the gate,Wolves At The Gate,310c1e0e-b267-4055-971d-9d2526d8660c,christian,0,christian | rock,True
+woodkid,Woodkid,420e923e-e74c-42ef-b771-2e2bcee93394,classical,0,classical | electronic | rock | pop,True
+wovenwar,Wovenwar,3b374204-4712-4a58-bd92-1b020cc07ab8,rock,0,rock,False
+wrekonize,Wrekonize,01b7ebed-c908-4243-90fe-b855cb34e1b3,hiphop_rnb,1,hiphop_rnb,False
+wu-block,Wu-Block,477c1c53-0a3a-4f96-91f5-ea688295ddd5,hiphop_rnb,1,hiphop_rnb,False
+wu-tang,Wu-Tang,0febdcf7-4e1f-4661-9493-b40427de2c13,hiphop_rnb,1,hiphop_rnb,False
+wye oak,Wye Oak,3c8ff4c9-b5b9-4e78-ad9d-5157c323de24,rock,0,rock | pop,True
+wynton marsalis,Wynton Marsalis,0d74dcc7-5684-4695-830f-a9846aad8ba9,jazz,0,jazz | classical,True
+xzibit,Xzibit,9e839dc3-55f3-4492-ad0e-a1a2e84275e2,hiphop_rnb,1,hiphop_rnb,False
+yandel,Yandel,3d291f48-a8be-4113-baad-c73618a7897d,latin,1,latin | hiphop_rnb,True
+yeah yeah yeahs,Yeah Yeah Yeahs,584c04d2-4acc-491b-8a0a-e63133f4bfc4,rock,0,rock,False
+yeasayer,Yeasayer,3feba7fa-3837-424a-b4f1-0077d217f569,rock,0,rock | pop,True
+yelawolf,YelaWolf,13513a8a-e9a8-4367-b9e4-410fef5bed3a,hiphop_rnb,1,hiphop_rnb | country,True
+yellowcard,Yellowcard,3630fff3-52fc-4e97-ab01-d68fd88e4135,rock,0,rock | pop,True
+yo gotti,Yo Gotti,b02ec63e-e78d-43e5-a594-462e95036e8d,hiphop_rnb,1,hiphop_rnb,False
+yo la tengo,Yo La Tengo,3f542031-b054-454d-b57b-812fa2a81b11,rock,0,rock | pop,True
+yolanda adams,Yolanda Adams,4fac8f5d-0e44-4efa-b518-7f8a8f02c162,christian,0,christian,False
+you blew it!,You Blew It!,5d38d649-ea95-4096-b34b-9bf59e0e2d0a,rock,0,rock,False
+you me at six,You Me at Six,fb4fc5a6-cbe1-45ff-954c-ef45faceb54d,rock,0,rock | pop,True
+young buck,Young Buck,5719f1bd-ee0e-4454-b402-8e51ba9613fe,hiphop_rnb,1,hiphop_rnb,False
+young dro,Young Dro,b76f6f2b-87f1-466f-8a96-9443cf5ae07f,hiphop_rnb,1,hiphop_rnb,False
+young jeezy,Young Jeezy,dcad99e7-3c3e-4c78-bf8a-68203e17da48,hiphop_rnb,1,hiphop_rnb,False
+young the giant,Young the Giant,7fe96b15-5608-430e-ad25-77a01353c5d9,rock,0,rock | pop,True
+youngblood hawke,Youngblood Hawke,ee9834c6-67ae-4155-b607-2f2aca0f7f45,rock,0,rock | pop,True
+youth lagoon,Youth Lagoon,4a18722d-5a98-41c8-9e86-814afbffc704,pop,1,pop,False
+z-ro,Z-Ro,36cf5c5e-14fb-42c0-a232-56bd449a81df,hiphop_rnb,1,hiphop_rnb,False
+zz top,ZZ Top,a81259a0-a2f5-464b-866e-71220f2739f1,rock,0,rock | pop,True
+zz ward,ZZ Ward,5fd5ef7b-272d-4284-ac10-ae0d48ae80f5,pop,1,pop,False
+zac brown band,Zac Brown Band,507226f4-0842-4f43-950e-81a7017230ec,country,0,country | rock | pop,True
+zedd,Zedd,56c4b861-0922-4c3a-a9b9-3bfcb00f8274,electronic,1,electronic | pop,True
+zeds dead,Zeds Dead,f9fdca15-1bef-43a0-8213-758b6ee0aa91,electronic,1,electronic,False
+zero 7,Zero 7,c23b637b-97c6-41eb-8ef6-6c724efc80a8,hiphop_rnb,1,hiphop_rnb | jazz | electronic | rock,True
+zola jesus,Zola Jesus,c35bd778-efb5-424b-ba7b-dae56d01a206,electronic,1,electronic | rock | pop,True
+zomboy,Zomboy,c764f48c-8ed7-46aa-8d1e-b1df6ec0f2ef,hiphop_rnb,1,hiphop_rnb | electronic,True
+blessthefall,blessthefall,aafa70a4-2f06-4975-935e-b283fc87de7e,christian,0,christian | rock,True
+blink-182,blink-182,0743b15a-3c32-48c8-ad58-cb325350befa,rock,0,rock | pop,True
+iamsu!,iAMSU!,efa81d5c-b900-480a-b27f-0a66e48792de,hiphop_rnb,1,hiphop_rnb,False
+iwrestledabearonce,iwrestledabearonce,4814efa3-69eb-4d6f-85bd-5b05d91f7188,electronic,1,electronic,False
+k.d. lang,k.d. lang,675c1c5e-5625-4a5e-97a2-b02aab5db2fc,country,0,country,False
+k.flay,k.flay,d1fc999f-6184-41a6-bcb1-7c59bf74a6e1,hiphop_rnb,1,hiphop_rnb | rock | pop,True
+letlive.,letlive.,358361ef-d38f-42ee-b9b3-b561a4c9db46,hiphop_rnb,1,hiphop_rnb | rock,True
+mewithoutyou,mewithoutYou,759b5ff1-91fe-4ec9-b9b7-75b7b2ceb283,rock,0,rock,False
+tune-yards,tUnE-yArDs,fac3ff34-6ba4-425a-8f01-b181ef4a908a,pop,1,pop,False
+tobymac,tobyMac,8484e4ab-b6b5-4326-b837-72eb72c9e8a4,hiphop_rnb,1,hiphop_rnb | christian | rock,True
+will.i.am,will.i.am,d574c9bd-46f6-440a-8d6a-8412a283eeb1,hiphop_rnb,1,hiphop_rnb | pop,True

@@ -63,6 +63,7 @@ PART2B_CHART_LABELLED = INTERIM_DIR / "part2b_chart_labelled.pkl"
 
 # Final (analysis-ready)
 ANALYSIS_SAMPLE = FINAL_DIR / "analysis_sample.csv"
+ARTIST_GENRES = FINAL_DIR / "artist_genres.csv"   # one genre per resolved roster artist (step 12a)
 PART2_WEEKLY = FINAL_DIR / "part2_weekly_billboard200.csv"
 PART2B_ALBUM_RUNS = FINAL_DIR / "part2b_album_runs.csv"
 ANALYSIS_SAMPLE_0928 = ROOT / "archive" / "superseded_0928_genre_labels" / "analysis_sample_0928.csv"  # random labels, validation only

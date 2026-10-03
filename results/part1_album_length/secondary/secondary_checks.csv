@@ -1,9 +1,9 @@
 check,kind,outcome,term,n_albums,n_artists,n_genre_clusters,coef,se_artist,p_artist,p_wildboot_genre,labels
-1 charted subsample,secondary,ln_standard_tracks,post:heavy,3991,1414,9,0.03321512354168164,0.016874859097136766,0.04903122414761226,0.09500950095009501,ordered_rule
-2 non-charted subsample,secondary,ln_standard_tracks,post:heavy,2784,934,9,0.016454694454166828,0.028494082331122102,0.5636168621007005,0.47104710471047107,ordered_rule
-3 selection test,secondary,charted,ln_standard_tracks:post:heavy,6775,1492,9,0.17710192007083192,0.09128180983880788,0.05235944428969024,0.060006000600060005,ordered_rule
-4a payoff: debut rank,secondary,debut_rank,ln_standard_tracks:post:heavy,3991,1414,9,21.7619730354861,14.527925345715188,0.1341486155972902,0.1492149214921492,ordered_rule
-4b payoff: log weeks on chart,secondary,ln_weeks,ln_standard_tracks:post:heavy,3991,1414,9,0.5119510683946975,0.3747792269409591,0.17193674875932063,0.47584758475847583,ordered_rule
-6a seconds per track,exploratory,ln_sec_per_track,post:heavy,6673,1488,9,-0.039005665416374825,0.012342343247248996,0.0015759983980598933,,ordered_rule
-6b day-one multi-edition launch,exploratory,multi_edition,post:heavy,6775,1492,9,-0.05085286286676164,0.019006199060473364,0.0074597059894950715,,ordered_rule
-"6c UK origin x post, >12 tracks",exploratory,over12,post:uk,6775,1492,9,0.0011155545094506541,0.0503384085904429,0.9823194476219832,,ordered_rule
+1 charted subsample,secondary,ln_standard_tracks,post:heavy,3991,1820,9,0.03321512354168164,0.015708023444292167,0.03446982576793624,0.08350835083508351,ordered_rule
+2 non-charted subsample,secondary,ln_standard_tracks,post:heavy,2784,1154,9,0.016454694454166828,0.0286684760427267,0.5659916605823803,0.4675467546754675,ordered_rule
+3 selection test,secondary,charted,ln_standard_tracks:post:heavy,6775,1942,9,0.17710192007083192,0.09337646024570966,0.0578749152141072,0.0627062706270627,ordered_rule
+4a payoff: debut rank,secondary,debut_rank,ln_standard_tracks:post:heavy,3991,1820,9,21.7619730354861,14.392475152242845,0.13052413053114573,0.1401140114011401,ordered_rule
+4b payoff: log weeks on chart,secondary,ln_weeks,ln_standard_tracks:post:heavy,3991,1820,9,0.5119510683946975,0.36902503120626956,0.16534812043208635,0.45424542454245426,ordered_rule
+6a seconds per track,exploratory,ln_sec_per_track,post:heavy,6673,1937,9,-0.039005665416374825,0.012874499946658255,0.002448097996343316,,ordered_rule
+6b day-one multi-edition launch,exploratory,multi_edition,post:heavy,6775,1942,9,-0.05085286286676164,0.01909621621786137,0.007745176425231876,,ordered_rule
+"6c UK origin x post, >12 tracks",exploratory,over12,post:uk,6775,1942,9,0.0011155545094506541,0.05094296225775648,0.9825292336969683,,ordered_rule

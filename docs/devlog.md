@@ -586,6 +586,8 @@ Files touched: `code/musicbrainz_helpers.py`, `code/14_validate_album_collection
 
 ## 25. Release-date parsing bug, corrected Part 1 sample, and rerun of the secondary checks (2026-10-02, Claude Code)
 
+> **Part 1 standard errors, p-values and artist counts in this section are superseded by §26** (they used a cluster variable equal to the first word of the artist's name). Coefficients and sample counts are unchanged.
+
 **How it was found.** Rebuilding the Part 1 secondary checks from Claude chat (plan written first: `docs/part1_secondary_rerun_plan.md`), the event-study design matrix was one rank short. The headline sample contained **no 2014 albums at all**.
 
 **Bug.** `build_data()` parsed `release_date` with `pd.to_datetime(..., errors="coerce")`. pandas 2.2 inferred one format from the first value in the column, which was year-only ("2009"), so it applied `%Y` to every row and blanked every day- or month-precision date. Those albums were dropped. **All 1,663 albums of the headline sample had year-only release dates.** No 2014 album could enter (2014 year-only albums are excluded by the plan; every other 2014 album has a full date). This is the mixed-precision gotcha in CLAUDE.md, and the opposite of the plan's clarification 3. The chat-era secondary checks ran on the same year-only sample, which is why the rebuilt checks reproduced them.
@@ -635,3 +637,62 @@ Files touched: `code/musicbrainz_helpers.py`, `code/14_validate_album_collection
 **Also changed:** `code/22_part2b_analyze.py` now records a numerical failure of the artist-FE regression (numpy "SVD did not converge") instead of crashing. This happened deterministically on the rock + pop variant labels, never on the reported labels; the reported outputs are unchanged by the edit. `code/inference.py` (generalised headline bootstrap, reproduces the headline p exactly), `code/18_part1_secondary_checks.py`, `code/19_genre_rule_sensitivity.py`, steps 18 and 19 added to `run_pipeline.py`, and an optional `priority` argument in the genre helpers (default unchanged; verified identical labels).
 
 Files touched: `code/musicbrainz_helpers.py`, `code/paths.py`, `code/run_pipeline.py`, `code/22_part2b_analyze.py`, new `code/inference.py`, `code/18_part1_secondary_checks.py`, `code/19_genre_rule_sensitivity.py`; `docs/part1_secondary_rerun_plan.md` (new), `docs/analysis_plan.md` (dated note), `docs/genre_classification.md`; all Part 1 and Part 2b outputs; `results/part1_album_length/secondary/` (new); `archive/superseded_0928_genre_labels/` (new); PROJECT_CONTEXT.md; CLAUDE.md.
+
+---
+
+## 26. Artist-cluster bug, Part 2b FE fallback, per-artist genre file, album-order control and the remaining frozen-plan checks (2026-10-03, Claude Code)
+
+Plan written before estimation: `docs/items4_5_plan.md`. The author asked for the FE fix and then items 3–4 of PROJECT_CONTEXT §11 without a further approval step.
+
+**Artist-cluster bug (found while building the artist-FE check).** `build_data()` set `artist_cluster = roster_artist_names.str.split(" | ").str[0]`. In pandas a multi-character split pattern is a regular expression, and `" | "` means "a space or a space", so the "artist" was the **first word** of the name ("The", "Young", "Britney"…): 1,492 groups instead of 1,942 artists. Fixed with `regex=False` (also made literal in scripts 14, 18 and 24, where it was harmless because MusicBrainz IDs contain no spaces). Coefficients are unaffected; artist-clustered SEs and p-values, the bootstrap p (its t-statistics use artist-clustered SEs) and the reported artist counts change. Every earlier Part 1 SE and artist count, including the 09-28 headline and the chat-era checks, used first-word clusters. Part 2b clusters on MusicBrainz IDs and is unaffected. Dated note added to `docs/analysis_plan.md`.
+
+| Part 1 estimate (corrected sample) | First-word clusters (§25) | Artist clusters (current) |
+|---|---|---|
+| Headline | +0.0228, SE 0.0152, p = 0.135, Webb p = 0.167; "1,492 artists" | +0.0228, SE 0.0151, p = 0.133, **Webb p = 0.161**; **1,942 artists** |
+| Charted subsample | p = 0.049, Webb p = 0.095 | p = 0.035, Webb p = 0.084 |
+| Non-charted subsample | Webb p = 0.471 | Webb p = 0.468 |
+| Selection test | p = 0.052, Webb p = 0.060 | p = 0.058, Webb p = 0.063 |
+| Payoff: debut rank / log weeks | Webb p = 0.149 / 0.476 | Webb p = 0.140 / 0.454 |
+| Event study, joint pre-2014 test | p = 0.883 | p = 0.852 |
+| Exploratory: seconds per track / multi-edition / UK | p = 0.002 / 0.007 / 0.98 | p = 0.002 / 0.008 / 0.98 |
+| Rock + pop variant (Part 1) | Webb p = 0.277 | Webb p = 0.288 |
+
+**Part 2b artist-FE fallback.** `22_part2b_analyze.py` now falls back to a within-artist (demeaned) estimator when the artist-dummy regression fails numerically. Verified on the reported labels that both give the identical coefficient (+1.7278744988). **The SEs differ more than expected:** 1.049 (dummy version) vs 0.813 (within). The dummy version counts the ~1,800 absorbed artist dummies in statsmodels' clustered small-sample correction. When fixed effects are nested in the clusters, standard practice (`reghdfe`; Cameron and Miller) does not count them. The reported Part 2b artist-FE result (+1.73, p = 0.10) therefore uses the conservative correction; under the standard one it would be about p = 0.03. The reported number is **not** switched after seeing this. Both are recorded, and the choice is left to the author. The rock + pop variant, where the dummy regression fails, now gets a within estimate: +1.04, SE 0.73 (within SE), p = 0.155.
+
+**Per-artist genre file (item 3).** New step `code/12a_export_artist_genres.py` writes `data/final/artist_genres.csv`: **2,034** resolved roster artists with a genre (741 streaming-heavy; 1,135 decided by the ordered tie-break). The "≈2,450 classified artists" in earlier notes counted the validation table's 2,451, which includes 417 unresolved roster names with no MusicBrainz ID; those cannot be linked to chart rows.
+
+**Results (`results/part1_album_length/secondary/plan_checks.csv`, `results/part2b_genre_staying_power/extensions.csv`).** Part 1: corrected sample, ordered rule, artist clusters, genre Webb bootstrap (9,999 draws).
+
+| Part 1 check | n albums (artists) | Coefficient | SE | p (artist) | Webb p |
+|---|---|---|---|---|---|
+| Headline (baseline) | 6,775 (1,942) | +0.0228 | 0.0151 | 0.133 | 0.161 |
+| **Album order, career start (frozen plan; main definition)** | 6,775 (1,942) | +0.0207 | 0.0153 | 0.176 | **0.214** |
+| Album order, since 2009 (alternate) | 6,775 (1,942) | +0.0114 | 0.0148 | 0.441 | 0.371 |
+| a Artist fixed effects (within; 1,394 artists with pre and post albums) | 6,479 (1,646) | +0.0187 | 0.0161 | 0.245 | 0.298 |
+| b Drop albums on/before first qualifying debut | 4,491 (1,671) | +0.0287 | 0.0173 | 0.096 | 0.203 |
+| c Including Mixtape/Street (+670 albums) | 7,445 (1,945) | −0.0159 | 0.0157 | 0.313 | 0.742 |
+| d 2009–2024 window | 9,062 (1,965) | +0.0131 | 0.0150 | 0.382 | 0.447 |
+| e 2010–2019 window | 6,044 (1,881) | +0.0263 | 0.0144 | 0.068 | 0.118 |
+| f Continuous intensity (post × Nielsen ratio) | 6,775 (1,942) | +0.0124 | 0.0088 | 0.161 | 0.109 |
+| g Exclude electronic | 6,413 (1,825) | +0.0204 | 0.0160 | 0.202 | 0.226 |
+| h Log running time | 6,673 (1,937) | −0.0148 | 0.0183 | 0.419 | 0.809 |
+| i More than 12 tracks (LPM) | 6,775 (1,942) | +0.0089 | 0.0260 | 0.732 | 0.749 |
+| **j 18 or more tracks (LPM)** | 6,775 (1,942) | **+0.0433** | 0.0148 | **0.004** | **0.012** |
+
+Career-order bins in the sample: 1: 522, 2: 674, 3: 716, 4–5: 1,325, 6–9: 1,668, 10+: 1,870. Since-2009 bins: 1: 1,918, 2: 1,609, 3: 1,236, 4–5: 1,260, 6–9: 518, 10+: 234.
+
+| Part 2b specification (weeks in first 52, post × heavy; `inference.py` bootstrap with artist-clustered t) | n albums (artists) | Coefficient | SE | p (artist) | Webb p |
+|---|---|---|---|---|---|
+| Baseline (labels from the Part 1 sample; same sample as `results_main.csv`) | 4,517 (1,800) | +3.23 | 0.90 | <0.001 | 0.011 (Part 2b script's own: 0.015) |
+| **Album-order control (chart-career debut ordinal since 1963)** | 4,517 (1,800) | +3.10 | 0.90 | <0.001 | **0.012** |
+| Labels from `artist_genres.csv` (2,034 artists; secondary) | 4,696 (1,882) | +3.29 | 0.89 | <0.001 | 0.010 (Part 2b script's own: 0.013) |
+
+The rock + pop sensitivity (step 19) was rerun with the fixed clusters: Part 1 +0.0159, p = 0.233, Webb p = 0.288; Part 2b unchanged (+2.45, bootstrap p = 0.174).
+
+**Interpretation.**
+- **Part 1 stays null under the album-order control** (Webb p = 0.21) and under 11 of the 12 frozen-plan checks. The coefficient is small and positive in most, negative with mixtapes and for running time.
+- **The exception is the share of albums with 18 or more tracks:** +4.3 percentage points for streaming-heavy albums after the rule (Webb p = 0.012). This is a prespecified secondary outcome, so it is reported as a result. But it is one of 12 checks, and about 0.6 would be significant at 5% by chance. The mean log length (headline) and the >12-track share do not move. One reading consistent with all three is that padding happened only in the extreme upper tail (very long albums) rather than across the board. A written plan would be needed before probing that further (e.g. distribution or quantile outcomes); it is not promoted to the headline.
+- **Part 2b is robust** to the album-order (career-stage) control (+3.10, bootstrap p = 0.012) and to the broader per-artist label file (+3.29, bootstrap p = 0.010). Its known fragility remains the rock + pop classification (bootstrap p = 0.174 under the alternative).
+- The reported Part 2b result keeps the Part 1-sample labels, as its plan specifies. The artist-file version is secondary unless the author adopts it.
+
+Files touched: `code/musicbrainz_helpers.py` (cluster fix; `select` argument for `build_data`, default unchanged and verified), `code/inference.py` (within-FE helpers, intercept option), `code/22_part2b_analyze.py` (fallback), `code/14_validate_album_collection.py`, `code/18_part1_secondary_checks.py`, `code/run_pipeline.py` (steps 12a, 24, 25; `--from` follows list order), `code/paths.py`; new `code/12a_export_artist_genres.py`, `code/24_part1_plan_checks.py`, `code/25_part2b_extensions.py`, `docs/items4_5_plan.md`, `data/final/artist_genres.csv`; regenerated Part 1 outputs; docs updated (plan note, PROJECT_CONTEXT, CLAUDE.md, genre doc, LLM log).

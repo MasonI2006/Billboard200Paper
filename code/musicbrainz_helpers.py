@@ -463,12 +463,17 @@ def digital_track_counts():
     return pd.DataFrame.from_dict(selected, orient="index").rename_axis("release_group_id").reset_index()
 
 
-def build_data(priority=GENRE_PRIORITY):
+def headline_selection(candidates):
+    """Frozen headline universe: 2009-2019 window, no 2014 year-only dates."""
+    return (candidates["headline_window_2009_2019"] == "True") & (
+        candidates["2014_year_only_exclude_headline"] != "True"
+    )
+
+
+def build_data(priority=GENRE_PRIORITY, select=headline_selection):
+    """Album-level analysis data. `select` picks candidate rows (default: headline)."""
     candidates = pd.read_csv(CANDIDATES_PATH, dtype=str).fillna("")
-    candidates = candidates[
-        (candidates["headline_window_2009_2019"] == "True")
-        & (candidates["2014_year_only_exclude_headline"] != "True")
-    ].copy()
+    candidates = candidates[select(candidates)].copy()
     # format="mixed" parses each value on its own. The old default call inferred "%Y"
     # from the first value ("2009") and blanked every full date, so the headline kept
     # only year-only albums (bug found 2026-10-02; docs/analysis_plan.md dated note).
@@ -498,7 +503,9 @@ def build_data(priority=GENRE_PRIORITY):
 
     candidates["genre"] = candidates["artist_ids"].map(candidate_genre)
     candidates["heavy"] = candidates["genre"].isin(HEAVY_GENRES).astype(int)
-    candidates["artist_cluster"] = candidates["roster_artist_names"].str.split(" | ").str[0]
+    # regex=False: a multi-character pattern is a regex in pandas, and " | " then splits on every
+    # space (cluster = first word of the name; bug found 2026-10-02, devlog section 26).
+    candidates["artist_cluster"] = candidates["roster_artist_names"].str.split(" | ", regex=False).str[0]
     candidates = candidates.dropna(subset=["release_date", "year"])
     candidates = candidates[candidates["standard_tracks"] >= 6].copy()
     digital = digital_track_counts()

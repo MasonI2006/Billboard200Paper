@@ -99,3 +99,10 @@ This note does not change the approved universe, window, outcome, comparison, tr
 3. **One case not covered by clarification 3:** a date known only as "2014-11" straddles the 2014-11-24 threshold, so its position relative to the rule cannot be established. It is excluded for the same reason as 2014 year-only dates. This affects one album.
 4. **Corrected headline sample:** 6,775 albums from 1,492 artists (2,586 streaming-heavy), covering every year 2009-2019, of which 5,033 have day-precision, 79 month-precision and 1,663 year-precision dates.
 5. **Superseded results.** Every Part 1 estimate reported before this date used the year-only sample: the 2026-09-28 headline (+0.0356, Webb p = 0.247), the ordered-genre-rule headline of 2026-10-02 (-0.0247, Webb p = 0.434), and all secondary checks run in Claude chat. Part 2b took its artist genre labels from the same sample (1,040 artists) and is also superseded. The corrected results are recorded in `docs/devlog.md` section 25.
+
+## Dated note (2026-10-03): artist-cluster variable bug
+
+This note does not change the approved universe, window, outcome, comparison, treatment date or inference. It records an implementation bug in the artist clusters used for the artist-clustered standard errors.
+
+1. **Bug.** The artist cluster was built by splitting the roster artist names on " | " with pandas, which treats a multi-character pattern as a regular expression; " | " then splits on every space. Each album's "artist" cluster was therefore the first word of the artist's name ("The", "Young", ...): 1,492 groups instead of 1,942 artists. Fixed by splitting on the literal separator.
+2. **Effect.** Coefficients are unchanged. Artist-clustered standard errors and p-values, the wild bootstrap p-value (its t-statistics use artist-clustered standard errors) and reported artist counts change slightly. Corrected headline: +0.0228, artist-clustered SE 0.0151, p = 0.133, Webb wild cluster bootstrap p = 0.161 (6,775 albums, 1,942 artists). Every earlier Part 1 standard error and artist count used the first-word clusters. Details in `docs/devlog.md` section 26.

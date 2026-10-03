@@ -116,7 +116,7 @@ def main():
     chart["title_key"] = normalize_match_text(chart["Song"])
 
     albums["album_title_key"] = normalize_match_text(albums["album_title"])
-    albums["artist_id_list"] = albums["artist_ids"].str.split(" | ")
+    albums["artist_id_list"] = albums["artist_ids"].str.split(" | ", regex=False)
     album_keys = set()
     album_genre = {}
     for row in albums.to_dict("records"):

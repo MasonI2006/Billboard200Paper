@@ -32,15 +32,18 @@ STEPS = [
     ("10", "10_report_resolution_balance.py", []),
     ("11", "11_collect_discographies.py", ["--phase", "all"]),
     ("12", "12_validate_musicbrainz_collection.py", []),
+    ("12a", "12a_export_artist_genres.py", []),
     ("13", "13_adjudicate_edition_handcheck.py", []),
     ("14", "14_validate_album_collection.py", []),
     ("16", "16_part1_digital_robustness.py", []),
     ("17", "17_part1_headline.py", []),
     ("18", "18_part1_secondary_checks.py", []),
+    ("24", "24_part1_plan_checks.py", []),
     ("20", "20_part2_incumbency.py", []),
     ("21", "21_part2b_build.py", []),
     ("22", "22_part2b_analyze.py", []),
     ("23", "23_part2b_album_age.py", []),
+    ("25", "25_part2b_extensions.py", []),  # needs 12a and 21-23 first
     ("19", "19_genre_rule_sensitivity.py", []),  # exploratory; needs 17 and 21-23 first
 ]
 
@@ -54,7 +57,11 @@ def main():
 
     steps = STEPS
     if args.start:
-        steps = [step for step in steps if step[0] >= args.start.zfill(2)]
+        # run order is the list order (step numbers are not strictly sequential)
+        numbers = [step[0] for step in steps]
+        if args.start.zfill(2) not in numbers:
+            parser.error(f"unknown step {args.start}; steps are {' '.join(numbers)}")
+        steps = steps[numbers.index(args.start.zfill(2)):]
     if args.only:
         wanted = {number.zfill(2) for number in args.only}
         steps = [step for step in steps if step[0] in wanted]

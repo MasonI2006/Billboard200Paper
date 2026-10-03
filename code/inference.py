@@ -18,11 +18,15 @@ def fit_clustered(formula, data, cluster="artist_cluster"):
 
 
 def wild_bootstrap_pvalue(data, outcome, rhs_terms, term, draws=9999, seed=20260928,
-                          boot_cluster="genre", robust_cluster="artist_cluster"):
-    """Return (p-value, observed t) for `term` in `outcome ~ rhs_terms`."""
+                          boot_cluster="genre", robust_cluster="artist_cluster", intercept=True):
+    """Return (p-value, observed t) for `term` in `outcome ~ rhs_terms`.
+
+    intercept=False fits without a constant (for within-demeaned data).
+    """
     data = data.reset_index(drop=True)
-    formula = f"{outcome} ~ " + " + ".join(rhs_terms)
-    restricted_formula = f"{outcome} ~ " + " + ".join(t for t in rhs_terms if t != term)
+    tail = "" if intercept else " - 1"
+    formula = f"{outcome} ~ " + " + ".join(rhs_terms) + tail
+    restricted_formula = f"{outcome} ~ " + " + ".join(t for t in rhs_terms if t != term) + tail
     model = fit_clustered(formula, data, robust_cluster)
     restricted = smf.ols(restricted_formula, data=data).fit()
     fitted = restricted.fittedvalues.to_numpy()
@@ -51,3 +55,33 @@ def wild_bootstrap_pvalue(data, outcome, rhs_terms, term, draws=9999, seed=20260
         covariance = inverse @ meat @ inverse * correction
         simulated[draw] = beta[index] / math.sqrt(max(covariance[index, index], 0))
     return float(np.mean(np.abs(simulated) >= abs(observed))), float(observed)
+
+
+def within_demean(data, columns, group):
+    """Subtract group means (absorbs group fixed effects; Frisch-Waugh-Lovell)."""
+    out = data.copy()
+    means = data.groupby(group)[columns].transform("mean")
+    for column in columns:
+        out[column] = data[column] - means[column]
+    return out
+
+
+def within_fe_design(data, outcome, term_values, year_col="year", group="artist_cluster"):
+    """Within-group design for `outcome ~ term + C(year) + C(group)`.
+
+    Returns (demeaned frame, rhs term names) with columns y_w, x_w and year
+    dummies yd_<year> (first year dropped), all demeaned by `group`.
+    Groups with a single row carry no information and are dropped.
+    """
+    frame = data.copy()
+    frame = frame[frame.groupby(group)[outcome].transform("size") > 1].copy()
+    frame["y_w"] = frame[outcome].astype(float)
+    frame["x_w"] = term_values.loc[frame.index].astype(float)
+    years = sorted(frame[year_col].astype(int).unique())[1:]
+    dummies = []
+    for year in years:
+        name = f"yd_{year}"
+        frame[name] = (frame[year_col].astype(int) == year).astype(float)
+        dummies.append(name)
+    frame = within_demean(frame, ["y_w", "x_w", *dummies], group)
+    return frame, ["x_w", *dummies]

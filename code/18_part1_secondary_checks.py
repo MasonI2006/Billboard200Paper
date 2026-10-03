@@ -46,7 +46,7 @@ def add_chart_flags(data):
     runs = runs.to_dict("index")
     title_keys = nz(data["album_title"])
     found = []
-    for ids, title in zip(data["artist_ids"].astype(str).str.split(" | "), title_keys):
+    for ids, title in zip(data["artist_ids"].astype(str).str.split(" | ", regex=False), title_keys):
         hits = [runs[(i, title)] for i in ids if (i, title) in runs]
         found.append(min(hits, key=lambda h: h["first_date"]) if hits else None)
     data["charted"] = [int(h is not None) for h in found]
@@ -67,7 +67,7 @@ def add_uk_flag(data):
             if artist.get("id") == artist_id:
                 area[artist_id] = (artist.get("area") or {}).get("name", "")
                 break
-    first_artist = data["artist_ids"].astype(str).str.split(" | ").str[0]
+    first_artist = data["artist_ids"].astype(str).str.split(" | ", regex=False).str[0]
     data["uk"] = first_artist.map(lambda i: int(area.get(i, "") in UK_AREAS))
     return data
 
