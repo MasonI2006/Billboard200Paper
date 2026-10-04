@@ -51,6 +51,7 @@ STEPS = [
     ("29", "29_uk_comparison.py", []),  # UK vs U.S. own-date test; needs 28
     ("30", "30_match_us_uk_albums.py", []),  # U.S.-UK album matching; needs 28
     ("31", "31_matched_album_tests.py", []),  # matched-album tests A-F; needs 12, 20, 27-30
+    ("32", "32_final_checks.py", []),  # equivalence, Part 2b leave-one-genre-out, event-study plot
 ]
 
 

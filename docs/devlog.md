@@ -904,3 +904,42 @@ Plan: `docs/matched_albums_plan.md` (approved; post-estimation notes added). New
 - Consistent with H-formula, Billboard's 2014 formula (no track cap or down-weighting) may have favoured streaming-heavy albums more than the UK formula did. That reading is interpretation, not a tested result.
 
 Files touched: new `code/30_match_us_uk_albums.py`, `code/31_matched_album_tests.py`, `code/run_pipeline.py` (steps 30–31), `data/interim/us_uk_album_matches.csv`, `results/part2_incumbency/matched/`, `docs/matched_albums_plan.md` (post-estimation notes), PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
+
+---
+
+## 34. Part 1 equivalence bound, Part 2b leave-one-genre-out, Part 2 event-study plot (2026-10-03, Claude Code)
+
+Plan: `docs/final_checks_plan.md` (written before estimation; post-estimation notes added). Script `code/32_final_checks.py` (runner step 32, 90 s). Outputs in `results/final_checks/`.
+
+**1. What the Part 1 null rules out** (headline +0.0228, artist-clustered SE 0.0151; mean album 13.0 tracks):
+- 90% CI: −0.0021 to +0.0476 log points, i.e. **−0.03 to +0.63 tracks** (−0.2% to +4.9%).
+- Smallest equivalence bound rejected at 5% (TOST): **0.63 tracks (4.9%)**. Minimum detectable effect (80% power): 0.56 tracks (4.3%).
+- **Prespecified half-track bound: fails** (TOST p = 0.16).
+- Paper wording: "we can rule out increases larger than about two-thirds of a track (5%)", not half a track. The earlier "about half a track" in conversation matched the MDE (0.56) but not the equivalence bound.
+
+**2. Part 2b leave-one-genre-out** (Part 2b sample, artist-clustered p, Part 2b genre bootstrap; full sample reproduces boot p = 0.015):
+
+| Genre dropped | n albums | Coefficient | p (artist) | Bootstrap p |
+|---|---|---|---|---|
+| none (full) | 4,517 | +3.23 | <0.001 | 0.015 |
+| christian | 4,172 | +3.23 | <0.001 | 0.022 |
+| classical | 4,363 | +3.21 | <0.001 | 0.017 |
+| country | 3,781 | +3.01 | 0.001 | 0.029 |
+| electronic (heavy) | 4,283 | +3.41 | 0.001 | 0.026 |
+| **hiphop_rnb (heavy)** | 3,422 | **+1.85** | 0.079 | **0.102** |
+| jazz | 4,395 | +3.29 | <0.001 | 0.012 |
+| latin (heavy) | 4,355 | +3.26 | 0.001 | 0.023 |
+| pop (heavy) | 4,423 | +3.36 | <0.001 | 0.012 |
+| rock | 2,942 | +3.73 | <0.001 | 0.016 |
+
+- Under the fixed rule, Part 2b is **"not driven by a single genre"**: all nine estimates are positive, and the smallest (+1.85, without hip-hop/R&B) is above half the full estimate (1.61).
+- **Hip-hop/R&B carries much of it:** without it the effect falls by 43% and the bootstrap p rises to 0.10. Dropping any other genre leaves +3.0 to +3.7, all with bootstrap p < 0.03.
+- The paper should say so: the effect is largest for hip-hop/R&B, the most streaming-intensive genre, which fits the mechanism.
+
+**3. Event-study plot** (`fig_event_study.png`; figure only):
+- **U.S. new-entry share:** an upward drift in the two years before the rule, then a step down of about 4–5 points that persists.
+- **U.S. 52+-week share:** a step up at the rule, with a second rise about 12 months later.
+- **UK, at its own date:** no step in either series; the 52+-week share drifts up gradually.
+- **Deviation from the plan (figure only):** the ±24-month-only specification was not identified (month dummies vs week-of-year effects; a sawtooth appeared). The plot was redrawn on the full 2010–2019 series with end bins, recorded in the plan's notes.
+
+Files touched: new `code/32_final_checks.py`, `code/paths.py` (`RESULTS_FINAL_CHECKS`), `code/run_pipeline.py` (step 32), `results/final_checks/`, new `docs/final_checks_plan.md`, PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
