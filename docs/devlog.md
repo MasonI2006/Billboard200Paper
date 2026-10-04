@@ -744,3 +744,24 @@ Plan written and approved before estimation: `docs/long_albums_followup_plan.md`
 **Interpretation.** The prespecified test of an upper-tail shift fails: no test survives multiplicity adjustment, though all four upper-tail estimates (A2-A5) are positive with unadjusted p between 0.05 and 0.09. The honest description for the paper is: no change in average album length; a suggestive but not robust rise in albums of roughly 18-23 tracks in streaming-heavy genres, with no pre-trend and no matching rise in running time. It is not promoted to a finding.
 
 Files touched: new `code/26_long_albums_followup.py`, `code/run_pipeline.py` (step 26), the four result files above, `docs/long_albums_followup_plan.md` (post-estimation notes), PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
+
+---
+
+## 29. Sales-chart scraping not done (Billboard blocks AI agents); RIAA revenue data tidied (2026-10-03, Claude Code)
+
+**Top Album Sales scraping: stopped before collection.** The author approved scraping Billboard's sales-only Top Album Sales chart. Before any chart page was requested, billboard.com/robots.txt was checked: it sets `Disallow: /` for `anthropic-ai`, `ClaudeBot` and `Claude-Web` (and most other AI crawlers). The agent therefore did not scrape; the only request was for robots.txt. The `01_scrape_billboard.py` that PROJECT_CONTEXT said could be adapted does not exist anywhere in the project. Alternatives: an existing Kaggle/GitHub dataset, *Billboard* magazine back issues via the library, a data request to Billboard/Luminate, or the author's own collection under Billboard's terms. The author is supplying UK Official Albums Chart data instead (the UK added streams in March 2015, a different date, which can serve as a cross-country comparison).
+
+**RIAA revenue data.** The author added `data/raw/RIAARevenue.csv`, copied from RIAA's U.S. Sales Database (Tableau). It is a Tableau crosstab export, not a broken file:
+- UTF-16, tab-separated, with dollar strings and thousands separators;
+- four negative values in accounting parentheses (small format corrections in 1989, 2001, 2002, 2013);
+- a placeholder "Disclaimer" column, a units column that is empty in the export, and "Total" rows per category, year and overall;
+- 1973–2025, 5 categories (Physical, Digital Downloads, Streaming, Synchronization, Total) and 23 formats;
+- "CPI Adjustment" is in 2025 dollars (factor 1.000 in 2025, 1.36 in 2014).
+
+Formats sum to category totals and categories to the grand total within $2. `data/raw/4_Baseline.csv` (added alongside) is a Tableau parameter table (baseline/inflation toggle) and is not used.
+
+New step `code/27_riaa_revenue.py` writes `data/final/riaa_revenue_long.csv` (year x format, nominal and 2025 dollars) and `data/final/riaa_revenue_by_category.csv` (year x category, plus the streaming share). The raw file is unchanged.
+
+Streaming share of U.S. recorded-music revenue: 7.9% (2010), 17.5% (2012), 23.3% (2013), **31.2% (2014)**, 38.0% (2015), 53.7% (2016), 79.0% (2019). Streaming revenue rose smoothly through December 2014: +36% in 2013, +31% in 2014, +22% in 2015, +54% in 2016. There is no discontinuity at the rule change, which is the comparison the paper needs: a sharp chart break against a smooth market trend. Annual data cannot locate a December break, so this is context, not a test; any formal use needs a written plan.
+
+Files touched: new `code/27_riaa_revenue.py`, `code/paths.py` (RIAA paths), `code/run_pipeline.py` (step 27), new `data/final/riaa_revenue_long.csv` and `riaa_revenue_by_category.csv`, PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.

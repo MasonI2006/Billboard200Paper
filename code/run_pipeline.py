@@ -46,6 +46,7 @@ STEPS = [
     ("23", "23_part2b_album_age.py", []),
     ("25", "25_part2b_extensions.py", []),  # needs 12a and 21-23 first
     ("19", "19_genre_rule_sensitivity.py", []),  # exploratory; needs 17 and 21-23 first
+    ("27", "27_riaa_revenue.py", []),  # RIAA revenue context table
 ]
 
 

@@ -32,6 +32,7 @@ RAW_DIGITAL = RAW_DIR / "digital.csv"
 RAW_RADIO = RAW_DIR / "radio.csv"
 RAW_SPOTIFY_TRACKS = RAW_DIR / "track_data_final.csv"
 RAW_SPOTIFY_CLEAN = RAW_DIR / "spotify_data clean.csv"   # the space is in the real filename
+RAW_RIAA_REVENUE = RAW_DIR / "RIAARevenue.csv"   # Tableau export: UTF-16, tab-separated
 
 # External: MusicBrainz caches (never delete) and collector outputs
 ARTIST_SEARCH_CACHE = EXTERNAL_DIR / "musicbrainz_artist_search_cache.jsonl"
@@ -66,6 +67,8 @@ ANALYSIS_SAMPLE = FINAL_DIR / "analysis_sample.csv"
 ARTIST_GENRES = FINAL_DIR / "artist_genres.csv"   # one genre per resolved roster artist (step 12a)
 PART2_WEEKLY = FINAL_DIR / "part2_weekly_billboard200.csv"
 PART2B_ALBUM_RUNS = FINAL_DIR / "part2b_album_runs.csv"
+RIAA_REVENUE_LONG = FINAL_DIR / "riaa_revenue_long.csv"   # step 27
+RIAA_REVENUE_BY_CATEGORY = FINAL_DIR / "riaa_revenue_by_category.csv"
 ANALYSIS_SAMPLE_0928 = ROOT / "archive" / "superseded_0928_genre_labels" / "analysis_sample_0928.csv"  # random labels, validation only
 
 # Part 1 results and validation outputs

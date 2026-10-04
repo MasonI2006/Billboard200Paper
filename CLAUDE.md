@@ -2,7 +2,7 @@
 
 Economics research project for the *Journal of Cultural Economics*: how Billboard's December 2014 switch to counting streams on the Billboard 200 album chart affected (1) what artists produce and (2) which albums the chart rewards.
 
-**Read `PROJECT_CONTEXT.md` before doing any analysis.** It has the research question, mechanisms, parameters, every result so far, and the full history. `docs/devlog.md` is the detailed chronological log (§1–20 by the previous agent; §21–22 from Claude chat; §23–28 the 2026-10-02/03 cleanup, genre-rule fix, release-date fix, artist-cluster fix, the secondary and frozen-plan checks, the author's Part 2b decisions, and the long-albums follow-up, §28).
+**Read `PROJECT_CONTEXT.md` before doing any analysis.** It has the research question, mechanisms, parameters, every result so far, and the full history. `docs/devlog.md` is the detailed chronological log (§1–20 by the previous agent; §21–22 from Claude chat; §23–29 the 2026-10-02/03 cleanup, genre-rule fix, release-date fix, artist-cluster fix, the secondary and frozen-plan checks, the author's Part 2b decisions, the long-albums follow-up, §28, and the RIAA data, §29).
 
 ## Hard rules
 1. **Never edit, rename or delete raw data** (`data/raw/`, formerly `OriginalDataFiles/`).
@@ -20,10 +20,10 @@ Economics research project for the *Journal of Cultural Economics*: how Billboar
 - **Run the pipeline:** `py -3.10 code/run_pipeline.py` (cache-only). The data steps take minutes; the 9,999-draw bootstraps in steps 17, 18, 24, 26, 25 and 19 take about 3.3 hours in total, so long runs are best split with `--only`. `--from 16` or `--only 20 21` runs part of it. MusicBrainz requests need `--allow-api` (ask first); without it a cache miss raises `CacheMissError`.
 
 ## Folder layout
-- `data/raw/` — Kaggle `billboard200.csv`, `hot100.csv`, `streaming.csv`, `digital.csv`, `radio.csv`; Spotify `track_data_final.csv` and **`spotify_data clean.csv` (note the space)**. Read-only.
+- `data/raw/` — Kaggle `billboard200.csv`, `hot100.csv`, `streaming.csv`, `digital.csv`, `radio.csv`; Spotify `track_data_final.csv` and **`spotify_data clean.csv` (note the space)**; RIAA `RIAARevenue.csv` (Tableau export: **UTF-16, tab-separated**, negatives in parentheses; read via step 27). Read-only.
 - `data/external/` — MusicBrainz caches (`*.jsonl`), API error logs, and the collector's tables (release groups, official releases, standard-album candidates).
 - `data/interim/` — roster, credit audit, artist matches and review, identity decisions and audits, zero-match lists, Spotify album sample, Part 2b intermediate pickle.
-- `data/final/` — `analysis_sample.csv` (Part 1 sample; also the Part 2b genre source), `artist_genres.csv` (one genre per resolved artist, step 12a), `part2_weekly_billboard200.csv`, `part2b_album_runs.csv`.
+- `data/final/` — `analysis_sample.csv` (Part 1 sample; also the Part 2b genre source), `artist_genres.csv` (one genre per resolved artist, step 12a), `part2_weekly_billboard200.csv`, `part2b_album_runs.csv`, `riaa_revenue_long.csv` and `riaa_revenue_by_category.csv` (step 27).
 - `code/` — `paths.py` (every path), `load_clean_data.py`, `musicbrainz_helpers.py` (shared functions, genre rule) and `inference.py` (genre Webb bootstrap), numbered scripts 01–25 (run order is the list in `run_pipeline.py`; 12a, 24, 25 and 19 run out of numeric order), `run_pipeline.py`. Step 15 (genre hand-check sheet) is one-time and skipped by the runner.
 - `results/part1_album_length/` — headline, means, digital robustness; `secondary/` (secondary checks, event study, frozen-plan checks incl. album order, long-albums follow-up (step 26), rock + pop sensitivity, old-label validation); `validation/` (coverage, genre balance, hand-check sheets); `spotify_exploratory/` (first Spotify-sample analysis).
 - `results/part2_incumbency/`, `results/part2b_genre_staying_power/` (incl. `extensions.csv`: album-order control, artist-file labels).
@@ -31,6 +31,7 @@ Economics research project for the *Journal of Cultural Economics*: how Billboar
 - `archive/` — first-round code (`InitialAnalysisCode/`) and results (`kaggle_results/`), the phase-1 reproduction, root strays, devlog section files from chat, old venv. Don't edit.
 
 ## Known gotchas (each has caused a real bug)
+- **billboard.com blocks AI agents in robots.txt** (`anthropic-ai`, `ClaudeBot`): don't scrape it, even with the author's approval (devlog §29).
 - **Kaggle chart dates are stored 3 days early** (Wednesday, not Billboard's Saturday). The first rule chart (dated 2014-12-13) is stored as **2014-12-10**. Album post-rule threshold = release on/after **2014-11-24**.
 - In `billboard200.csv` the **album title is in the `Song` column**. Read chart files with `dtype=str, low_memory=False`.
 - **Mixed-precision dates** (`"1999"` and `"1999-02-23"` in one column): default `pd.to_datetime(..., errors="coerce")` silently blanks most values. Use `format="mixed"` and handle year-only values explicitly. This bug made the Part 1 headline sample year-only albums only until 2026-10-02 (devlog §25); fixed in `build_data()`.
