@@ -64,3 +64,10 @@ Shorter songs (seconds per track −3.9%, p = 0.002) and fewer same-day multi-ed
 - Output `results/part1_album_length/secondary/long_albums_followup.csv`, plus the figure data.
 - Logged in `docs/devlog.md`; PROJECT_CONTEXT updated.
 - Expected runtime: about 30–45 minutes (three 9,999-draw Webb bootstraps and two 999-draw quantile bootstraps).
+
+## Post-estimation notes (2026-10-03)
+
+Added after running; the plan above is unchanged. The author approved the plan on 2026-10-03 and it was run as written (`code/26_long_albums_followup.py`, runner step 26, 43 minutes). Results and interpretation: `docs/devlog.md` section 28.
+- **Verdict under the fixed rules: 0 of 5 survive Holm**, so the 18+ result does not generalise robustly across the upper tail, and Part 1 stays a plain null. The pre-2014 test does not reject (p = 0.998).
+- **Smoke test:** before the full run, the script was smoke-tested with 19 bootstrap draws to check that it ran. Its point estimates were the same as the final ones; no specification was changed after it.
+- **Quantile regressions on a discrete outcome:** track counts are integers, so the 75th and 90th percentiles of log tracks move in steps (one track at the 75th percentile is about 0.07 log points). The percentile intervals touch zero. This is a property of the data, noted for the write-up.

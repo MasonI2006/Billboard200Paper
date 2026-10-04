@@ -39,6 +39,7 @@ STEPS = [
     ("17", "17_part1_headline.py", []),
     ("18", "18_part1_secondary_checks.py", []),
     ("24", "24_part1_plan_checks.py", []),
+    ("26", "26_long_albums_followup.py", []),
     ("20", "20_part2_incumbency.py", []),
     ("21", "21_part2b_build.py", []),
     ("22", "22_part2b_analyze.py", []),

@@ -1,0 +1,11 @@
+test,family,outcome,method,n_albums,n_artists,coef,se,p_artist,p_family,p_family_kind,note,p_holm
+A1 >=15 tracks,A,ge15,LPM,6775,1942,-0.004243227261741832,0.021535048402863202,0.8437976412561006,0.904990499049905,genre Webb wild bootstrap,,0.904990499049905
+A2 >=20 tracks,A,ge20,LPM,6775,1942,0.02977463373234933,0.012968331478244948,0.021678770938415196,0.061606160616061605,genre Webb wild bootstrap,,0.24642464246424642
+A3 >=25 tracks,A,ge25,LPM,6775,1942,0.013284924754337785,0.00803945416412742,0.09843958842627168,0.08750875087508751,genre Webb wild bootstrap,,0.24642464246424642
+"A4 75th percentile, log tracks",A,ln_standard_tracks q75,quantile regression,6775,1942,0.060627524811426525,0.030810344151794015,,0.0490950533062573,artist pairs cluster bootstrap (999),"bootstrap SE (normal p); percentile 95% CI [-0.0000, +0.0800]; share of draws with coef exactly 0: 0.00; failed draws: 0",0.24547526653128648
+"A5 90th percentile, log tracks",A,ln_standard_tracks q90,quantile regression,6775,1942,0.06900317827378188,0.037387569871595305,,0.06494766639968685,artist pairs cluster bootstrap (999),"bootstrap SE (normal p); percentile 95% CI [+0.0001, +0.1471]; share of draws with coef exactly 0: 0.00; failed draws: 0",0.24642464246424642
+ref >=18 tracks (already seen; not in family),reference,ge18,LPM,6775,1942,0.04325132696082123,0.01480475252094222,0.0034840750033784374,0.0116011601160116,genre Webb wild bootstrap,,
+B2 event study >=18: joint pre-2014 test,B,ge18,Wald,6775,1942,,,0.9977797462386567,,,"year x heavy, ref 2014; coefficients in long_albums_event_study.csv",
+"B3 >=18 tracks, charted",B,ge18,LPM,3991,1820,0.05252185497592215,0.020171988404195873,0.009222279181289827,0.060106010601060106,genre Webb wild bootstrap,,
+"B3 >=18 tracks, non-charted",B,ge18,LPM,2784,1154,0.03357439036481498,0.025002620046894887,0.1793254453814106,0.0462046204620462,genre Webb wild bootstrap,,
+B4 running time >=60 minutes,B,ge60min,LPM,6673,1937,-0.008010086302712549,0.020260239534569614,0.6925772976781823,0.7988798879887988,genre Webb wild bootstrap,albums with all track durations,

@@ -714,3 +714,33 @@ The author approved four recommendations (PROJECT_CONTEXT §11 item 2 and the sc
 4. **Scratchpad backup deleted.** `scratchpad/external_backup/` (687 MB) was a copy, taken before the 10-02 rerun, of the three collector tables in `data/external/` (official releases, release groups, standard-album candidates). All three were byte-identical to the live files (`cmp`) before deletion. No cache (`*.jsonl`) was involved.
 
 Files touched: `code/22_part2b_analyze.py`, `results/part2b_genre_staying_power/results_main.csv`, `docs/q1b_analysis_plan.md` (dated note), new `docs/long_albums_followup_plan.md`, PROJECT_CONTEXT, CLAUDE.md, `docs/genre_classification.md`, `docs/llm_use_log.md`.
+
+---
+
+## 28. Long-albums follow-up: does the 18+-track result generalise? (2026-10-03, Claude Code)
+
+Plan written and approved before estimation: `docs/long_albums_followup_plan.md`. Script `code/26_long_albums_followup.py` (new runner step 26, after 24); 43 minutes. Sample: the corrected headline sample (6,775 albums, 1,942 artists). Model `outcome ~ post:heavy + C(genre) + C(year)`, artist-clustered SEs; Webb genre bootstrap 9,999 draws for the LPMs; artist pairs cluster bootstrap 999 draws for the quantile regressions. Outputs in `results/part1_album_length/secondary/`: `long_albums_followup.csv`, `long_albums_thresholds.csv`, `long_albums_event_study.csv`, `long_albums_shares.csv`.
+
+**A. Prespecified family (Holm across A1-A5):**
+
+| Test | Coefficient | SE | p (artist) | p used for Holm | Holm-adjusted p |
+|---|---|---|---|---|---|
+| A1 share >= 15 tracks | -0.004 | 0.022 | 0.844 | Webb 0.905 | 0.905 |
+| A2 share >= 20 tracks | +0.030 | 0.013 | 0.022 | Webb 0.062 | 0.25 |
+| A3 share >= 25 tracks | +0.013 | 0.008 | 0.098 | Webb 0.088 | 0.25 |
+| A4 75th percentile, log tracks | +0.061 | 0.031 (bootstrap) | | bootstrap 0.049 | 0.25 |
+| A5 90th percentile, log tracks | +0.069 | 0.037 (bootstrap) | | bootstrap 0.065 | 0.25 |
+| Reference: share >= 18 tracks (already seen; not in family) | +0.043 | 0.015 | 0.003 | Webb 0.012 | |
+
+(Holm-adjusted p rounded; exact values in the CSV.) **0 of 5 survive.** Under the plan's fixed rules, the 18+ result does not generalise robustly across the upper tail, and Part 1 is reported as a plain null.
+
+**B. Supporting checks (not adjusted; descriptive):**
+- **Threshold profile (k = 8 to 30):** the post x heavy coefficient is near zero up to 17 tracks (except +0.045 at 14, p = 0.07), positive and individually significant (artist-clustered) for 18-23 tracks (+0.021 to +0.043), and back near zero from 24 tracks on. This band was not prespecified, and neighbouring thresholds are strongly correlated, so it is a description of where the 18+ result sits, not new evidence.
+- **Event study for the >= 18 share:** pre-2014 coefficients +0.004 to +0.014, **joint pre-2014 test p = 0.998**; post-rule +0.060 (2015), +0.028, +0.035, +0.082 (2018), +0.052. No pre-trend.
+- **Charted vs non-charted:** charted +0.053 (p = 0.009; Webb p = 0.060); non-charted +0.034 (p = 0.18; Webb p = 0.046). Not concentrated among charting acts.
+- **Running time >= 60 minutes:** -0.008 (Webb p = 0.80). More very long track lists did not come with more very long running times, consistent with the exploratory shorter-songs result (devlog section 25).
+- **Raw shares >= 18 tracks:** other genres 5.7% pre, 4.1% post; streaming-heavy 12.3% pre, 14.8% post.
+
+**Interpretation.** The prespecified test of an upper-tail shift fails: no test survives multiplicity adjustment, though all four upper-tail estimates (A2-A5) are positive with unadjusted p between 0.05 and 0.09. The honest description for the paper is: no change in average album length; a suggestive but not robust rise in albums of roughly 18-23 tracks in streaming-heavy genres, with no pre-trend and no matching rise in running time. It is not promoted to a finding.
+
+Files touched: new `code/26_long_albums_followup.py`, `code/run_pipeline.py` (step 26), the four result files above, `docs/long_albums_followup_plan.md` (post-estimation notes), PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
