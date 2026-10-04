@@ -90,5 +90,7 @@ E["p"] = 2 * (1 - stats.norm.cdf(abs(E.coef / E.se)))
 pre = [n for n in es.params.index if re.search(r"year ?== ?201[0-3]\)", n)]
 R_ = np.vstack([(es.params.index == n).astype(float) for n in pre])
 print("\nEvent study (weeks in first 52, heavy minus other, ref 2014):"); print(E.round(2).to_string())
-print("joint pre-2014 test p =", round(float(es.wald_test(R_, scalar=True).pvalue), 3))
+joint_p = float(es.wald_test(R_, scalar=True).pvalue)
+print("joint pre-2014 test p =", round(joint_p, 3))
+E["joint_pre2014_p"] = joint_p
 E.to_csv(RESULTS_P2B / "results_event_study.csv")

@@ -24,6 +24,7 @@ RESULTS_P1_SECONDARY = RESULTS_P1 / "secondary"
 RESULTS_P2 = RESULTS_DIR / "part2_incumbency"
 RESULTS_P2B = RESULTS_DIR / "part2b_genre_staying_power"
 RESULTS_FINAL_CHECKS = RESULTS_DIR / "final_checks"   # step 32
+PAPERWRITING = ROOT / "paperwriting"   # paper materials; figures and parameters.md from step 33
 
 # Raw inputs (never edit)
 RAW_BILLBOARD200 = RAW_DIR / "billboard200.csv"
