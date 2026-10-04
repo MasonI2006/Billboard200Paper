@@ -105,3 +105,19 @@ U.S. and UK weekly new-entry and 52+-week shares, 2010–2019, with both rule da
 - New scripts: `code/30_match_us_uk_albums.py` (matching and hand-check sheet) and `code/31_matched_album_tests.py` (A–F).
 - Results in `results/part2_incumbency/matched/`; logged in `docs/devlog.md`; PROJECT_CONTEXT updated.
 - Expected runtime: matching a few minutes; A, B, E and F a few minutes; C and D about 15–25 minutes (two 9,999-draw bootstraps).
+
+## Post-estimation notes (2026-10-03)
+
+Added after running; the plan above is unchanged. The author approved the plan and it was run as written (`code/30_match_us_uk_albums.py`, `code/31_matched_album_tests.py`, runner steps 30-31). Implementation details fixed before the full run (only a 19-draw smoke test preceded it):
+- **Title comparison ignores spaces**, because some Kaggle titles have lost a space ("STRONGER withEach Tear"). This is stricter normalisation of the same rule.
+- **Debut = each chart's own weeks-on-chart count of 1** (the true first chart week; the U.S. debut must be in the top 100). For albums first seen after 2000 with more weeks, the debut is backdated from the count. This is needed because catalogue albums (e.g. Pearl Jam *Ten*) first appear in the 2000+ data years after release.
+- **A placebo-rank:** at each fake date f, the same two-jump model with jumps at f and f + 12 weeks (the true spacing); the p-value ranks |tau1|.
+- **C and D bootstraps** use `code/inference.py` (artist-clustered t, genre Webb weights, 9,999 draws), as in the items 4-5 extensions. The Part 2b script's own bootstrap uses genre-clustered t.
+- **Hand check:** 50 of 50 random matches are the same album on both charts (`results/part2_incumbency/matched/match_handcheck_sample.csv`).
+
+**Verdicts under the fixed rules:**
+- A: album-level rule effect **supported** (tau1 > 0, placebo-rank p = 0.071 < 0.10; Holm-adjusted 0.14).
+- H-inclusion vs H-formula: **H-formula**, borderline (|tau2| / tau1 = 0.46, just under the 0.5 cut-off).
+- C: Part 2b robustness to holding the album fixed **not supported** (genre-bootstrap p = 0.43).
+- D: UK replication of Part 2b is null. E: the Part 2 jumps survive the RIAA control.
+- See devlog section 33 for the fragility of A (tau1 disappears when trend changes are added).

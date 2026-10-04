@@ -49,6 +49,8 @@ STEPS = [
     ("27", "27_riaa_revenue.py", []),  # RIAA revenue context table
     ("28", "28_uk_albums_build.py", []),  # UK Official Albums Chart, tidy weekly file
     ("29", "29_uk_comparison.py", []),  # UK vs U.S. own-date test; needs 28
+    ("30", "30_match_us_uk_albums.py", []),  # U.S.-UK album matching; needs 28
+    ("31", "31_matched_album_tests.py", []),  # matched-album tests A-F; needs 12, 20, 27-30
 ]
 
 

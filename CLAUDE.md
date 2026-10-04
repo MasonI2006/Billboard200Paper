@@ -2,7 +2,7 @@
 
 Economics research project for the *Journal of Cultural Economics*: how Billboard's December 2014 switch to counting streams on the Billboard 200 album chart affected (1) what artists produce and (2) which albums the chart rewards.
 
-**Read `PROJECT_CONTEXT.md` before doing any analysis.** It has the research question, mechanisms, parameters, every result so far, and the full history. `docs/devlog.md` is the detailed chronological log (§1–20 by the previous agent; §21–22 from Claude chat; §23–31 the 2026-10-02/03 cleanup, genre-rule fix, release-date fix, artist-cluster fix, the secondary and frozen-plan checks, the author's Part 2b decisions, the long-albums follow-up, §28, the RIAA data, §29, the UK chart data, §30, and the UK comparison, §31).
+**Read `PROJECT_CONTEXT.md` before doing any analysis.** It has the research question, mechanisms, parameters, every result so far, and the full history. `docs/devlog.md` is the detailed chronological log (§1–20 by the previous agent; §21–22 from Claude chat; §23–33 the 2026-10-02/03 cleanup, genre-rule fix, release-date fix, artist-cluster fix, the secondary and frozen-plan checks, the author's Part 2b decisions, the long-albums follow-up, §28, the RIAA data, §29, the UK chart data, §30, the UK comparison, §31, and the matched-album tests, §33).
 
 ## Hard rules
 1. **Never edit, rename or delete raw data** (`data/raw/`, formerly `OriginalDataFiles/`).
@@ -26,8 +26,8 @@ Economics research project for the *Journal of Cultural Economics*: how Billboar
 - `data/final/` — `analysis_sample.csv` (Part 1 sample; also the Part 2b genre source), `artist_genres.csv` (one genre per resolved artist, step 12a), `part2_weekly_billboard200.csv`, `part2b_album_runs.csv`, `riaa_revenue_long.csv` and `riaa_revenue_by_category.csv` (step 27), `uk_albums_weekly.csv` (step 28).
 - `code/` — `paths.py` (every path), `load_clean_data.py`, `musicbrainz_helpers.py` (shared functions, genre rule) and `inference.py` (genre Webb bootstrap), numbered scripts 01–25 (run order is the list in `run_pipeline.py`; 12a, 24, 25 and 19 run out of numeric order), `run_pipeline.py`. Step 15 (genre hand-check sheet) is one-time and skipped by the runner.
 - `results/part1_album_length/` — headline, means, digital robustness; `secondary/` (secondary checks, event study, frozen-plan checks incl. album order, long-albums follow-up (step 26), rock + pop sensitivity, old-label validation); `validation/` (coverage, genre balance, hand-check sheets); `spotify_exploratory/` (first Spotify-sample analysis).
-- `results/part2_incumbency/` (incl. `uk_comparison*.csv`, step 29), `results/part2b_genre_staying_power/` (incl. `extensions.csv`: album-order control, artist-file labels).
-- `docs/` — frozen `analysis_plan.md`, `q1_analysis_plan.md`, `q1b_analysis_plan.md`, `part1_secondary_rerun_plan.md`, `items4_5_plan.md`, `long_albums_followup_plan.md`, `uk_comparison_plan.md`, `devlog.md`, `llm_use_log.md`, `genre_classification.md`, cleanup inventory and move map.
+- `results/part2_incumbency/` (incl. `uk_comparison*.csv`, step 29; `matched/`, steps 30–31), `results/part2b_genre_staying_power/` (incl. `extensions.csv`: album-order control, artist-file labels).
+- `docs/` — frozen `analysis_plan.md`, `q1_analysis_plan.md`, `q1b_analysis_plan.md`, `part1_secondary_rerun_plan.md`, `items4_5_plan.md`, `long_albums_followup_plan.md`, `uk_comparison_plan.md`, `matched_albums_plan.md`, `devlog.md`, `llm_use_log.md`, `genre_classification.md`, cleanup inventory and move map.
 - `archive/` — first-round code (`InitialAnalysisCode/`) and results (`kaggle_results/`), the phase-1 reproduction, root strays, devlog section files from chat, old venv. Don't edit.
 
 ## Known gotchas (each has caused a real bug)

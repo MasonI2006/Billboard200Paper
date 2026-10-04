@@ -1,0 +1,51 @@
+album_id,us_title,us_artist,us_tkey,us_akey,uk_album,uk_artist,uk_tkey,uk_akey,match_type,us_first_week,uk_first_week,us_weeks,uk_weeks
+4095,Things Falling Apart,Nine Inch Nails,thingsfallingapart,nine inch nails,THINGS FALLING APART,NINE INCH NAILS,thingsfallingapart,nine inch nails,title equal,2000-12-06,2000-11-26,5,1
+4021,The Singles,Phil Collins,thesingles,phil collins,THE SINGLES,PHIL COLLINS,thesingles,phil collins,title equal,2016-11-02,2016-10-23,8,303
+4278,Tyranny Of Souls,Bruce Dickinson,tyrannyofsouls,bruce dickinson,TYRANNY OF SOULS,BRUCE DICKINSON,tyrannyofsouls,bruce dickinson,title equal,2005-06-08,2005-05-29,1,1
+1158,Ella Wishes You A Swinging Christmas,Ella Fitzgerald,ellawishesyouaswingingchristmas,ella fitzgerald,ELLA WISHES YOU A SWINGING CHRISTMAS,ELLA FITZGERALD,ellawishesyouaswingingchristmas,ella fitzgerald,title equal,2020-01-01,2023-12-31,21,2
+1690,Heroes,Sabaton,heroes,sabaton,HEROES,SABATON,heroes,sabaton,title equal,2014-06-11,2014-05-25,1,1
+1503,Golden,Kylie Minogue,golden,kylie minogue,GOLDEN,KYLIE MINOGUE,golden,kylie minogue,title equal,2018-04-18,2018-04-15,1,27
+3759,The Courage Of Others,Midlake,thecourageofothers,midlake,THE COURAGE OF OTHERS,MIDLAKE,thecourageofothers,midlake,title equal,2010-02-17,2010-02-07,1,2
+2581,My Name Is Michael Holbrook,Mika,mynameismichaelholbrook,mika,MY NAME IS MICHAEL HOLBROOK,MIKA,mynameismichaelholbrook,mika,title equal,2019-10-16,2019-10-13,1,1
+2584,My One And Only Thrill,Melody Gardot,myoneandonlythrill,melody gardot,MY ONE AND ONLY THRILL,MELODY GARDOT,myoneandonlythrill,melody gardot,title equal,2009-05-13,2009-03-22,6,14
+2264,Lost Dogs,Pearl Jam,lostdogs,pearl jam,LOST DOGS,PEARL JAM,lostdogs,pearl jam,title equal,2003-11-26,2003-11-16,11,1
+675,Bullet In A Bible,Green Day,bulletinabible,green day,BULLET IN A BIBLE,GREEN DAY,bulletinabible,green day,title equal,2005-11-30,2005-11-20,14,16
+318,A Place We Knew,Dean Lewis,aplaceweknew,dean lewis,A PLACE WE KNEW,DEAN LEWIS,aplaceweknew,dean lewis,title equal,2019-04-03,2019-03-31,11,4
+1376,Four,Bloc Party,four,bloc party,FOUR,BLOC PARTY,four,bloc party,title equal,2012-09-05,2012-08-26,2,4
+2062,Killswitch Engage,Killswitch Engage,killswitchengage,killswitch engage,KILLSWITCH ENGAGE,KILLSWITCH ENGAGE,killswitchengage,killswitch engage,title equal,2009-07-15,2009-07-05,12,2
+1025,Dirt,Alice in Chains,dirt,alice in chains,DIRT,ALICE IN CHAINS,dirt,alice in chains,title equal,2022-10-05,2022-10-02,4,1
+4658,Ys,Joanna Newsom,ys,joanna newsom,YS,JOANNA NEWSOM,ys,joanna newsom,title equal,2006-11-29,2006-11-12,1,2
+4622,Year Of The Gentleman,Ne-Yo,yearofthegentleman,neyo,YEAR OF THE GENTLEMAN,NE-YO,yearofthegentleman,neyo,title equal,2008-10-01,2008-09-21,47,56
+468,Because Of The Times,Kings of Leon,becauseofthetimes,kings of leon,BECAUSE OF THE TIMES,KINGS OF LEON,becauseofthetimes,kings of leon,title equal,2007-04-18,2007-04-08,9,112
+3931,The Nothing,Korn,thenothing,korn,THE NOTHING,KORN,thenothing,korn,title equal,2019-09-25,2019-09-22,2,2
+359,As Long As You Are,Future Islands,aslongasyouare,future islands,AS LONG AS YOU ARE,FUTURE ISLANDS,aslongasyouare,future islands,title equal,2020-10-21,2020-10-18,1,1
+145,Aggressive,Beartooth,aggressive,beartooth,AGGRESSIVE,BEARTOOTH,aggressive,beartooth,title equal,2016-06-22,2016-06-12,1,1
+3197,Scream Aim Fire,Bullet for My Valentine,screamaimfire,bullet for my valentine,SCREAM AIM FIRE,BULLET FOR MY VALENTINE,screamaimfire,bullet for my valentine,title equal,2008-02-13,2008-02-03,17,6
+4018,"""The Sick, The Dying... And The Dead!""",Megadeth,thesickthedyingandthedead,megadeth,THE SICK THE DYING AND THE DEAD,MEGADETH,thesickthedyingandthedead,megadeth,title equal,2022-09-14,2022-09-11,2,1
+1023,Dimension : Dilemma,ENHYPEN,dimensiondilemma,enhypen,DIMENSION - DILEMMA,ENHYPEN,dimensiondilemma,enhypen,title equal,2021-10-27,2021-10-24,3,1
+3880,The Last Kind Words,DevilDriver,thelastkindwords,devildriver,THE LAST KIND WORDS,DEVILDRIVER,thelastkindwords,devildriver,title equal,2007-08-15,2007-06-24,4,1
+3430,Spaceman,Nick Jonas,spaceman,nick jonas,SPACEMAN,NICK JONAS,spaceman,nick jonas,title equal,2021-03-24,2021-03-21,3,1
+1806,I Am > I Was,21 Savage,iamiwas,21 savage,I AM I WAS,21 SAVAGE,iamiwas,21 savage,title equal,2019-01-02,2018-12-30,112,9
+523,Birds In The Trap Sing McKnight,Travis Scott,birdsinthetrapsingmcknight,travis scott,BIRDS IN THE TRAP SING MCKNIGHT,TRAVIS SCOTT,birdsinthetrapsingmcknight,travis scott,title equal,2016-09-21,2016-09-11,285,5
+3486,Still Over It,Summer Walker,stilloverit,summer walker,STILL OVER IT,SUMMER WALKER,stilloverit,summer walker,title equal,2021-11-17,2021-11-14,56,5
+3332,Smokey Rolls Down Thunder Canyon,Devendra Banhart,smokeyrollsdownthundercanyon,devendra banhart,SMOKEY ROLLS DOWN THUNDER CANYON,DEVENDRA BANHART,smokeyrollsdownthundercanyon,devendra banhart,title equal,2007-10-10,2007-09-30,1,1
+1689,Hero,Maren Morris,hero,maren morris,HERO,MAREN MORRIS,hero,maren morris,title equal,2016-06-22,2017-03-19,80,2
+289,A New Day...Live In Las Vegas,Celine Dion,anewdayliveinlasvegas,celine dion,A NEW DAY - LIVE IN LAS VEGAS,CELINE DION,anewdayliveinlasvegas,celine dion,title equal,2004-06-30,2004-06-20,18,5
+2402,Man Of The Woods,Justin Timberlake,manofthewoods,justin timberlake,MAN OF THE WOODS,JUSTIN TIMBERLAKE,manofthewoods,justin timberlake,title equal,2018-02-14,2018-02-11,19,11
+2731,Olympia,Bryan Ferry,olympia,bryan ferry,OLYMPIA,BRYAN FERRY,olympia,bryan ferry,title equal,2010-11-10,2010-10-31,2,3
+3982,There Is A Hell Believe Me Ive Seen It...,Bring Me the Horizon,thereisahellbelievemeiveseenit,bring me the horizon,THERE IS A HELL BELIEVE ME I'VE SEEN IT,BRING ME THE HORIZON,thereisahellbelievemeiveseenit,bring me the horizon,title equal,2010-10-20,2010-10-10,4,2
+526,Bittersweet World,Ashlee Simpson,bittersweetworld,ashlee simpson,BITTERSWEET WORLD,ASHLEE SIMPSON,bittersweetworld,ashlee simpson,title equal,2008-05-07,2008-06-01,7,1
+745,Chapter One,Ella Henderson,chapterone,ella henderson,CHAPTER ONE,ELLA HENDERSON,chapterone,ella henderson,title equal,2015-01-28,2014-10-19,11,55
+3860,The Hunting Party,Linkin Park,thehuntingparty,linkin park,THE HUNTING PARTY,LINKIN PARK,thehuntingparty,linkin park,title equal,2014-07-02,2014-06-22,20,14
+2254,Looking 4 Myself,Usher,looking4myself,usher,LOOKING 4 MYSELF,USHER,looking4myself,usher,title equal,2012-06-27,2012-06-17,24,14
+317,Aphrodite,Kylie Minogue,aphrodite,kylie minogue,APHRODITE,KYLIE MINOGUE,aphrodite,kylie minogue,title equal,2010-07-21,2010-07-11,3,32
+2773,Oral Fixation Vol. 2,Shakira,oralfixationvol2,shakira,ORAL FIXATION - VOL 2,SHAKIRA,oralfixationvol2,shakira,title equal,2005-12-14,2006-03-12,58,30
+3146,Run The Jewels 3,Run the Jewels,runthejewels3,run the jewels,RUN THE JEWELS 3,RUN THE JEWELS,runthejewels3,run the jewels,title equal,2017-01-11,2017-01-29,8,1
+930,Dark Days,Coal Chamber,darkdays,coal chamber,DARK DAYS,COAL CHAMBER,darkdays,coal chamber,title equal,2002-05-22,2002-05-12,6,3
+702,Cardinology,Ryan Adams & The Cardinals,cardinology,ryan adams and the cardinals,CARDINOLOGY,RYAN ADAMS & THE CARDINALS,cardinology,ryan adams and the cardinals,title equal,2008-11-12,2008-11-02,4,1
+2701,Now What?!,Deep Purple,nowwhat,deep purple,NOW WHAT,DEEP PURPLE,nowwhat,deep purple,title equal,2013-05-15,2013-05-05,2,4
+2079,Kiss Each Other Clean,Iron And Wine,kisseachotherclean,iron and wine,KISS EACH OTHER CLEAN,IRON & WINE,kisseachotherclean,iron and wine,title equal,2011-02-09,2011-01-30,6,1
+2336,LP1,Liam Payne,lp1,liam payne,LP1,LIAM PAYNE,lp1,liam payne,title equal,2019-12-18,2019-12-15,1,7
+1581,Greendale,Neil Young & Crazy Horse,greendale,neil young and crazy horse,GREENDALE,NEIL YOUNG & CRAZY HORSE,greendale,neil young and crazy horse,title equal,2003-09-03,2003-08-24,6,3
+4627,Yellow And Green,Baroness,yellowandgreen,baroness,YELLOW & GREEN,BARONESS,yellowandgreen,baroness,title equal,2012-08-01,2012-07-22,3,1
+3640,Ten,Pearl Jam,ten,pearl jam,TEN,PEARL JAM,ten,pearl jam,title equal,2011-09-21,2003-01-05,15,10

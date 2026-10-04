@@ -1,0 +1,2 @@
+test,n_uk_debuts,n_albums,share_labelled,n_artists,label_sources,coef,se_artist,p_artist,p_wildboot_genre,means_by_group
+"D UK Part 2b: weeks in first 52, post x heavy (post = debut >= 2015-03-01)",5009,1641,0.32761030145737674,663,"{'matched U.S. album (Part 2b labels)': 1181, 'per-artist file by name': 460}",0.025198526174368827,1.2374644200672702,0.9837537748309,0.9833983398339834,"{(0, 0): 6.3, (0, 1): 4.5, (1, 0): 10.51, (1, 1): 8.85}"

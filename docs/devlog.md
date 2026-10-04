@@ -853,3 +853,54 @@ The author asked for a plan using the new UK and RIAA data. Written before estim
 Interpretation rules and caveats (selection into matching, truncated UK names, week alignment) are fixed in the plan. The only computation was a feasibility count: about 2,500 albums match across the two charts in 2009–2019. UK artist names are cut at about 30 characters and titles at 40, so matching allows prefixes. No outcomes were compared. Awaiting the author's approval.
 
 Files touched: new `docs/matched_albums_plan.md`, PROJECT_CONTEXT, `docs/llm_use_log.md`.
+
+---
+
+## 33. Matched U.S.-UK albums, UK Part 2b, RIAA control: results (2026-10-03, Claude Code)
+
+Plan: `docs/matched_albums_plan.md` (approved; post-estimation notes added). New steps: `code/30_match_us_uk_albums.py` (4 s) and `code/31_matched_album_tests.py` (106 s). Outputs: `data/interim/us_uk_album_matches.csv` and `results/part2_incumbency/matched/` (A–E CSVs, hand-check sample, matched slot shares, `fig_us_uk_series.png`).
+
+**Matching.**
+- **Matched albums:** 4,678 (2000–2025); 4,670 on equal titles and 8 on capped-title prefixes. 11 candidate pairs were dropped as ambiguous.
+- **Hand check:** 50 of 50 random matches are correct.
+- **Selection caveat, confirmed:** matched albums' share of U.S. top-100 slots rises from 48.8% (2014) to 59.1% (2015). The UK share is 63.4% then 62.7%.
+
+**A. Catalogue gap (main test for Part 2).** `D_t` is the U.S.-minus-UK top-100 presence of matched catalogue albums (about 2,500 albums at the rule; before it, about 9 in the U.S. top 100 against 18 in the UK per week).
+
+| Specification | tau1 (Dec 2014) | NW p | tau2 (Mar 2015) | NW p |
+|---|---|---|---|---|
+| **Main (U.S. top 100)** | **+0.0026** (≈ +6.5 albums) | <0.001 | −0.0012 (≈ −3 albums) | 0.11 |
+| + trend changes at both dates | +0.0001 | 0.92 | −0.0032 | <0.001 |
+| Full Billboard 200 on the U.S. side | +0.0051 | <0.001 | +0.0008 | 0.32 |
+
+- **tau1 placebo-rank p = 0.071** (353 fake dates), which meets the plan's < 0.10 rule: album-level rule effect **supported**. Holm across the two main tests: 0.14.
+- **|tau2| / tau1 = 0.46 < 0.5: H-formula** under the fixed rule, borderline. The gap opened at the U.S. rule and about half of it closed when the UK started counting streams.
+- **Fragility:** with trend changes added, tau1 vanishes. With jumps only 12 weeks apart, jumps and trend changes are hard to separate. The supported verdict rests on the plan's main specification.
+
+**B. New releases (secondary).** 1,640 simultaneous releases (2010–2018). U.S. minus UK first-year top-100 weeks: tau1 −0.27 (p = 0.88), tau2 −0.02 (p = 0.99). Null. Raw means of the U.S.-minus-UK difference: 1.09 weeks before, 1.69 after.
+
+**C. Genre triple difference (main test for Part 2b).**
+- **Main (Part 2b labels):** 986 albums (353 streaming-heavy). Streaming-heavy × post-U.S. **+7.8 weeks** (artist-clustered p = 0.060; **genre-bootstrap p = 0.43**). Streaming-heavy × post-UK −4.3 (p = 0.31).
+- **Per-artist file labels:** +7.9 (p = 0.058).
+- Under the fixed rule, Part 2b robustness to holding the album fixed is **not supported** (bootstrap p ≥ 0.10). The point estimate is large and positive and the post-UK term negative, the pattern H-inclusion predicts, but the genre-level inference is weak with 986 albums and 9 genre clusters.
+
+**D. UK replication of Part 2b.** 1,641 of 5,009 UK debuts (2010–2018) labelled: 1,181 via the matched U.S. album, 460 via the per-artist file by name. Streaming-heavy × post (March 2015): **+0.03 weeks** (p = 0.98; bootstrap p = 0.98). Null. UK means: other genres 6.3 → 4.5 weeks; streaming-heavy 10.5 → 8.9, so both fell by about the same. The Part 2b effect does not appear on the UK chart.
+
+**E. RIAA control for Part 2.** The U.S. jumps survive:
+- **New-entry share:** −0.026 without the control; −0.029 with the streaming share; −0.026 with log streaming revenue; −0.033 with both.
+- **52+-week share:** +0.057 without; +0.054 / +0.056 / +0.050 with.
+- All p < 0.001. A smooth streaming trend does not explain the December 2014 jumps (annual data; robustness only).
+
+**F. Figure:** `fig_us_uk_series.png`. U.S. and UK weekly shares with both rule dates, plus `D_t`. The U.S. 52+-week share jumps at the U.S. rule and the UK's does not; the U.S. new-entry share separates downward from the UK's after 2015.
+
+**Overall reading.**
+- **Part 2 gains support:**
+  - the E jumps survive the RIAA control;
+  - same-album evidence of a U.S.-specific catalogue gain at the U.S. date (A: placebo p = 0.07, though fragile to trend terms);
+  - the §31 contrast (U.S.-only new-entry decline).
+- **Part 2b becomes more clearly U.S.-specific:**
+  - it does not replicate on the UK chart (D);
+  - holding the album fixed, the point estimate is large but imprecise at the genre level (C).
+- Consistent with H-formula, Billboard's 2014 formula (no track cap or down-weighting) may have favoured streaming-heavy albums more than the UK formula did. That reading is interpretation, not a tested result.
+
+Files touched: new `code/30_match_us_uk_albums.py`, `code/31_matched_album_tests.py`, `code/run_pipeline.py` (steps 30–31), `data/interim/us_uk_album_matches.csv`, `results/part2_incumbency/matched/`, `docs/matched_albums_plan.md` (post-estimation notes), PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
