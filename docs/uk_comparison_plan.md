@@ -62,3 +62,17 @@ The test of the design is tau_own > 0 and tau_own − tau_other > 0. SEs: Newey-
 - New script `code/29_uk_comparison.py` (runner step after 28).
 - Output `results/part2_incumbency/uk_comparison.csv`, plus the placebo distribution and a weekly series figure.
 - Logged in `docs/devlog.md`; PROJECT_CONTEXT updated.
+
+## Post-estimation notes (2026-10-03)
+
+Added after running; the plan above is unchanged. The author approved the plan and asked for the rule check and the run.
+
+**Other UK rule changes (checked before estimation, by web search and Wikipedia).**
+- *Albums chart:* only the March 2015 inclusion of streams could be confirmed for 2010-2019.
+- *Singles chart:* documented changes in January 2017 (conversion 100:1 to 150:1) and July 2017 (three-track cap; 300:1 for declining songs).
+- *July 2018:* a premium vs free stream weighting and video streams were introduced, documented for the singles chart. Whether the weighting also applied to the albums chart could not be confirmed, so it is unverified.
+- None of these is modelled, as planned. All are more than 26 weeks from both rule dates, so they fall inside the placebo-date pool only.
+
+**Not produced:** the weekly series figure. The series are written to `results/part2_incumbency/uk_us_weekly_series.csv` for the write-up figure.
+
+**Verdict under the fixed rules: "common shock indicated", by the clause "the UK does not break at its own date".** The UK jumps at March 2015 are in the predicted direction but small and not significant (placebo-rank p = 0.55 and 0.94). However, the rule's wording treats "no UK break" as a common shock, and the data show no common shock either: the UK placebo at the U.S. date is near zero (B), and the UK new-entry share has no break or decline at all. The verdict is reported as written, with this caveat; see `docs/devlog.md` section 31. The plan is not re-scored.

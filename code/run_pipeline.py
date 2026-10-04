@@ -48,6 +48,7 @@ STEPS = [
     ("19", "19_genre_rule_sensitivity.py", []),  # exploratory; needs 17 and 21-23 first
     ("27", "27_riaa_revenue.py", []),  # RIAA revenue context table
     ("28", "28_uk_albums_build.py", []),  # UK Official Albums Chart, tidy weekly file
+    ("29", "29_uk_comparison.py", []),  # UK vs U.S. own-date test; needs 28
 ]
 
 

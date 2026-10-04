@@ -795,3 +795,45 @@ New step `code/28_uk_albums_build.py` writes `data/final/uk_albums_weekly.csv` (
 - Awaiting the author's approval.
 
 Files touched: new `code/28_uk_albums_build.py`, `code/paths.py` (UK paths), `code/run_pipeline.py` (step 28), new `data/final/uk_albums_weekly.csv`, new `docs/uk_comparison_plan.md`, PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
+
+---
+
+## 31. UK comparison for Part 2: results (2026-10-03, Claude Code)
+
+Plan: `docs/uk_comparison_plan.md` (approved; post-estimation notes added). Script `code/29_uk_comparison.py` (runner step 29, 30 s). Outputs in `results/part2_incumbency/`: `uk_comparison.csv` (A, B and U.S. reference rows), `uk_comparison_pooled.csv` (C), `uk_comparison_placebo_rank.csv` and `uk_comparison_placebo_distribution.csv` (D), `uk_us_weekly_series.csv`.
+
+**Rule-change check (before estimation):** only the March 2015 change is confirmed for the UK albums chart in 2010–2019. Singles-chart changes in 2017 and 2018 are documented; whether the July 2018 premium/free weighting also applied to albums is unverified. None is modelled.
+
+**A/B. Interrupted time series** (Part 2 model; Newey–West p; placebo-rank p over ~350 fake dates, 2011–2018, excluding 26 weeks around either true date):
+
+| Series, break date | New-entry share: jump | NW p | placebo-rank p | 52+-week share: jump | NW p | placebo-rank p |
+|---|---|---|---|---|---|---|
+| **A. UK at own rule (2015-03-01)** | −0.006 | 0.18 | **0.55** | +0.019 | 0.18 | **0.94** |
+| B. UK placebo at U.S. date (2014-12-07) | −0.003 | 0.56 | 0.79 | +0.002 | 0.88 | 0.997 |
+| U.S. at own rule (2014-12-10; Part 2) | −0.026 | <0.001 | **0.003** | +0.057 | <0.001 | **0.076** |
+| U.S. at UK date (2015-03-04; single-break model) | −0.024 | <0.001 | 0.003 | +0.062 | <0.001 | 0.025 |
+| U.S. top 100 only, own rule (secondary) | −0.036 | <0.001 | | +0.023 | 0.059 | |
+
+The U.S. "at UK date" rows are not informative: the date is only 12 weeks after the U.S. rule, so a single-break model there picks up the same December jump.
+
+**C. Pooled U.S. + UK** (own-date jump vs other-date jump; country-specific intercepts, trends, week-of-year effects and own-date trend changes):
+
+| Outcome | U.S. series | Own-date jump (p) | Other-date jump (p) | Own − other p (NW by country / Driscoll–Kraay) |
+|---|---|---|---|---|
+| New-entry share | 200 slots | −0.019 (0.010) | +0.004 (0.63) | 0.11 / 0.034 |
+| New-entry share | top 100 | −0.017 (0.022) | −0.004 (0.55) | 0.34 / 0.33 |
+| 52+-week share | 200 slots | +0.034 (0.007) | +0.004 (0.78) | 0.25 / 0.079 |
+| 52+-week share | top 100 | +0.036 (<0.001) | −0.018 (0.13) | 0.005 / 0.002 |
+
+The pooled own-date jump is driven mainly by the U.S.
+
+**Verdict under the plan's fixed rules: "common shock indicated"**, through the clause "the UK does not break at its own date" (A not significant; placebo-rank p 0.55 and 0.94). Reported as written.
+
+**Caveat on that verdict.** The rule's wording equates "no UK break" with a common shock, but the data show **no common shock** either. The UK placebo at the U.S. date is near zero, and the UK series do not move at December 2014. Descriptively (annual means, `uk_us_weekly_series.csv`):
+- **New-entry share:** the U.S. falls from 11.8% (2014) to 5.7% (2019), with a sharp drop at the rule. The UK is flat (11.5% in 2014, 10.1% in 2019). The streaming boom reached the UK too, yet UK new-entry share did not fall. That points against a market-wide streaming shock as the cause of the U.S. new-entry decline, and toward something U.S.-specific, such as Billboard's rule (no track cap or down-weighting in 2014, unlike the UK method).
+- **52+-week share:** this rose in **both** countries (U.S. 26% → 49%, UK 26% → 40%, 2014–2019). In the UK it rose through a trend change rather than a jump (+2.3 pts/yr, but trend changes are unreliable here: one of the same size appears at the placebo date). The catalogue-ageing part of Part 2 is therefore partly a shared trend; the U.S. adds a jump at the rule that the UK lacks.
+- These descriptive points are interpretation after seeing the results, not tests from the plan.
+
+**Also new for Part 2 itself:** the placebo-date distribution (D), which Part 2 lacked, gives the U.S. new-entry jump at the rule a placebo-rank **p = 0.003** (larger than at all but one of 352 fake dates). The 52+-week jump gets p = 0.076. This answers Part 2's earlier concern that fake dates also look significant: for the level jump in new-entry share, they do not.
+
+Files touched: new `code/29_uk_comparison.py`, `code/run_pipeline.py` (step 29), five result files above, `docs/uk_comparison_plan.md` (post-estimation notes), PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
