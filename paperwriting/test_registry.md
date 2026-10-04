@@ -21,7 +21,7 @@ Placement: **M** = main text, **A** = appendix, **F** = footnote, **O** = omit (
 |---|---|---|---|---|---|---|---|
 | 1 | **Headline DiD:** log tracks on post x streaming-heavy, genre + year FE (6,775 albums) | FP | `analysis_plan.md` | +0.0228, SE 0.0151, p = 0.133, Webb p = 0.161 | Null | §25–26 | M |
 | 2 | What the null rules out: 90% CI, TOST bound, MDE | PF | `final_checks_plan.md` | 90% CI −0.03 to +0.63 tracks; rules out > 0.63 tracks (4.9%); MDE 0.56 tracks; prespecified half-track TOST **fails** (p = 0.16) | Bounded null at ~2/3 of a track | §34 | M |
-| 3 | Year-by-year event study, joint pre-2014 test | PS | `analysis_plan.md` | Pre-2014 coefficients −0.014 to +0.017; joint p = 0.85 | No pre-trends | §25–26 | M (Fig. 3) |
+| 3 | Year-by-year event study, joint pre-2014 test | PS | `analysis_plan.md` | Pre-2014 coefficients −0.014 to +0.017; joint p = 0.85 | No pre-trends | §25–26 | M (Fig. 1b) |
 | 4 | Charted (Billboard 200 debut) subsample | PS | `analysis_plan.md`; rebuilt per `part1_secondary_rerun_plan.md` | +0.033, p = 0.035, Webb p = 0.084 | Small, not significant at genre level | §25–26 | A |
 | 5 | Non-charted subsample | PS | same | +0.016, Webb p = 0.47 | Null | §25–26 | A |
 | 6 | Selection: did long streaming-heavy albums become likelier to chart? | PS | same | +0.177, p = 0.058, Webb p = 0.063 | Marginal | §25–26 | A |
@@ -40,7 +40,7 @@ Placement: **M** = main text, **A** = appendix, **F** = footnote, **O** = omit (
 | 19 | **Share with ≥ 18 tracks** | PS | same | **+0.043, p = 0.004, Webb p = 0.012** | The 1 significant check of 12 (~0.6 expected by chance) | §26 | A + text |
 | 20 | Digital-edition alternate outcome (same sample) | PS | `analysis_plan.md` | +0.020, p = 0.23 | Null | §18, §25 | A |
 | 21 | Long-albums follow-up family A1–A5: shares ≥ 15/20/25 tracks, 75th/90th quantiles, Holm | PF | `long_albums_followup_plan.md` | −0.004 / +0.030 / +0.013 / +0.061 / +0.069; **0 of 5 survive Holm** | Test 19 does not generalise; "suggestive, not robust" | §28 | A + F |
-| 22 | Long-albums supporting checks: threshold profile k = 8–30; ≥ 18 event study; charted split; ≥ 60 minutes | PF (supporting) | same | Positive at 18–23 tracks only; pre-trend p = 0.998; charted +0.053 / non-charted +0.034; ≥ 60 min −0.008 | Descriptive context for test 19 | §28 | A (Fig. A1) |
+| 22 | Long-albums supporting checks: threshold profile k = 8–30; ≥ 18 event study; charted split; ≥ 60 minutes | PF (supporting) | same | Positive at 18–23 tracks only; pre-trend p = 0.998; charted +0.053 / non-charted +0.034; ≥ 60 min −0.008 | Descriptive context for test 19 | §28 | A (Fig. A4) |
 | 23 | Seconds per track | EX | `part1_secondary_rerun_plan.md` (labelled exploratory) | −3.9%, p = 0.002 | Shorter songs; exploratory | §25 | F / discussion |
 | 24 | Same-day multi-edition launches | EX | same | −5.1 pts, p = 0.008 | Exploratory | §25 | F |
 | 25 | UK-origin artists x post (> 12 tracks) | EX | same | +0.001, p = 0.98 | Null | §25 | O / F |
@@ -70,8 +70,8 @@ Placement: **M** = main text, **A** = appendix, **F** = footnote, **O** = omit (
 | 43 | Matched A secondaries: + trend changes; full Billboard 200 | PF | same | tau1 +0.0001 (p = 0.92); tau1 +0.0051 (p < 0.001) | Fragility disclosed | §33 | A |
 | 44 | Inclusion vs formula (|tau2| / tau1) | PF | same | 0.46 < 0.5: "formula details matter", borderline | Discussion point, not a finding | §33 | Discussion |
 | 45 | Matched B: first-year runs of simultaneous releases | PF (secondary) | same B | tau1 −0.27 weeks (p = 0.88) | Null | §33 | A |
-| 46 | Monthly event-study figure, U.S. and UK | DE (spec deviated, see plan note) | `final_checks_plan.md` | U.S. step down in new entries after upward drift; U.S. step up in 52+; UK no step | Visual evidence of sharpness | §34 | M (Fig. 5) |
-| 47 | Weekly U.S. vs UK series | DE | — | U.S. new-entry share 11.8% → 5.7% (2014–19); UK 11.5% → 10.1% | Key figure | §31 | M (Fig. 4) |
+| 46 | Monthly event-study figure, U.S. and UK | DE (spec deviated, see plan note) | `final_checks_plan.md` | U.S. step down in new entries after upward drift; U.S. step up in 52+; UK no step | Visual evidence of sharpness | §34 | M (Fig. 3) |
+| 47 | Weekly U.S. vs UK series | DE | — | U.S. new-entry share 11.8% → 5.7% (2014–19); UK 11.5% → 10.1% | Key figure | §31 | M (Fig. 2) |
 
 ## Part 2b: did streaming-heavy albums gain more staying power?
 
@@ -81,12 +81,12 @@ Placement: **M** = main text, **A** = appendix, **F** = footnote, **O** = omit (
 | 49 | Weeks in first 26; still on chart at week 26 | PS | same | +1.78 (boot p = 0.007); +4.6 pts (p = 0.04; boot p = 0.44) | Consistent | §25 | A |
 | 50 | Debut-rank controls | PS | same | +2.59, p < 0.001 | Survives | §25 | A |
 | 51 | Artist fixed effects | PS; SE choice **PH** | same; dated note 2026-10-03 | +1.73, SE 0.81, p = 0.034 (within); dummy-count SE 1.05, p = 0.10 | Positive within artists; SE switch made after seeing both, disclosed | §26–27 | A + F |
-| 52 | Event study, joint pre-2014 test | PS | same | Pre +1.5, −0.1, +0.6, +0.8; joint p = 0.79; post +3.1 to +3.9 | No pre-trends | §25 | M (Fig. 6) |
+| 52 | Event study, joint pre-2014 test | PS | same | Pre +1.5, −0.1, +0.6, +0.8; joint p = 0.79; post +3.1 to +3.9 | No pre-trends | §25 | M (Fig. 4) |
 | 53 | Album-age share of chart slots (descriptive) | PS (descriptive) | same | Rising before the rule in both groups | Context | §22 | A / F |
 | 54 | Album-order (career-stage) control | PS (extension) | `items4_5_plan.md` | +3.10, boot p = 0.012 | Survives | §26 | A |
 | 55 | Labels from the per-artist genre file | PS (extension) | same | +3.29, boot p = 0.010 | Survives | §26 | A |
 | 56 | Genre rule: rock + pop → pop | EX | `genre_classification.md` | +2.45, p = 0.001, **boot p = 0.174** | Genre-level significance depends on this call; report in main text | §25–26 | M (sentence) + A |
-| 57 | Leave-one-genre-out | PF | `final_checks_plan.md` | All 9 positive (+1.85 to +3.73); without hip-hop/R&B +1.85 (boot p = 0.10) | Not driven by one genre by the plan's rule, but hip-hop/R&B carries much of it | §34 | A (Fig. A4) + text |
+| 57 | Leave-one-genre-out | PF | `final_checks_plan.md` | All 9 positive (+1.85 to +3.73); without hip-hop/R&B +1.85 (boot p = 0.10) | Not driven by one genre by the plan's rule, but hip-hop/R&B carries much of it | §34 | A (Fig. A3) + text |
 | 58 | Cross-country triple difference (same album, U.S. vs UK) | PF (main) | `matched_albums_plan.md` C | heavy x post-U.S. +7.8 weeks (p = 0.06; **boot p = 0.43**); heavy x post-UK −4.3 | Not supported at the genre level | §33 | A |
 | 59 | Part 2b replicated on the UK chart (post = Mar 2015) | PF | same D | +0.03 weeks (p = 0.98) | Null: Part 2b is U.S.-specific | §33 | M (sentence) + A |
 

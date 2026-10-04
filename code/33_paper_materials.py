@@ -1,11 +1,13 @@
 """Paper materials: figures and the parameter list in paperwriting/, read straight from results files.
 
 Every number in paperwriting/parameters.md is pulled from a results CSV named in its row, so the
-list regenerates with the pipeline. Figures go to paperwriting/figures/. No estimation here.
+list regenerates with the pipeline. Figures go to paperwriting/figures/ as PNG (300 dpi) and PDF.
+Main text: Fig. 1-4. Appendix: Fig. A1-A4. No estimation here.
 """
 
 import matplotlib
 matplotlib.use("Agg")
+import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -17,157 +19,218 @@ FIG = PAPERWRITING / "figures"
 MATCHED = RESULTS_P2 / "matched"
 US_ISSUE = pd.Timestamp("2014-12-13")
 UK_RULE = pd.Timestamp("2015-03-01")
-plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
+
+# Okabe-Ito colour-blind-safe palette
+BLUE, ORANGE, GREEN, RED, GREY = "#0072B2", "#E69F00", "#009E73", "#D55E00", "#7F7F7F"
+plt.rcParams.update({
+    "font.family": "DejaVu Sans", "font.size": 9.5, "axes.titlesize": 10, "axes.titleweight": "bold",
+    "axes.labelsize": 9.5, "legend.fontsize": 8.5, "legend.frameon": False,
+    "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": "#E6E6E6",
+    "grid.linewidth": 0.6, "axes.axisbelow": True, "xtick.labelsize": 8.5, "ytick.labelsize": 8.5,
+    "savefig.bbox": "tight", "savefig.pad_inches": 0.05,
+})
 
 
 def save(fig, name):
-    fig.tight_layout()
-    fig.savefig(FIG / name, dpi=200)
+    for ext in ("png", "pdf"):
+        fig.savefig(FIG / f"{name}.{ext}", dpi=300)
     plt.close(fig)
 
 
-# ---------------- figures ----------------
-def fig_riaa():
-    r = pd.read_csv(RIAA_REVENUE_BY_CATEGORY)
-    r = r[r["year"].between(2005, 2019)]
-    fig, ax = plt.subplots(figsize=(6.5, 3.2))
-    for col, label in (("physical_nominal", "Physical"), ("digital_downloads_nominal", "Downloads"),
-                       ("streaming_nominal", "Streaming")):
-        ax.plot(r["year"], r[col] / 1e9, marker="o", ms=3, label=label)
-    ax.set_ylabel("U.S. revenue, $ billion (nominal)")
-    ax2 = ax.twinx()
-    ax2.plot(r["year"], 100 * r["streaming_share"], color="black", ls=":", label="Streaming share (right axis)")
-    ax2.set_ylabel("Streaming share of revenue, %")
-    ax2.spines["top"].set_visible(False)
-    ax.axvline(2014.95, color="tab:red", ls="--", lw=1)
-    ax.text(2014.95, ax.get_ylim()[1], " Billboard rule", color="tab:red", va="top", fontsize=8)
-    h1, l1 = ax.get_legend_handles_labels(); h2, l2 = ax2.get_legend_handles_labels()
-    ax.legend(h1 + h2, l1 + l2, fontsize=7, loc="center left")
-    save(fig, "fig01_riaa_revenue.png")
+def panel_label(ax, letter, title):
+    ax.set_title(f"({letter}) {title}", loc="left")
 
 
-def fig_part1_means():
+def rule_line(ax, x, label, color=RED, ypos=0.97, ha="left"):
+    ax.axvline(x, color=color, ls="--", lw=1)
+    ax.text(x, ypos, f" {label} ", transform=ax.get_xaxis_transform(), color=color, fontsize=8, va="top", ha=ha)
+
+
+def event_points(ax, x, b, se, ref, pre_last, scale=1.0):
+    """Coefficients with 95% intervals; pre-period grey, post-period blue, reference period hollow."""
+    x, b, se = np.asarray(x), np.asarray(b) * scale, np.asarray(se) * scale
+    pre = x <= pre_last
+    for mask, color in ((pre, GREY), (~pre, BLUE)):
+        ax.errorbar(x[mask], b[mask], yerr=1.96 * se[mask], fmt="o", ms=5, color=color, ecolor=color,
+                    elinewidth=1.2, capsize=3)
+    ax.plot([ref], [0], "o", ms=5, mfc="white", mec=GREY, zorder=5)
+    ax.axhline(0, color="black", lw=0.8)
+
+
+# ---------------- main-text figures ----------------
+def fig1_part1():
     a = pd.read_csv(ANALYSIS_SAMPLE)
     m = a.groupby(["year", "heavy"])["standard_tracks"].mean().unstack()
-    fig, ax = plt.subplots(figsize=(6.5, 3.2))
-    ax.plot(m.index, m[1], marker="o", ms=3, label="Streaming-heavy genres")
-    ax.plot(m.index, m[0], marker="s", ms=3, label="Other genres")
-    ax.axvline(2014.9, color="tab:red", ls="--", lw=1)
-    ax.set_xlabel("Release year"); ax.set_ylabel("Mean tracks, standard edition")
-    ax.legend(fontsize=8)
-    save(fig, "fig02_part1_mean_tracks_by_year.png")
-
-
-def coef_plot(ax, x, b, se, ref=None):
-    ax.errorbar(x, b, yerr=1.96 * np.asarray(se), fmt="o", ms=4, capsize=2, lw=1)
-    ax.axhline(0, color="grey", lw=0.8)
-    if ref is not None:
-        ax.plot([ref], [0], "o", ms=4, color="tab:blue", mfc="white")
-
-
-def fig_part1_event():
     e = pd.read_csv(RESULTS_P1_SECONDARY / "event_study.csv")
-    fig, ax = plt.subplots(figsize=(6.5, 3.2))
-    coef_plot(ax, e["year"], e["coef"], e["se_artist"], ref=2014)
-    ax.axvline(2014.5, color="tab:red", ls="--", lw=1)
-    ax.set_xlabel("Release year (2014 = reference)")
-    ax.set_ylabel("Streaming-heavy minus other,\nlog tracks")
-    ax.set_title(f"Joint pre-2014 test p = {e['joint_pre2014_p'].iloc[0]:.2f}", fontsize=9)
-    save(fig, "fig03_part1_event_study.png")
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.1))
+    ax = axes[0]
+    ax.plot(m.index, m[1], "-o", ms=4, color=BLUE, label="Streaming-heavy genres")
+    ax.plot(m.index, m[0], "-s", ms=4, color=ORANGE, label="Other genres")
+    rule_line(ax, 2014.9, "Rule", ypos=0.08)
+    ax.set_xlabel("Release year"); ax.set_ylabel("Average number of tracks")
+    ax.set_xticks(range(2009, 2020, 2))
+    ax.legend(loc="center left", bbox_to_anchor=(0.0, 0.52))
+    panel_label(ax, "a", "Average album length")
+    ax = axes[1]
+    years = list(e["year"]) + [2014]
+    order = np.argsort(years)
+    x = np.array(years)[order]
+    b = np.append(e["coef"].to_numpy(), 0.0)[order]
+    se = np.append(e["se_artist"].to_numpy(), 0.0)[order]
+    event_points(ax, x, b, se, ref=2014, pre_last=2014, scale=100)
+    rule_line(ax, 2014.5, "Rule", ypos=0.08)
+    ax.set_xlabel("Release year (2014 = reference)"); ax.set_ylabel("Difference in album length,\nstreaming-heavy vs other (%)")
+    ax.set_xticks(range(2009, 2020, 2))
+    panel_label(ax, "b", "Difference by year")
+    # pre-2014 joint test p is reported in the caption (paperwriting/README.md)
+    fig.tight_layout()
+    save(fig, "fig1_part1_album_length")
 
 
-def fig_part1_thresholds():
-    t = pd.read_csv(RESULTS_P1_SECONDARY / "long_albums_thresholds.csv")
-    fig, ax = plt.subplots(figsize=(6.5, 3.2))
-    ax.errorbar(t["threshold"], t["coef"], yerr=[t["coef"] - t["ci_low"], t["ci_high"] - t["coef"]],
-                fmt="o", ms=4, capsize=2, lw=1)
-    ax.axhline(0, color="grey", lw=0.8)
-    ax.set_xlabel("Track-count threshold k")
-    ax.set_ylabel("Post x streaming-heavy,\nshare of albums with >= k tracks")
-    save(fig, "figA1_part1_threshold_profile.png")
-
-
-def fig_part2_series():
+def fig2_us_uk_series():
     s = pd.read_csv(RESULTS_P2 / "uk_us_weekly_series.csv", parse_dates=["Date"])
-    fig, axes = plt.subplots(2, 1, figsize=(6.5, 5.2), sharex=True)
-    for ax, y, title in ((axes[0], "new_share", "Share of chart slots held by new entries"),
-                         (axes[1], "long_share", "Share of chart slots held by albums with 52+ weeks on chart")):
-        for name, label in (("US", "U.S. Billboard 200"), ("UK", "UK Official Albums Chart")):
-            d = s[s["country"] == name]
-            ax.plot(d["Date"], d[y].rolling(8, center=True).mean(), lw=1.2, label=label)
-        ax.axvline(US_ISSUE, color="tab:red", ls="--", lw=1)
-        ax.axvline(UK_RULE, color="tab:blue", ls="--", lw=1)
-        ax.set_title(title, fontsize=9)
-    axes[0].legend(fontsize=8)
-    axes[1].set_xlabel("8-week centred averages; dashed lines: U.S. rule (red), UK rule (blue)")
-    save(fig, "fig04_part2_us_uk_series.png")
+    fig, axes = plt.subplots(2, 1, figsize=(7.2, 5.6), sharex=True)
+    for ax, y, letter, title, ylab in (
+            (axes[0], "new_share", "a", "New albums entering the chart", "% of chart spots held by\nalbums in their first week"),
+            (axes[1], "long_share", "b", "Long-running albums", "% of chart spots held by\nalbums charting 52+ weeks")):
+        for name, color, label in (("US", BLUE, "U.S. Billboard 200"), ("UK", ORANGE, "UK Official Albums Chart")):
+            d = s[s["country"] == name].set_index("Date")[y] * 100
+            ax.plot(d.index, d.rolling(8, center=True).mean(), color=color, lw=1.6, label=label)
+        lo, hi = ax.get_ylim()
+        ax.set_ylim(lo, hi + 0.22 * (hi - lo))
+        rule_line(ax, US_ISSUE, "U.S. rule (Dec 2014)", color=RED, ha="right", ypos=0.99)
+        rule_line(ax, UK_RULE, "UK rule (Mar 2015)", color=GREEN, ypos=0.99)
+        ax.set_ylabel(ylab)
+        panel_label(ax, letter, title)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", ncol=2, bbox_to_anchor=(0.5, 1.02))
+    axes[1].xaxis.set_major_locator(mdates.YearLocator())
+    axes[1].xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
+    axes[1].set_xlabel("Chart week (8-week moving average)")
+    fig.tight_layout(rect=(0, 0, 1, 0.96))
+    save(fig, "fig2_us_uk_chart_shares")
 
 
-def fig_part2_event():
+def fig3_monthly_event():
     e = pd.read_csv(RESULTS_FINAL_CHECKS / "event_study_monthly.csv")
-    fig, axes = plt.subplots(2, 2, figsize=(7, 5), sharex=True)
-    order = [("U.S. (rule Dec 2014)", "new_share"), ("UK (rule Mar 2015)", "new_share"),
-             ("U.S. (rule Dec 2014)", "long_share"), ("UK (rule Mar 2015)", "long_share")]
-    names = {"new_share": "new-entry share", "long_share": "52+-week share"}
-    for ax, (series, y) in zip(axes.ravel(), order):
+    fig, axes = plt.subplots(2, 2, figsize=(7.2, 5.2), sharex=True, sharey="row")
+    spec = [("U.S. (rule Dec 2014)", "new_share", "a", "U.S.: new albums"),
+            ("UK (rule Mar 2015)", "new_share", "b", "UK: new albums"),
+            ("U.S. (rule Dec 2014)", "long_share", "c", "U.S.: long-running albums"),
+            ("UK (rule Mar 2015)", "long_share", "d", "UK: long-running albums")]
+    for ax, (series, y, letter, title) in zip(axes.ravel(), spec):
         d = e[(e["series"] == series) & (e["outcome"] == y)]
-        ax.errorbar(d["rel_month"], d["coef"], yerr=1.96 * d["se"], fmt="o", ms=2.5, lw=0.7)
-        ax.axhline(0, color="grey", lw=0.8)
-        ax.axvline(-0.5, color="tab:red", ls="--", lw=1)
-        ax.set_title(f"{series}: {names[y]}", fontsize=9)
-    for ax in axes[-1]:
-        ax.set_xlabel("Months relative to own rule")
-    save(fig, "fig05_part2_event_study_monthly.png")
+        b, se = d["coef"] * 100, d["se"] * 100
+        pre = d["rel_month"] < 0
+        ax.fill_between(d["rel_month"], b - 1.96 * se, b + 1.96 * se, color=BLUE, alpha=0.15, lw=0)
+        ax.plot(d["rel_month"][pre], b[pre], "o", ms=3, color=GREY)
+        ax.plot(d["rel_month"][~pre], b[~pre], "o", ms=3, color=BLUE)
+        ax.axhline(0, color="black", lw=0.8)
+        ax.axvline(-0.5, color=RED, ls="--", lw=1)
+        panel_label(ax, letter, title)
+        ax.set_xticks(range(-24, 25, 6))
+    axes[0, 0].set_ylabel("New-entry share vs month before\nrule (percentage points)")
+    axes[1, 0].set_ylabel("52+-week share vs month before\nrule (percentage points)")
+    for ax in axes[1]:
+        ax.set_xlabel("Months since own country's rule")
+    fig.tight_layout()
+    save(fig, "fig3_monthly_event_study")
 
 
-def fig_part2_placebo():
+def fig4_part2b_event():
+    e = pd.read_csv(RESULTS_P2B / "results_event_study.csv").rename(columns={"Unnamed: 0": "year"})
+    years = list(e["year"]) + [2014]
+    order = np.argsort(years)
+    x = np.array(years)[order]
+    b = np.append(e["coef"].to_numpy(), 0.0)[order]
+    se = np.append(e["se"].to_numpy(), 0.0)[order]
+    fig, ax = plt.subplots(figsize=(6.0, 3.2))
+    event_points(ax, x, b, se, ref=2014, pre_last=2014)
+    rule_line(ax, 2014.5, "Rule")
+    ax.set_xlabel("Year the album debuted (2014 = reference)")
+    ax.set_ylabel("Extra weeks on chart in first year,\nstreaming-heavy minus other genres")
+    ax.set_xticks(range(2010, 2019))
+    ax.text(0.02, 0.95, f"Pre-2014 joint test: p = {e['joint_pre2014_p'].iloc[0]:.2f}", transform=ax.transAxes, fontsize=8, color=GREY, va="top")
+    fig.tight_layout()
+    save(fig, "fig4_part2b_staying_power")
+
+
+# ---------------- appendix figures ----------------
+def figA1_riaa():
+    r = pd.read_csv(RIAA_REVENUE_BY_CATEGORY)
+    r = r[r["year"].between(2005, 2019)]
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.0))
+    ax = axes[0]
+    for col, color, label in (("physical_nominal", GREY, "CDs and vinyl"), ("digital_downloads_nominal", ORANGE, "Downloads"),
+                              ("streaming_nominal", BLUE, "Streaming")):
+        ax.plot(r["year"], r[col] / 1e9, "-o", ms=3.5, color=color, label=label)
+    rule_line(ax, 2014.95, "Rule")
+    ax.set_xlabel("Year"); ax.set_ylabel("U.S. revenue ($ billion, nominal)")
+    ax.legend(loc="upper left", bbox_to_anchor=(0.22, 1.0))
+    panel_label(ax, "a", "Revenue by format")
+    ax = axes[1]
+    ax.plot(r["year"], 100 * r["streaming_share"], "-o", ms=3.5, color=BLUE)
+    rule_line(ax, 2014.95, "Rule")
+    ax.set_xlabel("Year"); ax.set_ylabel("Streaming share of revenue (%)")
+    panel_label(ax, "b", "Streaming's share")
+    fig.tight_layout()
+    save(fig, "figA1_riaa_streaming_growth")
+
+
+def figA2_placebo():
     dist = pd.read_csv(RESULTS_P2 / "uk_comparison_placebo_distribution.csv")
     rank = pd.read_csv(RESULTS_P2 / "uk_comparison_placebo_rank.csv")
-    fig, axes = plt.subplots(1, 2, figsize=(7, 2.8))
-    for ax, y, title in ((axes[0], "new_share", "New-entry share"), (axes[1], "long_share", "52+-week share")):
-        d = dist[(dist["series"] == "US") & (dist["outcome"] == y)]
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.9))
+    for ax, y, letter, title in ((axes[0], "new_share", "a", "New-entry share"), (axes[1], "long_share", "b", "52+-week share")):
+        d = dist[(dist["series"] == "US") & (dist["outcome"] == y)]["tau"] * 100
         r = rank[(rank["series"] == "US") & (rank["outcome"] == y) & (rank["date"] == "own rule")].iloc[0]
-        ax.hist(d["tau"], bins=40, color="lightgrey", edgecolor="grey")
-        ax.axvline(r["tau"], color="tab:red", lw=1.5)
-        ax.set_title(f"{title}: rule-date jump vs {int(r['n_fake_dates'])} fake dates\n(placebo-rank p = {r['placebo_rank_p']:.3f})", fontsize=8)
-        ax.set_xlabel("Estimated jump")
-    save(fig, "figA2_part2_placebo_distribution.png")
+        ax.hist(d, bins=35, color="#C9D9E8", edgecolor="white")
+        ax.axvline(r["tau"] * 100, color=RED, lw=2)
+        ax.text(r["tau"] * 100, 0.95, " actual\n rule date" if r["tau"] < 0 else "actual \nrule date ", transform=ax.get_xaxis_transform(),
+                color=RED, fontsize=8, va="top", ha="left" if r["tau"] < 0 else "right")
+        ax.set_xlabel("Estimated jump (percentage points)")
+        ax.set_ylabel("Number of fake dates")
+        panel_label(ax, letter, f"{title} (p = {r['placebo_rank_p']:.3f})")
+    fig.tight_layout()
+    save(fig, "figA2_placebo_dates")
 
 
-def fig_matched_gap():
-    g = pd.read_csv(MATCHED / "A_weekly_gap_series.csv", parse_dates=["week"])
-    fig, ax = plt.subplots(figsize=(6.5, 3))
-    ax.plot(g["week"], (g["us_present"] - g["uk_present"]).rolling(8, center=True).mean(), color="black", lw=1.2)
-    ax.axvline(US_ISSUE, color="tab:red", ls="--", lw=1)
-    ax.axvline(UK_RULE, color="tab:blue", ls="--", lw=1)
-    ax.axhline(0, color="grey", lw=0.8)
-    ax.set_ylabel("Matched catalogue albums:\nU.S. top 100 minus UK top 100")
-    ax.set_xlabel("8-week centred average")
-    save(fig, "figA3_part2_matched_catalogue_gap.png")
-
-
-def fig_part2b_event():
-    e = pd.read_csv(RESULTS_P2B / "results_event_study.csv").rename(columns={"Unnamed: 0": "year"})
-    fig, ax = plt.subplots(figsize=(6.5, 3.2))
-    coef_plot(ax, e["year"], e["coef"], e["se"], ref=2014)
-    ax.axvline(2014.5, color="tab:red", ls="--", lw=1)
-    ax.set_xlabel("Debut year (2014 = reference)")
-    ax.set_ylabel("Streaming-heavy minus other,\nweeks on chart in first 52")
-    ax.set_title(f"Joint pre-2014 test p = {e['joint_pre2014_p'].iloc[0]:.2f}", fontsize=9)
-    save(fig, "fig06_part2b_event_study.png")
-
-
-def fig_part2b_loo():
+def figA3_leave_one_out():
+    names = {"christian": "Christian", "classical": "Classical", "country": "Country", "electronic": "Electronic*",
+             "hiphop_rnb": "Hip-hop/R&B*", "jazz": "Jazz", "latin": "Latin*", "pop": "Pop*", "rock": "Rock"}
     l = pd.read_csv(RESULTS_FINAL_CHECKS / "part2b_leave_one_genre_out.csv")
-    l = l.iloc[::-1]
-    fig, ax = plt.subplots(figsize=(6.5, 3.4))
-    y = np.arange(len(l))
-    ax.errorbar(l["coef"], y, xerr=1.96 * l["se_artist"], fmt="o", ms=4, capsize=2, lw=1)
-    ax.set_yticks(y, ["Full sample" if g.startswith("(") else f"Drop {g}" for g in l["genre_dropped"]])
-    ax.axvline(0, color="grey", lw=0.8)
-    ax.axvline(l["coef"].iloc[-1], color="tab:blue", ls=":", lw=1)
-    ax.set_xlabel("Post x streaming-heavy, weeks on chart in first 52 (95% CI, artist-clustered)")
-    save(fig, "figA4_part2b_leave_one_genre_out.png")
+    full, rest = l.iloc[0], l.iloc[1:].sort_values("coef")
+    rows = [("All genres (main estimate)", full["coef"], full["se_artist"], True)] + \
+           [(f"Without {names[g]}", c, s, False) for g, c, s in zip(rest["genre_dropped"], rest["coef"], rest["se_artist"])]
+    rows = rows[::-1]
+    fig, ax = plt.subplots(figsize=(6.0, 3.6))
+    for i, (label, c, s, main) in enumerate(rows):
+        ax.errorbar(c, i, xerr=1.96 * s, fmt="D" if main else "o", ms=5, color=RED if main else BLUE, capsize=3, elinewidth=1.2)
+    ax.set_yticks(range(len(rows)), [r[0] for r in rows])
+    ax.axvline(0, color="black", lw=0.8)
+    ax.axvline(full["coef"], color=RED, ls=":", lw=1)
+    ax.set_xlabel("Extra weeks on chart in first year (95% CI)")
+    ax.text(1.0, 1.01, "* streaming-heavy genre", transform=ax.transAxes, ha="right", va="bottom", fontsize=7.5, color=GREY)
+    ax.grid(axis="y", visible=False)
+    fig.tight_layout()
+    save(fig, "figA3_leave_one_genre_out")
+
+
+def figA4_thresholds():
+    t = pd.read_csv(RESULTS_P1_SECONDARY / "long_albums_thresholds.csv")
+    fig, ax = plt.subplots(figsize=(6.0, 3.0))
+    ax.fill_between(t["threshold"], t["ci_low"] * 100, t["ci_high"] * 100, color=BLUE, alpha=0.15, lw=0)
+    ax.plot(t["threshold"], t["coef"] * 100, "-o", ms=3.5, color=BLUE)
+    ax.axhline(0, color="black", lw=0.8)
+    ax.set_xlabel("Album has at least this many tracks")
+    ax.set_ylabel("Change in share of albums,\nstreaming-heavy vs other\n(percentage points)")
+    ax.set_xticks(range(8, 31, 2))
+    fig.tight_layout()
+    save(fig, "figA4_track_count_thresholds")
+
+
+FIGURES = (fig1_part1, fig2_us_uk_series, fig3_monthly_event, fig4_part2b_event,
+           figA1_riaa, figA2_placebo, figA3_leave_one_out, figA4_thresholds)
 
 
 # ---------------- parameter list ----------------
@@ -339,11 +402,10 @@ def parameters():
 
 def main():
     FIG.mkdir(parents=True, exist_ok=True)
-    for make in (fig_riaa, fig_part1_means, fig_part1_event, fig_part1_thresholds, fig_part2_series, fig_part2_event,
-                 fig_part2_placebo, fig_matched_gap, fig_part2b_event, fig_part2b_loo):
+    for make in FIGURES:
         make()
     parameters()
-    print("figures:", sorted(x.name for x in FIG.glob("*.png")))
+    print("figures:", [f.__name__ for f in FIGURES])
     print("parameters.md written")
 
 

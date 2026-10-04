@@ -992,3 +992,20 @@ The author added two CSVs to `data/raw/`: `Top 10 Albums By Year Album Length - 
   - At most, the author may use a sourced anecdote in the introduction.
 
 No files changed except this log.
+
+---
+
+## 38. Paper figures trimmed and redesigned (2026-10-04, Claude Code)
+
+The author asked whether all figures were necessary, and said that axes were not descriptive enough and the figures looked rough.
+- **Trimmed from 10 to 8:**
+  - **Main text:** Part 1 raw means and event study merged into one two-panel Fig. 1; U.S.-vs-UK series (Fig. 2); monthly event study (Fig. 3); Part 2b event study (Fig. 4).
+  - **Appendix:** RIAA revenue moved here (A1); placebo distribution (A2); leave-one-genre-out (A3); track-count threshold profile (A4).
+  - **Dropped:** the matched-catalogue-gap figure (noisy, December spikes, fragile result; reported in a table only).
+- **Redesigned in `code/33_paper_materials.py`:**
+  - plain-English axis labels with units (%, percentage points, weeks), panel letters, labelled rule-date lines;
+  - colour-blind-safe Okabe-Ito colours; pre-period grey and post-period blue in event studies;
+  - each figure saved as PNG (300 dpi) and PDF;
+  - every figure checked visually and overlapping labels fixed; the p-values moved into captions where they collided.
+- `paperwriting/README.md` has the new figure table with draft captions. Figure numbers are updated in the outline and the test registry.
+- The ten superseded draft figure files are still in `paperwriting/figures/` pending the author's approval to delete them (CLAUDE.md rule 4).

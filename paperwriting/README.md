@@ -14,22 +14,22 @@ Regenerate the generated files after any rerun: `py -3.10 code/run_pipeline.py -
 
 ## Figures
 
-Captions are drafts.
+Four for the main text and four for the appendix. Each is saved as PNG (300 dpi) and PDF (vector, for the journal). Colours are colour-blind safe (Okabe-Ito). The captions below are drafts.
 
 | File | Placement | Draft caption |
 |---|---|---|
-| `fig01_riaa_revenue.png` | Main, §2 (background) | U.S. recorded-music revenue by format, 2005–2019 (RIAA, nominal dollars), and streaming's share of revenue (right axis). The dashed line marks Billboard's December 2014 rule. Streaming grew smoothly through the rule change. |
-| `fig02_part1_mean_tracks_by_year.png` | Main, §4 | Mean standard-edition track count by release year, albums by streaming-heavy vs other-genre artists (6,775 albums by artists with pre-rule Billboard 200 careers). Dashed line: albums released on or after 24 November 2014 count as post-rule. |
-| `fig03_part1_event_study.png` | Main, §4 | Year-by-year difference in log track count, streaming-heavy minus other genres, relative to 2014, with genre and year fixed effects. 95% intervals from artist-clustered SEs. Joint test of the pre-2014 coefficients: p = 0.85. |
-| `fig04_part2_us_uk_series.png` | Main, §5 (key figure) | Share of chart slots held by new entries (top) and by albums with 52+ weeks on chart (bottom), U.S. Billboard 200 vs UK Official Albums Chart, 8-week centred averages. Dashed lines: U.S. rule (December 2014, red) and UK rule (March 2015, blue). |
-| `fig05_part2_event_study_monthly.png` | Main, §5 | Monthly event study around each country's own rule: weekly shares on month-relative dummies (reference: month before the rule) with week-of-year effects, estimated on 2010–2019 with end bins. 95% intervals, Newey–West (12 lags). |
-| `fig06_part2b_event_study.png` | Main, §6 | Year-by-year difference in weeks on chart in the first 52 weeks after debut, streaming-heavy minus other genres, relative to 2014 (4,517 Billboard 200 debuts, 2010–2018). Joint pre-2014 test: p = 0.79. |
-| `figA1_part1_threshold_profile.png` | Appendix C | Post x streaming-heavy coefficient on the share of albums with at least k tracks, k = 8–30 (95% artist-clustered intervals). Descriptive context for the prespecified long-albums follow-up, in which none of five upper-tail tests survives a Holm correction. |
-| `figA2_part2_placebo_distribution.png` | Appendix D (or main §5) | Jump at the U.S. rule date (red) against jumps estimated at about 350 fake dates (2011–2018, excluding 26 weeks around either country's rule). Placebo-rank p = 0.003 (new entries) and 0.076 (52+ weeks). |
-| `figA3_part2_matched_catalogue_gap.png` | Appendix D | Albums on both charts (4,678 matched), catalogue only (52+ weeks since debut): number in the U.S. top 100 minus number in the UK top 100, 8-week centred average. December spikes are holiday catalogue albums returning to the U.S. chart; the model absorbs them with week-of-year effects. |
-| `figA4_part2b_leave_one_genre_out.png` | Appendix E | Part 2b estimate re-estimated dropping one genre at a time (95% artist-clustered intervals; dotted line: full sample). Dropping hip-hop/R&B lowers the estimate to +1.85 weeks. |
+| `fig1_part1_album_length` | Main, §4 | **Album length, streaming-heavy vs other genres.** (a) Average standard-edition track count by release year (6,775 albums by artists with pre-rule Billboard 200 careers). (b) Year-by-year difference in album length (%), streaming-heavy minus other genres, relative to 2014, with genre and year fixed effects; 95% intervals from artist-clustered SEs. Joint test that the pre-2014 differences are zero: p = 0.85. Albums released on or after 24 November 2014 count as post-rule. |
+| `fig2_us_uk_chart_shares` | Main, §5 (key figure) | **Chart composition, U.S. vs UK.** Share of chart spots held by (a) albums in their first chart week and (b) albums that have charted 52 weeks or more, 8-week moving averages. Dashed lines: the U.S. rule (chart dated 13 December 2014) and the UK rule (chart of 1 March 2015). |
+| `fig3_monthly_event_study` | Main, §5 | **Monthly event study around each country's rule.** Coefficients on months relative to each country's own rule (reference: the month before), with week-of-year effects, estimated on weekly data 2010–2019 with end bins; shaded 95% intervals, Newey–West (12 lags). Grey: before the rule; blue: after. |
+| `fig4_part2b_staying_power` | Main, §6 | **Staying power of streaming-heavy albums.** Year-by-year difference in weeks on the chart during the first 52 weeks after debut, streaming-heavy minus other genres, relative to 2014 (4,517 Billboard 200 debuts, 2010–2018); 95% intervals from artist-clustered SEs. Joint pre-2014 test: p = 0.79. |
+| `figA1_riaa_streaming_growth` | Appendix (background) | **U.S. recorded-music revenue, 2005–2019 (RIAA).** (a) Revenue by format, nominal dollars. (b) Streaming's share of revenue. Streaming grew smoothly through the December 2014 rule. |
+| `figA2_placebo_dates` | Appendix D | **The U.S. jump compared with fake rule dates.** Histogram of jumps estimated at about 350 fake dates (2011–2018, excluding 26 weeks around either country's rule); the red line is the jump at the actual rule date. Placebo-rank p in each panel title. |
+| `figA3_leave_one_genre_out` | Appendix E | **Part 2b with one genre left out at a time.** Extra weeks on chart in the first year for streaming-heavy albums after the rule, re-estimated dropping each genre (95% artist-clustered intervals; dotted line: main estimate). * = streaming-heavy genre. |
+| `figA4_track_count_thresholds` | Appendix C | **Where in the length distribution any change sits.** Post-rule change in the share of albums with at least k tracks, streaming-heavy vs other genres, for k = 8–30 (shaded 95% artist-clustered intervals). Descriptive context for the prespecified long-albums follow-up, in which none of five upper-tail tests survives a Holm correction. |
 
-**Not included:** the earlier three-panel draft (`results/part2_incumbency/matched/fig_us_uk_series.png`). It is superseded by Fig. 4 and Fig. A3.
+**Dropped:**
+- The matched-catalogue-gap figure: it was noisy, dominated by December holiday spikes, and the result is fragile. It is reported in a table only.
+- The earlier draft figures (`fig01_*` to `fig06_*`, `figA1_part1_*`, `figA2_part2_*`, `figA3_part2_*`, `figA4_part2b_*`): superseded by the set above.
 
 ## Tables to build from `parameters.md`
 

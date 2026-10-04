@@ -51,7 +51,7 @@ Optional discussion claim (interpretation, not a tested result): the evidence le
 - **How the Billboard 200 is compiled:** before December 2014, sales only; after, album-equivalent units (1,500 song streams = 1 album unit; track-equivalent albums). Catalogue albums were allowed on the chart from December 2009, which is why the window starts in 2010.
 - **Later U.S. changes, outside or controlled for:** July 2018 paid/free stream weighting (tested, no further break); January 2020 video streams (after the window).
 - **The UK Official Albums Chart:** streams included from the chart of 1 March 2015. The 12 most-streamed tracks count, the top two are down-weighted, and 1,000 streams = 1 sale. Later singles-chart changes are not modelled; the July 2018 album weighting is unverified.
-- **Fig. 1 (RIAA revenue):** streaming grew smoothly through the rule (23% of U.S. revenue in 2013, 31% in 2014, 38% in 2015). That smooth trend is the backdrop against which the chart breaks are sharp.
+- **Appendix Fig. A1 (RIAA revenue; give the numbers in the text):** streaming grew smoothly through the rule (23% of U.S. revenue in 2013, 31% in 2014, 38% in 2015). That smooth trend is the backdrop against which the chart breaks are sharp.
 - **Mechanisms and predictions:**
   - Production: per-track streaming makes extra tracks raise album units, so the incentive is to lengthen albums, especially in streaming-heavy genres.
   - Rewards: streams accrue to catalogue albums over time, so incumbents are favoured, especially in streaming-heavy genres.
@@ -84,12 +84,12 @@ Optional discussion claim (interpretation, not a tested result): the evidence le
 ## 4. Part 1: did album length change? (4–5 pages)
 
 - **Design:** difference-in-differences, `ln(tracks) ~ post x streaming-heavy + genre FE + release-year FE`. Post = released on/after 2014-11-24. Artist-clustered SEs; genre-level restricted Webb wild cluster bootstrap (9 clusters, 9,999 draws). Explain why the genre bootstrap: treatment varies at the genre level.
-- **Fig. 2:** mean tracks by year and group (raw data).
+- **Fig. 1a:** mean tracks by year and group (raw data).
 - **Table 2:**
   - headline (+0.0228, SE 0.0151, p = 0.133, Webb p = 0.161);
   - what the null rules out (90% CI −0.03 to +0.63 tracks; TOST bound 0.63 tracks / 4.9%; MDE 0.56; half-track bound not ruled out);
   - key robustness checks: album order, artist FE, windows, intensity, Mixtape/Street, digital edition.
-- **Fig. 3:** event study (joint pre-2014 p = 0.85).
+- **Fig. 1b:** event study (joint pre-2014 p = 0.85, in the caption).
 - **Other outcomes:** > 12 tracks (null), running time (null), ≥ 18 tracks (+4.3 pts, Webb p = 0.012). The 18+ result is 1 of 12 checks, and its prespecified follow-up fails (0 of 5 upper-tail tests survive Holm). Present it as "suggestive, not robust". Fig. A1 shows where the positive estimates sit (18–23 tracks).
 - **Selection and payoff** (marginal/null), charted vs non-charted subsamples.
 - **Exploratory footnote:** seconds per track −3.9% (p = 0.002) and fewer same-day multi-edition launches (−5.1 pts), labelled exploratory.
@@ -99,14 +99,14 @@ Optional discussion claim (interpretation, not a tested result): the evidence le
 
 - **Design:** interrupted time series on weekly shares: `Y_t = a + b·t + tau·Post_t + d·(t − t0)·Post_t + week-of-year FE`, Newey–West SEs (12 lags). The level jump tau is the parameter of interest.
   - Explain why tau and not the trend change d: fake dates also give significant trend changes.
-- **Fig. 4:** U.S. vs UK weekly series with both rule dates (the key figure).
+- **Fig. 2:** U.S. vs UK weekly series with both rule dates (the key figure).
 - **Table 3:**
   - jumps: new-entry −2.6 pts, 52+-week +5.7 pts, re-entry −1.3, HHI ≈ 0;
   - placebo-rank p (0.003, 0.076);
   - RIAA controls (−2.9 to −3.3; +5.0 to +5.6);
   - 2010–2024 window;
   - July 2018 (no extra break).
-- **Fig. 5:** monthly event study, U.S. and UK. U.S.: step down in new entries after an upward drift; step up in 52+. UK: no step.
+- **Fig. 3:** monthly event study, U.S. and UK. U.S.: step down in new entries after an upward drift; step up in 52+. UK: no step.
 - **5.x Cross-country evidence (Table 4):**
   - UK at its own date: no break (placebo p 0.55 / 0.94);
   - UK at the U.S. date: about zero;
@@ -129,10 +129,10 @@ Optional discussion claim (interpretation, not a tested result): the evidence le
   - artist FE +1.73 (p = 0.034, with the SE-choice footnote);
   - album order +3.10;
   - artist-file labels +3.29.
-- **Fig. 6:** event study (pre p = 0.79; post +3.1 to +3.9).
+- **Fig. 4:** event study (pre p = 0.79; post +3.1 to +3.9).
 - **Limits, stated in the main text:**
   - rock + pop → pop classification gives boot p = 0.17;
-  - without hip-hop/R&B: +1.85 (boot p = 0.10) (Fig. A4);
+  - without hip-hop/R&B: +1.85 (boot p = 0.10) (Fig. A3);
   - on the UK chart: null (+0.03);
   - holding the album fixed across charts: +7.8 weeks but boot p = 0.43.
 - **Conclusion for this section:** a U.S.-specific effect, largest in the most streaming-intensive genre.
@@ -164,7 +164,7 @@ Optional discussion claim (interpretation, not a tested result): the evidence le
 - **B. Data construction:** roster, MusicBrainz matching, edition rule, genre rule (`docs/genre_classification.md`), hand checks.
 - **C. Part 1 robustness:**
   - full table of the 12 frozen-plan checks;
-  - long-albums follow-up (Fig. A1);
+  - long-albums follow-up (Fig. A4);
   - selection and payoff;
   - exploratory checks;
   - rock + pop.
@@ -174,10 +174,10 @@ Optional discussion claim (interpretation, not a tested result): the evidence le
   - July 2018;
   - first-run lengths;
   - pooled U.S.-UK;
-  - matched catalogue gap (Fig. A3);
+  - matched catalogue gap (table only; figure dropped as too noisy);
   - RIAA controls.
 - **E. Part 2b robustness:**
-  - leave-one-genre-out (Fig. A4);
+  - leave-one-genre-out (Fig. A3);
   - SE choice for artist FE;
   - cross-country tests;
   - UK replication.
