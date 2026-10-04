@@ -765,3 +765,33 @@ New step `code/27_riaa_revenue.py` writes `data/final/riaa_revenue_long.csv` (ye
 Streaming share of U.S. recorded-music revenue: 7.9% (2010), 17.5% (2012), 23.3% (2013), **31.2% (2014)**, 38.0% (2015), 53.7% (2016), 79.0% (2019). Streaming revenue rose smoothly through December 2014: +36% in 2013, +31% in 2014, +22% in 2015, +54% in 2016. There is no discontinuity at the rule change, which is the comparison the paper needs: a sharp chart break against a smooth market trend. Annual data cannot locate a December break, so this is context, not a test; any formal use needs a written plan.
 
 Files touched: new `code/27_riaa_revenue.py`, `code/paths.py` (RIAA paths), `code/run_pipeline.py` (step 27), new `data/final/riaa_revenue_long.csv` and `riaa_revenue_by_category.csv`, PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
+
+---
+
+## 30. UK Official Albums Chart data: build step and comparison plan (2026-10-03, Claude Code)
+
+The author added `data/raw/uktop100albums.xlsx` (Official Albums Chart, 1956-07-29 to 2025-08-03).
+
+**Structure.** One sheet per chart week, 3,602 sheets with no missing weeks. Sheet names "Week YYYYMMDD" give the Sunday the chart week starts. Columns: Album, Artist, Position, Last Week ("LW:n" / "LW:New" / "LW:RE"), Peak, Weeks on Chart, Week (text date range). Chart length is 99 rows from 1995.
+
+**Quirks found:**
+1. New entries have "New" glued to the title ("NewROCK AROUND THE CLOCK"). It appears exactly when Last Week is "LW:New" (22,254 of 22,254); stripped.
+2. **The #1 album is missing in almost every week since 1959** (positions 2–100 only; the source's highlighted #1 entry was apparently not captured).
+   - Rebuilt by chaining: the #1 of week t is the album marked "LW:1" in the first later week that has one. No "LW:1" row means the #1 stayed at #1 and is missing again.
+   - Its weeks on chart at t = weeks on chart then minus the weeks elapsed.
+   - Checks: every rebuilt album has peak 1, and the rebuilt sequence around the rule matches the record (One Direction *Four*, Olly Murs, Take That *III*, Ed Sheeran *X* at Christmas 2014; Sam Smith *In the Lonely Hour* at #1 on 1 March 2015, which the Official Charts Company names as the first streams-inclusive #1).
+   - 9 weeks, all 2021 or later, give an impossible weeks-on-chart (< 1): the week's #1 left the top 100 the next week (e.g. The Snuts *W.L.*, Bastille). These are recorded as unidentified new entries.
+   - **2010–2019: all 522 weeks complete** (100 rows); 270 #1s were debuts, 248 continuing, 4 re-entries.
+3. Ties (duplicate positions) occur only before 1994, outside the window.
+
+**UK rule date (verified):** the first Official Albums Chart including audio streams was published Sunday 1 March 2015 (officialcharts.com chart news; Wikipedia "UK Albums Chart"), i.e. sheet "Week 20150301". The UK method takes the 12 most-streamed tracks of an album, down-weights the top two, and converts 1,000 streams to one album sale.
+
+New step `code/28_uk_albums_build.py` writes `data/final/uk_albums_weekly.csv` (2000–2025; 133,598 rows; columns include status new/continuing/re-entry, `no1_rebuilt`, `no1_unidentified`). The final week (2025-08-03) has no later week, so its #1 cannot be rebuilt. The raw workbook is unchanged.
+
+**Plan written, not estimated:** `docs/uk_comparison_plan.md`.
+- **Tests:** the UK break at its own rule date (March 2015); a UK placebo at the U.S. date; a pooled two-country own-date vs other-date test; and a placebo-date distribution as the p-value for interpretation.
+- **Interpretation rules** are fixed in advance.
+- **Before estimation**, any other UK albums-chart rule changes in 2010–2019 must be verified.
+- Awaiting the author's approval.
+
+Files touched: new `code/28_uk_albums_build.py`, `code/paths.py` (UK paths), `code/run_pipeline.py` (step 28), new `data/final/uk_albums_weekly.csv`, new `docs/uk_comparison_plan.md`, PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
