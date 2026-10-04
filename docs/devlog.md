@@ -837,3 +837,19 @@ The pooled own-date jump is driven mainly by the U.S.
 **Also new for Part 2 itself:** the placebo-date distribution (D), which Part 2 lacked, gives the U.S. new-entry jump at the rule a placebo-rank **p = 0.003** (larger than at all but one of 352 fake dates). The 52+-week jump gets p = 0.076. This answers Part 2's earlier concern that fake dates also look significant: for the level jump in new-entry share, they do not.
 
 Files touched: new `code/29_uk_comparison.py`, `code/run_pipeline.py` (step 29), five result files above, `docs/uk_comparison_plan.md` (post-estimation notes), PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
+
+---
+
+## 32. Plan drafted: matched U.S.-UK albums, UK replication of Part 2b, RIAA control (2026-10-03, Claude Code)
+
+The author asked for a plan using the new UK and RIAA data. Written before estimation: `docs/matched_albums_plan.md`. Its tests:
+- **A (main, Part 2):** weekly U.S.-minus-UK chart presence of the same catalogue albums, with jumps at December 2014 (only the U.S. counts streams) and March 2015 (the UK catches up). This separates "streams counted at all" from "formula details".
+- **B:** album-level first-year runs.
+- **C (main, Part 2b):** the genre triple difference.
+- **D:** Part 2b replicated on the UK chart.
+- **E:** RIAA streaming share as a control in the Part 2 time series.
+- **F:** a descriptive figure.
+
+Interpretation rules and caveats (selection into matching, truncated UK names, week alignment) are fixed in the plan. The only computation was a feasibility count: about 2,500 albums match across the two charts in 2009–2019. UK artist names are cut at about 30 characters and titles at 40, so matching allows prefixes. No outcomes were compared. Awaiting the author's approval.
+
+Files touched: new `docs/matched_albums_plan.md`, PROJECT_CONTEXT, `docs/llm_use_log.md`.
