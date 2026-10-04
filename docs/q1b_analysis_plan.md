@@ -40,3 +40,9 @@ Standard errors clustered by artist; genre-level wild cluster bootstrap p-value 
 ## Reporting
 Report first the share of Billboard 200 debuts and chart slots that could be genre-labelled.
 Report all results, including nulls. No outcome or test changes after seeing results.
+
+## Dated note (2026-10-03): standard error for secondary check 2 (artist fixed effects)
+
+The main test, outcomes, sample and other checks are unchanged. Label source: the reported result keeps the Part 1 sample labels named above; the per-artist genre file (`data/final/artist_genres.csv`) is reported as a robustness row only (author's decision, 2026-10-03).
+
+Secondary check 2 was first estimated with explicit artist dummies, where statsmodels counts the ~1,800 absorbed artist effects in the clustered small-sample correction: +1.73, SE 1.05, p = 0.10. The standard treatment when fixed effects are nested in the clusters (as in `reghdfe`; Cameron and Miller) does not count them; the within-artist estimator gives the identical coefficient with SE 0.81, p = 0.034. **This change was made after both results were seen**, on the author's decision, for consistency with the Part 1 artist-FE check (which uses the within estimator) and because the dummy-count correction is a software artefact rather than a design choice. The reported row is now the within estimator; the dummy version is kept as a second row in `results_main.csv` and is to be shown in a footnote. Details in `docs/devlog.md` section 27.

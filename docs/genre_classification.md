@@ -112,7 +112,7 @@ Full cache-only pipeline reruns on 2026-10-02. The **current** column uses the c
 | **Part 2b**: post × heavy on weeks in first 52 | +2.48, p = 0.008, bootstrap p = 0.055 (2,807 albums) | +3.03, p = 0.012, bootstrap p = 0.001 (2,807 albums) | **+3.23, SE 0.90, p < 0.001, genre bootstrap p = 0.015** (4,517 albums, 1,800 artists) |
 | Part 2b weeks in first 26 | +1.51, bootstrap p = 0.056 | +1.68, bootstrap p = 0.013 | +1.78, bootstrap p = 0.007 |
 | Part 2b with debut-rank controls | +1.28, p = 0.09 | +2.39, p = 0.011 | +2.59, p < 0.001 |
-| Part 2b with artist fixed effects | −0.23, p = 0.83 | +1.93, p = 0.16 | +1.73, p = 0.10 |
+| Part 2b with artist fixed effects | −0.23, p = 0.83 | +1.93, p = 0.16 | +1.73, p = 0.034 (within-estimator SE 0.81; dummy-count SE 1.05 gives p = 0.10; devlog §27) |
 | Part 2b joint pre-2014 event-study test | p = 0.88 | p = 0.47 | p = 0.79 |
 
 **Exploratory sensitivity, rock + pop → pop** (rock and pop swapped in the priority order; 918 albums move from rock to pop; corrected sample):

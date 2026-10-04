@@ -696,3 +696,21 @@ The rock + pop sensitivity (step 19) was rerun with the fixed clusters: Part 1 +
 - The reported Part 2b result keeps the Part 1-sample labels, as its plan specifies. The artist-file version is secondary unless the author adopts it.
 
 Files touched: `code/musicbrainz_helpers.py` (cluster fix; `select` argument for `build_data`, default unchanged and verified), `code/inference.py` (within-FE helpers, intercept option), `code/22_part2b_analyze.py` (fallback), `code/14_validate_album_collection.py`, `code/18_part1_secondary_checks.py`, `code/run_pipeline.py` (steps 12a, 24, 25; `--from` follows list order), `code/paths.py`; new `code/12a_export_artist_genres.py`, `code/24_part1_plan_checks.py`, `code/25_part2b_extensions.py`, `docs/items4_5_plan.md`, `data/final/artist_genres.csv`; regenerated Part 1 outputs; docs updated (plan note, PROJECT_CONTEXT, CLAUDE.md, genre doc, LLM log).
+
+---
+
+## 27. Author decisions on Part 2b, plan for the long-albums follow-up, backup deleted (2026-10-03, Claude Code)
+
+The author approved four recommendations (PROJECT_CONTEXT §11 item 2 and the scratchpad backup).
+
+1. **Part 2b label source: unchanged.** The reported Part 2b result keeps the Part 1 sample labels, as `docs/q1b_analysis_plan.md` specifies. The per-artist file version (+3.29, bootstrap p = 0.010; §26) is a robustness row. Recorded in a dated note on the Part 2b plan.
+2. **Part 2b artist-FE standard error: switched to the within estimator.** `code/22_part2b_analyze.py` now reports the within-artist estimator as "artist fixed effects" (+1.73, **SE 0.81, p = 0.034**) and keeps the explicit-dummy version as a second row, "artist fixed effects (dummies; SE counts absorbed FE)" (+1.73, SE 1.05, p = 0.10), for a footnote. The coefficient is identical to 10 decimals. Rationale (§26): counting ~1,800 absorbed dummies in the clustered correction is a statsmodels artefact. Standard practice does not count fixed effects nested in the clusters, and the Part 1 artist-FE check already uses the within estimator. **Made after both numbers were seen**, which is stated in the dated note on the Part 2b plan. Step 22 rerun (32 s): every other row in `results_main.csv` and the event study are byte-identical. Steps 19 and 25 read only the main row, so they are unaffected.
+3. **Plan written for the 18+-track follow-up, not estimated:** `docs/long_albums_followup_plan.md`.
+   - A prespecified family of five tests: shares of albums with ≥15, ≥20 and ≥25 tracks, and 75th/90th-percentile quantile regressions. Holm adjustment across the family.
+   - Supporting checks: a distribution-regression figure, an event study for the ≥18 share, charted vs non-charted, and running time ≥60 minutes.
+   - Interpretation rules fixed in advance. It states that the follow-up cannot independently confirm a result already seen.
+   - The shorter-songs and multi-edition leads get no new estimates; they are reported as exploratory.
+   - Awaiting the author's approval before estimation.
+4. **Scratchpad backup deleted.** `scratchpad/external_backup/` (687 MB) was a copy, taken before the 10-02 rerun, of the three collector tables in `data/external/` (official releases, release groups, standard-album candidates). All three were byte-identical to the live files (`cmp`) before deletion. No cache (`*.jsonl`) was involved.
+
+Files touched: `code/22_part2b_analyze.py`, `results/part2b_genre_staying_power/results_main.csv`, `docs/q1b_analysis_plan.md` (dated note), new `docs/long_albums_followup_plan.md`, PROJECT_CONTEXT, CLAUDE.md, `docs/genre_classification.md`, `docs/llm_use_log.md`.
