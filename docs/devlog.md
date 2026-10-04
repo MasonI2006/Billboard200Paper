@@ -1008,4 +1008,4 @@ The author asked whether all figures were necessary, and said that axes were not
   - each figure saved as PNG (300 dpi) and PDF;
   - every figure checked visually and overlapping labels fixed; the p-values moved into captions where they collided.
 - `paperwriting/README.md` has the new figure table with draft captions. Figure numbers are updated in the outline and the test registry.
-- The ten superseded draft figure files are still in `paperwriting/figures/` pending the author's approval to delete them (CLAUDE.md rule 4).
+- At the author's instruction, the ten superseded draft figure files were moved (not deleted) to `archive/superseded_paper_figures_2026-10-03/`.

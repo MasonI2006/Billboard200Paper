@@ -29,7 +29,7 @@ Four for the main text and four for the appendix. Each is saved as PNG (300 dpi)
 
 **Dropped:**
 - The matched-catalogue-gap figure: it was noisy, dominated by December holiday spikes, and the result is fragile. It is reported in a table only.
-- The earlier draft figures (`fig01_*` to `fig06_*`, `figA1_part1_*`, `figA2_part2_*`, `figA3_part2_*`, `figA4_part2b_*`): superseded by the set above.
+- The earlier draft figures (`fig01_*` to `fig06_*`, `figA1_part1_*`, `figA2_part2_*`, `figA3_part2_*`, `figA4_part2b_*`): superseded by the set above; moved to `archive/superseded_paper_figures_2026-10-03/`.
 
 ## Tables to build from `parameters.md`
 
