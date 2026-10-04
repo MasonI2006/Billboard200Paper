@@ -4,6 +4,7 @@ Materials for writing the paper. Created 2026-10-03.
 
 | File | What it is | How it is made |
 |---|---|---|
+| `plain_language_guide.md` | Plain-English walk-through: research questions, the parameters, every decision and test in the paper, bugs, what can and can't be claimed, likely referee questions, glossary | Hand-written |
 | `paper_outline.md` | Section-by-section outline: core claims, abstract skeleton, which figure/table/number goes where, appendix plan, checklist | Hand-written |
 | `test_registry.md` | Every test mapped to its plan, status (frozen primary, prespecified, follow-up, exploratory, descriptive, post hoc), result, devlog section and suggested placement | Hand-written from `docs/` plans and the devlog |
 | `parameters.md` | Every estimated parameter for the paper, with SE, p-values, N and the results file it comes from | **Generated** by `code/33_paper_materials.py`; do not edit by hand |

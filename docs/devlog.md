@@ -962,3 +962,15 @@ The author asked for a folder of writing materials. New `paperwriting/`:
 Also changed: `code/22_part2b_analyze.py` now saves the joint pre-2014 test p (0.793) to `results_event_study.csv`; it was previously printed only. Step 22 rerun; no other output changed.
 
 Files touched: new `paperwriting/` (README, outline, registry, parameters, 10 figures), new `code/33_paper_materials.py`, `code/22_part2b_analyze.py`, `code/paths.py` (`PAPERWRITING`), `code/run_pipeline.py` (step 33), `results/part2b_genre_staying_power/results_event_study.csv`, PROJECT_CONTEXT, CLAUDE.md, `docs/llm_use_log.md`.
+
+---
+
+## 36. Plain-language guide (2026-10-03, Claude Code)
+
+At the author's request, added `paperwriting/plain_language_guide.md`. It is a non-technical explanation covering:
+- the research questions and the three main parameters;
+- every data decision, method and test that goes in the paper, with results;
+- post hoc decisions, the three bugs, and what can and cannot be claimed;
+- likely referee questions, and a glossary.
+
+No analysis was run. Files touched: new `paperwriting/plain_language_guide.md`, `paperwriting/README.md`, `docs/llm_use_log.md`.
