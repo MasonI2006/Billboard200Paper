@@ -974,3 +974,21 @@ At the author's request, added `paperwriting/plain_language_guide.md`. It is a n
 - likely referee questions, and a glossary.
 
 No analysis was run. Files touched: new `paperwriting/plain_language_guide.md`, `paperwriting/README.md`, `docs/llm_use_log.md`.
+
+---
+
+## 37. Reviewed: "Top 10 Albums By Year" files (2026-10-04, Claude Code)
+
+The author added two CSVs to `data/raw/`: `Top 10 Albums By Year Album Length - Sheet1.csv` and `Top 10 Albums By Year Tracks - Album Length.csv`.
+- **What they contain:** the same 320 albums, the 10 best-selling albums worldwide each year from 1990 to 2021. Columns: estimated worldwide sales, discs, tracks, length and genre. The first file adds hours, minutes and seconds; the second is sorted by genre. The source of the sales estimates is not stated.
+- **Descriptives only (no estimation):**
+  - Mean tracks: 13.9 (1990–2004), 13.5 (2005–2014), 16.4 (2015–2021).
+  - Median tracks: 13, 13, 14.
+  - The post-2015 mean is driven by compilations and soundtracks (Arashi 67 tracks, Hamilton 46, Moana 40, Elton John *Diamonds* 34) and by a few streaming-era rap albums (Drake *Scorpion* 25, *Views* 20). Asian pop releases with 7–11 tracks also enter from 2017.
+- **Assessment:** not used for analysis.
+  - Only 10 albums a year, selected on success.
+  - Worldwide rather than U.S. data, with no comparison group.
+  - Compilations and soundtracks are mixed in, and the provenance of the estimates is unknown.
+  - At most, the author may use a sourced anecdote in the introduction.
+
+No files changed except this log.
