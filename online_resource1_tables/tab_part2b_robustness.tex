@@ -1,0 +1,33 @@
+%% Online Resource 1, Part 2b robustness. Built 2026-10-18 from
+%% results/part2b_genre_staying_power/results_main.csv and extensions.csv,
+%% results/final_checks/part2b_leave_one_genre_out.csv, results/part2_incumbency/matched/C_genre_triple_difference.csv
+%% and D_uk_part2b.csv.
+\begin{table}[h]
+\caption{Part 2b robustness, streaming-heavy $\times$ post-rule}
+\label{tab:S_part2b}
+\small
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Specification & Unit & Estimate & SE & $p$ & Boot.\ $p$ & Albums \\
+\midrule
+Main, weeks in first 52 & weeks & $+3.23$ & 0.90 & $<0.001$ & 0.015 & 4,517 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{A. Other outcomes}} \\
+Weeks in first 26 & weeks & $+1.78$ & 0.51 & $<0.001$ & 0.007$^{a}$ & 4,517 \\
+Still on the chart at week 26 & percentage points & $+4.57$ & 2.23 & 0.041 & 0.435$^{a}$ & 4,517 \\
+\multicolumn{7}{@{}l}{\emph{B. Controls and fixed effects}} \\
+Debut-rank controls & weeks & $+2.59$ & 0.71 & $<0.001$ & -- & 4,517 \\
+Career position & weeks & $+3.10$ & 0.90 & $<0.001$ & 0.012$^{b}$ & 4,517 \\
+Artist fixed effects, within estimator & weeks & $+1.73$ & 0.81 & 0.034 & -- & 4,517 \\
+Artist fixed effects, artist indicators & weeks & $+1.73$ & 1.05 & 0.100 & -- & 4,517 \\
+Genre labels from the per-artist file & weeks & $+3.29$ & 0.89 & $<0.001$ & 0.010$^{b}$ & 4,696 \\
+Without hip-hop/R\&B & weeks & $+1.85$ & 1.05 & 0.079 & 0.102$^{c}$ & 3,422 \\
+\multicolumn{7}{@{}l}{\emph{C. Cross-country comparisons}} \\
+Triple difference, U.S. minus UK weeks in top 100 & weeks & & & & & 986 \\
+\quad Streaming-heavy $\times$ post U.S. rule & weeks & $+7.83$ & 4.16 & 0.060 & 0.431$^{b}$ & \\
+\quad Streaming-heavy $\times$ post UK rule & weeks & $-4.30$ & 4.20 & 0.306 & -- & \\
+UK chart, weeks in first 52 (post = March 2015) & weeks & $+0.03$ & 1.24 & 0.984 & 0.983$^{b}$ & 1,641 \\
+\botrule
+\end{tabular}
+\footnotetext{Album-level regressions of chart outcomes for Billboard 200 debuts from 2010 to 2018 on streaming-heavy $\times$ post-rule, with genre and debut-year fixed effects. SE: clustered by artist. $p$: artist-clustered. Boot.\ $p$: restricted wild cluster bootstrap at the genre level with Webb weights; -- not computed. The bootstrap $t$-statistic uses genre-clustered standard errors in the main row and rows marked $^{a}$ and $^{c}$, and artist-clustered standard errors in rows marked $^{b}$; on the latter variant the main row gives 0.011. $^{a}$1,999 draws; all other rows 9,999. $^{c}$Eight genre clusters. The artist fixed-effects rows use the 869 artists with albums before and after the rule; the indicator version counts the absorbed artist effects in the small-sample correction. The triple difference uses albums that debuted in the U.S. top 100 within eight weeks of their UK debut; its outcome is weeks in the U.S. top 100 minus weeks in the UK top 100 in the first 52 weeks after each debut. Because the post-U.S.-rule indicator also equals one after the UK rule, the first coefficient applies to the 18 albums that debuted between the two rules, and the sum of the two coefficients ($+3.5$ weeks) applies to albums released after March 2015 \todo{author decision: keep or drop this sentence; the $+3.5$ comes from refitting the same model, not from a results file}. UK labels come from the matched U.S. album or the per-artist file (1,641 of 5,009 UK debuts). Sources: \texttt{results\_main.csv}, \texttt{extensions.csv}, \texttt{part2b\_leave\_one\_genre\_out.csv}, \texttt{C\_genre\_triple\_difference.csv} and \texttt{D\_uk\_part2b.csv}}
+\end{table}

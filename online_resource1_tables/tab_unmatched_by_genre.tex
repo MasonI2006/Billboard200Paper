@@ -1,0 +1,31 @@
+%% Online Resource 1, Data construction. Built 2026-10-18 from
+%% results/part1_album_length/validation/musicbrainz_genre_balance.csv (group rows) and
+%% results/part1_album_length/validation/musicbrainz_subgenre_balance.csv (genre rows), both written by code/12.
+\begin{table}[h]
+\caption{Roster artists matched to MusicBrainz, by genre group and genre}
+\label{tab:S_unmatched}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+ & Roster artists & Matched uniquely & Unmatched & Unmatched (\%) \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Genre group}} \\
+Streaming-heavy              &   903 &   741 &  162 & 17.9 \\
+Other                        & 1,548 & 1,293 &  255 & 16.5 \\
+No identifiable genre        &   910 &   333 &  577 & 63.4 \\
+All roster artists           & 3,361 & 2,367 &  994 & 29.6 \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Streaming-heavy genres}} \\
+Hip-hop/R\&B                 &   637 &   515 &  122 & 19.2 \\
+Pop                          &    44 &    35 &    9 & 20.5 \\
+Electronic                   &   145 &   122 &   23 & 15.9 \\
+Latin                        &    77 &    69 &    8 & 10.4 \\
+\multicolumn{5}{@{}l}{\emph{Other genres}} \\
+Rock                         &   936 &   767 &  169 & 18.1 \\
+Country                      &   314 &   270 &   44 & 14.0 \\
+Christian                    &   156 &   134 &   22 & 14.1 \\
+Jazz                         &    75 &    63 &   12 & 16.0 \\
+Classical                    &    67 &    59 &    8 & 11.9 \\
+\botrule
+\end{tabular}
+\footnotetext{Roster artists are the 3,361 artists credited on a Billboard 200 debut between 1 January 2009 and 23 November 2014. Matched uniquely means one MusicBrainz artist identifier by exact name or alias; unmatched artists include same-name ambiguities and multi-artist credits. Genres come from MusicBrainz tags under the ordered rule. An unmatched artist has a genre only when the tags of every same-name candidate agree, so 577 of the 994 unmatched artists have no identifiable genre. Sources: \texttt{musicbrainz\_genre\_balance.csv} and \texttt{musicbrainz\_subgenre\_balance.csv} (replication step 12)}
+\end{table}

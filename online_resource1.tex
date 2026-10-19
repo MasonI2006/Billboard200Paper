@@ -1,0 +1,99 @@
+%% ===========================================================================
+%% online_resource1.tex -- Online Resource 1 (Supplementary Information)
+%% JCE: supplementary files are cited in the text as "Online Resource 1",
+%% submitted as PDF, and their figures are numbered separately from the
+%% main text (here S1, S2, ...). Each SI file must state: article title,
+%% journal name, author names, corresponding author's affiliation and e-mail.
+%% Compile as its own Overleaf project (or a second main file) with the same
+%% Springer Nature template.
+%% ===========================================================================
+\documentclass[pdflatex,sn-apa]{sn-jnl}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{array}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\begin{document}
+
+\title{Online Resource 1 for ``Changing the Scoreboard: How Counting Streams Reshaped the Billboard 200 but Not the Albums on It''}
+\author*[1]{\fnm{Mason} \sur{Istre}}\email{mi30@rice.edu}
+\affil*[1]{\orgdiv{Department of Economics}, \orgname{Rice University}, \orgaddress{\city{Houston}, \state{Texas}, \country{U.S.}}}
+\abstract{Supplementary information for an article in the \emph{Journal of Cultural Economics}: test registry, data construction, and robustness results for Parts 1, 2 and 2b.}
+\maketitle
+
+\section{Test registry}
+\input{appendix_test_registry}
+
+\section{Data construction}
+\begin{itemize}
+  \item Chart dates: the source records each chart three days before Billboard's issue date, and we use the dates as stored. The first chart under the rule is stored as 10 December 2014 and carries the issue date 13 December 2014; the first post-rule release date is 24 November 2014 \todo{confirm against parameters.md and the code that the pre/post split uses the stored date 10 December 2014}.
+  \item Pre-rule roster: every artist credited on a Billboard 200 debut, 1 January 2009 to 23 November 2014 (3,361 artists, ``Various Artists'' excluded); construction, match statuses (2,367 matched uniquely), unresolved rate by genre group \todo{table; rerun code/14\_validate\_album\_collection.py under the ordered genre rule first, because the devlog rates are stale}.
+  \item MusicBrainz collection: endpoints, rate limit, caching; studio-album and standard-edition rules; year-only dates.
+  \item Genre classification: tag mapping, priority order, 100-album hand check.
+  \item UK chart: reconstruction of the number-one rows from the following week's previous-position field, and the checks run on the reconstruction \todo{list exactly the checks the devlog documents, and do not claim a full comparison with the published number-one list unless it was done}.
+  \item U.S.--UK matched albums: matching rule; 50-album hand check (50/50 correct).
+\end{itemize}
+
+\section{Part 1 robustness}
+The frozen Part 1 plan lists twelve secondary checks:
+\begin{itemize}
+  \item a control for the album's position in the artist's career;
+  \item artist fixed effects;
+  \item dropping albums released before the artist's first qualifying chart debut;
+  \item including mixtapes;
+  \item the windows 2009--2024 and 2010--2019;
+  \item continuous streaming intensity in place of the streaming-heavy indicator;
+  \item excluding electronic music;
+  \item log running time, and indicators for more than 12 and for 18 or more tracks, as outcomes.
+\end{itemize}
+One of the twelve (18 or more tracks) is significant at the 5\% level.
+
+\todo{Table: all 12 frozen-plan checks (parameters.md, plan\_checks.csv). Charted vs non-charted subsamples; selection and payoff; digital edition; rock+pop$\to$pop; exploratory checks, labelled as such.}
+
+\subsection{Long albums follow-up}
+\todo{Family A1--A5 with Holm-adjusted p-values (0 of 5 survive).}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figA4_track_count_thresholds.png}
+\caption{Post-rule change in the share of albums with at least $k$ tracks, streaming-heavy minus other genres, $k=8$--30, with 95\% artist-clustered intervals. Descriptive context for the prespecified long-albums follow-up, in which none of five upper-tail tests survives a Holm correction}
+\label{fig:S_thresholds}
+\end{figure}
+
+\section{Part 2 robustness}
+\todo{Placebo-date table; song charts; July 2018 break; first-run lengths; pooled U.S.--UK test; RIAA controls; matched catalogue albums.}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figA1_riaa_streaming_growth.png}
+\caption{U.S. recorded-music revenue by format, 2005--2019, nominal dollars (a), and streaming's share of revenue (b). The dashed line marks the Billboard 200 rule change. Source: RIAA}
+\label{fig:S_riaa}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figA2_placebo_dates.png}
+\caption{Jump at the actual U.S. rule date against jumps estimated at about 350 placebo dates (2011--2018, excluding 26 weeks around either country's rule). (a) New-entry share, placebo $p=0.003$; (b) 52+-week share, placebo $p=0.076$}
+\label{fig:S_placebo}
+\end{figure}
+
+\section{Part 2b robustness}
+\todo{Weeks in first 26; still on chart at week 26; artist-FE standard-error choice (post hoc, disclosed); cross-country triple difference; UK replication.}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{figA3_leave_one_genre_out.png}
+\caption{Part 2b estimate re-estimated dropping one genre at a time, with 95\% artist-clustered intervals; the dotted line marks the full-sample estimate. Asterisks mark streaming-heavy genres}
+\label{fig:S_logo}
+\end{figure}
+
+\section{Superseded estimates and implementation fixes}
+\todo{The three bugs, the estimates they affected, and the corrected values.}
+
+\end{document}

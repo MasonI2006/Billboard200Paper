@@ -1,0 +1,20 @@
+%% Online Resource 1, Part 1 long-albums follow-up. Built 2026-10-18 from
+%% results/part1_album_length/secondary/long_albums_followup.csv (rows A1-A5 and the reference row).
+\begin{table}[h]
+\caption{Long-albums follow-up, streaming-heavy $\times$ post-rule}
+\label{tab:S_longalbums}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Outcome & Unit & Estimate & SE & $p$ & Holm $p$ \\
+\midrule
+A1. Share with 15 or more tracks & percentage points & $-0.42$ & 2.15 & 0.905 & 0.905 \\
+A2. Share with 20 or more tracks & percentage points & $+2.98$ & 1.30 & 0.062 & 0.246 \\
+A3. Share with 25 or more tracks & percentage points & $+1.33$ & 0.80 & 0.088 & 0.246 \\
+A4. 75th percentile of log track count & percent & $+6.06$ & 3.08 & 0.049 & 0.245 \\
+A5. 90th percentile of log track count & percent & $+6.90$ & 3.74 & 0.065 & 0.246 \\
+\midrule
+Reference: share with 18 or more tracks & percentage points & $+4.33$ & 1.48 & 0.012 & -- \\
+\botrule
+\end{tabular}
+\footnotetext{The five outcomes A1--A5 were fixed before estimation as one family, after the 18-or-more-tracks result (reference row) had been seen; Holm $p$ adjusts across A1--A5. Rows A1--A3 are linear probability models with genre and release-year fixed effects (SE clustered by artist; $p$ from the restricted wild cluster bootstrap at the genre level, Webb weights, 9,999 draws). Rows A4 and A5 are quantile regressions of the log track count (SE and $p$ from an artist pairs cluster bootstrap, 999 draws). Estimates and standard errors are coefficients multiplied by 100. 6,775 albums. Source: \texttt{long\_albums\_followup.csv}}
+\end{table}

@@ -102,7 +102,9 @@ def main():
     write_csv(UNRESOLVED_GENRE_PATH, breakdown)
 
     subgenre_rows = []
-    for genre in ("hiphop_rnb", "pop", "latin", "electronic"):
+    # all nine genres (the four streaming-heavy genres first, as before; the other five added
+    # 2026-10-18 for Online Resource 1, Table C1)
+    for genre in ("hiphop_rnb", "pop", "latin", "electronic", "rock", "country", "christian", "jazz", "classical"):
         selected = [row for row in match_records if row["musicbrainz_genre"] == genre]
         unresolved = sum(row["is_unresolved"] for row in selected)
         subgenre_rows.append(
@@ -131,7 +133,7 @@ def main():
     print(pd.DataFrame(genre_rows).to_string(index=False))
     print("Unresolved genre breakdown:")
     print(pd.DataFrame(breakdown).to_string(index=False))
-    print("Streaming-heavy subgenre balance:")
+    print("Genre balance, all nine genres:")
     print(pd.DataFrame(subgenre_rows).to_string(index=False))
     print(f"Wrote reproducible 30-case edition hand-check sample to {EDITION_SAMPLE_PATH}")
 

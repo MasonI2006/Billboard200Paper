@@ -1,0 +1,45 @@
+%% Online Resource 1, Part 1 robustness. Built 2026-10-18 from
+%% results/part1_album_length/headline.csv, secondary/plan_checks.csv, secondary/secondary_checks.csv,
+%% digital_robustness.csv and secondary/rockpop_sensitivity.csv. Estimates and SEs are coefficients x 100.
+\begin{table}[h]
+\caption{Part 1 robustness, streaming-heavy $\times$ post-rule}
+\label{tab:S_part1}
+\small
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Specification & Unit & Estimate & SE & $p$ & Boot.\ $p$ & Albums \\
+\midrule
+Headline, log track count & percent & $+2.28$ & 1.51 & 0.133 & 0.161 & 6,775 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{A. Twelve secondary checks in the Part 1 plan}} \\
+Career position, since career start & percent & $+2.07$ & 1.53 & 0.176 & 0.214 & 6,775 \\
+Career position, since 2009 & percent & $+1.14$ & 1.48 & 0.441 & 0.371 & 6,775 \\
+Artist fixed effects & percent & $+1.87$ & 1.61 & 0.245 & 0.298 & 6,479 \\
+Drop albums before first chart debut$^{b}$ & percent & $+2.87$ & 1.73 & 0.096 & 0.203 & 4,491 \\
+Including mixtapes$^{a}$ & percent & $-1.59$ & 1.57 & 0.313 & 0.742 & 7,445 \\
+Window 2009--2024 & percent & $+1.31$ & 1.50 & 0.382 & 0.447 & 9,062 \\
+Window 2010--2019 & percent & $+2.63$ & 1.44 & 0.068 & 0.118 & 6,044 \\
+Continuous streaming intensity & percent per ratio point & $+1.24$ & 0.88 & 0.160 & 0.109 & 6,775 \\
+Excluding electronic & percent & $+2.04$ & 1.60 & 0.202 & 0.226 & 6,413 \\
+Log running time & percent & $-1.48$ & 1.83 & 0.419 & 0.809 & 6,673 \\
+More than 12 tracks & percentage points & $+0.89$ & 2.60 & 0.732 & 0.749 & 6,775 \\
+\textbf{18 or more tracks} & percentage points & $\mathbf{+4.33}$ & 1.48 & 0.003 & \textbf{0.012} & 6,775 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{B. Other secondary checks}} \\
+Charted albums & percent & $+3.32$ & 1.57 & 0.034 & 0.084 & 3,991 \\
+Albums that did not chart & percent & $+1.65$ & 2.87 & 0.566 & 0.468 & 2,784 \\
+Selection into the chart$^{c}$ & percentage points & $+17.71$ & 9.34 & 0.058 & 0.063 & 6,775 \\
+Chart payoff, debut rank$^{c}$ & chart positions & $+21.76$ & 14.39 & 0.131 & 0.140 & 3,991 \\
+Chart payoff, log weeks on chart$^{c}$ & percent & $+51.20$ & 36.90 & 0.165 & 0.454 & 3,991 \\
+Earliest digital edition & percent & $+1.97$ & 1.63 & 0.227 & -- & 5,612 \\
+\quad Standard edition, same albums & percent & $+2.30$ & 1.62 & 0.157 & -- & 5,612 \\
+Rock$+$pop artists coded as pop & percent & $+1.59$ & 1.34 & 0.233 & 0.288 & 6,775 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{C. Exploratory checks}} \\
+Log seconds per track & percent & $-3.90$ & 1.29 & 0.002 & -- & 6,673 \\
+Same-day editions of different length & percentage points & $-5.09$ & 1.91 & 0.008 & -- & 6,775 \\
+UK artist $\times$ post, more than 12 tracks & percentage points & $+0.11$ & 5.09 & 0.983 & -- & 6,775 \\
+\botrule
+\end{tabular}
+\footnotetext{Each row is a separate regression with genre and release-year fixed effects. Estimates and standard errors are coefficients multiplied by 100, so log-point estimates read as percent and linear-probability estimates as percentage points; the debut-rank row is unscaled, in chart positions. SE: clustered by artist. $p$: artist-clustered. Boot.\ $p$: restricted wild cluster bootstrap at the genre level (Webb weights, 9,999 draws); -- not computed. $^{a}$Lowest and $^{b}$highest estimate among the checks that keep the log track count outcome and the streaming-heavy indicator, giving the range $-1.6$ to $+2.9$ percent. $^{c}$Coefficient on log track count $\times$ post $\times$ streaming-heavy. In the selection row the outcome is an indicator for the album ever appearing on the Billboard 200, so after the rule a 10 percent increase in track count raised the probability of charting by 1.7 percentage points more in streaming-heavy genres than in other genres. Sources: \texttt{headline.csv}, \texttt{plan\_checks.csv}, \texttt{secondary\_checks.csv}, \texttt{digital\_robustness.csv} and \texttt{rockpop\_sensitivity.csv}}
+\end{table}

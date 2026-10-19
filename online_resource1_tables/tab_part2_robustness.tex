@@ -1,0 +1,60 @@
+%% Online Resource 1, Part 2 robustness. Built 2026-10-18 from results/part2_incumbency/:
+%% A_break_tests.csv, B_placebo_dates.csv, C_song_chart_comparison.csv, D_with_2018_break.csv,
+%% E_debut_first_run_break.csv, uk_comparison.csv, uk_comparison_placebo_rank.csv, uk_comparison_pooled.csv,
+%% matched/E_riaa_control.csv, matched/A_catalogue_gap.csv. Estimates and SEs are coefficients x 100.
+\begin{table}[h]
+\caption{Part 2 robustness, jumps in chart shares at the rule date (percentage points)}
+\label{tab:S_part2}
+\footnotesize
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+ & \multicolumn{3}{c}{New-entry share} & \multicolumn{3}{c}{52+-week share} \\
+\cmidrule(lr){2-4}\cmidrule(l){5-7}
+ & Jump & SE & $p$ & Jump & SE & $p$ \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{A. Main estimate and placebo-date distribution}} \\
+U.S., main (521 weeks) & $-2.59$ & 0.41 & $<0.001$ & $+5.67$ & 0.87 & $<0.001$ \\
+\quad Placebo $p$, 352 placebo dates & & & 0.003 & & & 0.076 \\
+UK at own rule, March 2015 (522 weeks) & $-0.64$ & 0.48 & 0.184 & $+1.91$ & 1.41 & 0.175 \\
+\quad Placebo $p$, 353 placebo dates & & & 0.545 & & & 0.944 \\
+UK at U.S. rule date & $-0.28$ & 0.48 & 0.561 & $+0.22$ & 1.52 & 0.883 \\
+\quad Placebo $p$, 353 placebo dates & & & 0.785 & & & 0.997 \\
+\multicolumn{7}{@{}l}{\emph{B. Single placebo dates, U.S. (first chart in December)}} \\
+2011 & $+1.60$ & 0.55 & 0.004 & $+0.34$ & 1.14 & 0.766 \\
+2012 & $+0.73$ & 0.60 & 0.228 & $+0.71$ & 0.96 & 0.458 \\
+2016 & $-1.18$ & 0.53 & 0.027 & $+3.38$ & 1.98 & 0.088 \\
+2017 & $-0.60$ & 0.77 & 0.433 & $-4.58$ & 1.36 & $<0.001$ \\
+\multicolumn{7}{@{}l}{\emph{C. Alternative samples and controls, U.S.}} \\
+Top 100 positions only & $-3.55$ & 0.68 & $<0.001$ & $+2.31$ & 1.22 & 0.059 \\
+Window 2010--2024 (782 weeks) & $-3.22$ & 0.48 & $<0.001$ & $+5.54$ & 0.92 & $<0.001$ \\
+With a July 2018 break & $-2.87$ & 0.41 & $<0.001$ & $+5.97$ & 1.09 & $<0.001$ \\
+\quad July 2018 break itself & $-0.96$ & -- & 0.122 & $-1.70$ & -- & 0.390 \\
+RIAA streaming share & $-2.90$ & 0.41 & $<0.001$ & $+5.41$ & 0.91 & $<0.001$ \\
+RIAA log streaming revenue & $-2.64$ & 0.46 & $<0.001$ & $+5.57$ & 1.11 & $<0.001$ \\
+RIAA share and log revenue & $-3.26$ & 0.46 & $<0.001$ & $+5.00$ & 0.98 & $<0.001$ \\
+\multicolumn{7}{@{}l}{\emph{D. Pooled U.S. and UK series, jump at own rule date minus jump at the other country's date}} \\
+Own date & $-1.91$ & 0.74 & 0.010 & $+3.43$ & 1.27 & 0.007 \\
+Other country's date & $+0.35$ & 0.73 & 0.627 & $+0.43$ & 1.51 & 0.777 \\
+Own minus other, $p$ Newey--West by country & $-2.26$ & & 0.112 & $+3.00$ & & 0.248 \\
+Own minus other, $p$ Driscoll--Kraay & $-2.26$ & & 0.034 & $+3.00$ & & 0.079 \\
+\multicolumn{7}{@{}l}{\emph{E. Song charts, new-entry share, 2013--2019 (363 weeks)}} \\
+Streaming songs & $+2.50$ & 2.90 & 0.388 & & & \\
+Digital song sales & $-1.22$ & 1.22 & 0.317 & & & \\
+Radio songs & $-2.33$ & 0.63 & $<0.001$ & & & \\
+Billboard 200, same window & $-3.50$ & 0.46 & $<0.001$ & & & \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{F. Other outcomes, U.S. (jump at the rule)}} \\
+Re-entry share & $-1.29$ & 0.57 & 0.024 & & & \\
+Artist concentration (Herfindahl index $\times 100$) & $-0.005$ & 0.037 & 0.901 & & & \\
+First-run length of new debuts (percent) & $+0.86$ & 4.10 & 0.834 & & & \\
+\multicolumn{7}{@{}l}{\emph{G. Matched catalogue albums, U.S. minus UK top-100 presence}} \\
+Jump at U.S. rule, level only & $+0.26$ & 0.07 & $<0.001$ & & & \\
+\quad Placebo $p$, 353 placebo dates & & & 0.071 & & & \\
+Jump at UK rule, level only & $-0.12$ & 0.07 & 0.107 & & & \\
+Jump at U.S. rule, with trend changes & $+0.01$ & 0.05 & 0.923 & & & \\
+Jump at UK rule, with trend changes & $-0.32$ & 0.09 & $<0.001$ & & & \\
+Jump at U.S. rule, full Billboard 200 & $+0.51$ & 0.07 & $<0.001$ & & & \\
+\botrule
+\end{tabular}
+\footnotetext{Interrupted time series on weekly data, 2010--2019 unless stated, with a linear trend, a post-rule trend change and week-of-year effects. Estimates and standard errors are coefficients multiplied by 100 (percentage points of the share, except where a row states another unit). SE: Newey--West, 12 lags (Driscoll--Kraay, 12 lags, in the second panel D test). $p$: Newey--West unless labelled placebo. Placebo $p$ is two-sided: the share of placebo dates (2011--2018, excluding 26 weeks either side of each rule date in either country) whose absolute jump is at least as large as the actual one, counting the actual date. The first-run row in panel F is an album-level regression of log first-run weeks for debuts from 2010 to mid-2019, with a top-10 debut control and month effects (heteroskedasticity-robust SE). The SE of the July 2018 break is not stored in the results file. Sources: files in \texttt{results/part2\_incumbency/} listed at the top of this table file}
+\end{table}

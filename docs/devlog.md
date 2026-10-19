@@ -1009,3 +1009,69 @@ The author asked whether all figures were necessary, and said that axes were not
   - every figure checked visually and overlapping labels fixed; the p-values moved into captions where they collided.
 - `paperwriting/README.md` has the new figure table with draft captions. Figure numbers are updated in the outline and the test registry.
 - At the author's instruction, the ten superseded draft figure files were moved (not deleted) to `archive/superseded_paper_figures_2026-10-03/`.
+
+---
+
+## 39. Answers to the paper TODO list from the code and results (2026-10-08, Claude Code)
+
+The author added a draft of the paper (`main.tex`, `online_resource1.tex`) and `todo_for_code_agent.md`, which lists 30 items (A1–E4) that can be settled from the code, data and results. All answers, each with its evidence and a confidence note, are in the new file `todo_answers.md`. `main.tex`, `online_resource1.tex` and `references.bib` were not edited.
+
+**Rerun:** `py -3.10 code/run_pipeline.py --only 12 13 14` (cache-only, about 25 s; 30/30 edition hand-check pass). Every output is byte-identical to the committed version, so the genre-balance tables were already the ordered-rule output. No other script was run. Everything else was read from files or recomputed read-only.
+
+**Findings that correct earlier records or the draft:**
+1. **Placebo-rank p (step 29) is two-sided** on |tau|, with p = (1 + count)/(N + 1). The U.S. new-entry p = 0.0028 = 1/353 means the actual jump exceeds **all** 352 fake-date jumps. §31, PROJECT_CONTEXT and `paper_outline.md` say "all but one", which misreads the +1. The main.tex footnote says one-sided "in the predicted direction".
+2. **The RIAA-control range for the new-entry share** is −2.6 to −3.3 (log-revenue specification −0.0264). The draft and `test_registry.md` row 37 give "−2.9 to −3.3". The 52+-week range (+5.0 to +5.6) is right.
+3. **Part 2b Table 4.** Every bootstrap p is a genre-level Webb wild cluster bootstrap. The "artist-clustered t" / "genre-clustered t" labels in `parameters.md` name the SE inside the bootstrap t-statistic.
+   - Career position (0.012) and the UK row (0.983) use the artist-clustered t; on that variant the main row is 0.011.
+   - Main (0.015), without hip-hop/R&B (0.102) and rock + pop (0.174) use the genre-clustered t.
+   - No bootstrap exists for debut-rank controls or artist fixed effects (not run; awaiting the author).
+4. **UK chart week 2013-03-17 has 99 rows**, because position 97 is missing in the source sheet. §30 said all 522 weeks of 2010–2019 have 100 rows; the 522-week count is right.
+5. **UK #1 reconstruction.** The "peak 1" check holds when re-run independently (938/938 LW:1 source rows; 1,326/1,326 rebuilt albums). The "sequence matches the record" check was a spot check of the weeks around the rule, not a comparison with the published list.
+6. **Nine-genre unmatched rates** (the step 12 table had only the four streaming-heavy genres): rock 18.1%, country 14.0%, Christian 14.1%, jazz 16.0%, classical 11.9%; streaming-heavy 17.9% vs other 16.5%. 577 of the 994 unmatched artists have no genre.
+7. **12 Newey–West lags** are fixed in the Part 2 plan without a stated reason. No run uses another lag. RIAA annual values are placed at 1 July and linearly interpolated to weeks.
+8. **Provenance gaps.**
+   - The Kaggle version number and the RIAA export date are not recorded in the project.
+   - The UK workbook's internal date (2025-08-09) indicates it is `top_100_albums_1956_to_20250809.xlsx`, renamed.
+   - MusicBrainz responses were collected 27–28 Sept 2026.
+9. **No rule excludes holiday albums**, although the frozen plan lists them. MusicBrainz has no holiday type; the code excludes by secondary type only.
+
+Records not changed in this session (left for the author): devlog §30–31, PROJECT_CONTEXT, `paper_outline.md`, `test_registry.md`.
+
+Files touched: new `todo_answers.md`; `docs/devlog.md`; `docs/llm_use_log.md`.
+
+---
+
+## 40. Paper TODO list, round 2: answers, Online Resource 1 tables, literature and provenance checks (2026-10-18, Claude Code)
+
+The author added `todo_round2_for_code_agent.md`: the remaining `\todo` markers in the Overleaf draft, six Online Resource 1 tables, and source checks. With the author's approval, the web was used for the literature, RIAA, Kaggle, GitHub and announcement-date checks (billboard.com was not fetched). All answers are in the new file `todo_answers_round2.md`. `main.tex`, `online_resource1.tex` and `references.bib` were not edited.
+
+**Code change and rerun.**
+- `code/12_validate_musicbrainz_collection.py` now writes all nine genres to `musicbrainz_subgenre_balance.csv`; it previously wrote only the four streaming-heavy genres.
+- Rerun with `--only 12 13`. The existing four rows and all other outputs are byte-identical. Rows were added for rock (18.1% unmatched), country (14.0%), Christian (14.1%), jazz (16.0%) and classical (11.9%).
+- No estimation was run. One read-only refit of the matched-album triple difference (same specification) gave the SE of the sum of its two terms.
+
+**New files.** `online_resource1_tables/` holds six LaTeX tables:
+- unmatched artists by genre;
+- Part 1 robustness;
+- the long-albums family;
+- Part 2 robustness;
+- Part 2b robustness;
+- superseded estimates.
+
+They were checked for balanced braces and equal cell counts per row, but not compiled (no LaTeX installation here).
+
+**Findings.**
+1. **Matched-album triple difference.** The $+7.8$ weeks applies only to the 18 albums that debuted between the U.S. and UK rules, because the post-U.S. indicator also covers the post-UK period.
+   - For the 364 albums after March 2015 the sum is $+3.5$ weeks (SE 2.0, $p = 0.079$).
+   - The outcome is U.S. top-100 minus UK top-100 weeks, not Billboard 200 weeks.
+   - The draft and §33 describe it as a general same-album gain.
+2. **Kaggle version.** The data are version 175 or 176 (licence CC BY-NC-SA 4.0; weekly updates; now version 179), not version 131.
+3. **RIAA streaming series.** It includes "Other Streaming" (statutory-licence digital and customised radio, including SoundExchange): 52% of 2014 streaming revenue. So "on-demand streaming" is inaccurate. On-demand-only shares are 11.1%, 14.9% and 21.2% (2013–2015).
+4. **Sim et al. (2022).** Entering a streaming top-100 list raises discovery by 11–13 percent, but rank within the list has no effect. The draft's "a high rank raises demand" needs rewording.
+5. **Schneider and Gros (2019).** They support the claim that Billboard album-chart diversity reversed after streams were added in 2014/15 (DOI 10.1098/rsos.190944). They used Billboard's sales-only Top Album Sales chart after 2014, which is relevant to the missing Part 2 control.
+6. **Long-albums family.** Three of the five outcomes are thresholds and two are quantiles. The smallest Holm $p$ is 0.245, which rounds to 0.25.
+7. **Placebo dates.** There are 352 (U.S.) and 353 (UK).
+8. **Citation details.** Lech et al. is 2025 (*EPJ Data Science* 14, 67). Zanella et al. is 2022 (*SMJ* 43(7)).
+9. **Licences.** MusicBrainz tags (the genre source) are CC BY-NC-SA 3.0 supplementary data. The UK scrape repository is Apache-2.0 for code and asks users to respect the Official Charts Company's terms.
+
+Files touched: `code/12_validate_musicbrainz_collection.py`, `results/part1_album_length/validation/musicbrainz_subgenre_balance.csv`, new `online_resource1_tables/` (6 files), new `todo_answers_round2.md`, `docs/devlog.md`, `docs/llm_use_log.md`.

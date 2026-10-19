@@ -3,3 +3,8 @@ hiphop_rnb,637,122,0.19152276295133439,MusicBrainz artist tags/disambiguation; d
 pop,44,9,0.20454545454545456,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
 latin,77,8,0.1038961038961039,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
 electronic,145,23,0.15862068965517243,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+rock,936,169,0.18055555555555555,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+country,314,44,0.14012738853503184,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+christian,156,22,0.14102564102564102,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+jazz,75,12,0.16,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.
+classical,67,8,0.11940298507462686,MusicBrainz artist tags/disambiguation; denominator is resolved plus unresolved artists assigned to this subgenre.

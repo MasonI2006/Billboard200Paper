@@ -1,0 +1,30 @@
+%% Online Resource 1, superseded estimates. Built 2026-10-18 from docs/devlog.md sections 19-20 and 24-26
+%% and the dated notes in docs/analysis_plan.md. Fix commits: 2f1371b (genre rule, 2026-10-02),
+%% 3835fa7 (release dates, 2026-10-02), 2f83fc6 (artist clusters, 2026-10-03).
+\begin{table}[h]
+\caption{Estimates superseded by the three implementation corrections}
+\label{tab:S_superseded}
+\footnotesize
+\begin{tabular}{@{}p{3.1cm}p{3.0cm}p{3.6cm}p{3.6cm}@{}}
+\toprule
+Correction & Estimate & Before the correction & After the correction \\
+\midrule
+1. Genre tie-break made deterministic (ordered rule) & Part 1 headline & $+0.0356$ (SE 0.0289, $p=0.218$, boot.\ $p=0.247$), 1,663 albums & $-0.0247$ (SE 0.0291, $p=0.397$, boot.\ $p=0.434$), same albums \\
+ & Part 2b main, weeks in first 52 & $+2.48$ ($p=0.008$, boot.\ $p=0.055$), 2,807 albums & $+3.03$ (SE 1.20, $p=0.012$, boot.\ $p=0.001$), same albums \\
+ & Part 2b, weeks in first 26 & $+1.51$ (boot.\ $p=0.056$) & $+1.68$ (boot.\ $p=0.013$) \\
+ & Part 2b, debut-rank controls & $+1.28$ ($p=0.093$) & $+2.39$ ($p=0.011$) \\
+ & Part 2b, artist fixed effects & $-0.23$ ($p=0.834$) & $+1.93$ ($p=0.16$) \\
+\midrule
+2. Release dates parsed value by value & Part 1 headline & $-0.0247$ (boot.\ $p=0.434$), 1,663 albums, all dated to the year only & $+0.0228$ (SE 0.0152, $p=0.135$, boot.\ $p=0.167$), 6,775 albums \\
+ & Part 1, earliest digital edition & $-0.066$ ($p=0.026$), 1,382 albums & $+0.020$ ($p=0.240$), 5,612 albums \\
+ & Part 2b main, weeks in first 52 & $+3.03$ (boot.\ $p=0.001$), 2,807 albums, 1,040 labelled artists & $+3.23$ (SE 0.90, $p<0.001$, boot.\ $p=0.015$), 4,517 albums, 1,941 labelled artists \\
+ & Part 2b, artist fixed effects & $+1.93$ ($p=0.16$) & $+1.73$ ($p=0.10$ with artist indicators) \\
+\midrule
+3. Artist clusters built from the full artist name & Part 1 headline & SE 0.0152, $p=0.135$, boot.\ $p=0.167$, 1,492 clusters & SE 0.0151, $p=0.133$, boot.\ $p=0.161$, 1,942 artists \\
+ & Part 1, charted albums & boot.\ $p=0.095$ & boot.\ $p=0.084$ \\
+ & Part 1, selection into the chart & boot.\ $p=0.060$ & boot.\ $p=0.063$ \\
+ & Part 1, event study (joint pre-2014 test) & $p=0.883$ & $p=0.852$ \\
+\botrule
+\end{tabular}
+\footnotetext{Corrections in the order made, each applied on top of the previous one. Correction 1 replaced a tie-break that assigned artists matching several genres at random on each run, so its before column is one random draw. Correction 2 fixed a date parser that blanked every full or year-month date, which had restricted Part 1 to the 1,663 albums dated only to a year (and therefore excluded every 2014 album); Part 2b took its genre labels from that sample. Correction 3 fixed artist clusters that had been the first word of each artist's name; it changes standard errors, $p$-values and artist counts only, and every Part 1 standard error before it used the incorrect clusters. Part 1 estimates are log points of the track count and Part 2b estimates are weeks. Every estimate in the article and in the tables above is after all three corrections. Sources: \texttt{docs/devlog.md} (sections 24 to 26) and the dated notes in \texttt{docs/analysis\_plan.md}}
+\end{table}
